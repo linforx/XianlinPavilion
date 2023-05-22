@@ -1,0 +1,83 @@
+{
+	"id": 215011,
+	"name": "混元熵增论",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ANEMO": 3,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Sucrose",
+	"route": "Chaotic Entropy",
+	"storyTitle": "砂糖·混元熵增论",
+	"storyDetail": "狂风骤降，乱中取胜。",
+	"source": "在猫尾酒馆中邀请砂糖进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S15013": {
+			"name": "禁·风灵作成·柒伍同构贰型",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C115011]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"C115011": "大型风灵"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Sucrose_01_HD"
+		},
+		"C115011": {
+			"name": "大型风灵",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K105]。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n\\n<color=#FFFFFFFF>我方角色或召唤物引发扩散反应后：</color>转换此牌的元素类型，改为造成被扩散的元素类型的伤害。（离场前仅限一次）",
+			"cost": null,
+			"params": {
+				"K105": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "混元熵增论",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1501]</color>时，装备此牌。\\n$[A1501]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15013]</color>。\\n装备有此牌的$[A1501]生成的<color=#FFFFFFFF>$[C115011]</color>已转换成另一种元素后：我方造成的此类元素伤害+1。\\n（牌组中包含$[A1501]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1501": "砂糖",
+				"S15013": "禁·风灵作成·柒伍同构贰型",
+				"C115011": "大型风灵"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1501]生成的<color=#FFFFFFFF>$[C115011]</color>已转换成另一种元素后：我方造成的此类元素伤害+1。",
+			"subSkills": {
+				"S15013": "skill",
+				"C115011": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

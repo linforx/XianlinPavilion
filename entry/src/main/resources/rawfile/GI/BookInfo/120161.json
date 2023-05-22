@@ -1,0 +1,15 @@
+{
+	"id": 120161,
+	"name": "神秘的愚人众信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100105",
+	"volume": [
+		{
+			"id": 120161,
+			"name": "神秘的愚人众信件",
+			"description": "击败偶然发现的愚人众债务处理人后找到的信件，不知为何会被他带在身上。",
+			"storyId": "509"
+		}
+	],
+	"route": "Mysterious Fatui Letter"
+}

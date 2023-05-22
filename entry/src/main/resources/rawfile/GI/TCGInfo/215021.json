@@ -1,0 +1,87 @@
+{
+	"id": 215021,
+	"name": "蒲公英的国土",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ANEMO": 4,
+		"GCG_COST_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Qin",
+	"route": "Lands of Dandelion",
+	"storyTitle": "琴·蒲公英的国土",
+	"storyDetail": "「风啊，回应我吧！」",
+	"source": "在猫尾酒馆中邀请琴进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S15023": {
+			"name": "蒲公英之风",
+			"description": "治疗所有我方角色2点，召唤<color=#FFFFFFFF>$[C115021]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 4,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"C115021": "蒲公英领域"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Qin_01_HD"
+		},
+		"C115021": {
+			"name": "蒲公英领域",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K105]，治疗我方出战角色1点。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K105": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K105": {
+			"name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "蒲公英的国土",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1502]</color>时，装备此牌。\\n$[A1502]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15023]</color>。\\n装备有此牌的$[A1502]在场时，<color=#FFFFFFFF>$[C115021]</color>会使我方造成的<color=#80FFD7FF>$[K105]</color>+1。\\n（牌组中包含$[A1502]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 4,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1502": "琴",
+				"S15023": "蒲公英之风",
+				"C115021": "蒲公英领域",
+				"K105": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1502]在场时，<color=#FFFFFFFF>$[C115021]</color>会使我方造成的<color=#80FFD7FF>$[K105]</color>+1。",
+			"subSkills": {
+				"S15023": "skill",
+				"C115021": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K105": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120330,
+	"name": "模糊的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120330,
+			"name": "模糊的笔记",
+			"description": "（test)萨齐因思考的资料",
+			"storyId": "595"
+		}
+	],
+	"route": "Unclear Notes"
+}

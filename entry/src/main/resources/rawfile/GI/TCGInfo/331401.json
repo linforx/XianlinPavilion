@@ -1,0 +1,29 @@
+{
+	"id": 331401,
+	"name": "元素共鸣：交织之雷",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_RESONANCE": "元素共鸣"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_ResonanceB_Electric",
+	"route": "Elemental Resonance: Woven Thunder",
+	"storyTitle": "元素共鸣：交织之雷",
+	"storyDetail": "雷光所至，永恒之土。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "元素共鸣：交织之雷",
+			"description": "生成1个<color=#FFACFFFF>{SPRITE_PRESET#1104}雷元素骰</color>。\\n（牌组包含至少2个{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素</color>角色，才能加入牌组）",
+			"cost": null,
+			"params": null,
+			"tags": {
+				"GCG_TAG_RESONANCE": "元素共鸣"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

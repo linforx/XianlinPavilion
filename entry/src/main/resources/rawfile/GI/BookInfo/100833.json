@@ -1,0 +1,15 @@
+{
+	"id": 100833,
+	"name": "略有腐坏的木板",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100307",
+	"volume": [
+		{
+			"id": 100833,
+			"name": "略有腐坏的木板",
+			"description": "略有腐坏的木板。上面似乎刻着一些字…",
+			"storyId": "199"
+		}
+	],
+	"route": "Somewhat Rotten Wooden Plank"
+}

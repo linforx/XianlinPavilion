@@ -1,0 +1,15 @@
+{
+	"id": 100712,
+	"name": "奇怪的纸条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 100712,
+			"name": "奇怪的纸条",
+			"description": "奇怪的纸条，上面似乎记载着什么信息…",
+			"storyId": "183"
+		}
+	],
+	"route": "Strange Note"
+}

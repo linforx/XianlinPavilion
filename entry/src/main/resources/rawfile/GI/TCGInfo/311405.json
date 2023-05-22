@@ -1,0 +1,46 @@
+{
+	"id": 311405,
+	"name": "薙草之稻光",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_WEAPON": "武器",
+		"GCG_TAG_WEAPON_POLE": "长柄武器"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Weapon_Narukami",
+	"route": "Engulfing Lightning",
+	"storyTitle": "非时之梦·薙草之稻光",
+	"storyDetail": "所谓薙刀，乃是斩除芜杂之利器。\\n秉薙刀之人，意在守护恒常之道。",
+	"source": "",
+	"dictionary": {
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "薙草之稻光",
+			"description": "<color=#FFFFFFFF>角色造成的伤害+1</color>。\\n<color=#FFFFFFFF>每回合自动触发1次：</color>如果所附属角色没有$[K310]，就使其获得1点$[K310]。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3204}长柄武器」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": {
+				"GCG_TAG_WEAPON": "武器",
+				"GCG_TAG_WEAPON_POLE": "长柄武器"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色造成的伤害+1</color>。\\n<color=#FFFFFFFF>每回合自动触发1次：</color>如果所附属角色没有$[K310]，就使其获得1点$[K310]。",
+			"subSkills": null,
+			"keywords": {
+				"K310": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

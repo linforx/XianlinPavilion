@@ -1,0 +1,27 @@
+{
+	"id": 100971,
+	"name": "药师的笔记本·一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100971,
+			"name": "药师的笔记本·一",
+			"description": "保本留下的笔记，散发着浓烈的鸣草气息。",
+			"storyId": "255"
+		},
+		{
+			"id": 100972,
+			"name": "药师的笔记本·二",
+			"description": "保本留下的笔记，在精心保护下并没有被雨水沾湿多少。",
+			"storyId": "256"
+		},
+		{
+			"id": 100973,
+			"name": "药师的笔记本·三",
+			"description": "保本留下的笔记，其上有些许污损痕迹。",
+			"storyId": "257"
+		}
+	],
+	"route": "Pharmacist's Notebook (I)"
+}

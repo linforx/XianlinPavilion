@@ -1,0 +1,87 @@
+{
+	"id": 211021,
+	"name": "猫爪冰摇",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_CRYO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Diona",
+	"route": "Shaken, Not Purred",
+	"storyTitle": "迪奥娜·猫爪冰摇",
+	"storyDetail": "摇晃摇晃，混合均匀。您要的续杯！",
+	"source": "在猫尾酒馆中邀请迪奥娜进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S11022": {
+			"name": "猫爪冻冻",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C111021]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111021": "猫爪护盾"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Diona_01"
+		},
+		"C111021": {
+			"name": "猫爪护盾",
+			"description": "为我方出战角色提供<color=#FFFFFFFF>1点$[K6]</color>。",
+			"cost": null,
+			"params": {
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>"
+			},
+			"tags": {
+				"GCG_TAG_SHEILD": "护盾"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"K6": {
+			"name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+			"description": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "猫爪冰摇",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1102]</color>时，装备此牌。\\n$[A1102]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11022]</color>。\\n装备有此牌的$[A1102]生成的<color=#FFFFFFFF>$[C111021]</color>，所提供的$[K6]值+1。\\n（牌组中包含$[A1102]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1102": "迪奥娜",
+				"S11022": "猫爪冻冻",
+				"C111021": "猫爪护盾",
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1102]生成的<color=#FFFFFFFF>$[C111021]</color>，所提供的$[K6]值+1。",
+			"subSkills": {
+				"S11022": "skill",
+				"C111021": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K6": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

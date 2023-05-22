@@ -1,0 +1,15 @@
+{
+	"id": 120296,
+	"name": "来自稻妻的长途信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120296,
+			"name": "来自稻妻的长途信件",
+			"description": "一封书信",
+			"storyId": "586"
+		}
+	],
+	"route": "Inazuman Mail From Afar"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120180,
+	"name": "解读出的内容",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120180,
+			"name": "解读出的内容",
+			"description": "结合线索后解读而出的内容",
+			"storyId": "502"
+		}
+	],
+	"route": "Derived Contents"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 101608,
+	"name": "简要的日程安排表",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100242",
+	"volume": [
+		{
+			"id": 101608,
+			"name": "简要的日程安排表",
+			"description": "由你为凝光安排的日程表，简明扼要，毫无冗杂。",
+			"storyId": "315"
+		}
+	],
+	"route": "Simple Schedule"
+}

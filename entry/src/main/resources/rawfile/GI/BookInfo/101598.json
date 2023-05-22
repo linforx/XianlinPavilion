@@ -1,0 +1,15 @@
+{
+	"id": 101598,
+	"name": "「东王」史辩",
+	"rank": 3,
+	"icon": "UI_ItemIcon_101598",
+	"volume": [
+		{
+			"id": 101598,
+			"name": "「东王」史辩",
+			"description": "在海民的岛歌中流传的「东王」或「东山王」，在雷电的土地上则以「恶王」之名广泛流传。他是大蛇远吕羽氏册立的第一位藩王，也是最后一位。",
+			"storyId": "310"
+		}
+	],
+	"route": "Debates on the \"Viceroy of the East\""
+}

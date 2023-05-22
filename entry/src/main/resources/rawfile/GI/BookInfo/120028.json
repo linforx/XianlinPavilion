@@ -1,0 +1,15 @@
+{
+	"id": 120028,
+	"name": "灵光颂",
+	"rank": 4,
+	"icon": "UI_ItemIcon_100229",
+	"volume": [
+		{
+			"id": 120028,
+			"name": "灵光颂",
+			"description": "传说是失落的沙漠教团流传的歌谣，不知由何人录成文稿。",
+			"storyId": "436"
+		}
+	],
+	"route": "An Ode to Khvarena"
+}

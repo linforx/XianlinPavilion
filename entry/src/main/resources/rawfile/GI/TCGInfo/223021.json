@@ -1,0 +1,59 @@
+{
+	"id": 223021,
+	"name": "烬火重燃",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_DeaconFire",
+	"route": "Embers Rekindled",
+	"storyTitle": "深渊咏者·烬火重燃",
+	"storyDetail": "递播恩典之路，并非一路平顺。",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度深渊咏者·渊火中完成挑战目标后获取",
+	"dictionary": {
+		"C123022": {
+			"name": "火之新生",
+			"description": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到3点生命值。",
+			"cost": null,
+			"params": {
+				"K54": "<color=#FFFFFFFF>免于被击倒</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K1006": {
+			"name": "<color=#FFFFFFFF>渊火加护</color>",
+			"description": "为所附属角色提供<color=#FFFFFFFF>3点{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color></color>。\\n此{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>耗尽前，所附属角色造成的{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>+1。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "烬火重燃",
+			"description": "<color=#FFFFFFFF>入场时：</color>如果装备有此牌的<color=#FFFFFFFF>$[A2302]</color>已触发过<color=#FFFFFFFF>$[C123022]</color>，就立刻弃置此牌，为角色附属$[K1006]。\\n装备有此牌的$[A2302]触发<color=#FFFFFFFF>$[C123022]</color>时：弃置此牌，为角色附属$[K1006]。\\n（牌组中包含$[A2302]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 2
+			},
+			"params": {
+				"A2302": "深渊咏者·渊火",
+				"C123022": "火之新生",
+				"K1006": "<color=#FFFFFFFF>渊火加护</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A2302]触发<color=#FFFFFFFF>$[C123022]</color>时：弃置此牌，为角色附属$[K1006]。",
+			"subSkills": {
+				"C123022": "cardSkill"
+			},
+			"keywords": {
+				"K1006": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

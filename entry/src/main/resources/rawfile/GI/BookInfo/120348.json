@@ -1,0 +1,15 @@
+{
+	"id": 120348,
+	"name": "何人遗留的信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120348,
+			"name": "何人遗留的信件",
+			"description": "何人遗留的信件",
+			"storyId": "617"
+		}
+	],
+	"route": "Someone's Abandoned Letter"
+}

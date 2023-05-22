@@ -1,0 +1,39 @@
+{
+	"id": 120182,
+	"name": "居尔城记事·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120182,
+			"name": "居尔城记事·其一",
+			"description": "居尔城记事·其一",
+			"storyId": "511"
+		},
+		{
+			"id": 120183,
+			"name": "居尔城记事·其二",
+			"description": "居尔城记事·其二",
+			"storyId": "512"
+		},
+		{
+			"id": 120184,
+			"name": "居尔城记事·其三",
+			"description": "居尔城记事·其三",
+			"storyId": "513"
+		},
+		{
+			"id": 120185,
+			"name": "居尔城记事·其四",
+			"description": "居尔城记事·其四",
+			"storyId": "514"
+		},
+		{
+			"id": 120186,
+			"name": "居尔城记事·其五",
+			"description": "居尔城记事·其五",
+			"storyId": "515"
+		}
+	],
+	"route": "Records of Gurabad: Part I"
+}

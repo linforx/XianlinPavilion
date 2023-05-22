@@ -1,0 +1,15 @@
+{
+	"id": 100905,
+	"name": "《第七个武士》台本",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 100905,
+			"name": "《第七个武士》台本",
+			"description": "从泽维尔那里拿到的「映影台本」。",
+			"storyId": "213"
+		}
+	],
+	"route": "\"The Seventh Samurai\" Script"
+}

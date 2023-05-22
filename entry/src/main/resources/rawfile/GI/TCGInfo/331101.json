@@ -1,0 +1,29 @@
+{
+	"id": 331101,
+	"name": "元素共鸣：交织之冰",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_RESONANCE": "元素共鸣"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_ResonanceB_Ice",
+	"route": "Elemental Resonance: Woven Ice",
+	"storyTitle": "元素共鸣：交织之冰",
+	"storyDetail": "坚冰凜冽，直撼高天。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "元素共鸣：交织之冰",
+			"description": "生成1个<color=#99FFFFFF>{SPRITE_PRESET#1101}冰元素骰</color>。\\n（牌组包含至少2个{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素</color>角色，才能加入牌组）",
+			"cost": null,
+			"params": null,
+			"tags": {
+				"GCG_TAG_RESONANCE": "元素共鸣"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

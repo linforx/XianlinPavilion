@@ -1,0 +1,69 @@
+{
+	"id": 214071,
+	"name": "万千的愿望",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ELECTRO": 4,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Shougun",
+	"route": "Wishes Unnumbered",
+	"storyTitle": "雷电将军·万千的愿望",
+	"storyDetail": "恶曜开眼，威光无赦。",
+	"source": "在猫尾酒馆中邀请雷电将军进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S14073": {
+			"name": "奥义·梦想真说",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，其他我方角色获得2点$[K310]。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Shougun_01_HD"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "万千的愿望",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1407]</color>时，装备此牌。\\n$[A1407]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14073]</color>。\\n装备有此牌的$[A1407]使用<color=#FFFFFFFF>$[S14073]</color>时每消耗1点「愿力」，都使造成的伤害额外+1。\\n（牌组中包含$[A1407]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1407": "雷电将军",
+				"S14073": "奥义·梦想真说"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1407]使用<color=#FFFFFFFF>$[S14073]</color>时每消耗1点「愿力」，都使造成的伤害额外+1。",
+			"subSkills": {
+				"S14073": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

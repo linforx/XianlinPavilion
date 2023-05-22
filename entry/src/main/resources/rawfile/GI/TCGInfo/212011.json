@@ -1,0 +1,80 @@
+{
+	"id": 212011,
+	"name": "光辉的季节",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_HYDRO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Barbara",
+	"route": "Glorious Season",
+	"storyTitle": "芭芭拉·光辉的季节",
+	"storyDetail": "将我的歌声与祝福献给你。",
+	"source": "在猫尾酒馆中邀请芭芭拉进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S12012": {
+			"name": "演唱，开始♪",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C112011]</color>。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"C112011": "歌声之环"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Barbara_01"
+		},
+		"C112011": {
+			"name": "歌声之环",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>治疗所有我方角色1点，然后对我方出战角色$[K202]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K202": "<color=#80C0FFFF>附着{SPRITE_PRESET#2102}水元素</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "光辉的季节",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1201]</color>时，装备此牌。\\n$[A1201]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12012]</color>。\\n装备有此牌的$[A1201]在场时，<color=#FFFFFFFF>$[C112011]</color>会使我方执行「切换角色」行动时少花费1个元素骰。（每回合1次）\\n（牌组中包含$[A1201]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1201": "芭芭拉",
+				"S12012": "演唱，开始♪",
+				"C112011": "歌声之环"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1201]在场时，<color=#FFFFFFFF>$[C112011]</color>会使我方执行「切换角色」行动时少花费1个元素骰。（每回合1次）",
+			"subSkills": {
+				"S12012": "skill",
+				"C112011": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

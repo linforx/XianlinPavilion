@@ -1,0 +1,15 @@
+{
+	"id": 120116,
+	"name": "封藏资料「归寂之庭」",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120116,
+			"name": "封藏资料「归寂之庭」",
+			"description": "",
+			"storyId": "472"
+		}
+	],
+	"route": "Sealed Materials: The Court of Desolation"
+}

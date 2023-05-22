@@ -1,0 +1,40 @@
+{
+	"id": 333004,
+	"name": "北地烟熏鸡",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Food_Beidiyanxunji",
+	"route": "Northern Smoked Chicken",
+	"storyTitle": "北地烟熏鸡",
+	"storyDetail": "北境常见的待客佳肴，这次端上来是要「招待」怎样的客人呢？",
+	"source": "",
+	"dictionary": {
+		"K309": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+			"description": "可以用任意类型的元素骰子组合，来支付此类费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "北地烟熏鸡",
+			"description": "本回合中，目标角色下一次<color=#FFFFFFFF>「普通攻击」</color>少花费1个$[K309]。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": null,
+			"params": {
+				"K309": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K309": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

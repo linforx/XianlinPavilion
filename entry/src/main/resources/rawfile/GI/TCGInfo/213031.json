@@ -1,0 +1,82 @@
+{
+	"id": 213031,
+	"name": "冒险憧憬",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 4,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Bennett",
+	"route": "Grand Expectation",
+	"storyTitle": "班尼特·冒险憧憬",
+	"storyDetail": "最美妙的冒险永远是下一次。",
+	"source": "在猫尾酒馆中邀请班尼特进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S13033": {
+			"name": "美妙旅程",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C113031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+				"C113031": "鼓舞领域"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Bennett_01_HD"
+		},
+		"C113031": {
+			"name": "鼓舞领域",
+			"description": "<color=#FFFFFFFF>我方角色使用技能时：</color>如果该角色生命值至少为7，则使此伤害额外+2；技能结算后，如果该角色生命值不多于6，则治疗该角色2点。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+			"cost": null,
+			"params": {
+				"K4": "<color=#FFFFFFFF>持续回合</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "冒险憧憬",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1303]</color>时，装备此牌。\\n$[A1303]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13033]</color>。\\n装备有此牌的$[A1303]生成的<color=#FFFFFFFF>$[C113031]</color>，其伤害提升效果改为总是生效，不再具有生命值限制。\\n（牌组中包含$[A1303]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1303": "班尼特",
+				"S13033": "美妙旅程",
+				"C113031": "鼓舞领域"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1303]生成的<color=#FFFFFFFF>$[C113031]</color>，其伤害提升效果改为总是生效，不再具有生命值限制。",
+			"subSkills": {
+				"S13033": "skill",
+				"C113031": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

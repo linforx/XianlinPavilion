@@ -1,0 +1,21 @@
+{
+	"id": 1037,
+	"name": "希鲁伊与希琳的故事",
+	"rank": 4,
+	"icon": "UI_ItemIcon_120019",
+	"volume": [
+		{
+			"id": 120019,
+			"name": "希鲁伊与希琳的故事·卷一",
+			"description": "镇灵在夜风中讲与牧童的故事，不知何来，荒诞不羁。",
+			"storyId": "427"
+		},
+		{
+			"id": 120020,
+			"name": "希鲁伊与希琳的故事·卷二",
+			"description": "镇灵在夜风中讲与牧童的故事，不知何来，荒诞不羁。",
+			"storyId": "428"
+		}
+	],
+	"route": "The Tale of Shiruyeh and Shirin"
+}

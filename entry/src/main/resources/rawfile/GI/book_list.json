@@ -1778,6 +1778,13 @@
 			"icon": "UI_ItemIcon_120001",
 			"route": "Competition Scores"
 		},
+		"120336": {
+			"id": 120336,
+			"name": "《召唤王》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120336",
+			"route": "King of Invokations"
+		},
 		"120345": {
 			"id": 120345,
 			"name": "无名冒险家的记录",

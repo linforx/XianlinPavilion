@@ -1,0 +1,15 @@
+{
+	"id": 100350,
+	"name": "可莉的本子",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100350",
+	"volume": [
+		{
+			"id": 100350,
+			"name": "可莉的本子",
+			"description": "(test)可莉的本子",
+			"storyId": "42"
+		}
+	],
+	"route": "Klee's Notebook"
+}

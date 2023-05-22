@@ -1,0 +1,15 @@
+{
+	"id": 100413,
+	"name": "提瓦特野外救急食谱",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100413",
+	"volume": [
+		{
+			"id": 100413,
+			"name": "提瓦特野外救急食谱",
+			"description": "饮食烹饪是野外生存的重中之重！拥有十年资历的冒险家协会老会员琳，为您深入讲解如何野外紧急情况下吃饱又吃好的烹饪秘诀！",
+			"storyId": "86"
+		}
+	],
+	"route": "Teyvat Wilderness Survivalist's Recipes"
+}

@@ -1,0 +1,87 @@
+{
+	"id": 120260,
+	"name": "(test)提纳里的来信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120260,
+			"name": "(test)提纳里的来信",
+			"description": "(test)提纳里的来信",
+			"storyId": "571"
+		},
+		{
+			"id": 120261,
+			"name": "(test)阿贝多的来信",
+			"description": "(test)阿贝多的来信",
+			"storyId": "572"
+		},
+		{
+			"id": 120262,
+			"name": "(test)砂糖的来信",
+			"description": "(test)砂糖的来信",
+			"storyId": "573"
+		},
+		{
+			"id": 120263,
+			"name": "(test)丽莎的来信",
+			"description": "(test)丽莎的来信",
+			"storyId": "574"
+		},
+		{
+			"id": 120264,
+			"name": "(test)可莉的来信",
+			"description": "(test)可莉的来信",
+			"storyId": "575"
+		},
+		{
+			"id": 120265,
+			"name": "(test)柯莱的来信",
+			"description": "(test)柯莱的来信",
+			"storyId": "576"
+		},
+		{
+			"id": 120266,
+			"name": "(test)莫娜的来信",
+			"description": "(test)莫娜的来信",
+			"storyId": "577"
+		},
+		{
+			"id": 120267,
+			"name": "(test)班尼特的来信",
+			"description": "(test)班尼特的来信",
+			"storyId": "578"
+		},
+		{
+			"id": 120268,
+			"name": "(test)安柏的来信",
+			"description": "(test)安柏的来信",
+			"storyId": "579"
+		},
+		{
+			"id": 120269,
+			"name": "(test)米卡的来信",
+			"description": "(test)米卡的来信",
+			"storyId": "580"
+		},
+		{
+			"id": 120270,
+			"name": "(test)赛诺的来信",
+			"description": "(test)赛诺的来信",
+			"storyId": "581"
+		},
+		{
+			"id": 120271,
+			"name": "(test)罗莎莉亚的来信",
+			"description": "(test)罗莎莉亚的来信",
+			"storyId": "582"
+		},
+		{
+			"id": 120272,
+			"name": "(test)雷泽的来信",
+			"description": "(test)雷泽的来信",
+			"storyId": "583"
+		}
+	],
+	"route": "？？？"
+}

@@ -1,0 +1,21 @@
+{
+	"id": 120361,
+	"name": "遗落的笔记残页·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120361,
+			"name": "遗落的笔记残页·其一",
+			"description": "遗落的笔记残页·其一",
+			"storyId": "627"
+		},
+		{
+			"id": 120362,
+			"name": "遗落的笔记残页·其二",
+			"description": "遗落的笔记残页·其二",
+			"storyId": "628"
+		}
+	],
+	"route": "Pages From Some Lost Notes (I)"
+}

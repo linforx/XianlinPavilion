@@ -1,0 +1,27 @@
+{
+	"id": 101555,
+	"name": "鹮巷物语·六",
+	"rank": 4,
+	"icon": "UI_ItemIcon_101507",
+	"volume": [
+		{
+			"id": 101555,
+			"name": "鹮巷物语·六",
+			"description": "",
+			"storyId": "298"
+		},
+		{
+			"id": 101556,
+			"name": "鹮巷物语·七",
+			"description": "",
+			"storyId": "299"
+		},
+		{
+			"id": 101557,
+			"name": "鹮巷物语·八",
+			"description": "",
+			"storyId": "300"
+		}
+	],
+	"route": "Toki Alley Tales (VI)"
+}

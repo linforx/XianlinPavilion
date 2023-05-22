@@ -1,0 +1,15 @@
+{
+	"id": 120152,
+	"name": "活动公告",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120152,
+			"name": "活动公告",
+			"description": "（test）蕈兽公告牌交互文本，宣传文本",
+			"storyId": "499"
+		}
+	],
+	"route": "Event Notice"
+}

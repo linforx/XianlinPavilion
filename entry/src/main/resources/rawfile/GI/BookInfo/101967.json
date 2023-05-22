@@ -1,0 +1,15 @@
+{
+	"id": 101967,
+	"name": "箱底的藏宝图",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100173",
+	"volume": [
+		{
+			"id": 101967,
+			"name": "箱底的藏宝图",
+			"description": "被放在箱底的藏宝图。图上用简单的标记注明了「好东西」的所在。",
+			"storyId": "416"
+		}
+	],
+	"route": "Treasure Map in a Box"
+}

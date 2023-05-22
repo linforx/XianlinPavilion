@@ -1,0 +1,15 @@
+{
+	"id": 120241,
+	"name": "雇佣守则石板",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120241,
+			"name": "雇佣守则石板",
+			"description": "雇佣守则石板",
+			"storyId": "559"
+		}
+	],
+	"route": "Employment Code of Conduct Tablet"
+}

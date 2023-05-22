@@ -1,0 +1,15 @@
+{
+	"id": 100242,
+	"name": "给盗宝团的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100242",
+	"volume": [
+		{
+			"id": 100242,
+			"name": "给盗宝团的信",
+			"description": "某人写给盗宝团的一封信。似乎有什么与海灯节相关的计划…",
+			"storyId": "87"
+		}
+	],
+	"route": "Letter to the Treasure Hoarders"
+}

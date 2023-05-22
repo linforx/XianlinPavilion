@@ -1,0 +1,15 @@
+{
+	"id": 100975,
+	"name": "稻叶藤三郎久藏 绝笔",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100975,
+			"name": "稻叶藤三郎久藏 绝笔",
+			"description": "一张写满文字的信纸，其作者已不知所踪。",
+			"storyId": "259"
+		}
+	],
+	"route": "Inaba Tousaburou Kyuuzou's Final Words"
+}

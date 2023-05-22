@@ -1,0 +1,27 @@
+{
+	"id": 120153,
+	"name": "海妮耶的笔记 第一段",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120153,
+			"name": "海妮耶的笔记 第一段",
+			"description": "海妮耶留下的陈旧笔记，似乎记载着她的家族。",
+			"storyId": "500"
+		},
+		{
+			"id": 120154,
+			"name": "海妮耶的笔记 第二段",
+			"description": "海妮耶留下的陈旧笔记，似乎记载着她的家族。",
+			"storyId": "501"
+		},
+		{
+			"id": 120159,
+			"name": "海妮耶的笔记",
+			"description": "海妮耶留下的陈旧笔记，似乎记载着她的家族。",
+			"storyId": "504"
+		}
+	],
+	"route": "Haniyyah's Notes - First Part"
+}

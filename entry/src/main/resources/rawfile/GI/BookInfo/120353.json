@@ -1,0 +1,21 @@
+{
+	"id": 120353,
+	"name": "不知何人的记录·其二",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120353,
+			"name": "不知何人的记录·其二",
+			"description": "不知何人的记录·其二",
+			"storyId": "622"
+		},
+		{
+			"id": 120360,
+			"name": "不知何人的记录·其一",
+			"description": "不知何人的记录·其一",
+			"storyId": "626"
+		}
+	],
+	"route": "Records of Unknown Attribution (II)"
+}

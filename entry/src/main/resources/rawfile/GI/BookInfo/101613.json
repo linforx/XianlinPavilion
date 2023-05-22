@@ -1,0 +1,15 @@
+{
+	"id": 101613,
+	"name": "村庄变迁记录",
+	"rank": 3,
+	"icon": "UI_ItemIcon_100230",
+	"volume": [
+		{
+			"id": 101613,
+			"name": "村庄变迁记录",
+			"description": "通告村民迁居的文书，记录了村庄因为魔神残骸而被迫搬迁的事情。",
+			"storyId": "316"
+		}
+	],
+	"route": "Records of a Changing Village"
+}

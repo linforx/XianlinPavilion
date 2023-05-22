@@ -1,0 +1,15 @@
+{
+	"id": 101580,
+	"name": "留给岻伽的「藏宝图」",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100173",
+	"volume": [
+		{
+			"id": 101580,
+			"name": "留给岻伽的「藏宝图」",
+			"description": "由碎片拼成的一整张藏宝图，散发着淡淡的海盐气息。",
+			"storyId": "319"
+		}
+	],
+	"route": "A Treasure Map Left for Shitoki"
+}

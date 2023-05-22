@@ -1,0 +1,33 @@
+{
+	"id": 331102,
+	"name": "元素共鸣：粉碎之冰",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_RESONANCE": "元素共鸣"
+	},
+	"props": {
+		"GCG_COST_DICE_CRYO": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_ResonanceA_Ice",
+	"route": "Elemental Resonance: Shattering Ice",
+	"storyTitle": "元素共鸣：粉碎之冰",
+	"storyDetail": "霜华绽放，唯此一心。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "元素共鸣：粉碎之冰",
+			"description": "本回合中，我方当前出战角色下一次造成的伤害+2。\\n（牌组包含至少2个{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素</color>角色，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_RESONANCE": "元素共鸣"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

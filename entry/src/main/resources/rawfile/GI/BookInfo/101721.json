@@ -1,0 +1,45 @@
+{
+	"id": 101721,
+	"name": "陈旧的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 101721,
+			"name": "陈旧的笔记",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "350"
+		},
+		{
+			"id": 101722,
+			"name": "陈旧的笔记",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "351"
+		},
+		{
+			"id": 101723,
+			"name": "陈旧的笔记",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "352"
+		},
+		{
+			"id": 101735,
+			"name": "陈旧的笔记",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "364"
+		},
+		{
+			"id": 101736,
+			"name": "陈旧的笔记",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "365"
+		},
+		{
+			"id": 101737,
+			"name": "陈旧的笔记",
+			"description": "加入了调料的美味料理，散发着诱人的香气。不知道适合谁的喜好呢？快去邀请伙伴们试吃吧！",
+			"storyId": "366"
+		}
+	],
+	"route": "Old Notes"
+}

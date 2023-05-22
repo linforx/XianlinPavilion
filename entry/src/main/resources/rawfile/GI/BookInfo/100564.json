@@ -1,0 +1,15 @@
+{
+	"id": 100564,
+	"name": "骑士团指导手册·第五版",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100564",
+	"volume": [
+		{
+			"id": 100564,
+			"name": "骑士团指导手册·第五版",
+			"description": "蒙德西风骑士团的日常言行守则，经过了本届代理团长琴的亲自修订。合格的骑士应当严格依照其规定规范自己的言行。",
+			"storyId": "129"
+		}
+	],
+	"route": "Knights of Favonius Handbook - 5th Edition"
+}

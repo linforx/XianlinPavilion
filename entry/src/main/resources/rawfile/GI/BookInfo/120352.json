@@ -1,0 +1,15 @@
+{
+	"id": 120352,
+	"name": "古旧的日记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120352,
+			"name": "古旧的日记",
+			"description": "古旧的日记",
+			"storyId": "621"
+		}
+	],
+	"route": "Ancient Journal"
+}

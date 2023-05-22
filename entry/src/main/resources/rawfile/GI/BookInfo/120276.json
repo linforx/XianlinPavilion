@@ -1,0 +1,15 @@
+{
+	"id": 120276,
+	"name": "某人留下的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120276,
+			"name": "某人留下的笔记",
+			"description": "似乎是矫论团的成员留下的笔记，记录了佚失俱利鼓及仪式相关的信息。",
+			"storyId": "604"
+		}
+	],
+	"route": "Notes Left by Someone"
+}

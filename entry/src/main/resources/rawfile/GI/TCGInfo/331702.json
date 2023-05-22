@@ -1,0 +1,95 @@
+{
+	"id": 331702,
+	"name": "元素共鸣：蔓生之草",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_RESONANCE": "元素共鸣"
+	},
+	"props": {
+		"GCG_COST_DICE_DENDRO": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_ResonanceA_Grass",
+	"route": "Elemental Resonance: Sprawling Greenery",
+	"storyTitle": "元素共鸣：生长之草",
+	"storyDetail": "新枝抽芽，郁郁成林。",
+	"source": "",
+	"dictionary": {
+		"C115": {
+			"name": "燃烧烈焰",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K103]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到2次）",
+			"cost": null,
+			"params": {
+				"K103": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_DENDRO_PRODUCE": "草元素产物"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"C116": {
+			"name": "草原核",
+			"description": "<color=#FFFFFFFF>我方对敌方出战角色造成$[K103]或$[K104]时，</color>伤害值+2。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+			"cost": null,
+			"params": {
+				"K103": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+				"K104": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_DENDRO_PRODUCE": "草元素产物"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"C117": {
+			"name": "激化领域",
+			"description": "<color=#FFFFFFFF>我方对敌方出战角色造成$[K104]或$[K107]时</color>，伤害值+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K104": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K107": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_DENDRO_PRODUCE": "草元素产物"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "元素共鸣：蔓生之草",
+			"description": "本回合中，我方下一次引发元素反应时，造成的伤害+2。\\n使我方场上的<color=#FFFFFFFF>$[C115]、$[C116]和$[C117]</color>「$[K3]」+1。\\n（牌组包含至少2个{SPRITE_PRESET#2107}<color=#99FF88FF>草元素</color>角色，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 1
+			},
+			"params": {
+				"C115": "燃烧烈焰",
+				"C116": "草原核",
+				"C117": "激化领域",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_RESONANCE": "元素共鸣"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": {
+				"C115": "cardSkill",
+				"C116": "cardSkill",
+				"C117": "cardSkill"
+			},
+			"keywords": {
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

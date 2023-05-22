@@ -1,0 +1,15 @@
+{
+	"id": 101893,
+	"name": "法医室的研究日志内页",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 101893,
+			"name": "法医室的研究日志内页",
+			"description": "满是折痕的研究日志内页，字迹依旧清晰可见。",
+			"storyId": "409"
+		}
+	],
+	"route": "Forensic Office Research Log Excerpt"
+}

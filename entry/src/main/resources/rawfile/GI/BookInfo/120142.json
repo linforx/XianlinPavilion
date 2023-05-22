@@ -1,0 +1,15 @@
+{
+	"id": 120142,
+	"name": "内部撤离行动公文",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120142,
+			"name": "内部撤离行动公文",
+			"description": "一份正式公文，被随意地丢在了营地里。",
+			"storyId": "489"
+		}
+	],
+	"route": "Internal Withdrawal Document"
+}

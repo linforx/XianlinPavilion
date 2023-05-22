@@ -1,0 +1,33 @@
+{
+	"id": 312005,
+	"name": "教官的帽子",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_JiaoguanDanjian",
+	"route": "Instructor's Cap",
+	"storyTitle": "事预则立·教官的帽子",
+	"storyDetail": "「我没有作为将校指挥军旅的能力，除当兵外也不胜任别的什么工作，\\n不如让我来教小伙子们吃点苦头，好让他们在战场上能多活几分钟。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "教官的帽子",
+			"description": "<color=#FFFFFFFF>角色引发元素反应后：</color>生成1个此角色元素类型的元素骰。（每回合至多3次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色引发元素反应后：</color>生成1个此角色元素类型的元素骰。（每回合至多3次）"
+		}
+	},
+	"relatedEntries": null
+}

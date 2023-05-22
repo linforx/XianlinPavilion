@@ -1,0 +1,15 @@
+{
+	"id": 100832,
+	"name": "有些残破的木板",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100307",
+	"volume": [
+		{
+			"id": 100832,
+			"name": "有些残破的木板",
+			"description": "有些残破的木板。上面似乎刻着一些字…",
+			"storyId": "198"
+		}
+	],
+	"route": "Slightly Damaged Wooden Plank"
+}

@@ -1,0 +1,40 @@
+{
+	"id": 332001,
+	"name": "最好的伙伴！",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_BestAibo",
+	"route": "The Bestest Travel Companion!",
+	"storyTitle": "最好的伙伴！",
+	"storyDetail": "「你是万千星辰中的一颗，于我而言却是整个世界。」",
+	"source": "达成牌手手册的奖励条件后领取",
+	"dictionary": {
+		"K411": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+			"description": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "最好的伙伴！",
+			"description": "将所花费的元素骰转换为2个$[K411]。",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"K411": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K411": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

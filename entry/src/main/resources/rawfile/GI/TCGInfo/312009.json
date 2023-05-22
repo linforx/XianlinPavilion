@@ -1,0 +1,60 @@
+{
+	"id": 312009,
+	"name": "将帅兜鍪",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_Jiangshuai",
+	"route": "General's Ancient Helm",
+	"storyTitle": "誓愿无渝·将帅兜鍪",
+	"storyDetail": "「直至最后一滴血汇入大地，琉璃砂终又显露光泽。」",
+	"source": "",
+	"dictionary": {
+		"C301201": {
+			"name": "重嶂不移",
+			"description": "提供2点$[K6]，保护所附属的角色。",
+			"cost": null,
+			"params": {
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>"
+			},
+			"tags": {
+				"GCG_TAG_SHEILD": "护盾"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"K6": {
+			"name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+			"description": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "将帅兜鍪",
+			"description": "<color=#FFFFFFFF>行动阶段开始时：</color>为角色附属<color=#FFFFFFFF>「$[C301201]」</color>。（提供2点$[K6]，保护该角色。）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": {
+				"C301201": "重嶂不移",
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>"
+			},
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>行动阶段开始时：</color>为角色附属<color=#FFFFFFFF>「$[C301201]」</color>。（提供2点$[K6]，保护该角色。）",
+			"subSkills": {
+				"C301201": "cardSkill"
+			},
+			"keywords": {
+				"K6": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

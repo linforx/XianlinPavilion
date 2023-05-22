@@ -1,0 +1,33 @@
+{
+	"id": 100366,
+	"name": "岩神传说：炉灶之神",
+	"rank": 2,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100366,
+			"name": "岩神传说：炉灶之神",
+			"description": "关于岩王爷「炉灶之神」的传说故事。",
+			"storyId": "59"
+		},
+		{
+			"id": 100367,
+			"name": "岩神传说：开拓之神",
+			"description": "关于岩王爷「开拓之神」神职的传说故事。",
+			"storyId": "60"
+		},
+		{
+			"id": 100368,
+			"name": "岩神传说：财神",
+			"description": "关于岩王爷「财神」神职的传说故事。",
+			"storyId": "61"
+		},
+		{
+			"id": 100369,
+			"name": "岩神传说：历史之神",
+			"description": "关于岩王爷「历史之神」神职的传说故事。",
+			"storyId": "62"
+		}
+	],
+	"route": "Legend of the Geo Archon: God of the Stove"
+}

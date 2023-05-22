@@ -1,0 +1,15 @@
+{
+	"id": 120140,
+	"name": "不知何人的日记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120140,
+			"name": "不知何人的日记",
+			"description": "",
+			"storyId": "487"
+		}
+	],
+	"route": "Someone's Diary"
+}

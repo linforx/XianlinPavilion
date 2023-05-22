@@ -1,0 +1,74 @@
+{
+	"id": 222011,
+	"name": "百川奔流",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_HYDRO": 4,
+		"GCG_COST_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Chunshui",
+	"route": "Streaming Surge",
+	"storyTitle": "如流悬泄",
+	"storyDetail": "奔涌之水，是对已殁神灵敬爱的显现。",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度纯水精灵·洛蒂娅中完成挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S22014": {
+			"name": "潮涌与激流",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；我方每有1个召唤物，再使此伤害+2。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "MonsterSkill_E_Oceanid_01_HD"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "百川奔流",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2201]</color>时，装备此牌。\\n$[A2201]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22014]</color>。\\n装备有此牌的$[A2201]施放<color=#FFFFFFFF>$[S22014]</color>时，使我方所有召唤物$[K3]+1。\\n（牌组中包含$[A2201]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 4,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A2201": "纯水精灵·洛蒂娅",
+				"S22014": "潮涌与激流",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A2201]施放<color=#FFFFFFFF>$[S22014]</color>时，使我方所有召唤物$[K3]+1。",
+			"subSkills": {
+				"S22014": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

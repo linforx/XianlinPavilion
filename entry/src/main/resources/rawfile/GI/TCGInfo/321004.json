@@ -1,0 +1,33 @@
+{
+	"id": 321004,
+	"name": "晨曦酒庄",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_PLACE": "场地"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_Location_Chenxijiuzhuang",
+	"route": "Dawn Winery",
+	"storyTitle": "曙光初照的庄园",
+	"storyDetail": "「最好的永远是明年酿造出的酒。」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "晨曦酒庄",
+			"description": "<color=#FFFFFFFF>我方执行「切换角色」行动时：</color>少花费1个元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

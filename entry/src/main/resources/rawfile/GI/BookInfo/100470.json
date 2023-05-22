@@ -1,0 +1,69 @@
+{
+	"id": 100470,
+	"name": "(test)艾拉·马斯克的诗歌翻译",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100229",
+	"volume": [
+		{
+			"id": 100470,
+			"name": "(test)艾拉·马斯克的诗歌翻译",
+			"description": "(test)艾拉·马斯克的诗歌翻译",
+			"storyId": "119"
+		},
+		{
+			"id": 100471,
+			"name": "(test)优美的丘丘语抒情诗",
+			"description": "(test)优美的丘丘语抒情诗",
+			"storyId": "120"
+		},
+		{
+			"id": 100834,
+			"name": "(test)雷樱大祓要略",
+			"description": "(test)记录了雷樱大祓的事宜已经封印的方法",
+			"storyId": "155"
+		},
+		{
+			"id": 100860,
+			"name": "（test）寻人启事",
+			"description": "绀田村寻人启事",
+			"storyId": "206"
+		},
+		{
+			"id": 100906,
+			"name": "(test)带信封的信",
+			"description": "(test)带信封的信",
+			"storyId": "223"
+		},
+		{
+			"id": 100915,
+			"name": "(test)破破烂烂的纸片",
+			"description": "(test)废弃营地发现的纸片，上面写了一些不明所以的话，可能跟神社占卜有关？",
+			"storyId": "236"
+		},
+		{
+			"id": 101761,
+			"name": "(test)方碑解谜笔记文本·其三",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "367"
+		},
+		{
+			"id": 101762,
+			"name": "(test)方碑解谜笔记文本·其四",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "369"
+		},
+		{
+			"id": 101763,
+			"name": "(test)方碑解谜笔记文本·其五",
+			"description": "(test)无名冒险家的笔记",
+			"storyId": "370"
+		},
+		{
+			"id": 120125,
+			"name": "（test）赛芭的蔷薇",
+			"description": "（test）赛芭的蔷薇",
+			"storyId": "474"
+		}
+	],
+	"route": "Other Undefined"
+}

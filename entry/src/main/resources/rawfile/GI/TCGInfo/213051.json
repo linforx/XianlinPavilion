@@ -1,0 +1,85 @@
+{
+	"id": 213051,
+	"name": "长野原龙势流星群",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Yoyimiya",
+	"route": "Naganohara Meteor Swarm",
+	"storyTitle": "宵宫·长野原龙势流星群",
+	"storyDetail": "长野原·优势烟花储量学说。",
+	"source": "在猫尾酒馆中邀请宵宫进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S13052": {
+			"name": "焰硝庭火舞",
+			"description": "本角色附属<color=#FFFFFFFF>$[C113051]</color>。（此技能不产生{SPRITE_PRESET#1110}充能）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 1
+			},
+			"params": {
+				"C113051": "庭火焰硝"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Yoimiya_01"
+		},
+		"C113051": {
+			"name": "庭火焰硝",
+			"description": "所附属角色<color=#FFFFFFFF>普通攻击</color>伤害+1，造成的$[K100]变为$[K103]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K103": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K103": {
+			"name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "长野原龙势流星群",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1305]</color>时，装备此牌。\\n$[A1305]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13052]</color>。\\n装备有此牌的$[A1305]触发<color=#FFFFFFFF>$[C113051]</color>后：额外造成1点$[K103]。\\n（牌组中包含$[A1305]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1305": "宵宫",
+				"S13052": "焰硝庭火舞",
+				"C113051": "庭火焰硝",
+				"K103": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1305]触发<color=#FFFFFFFF>$[C113051]</color>后：额外造成1点$[K103]。",
+			"subSkills": {
+				"S13052": "skill",
+				"C113051": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K103": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,91 @@
+{
+	"name": "生长碧翡断片",
+	"description": "角色突破素材。\\n「我做了一个很长很长的梦…」",
+	"type": "角色突破素材",
+	"recipe": {
+		"15007": {
+			"104131": {
+				"icon": "UI_ItemIcon_104131",
+				"count": 3
+			}
+		},
+		"50055": {
+			"104112": {
+				"icon": "UI_ItemIcon_104112",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50056": {
+			"104122": {
+				"icon": "UI_ItemIcon_104122",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50057": {
+			"104142": {
+				"icon": "UI_ItemIcon_104142",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50058": {
+			"104152": {
+				"icon": "UI_ItemIcon_104152",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50059": {
+			"104162": {
+				"icon": "UI_ItemIcon_104162",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50060": {
+			"104172": {
+				"icon": "UI_ItemIcon_104172",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "40级以上翠翎恐蕈掉落",
+			"type": "single"
+		},
+		{
+			"name": "40级以上无相之草掉落",
+			"type": "single"
+		},
+		{
+			"name": "合成获得",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104132",
+	"rank": 3,
+	"route": "Nagadus Emerald Fragment"
+}

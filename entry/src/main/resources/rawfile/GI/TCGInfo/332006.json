@@ -1,0 +1,42 @@
+{
+	"id": 332006,
+	"name": "交给我吧！",
+	"type": "actionCard",
+	"tags": null,
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Event_Jiaogeiwoba",
+	"route": "Leave It to Me!",
+	"storyTitle": "交给我吧！",
+	"storyDetail": "「什么都可以，全都交给我吧！」——这句话，常年稳居最令蒙德人安心的话语排行榜榜首。",
+	"source": "初始牌组中获取",
+	"dictionary": {
+		"K2": {
+			"name": "<color=#FFFFFFFF>快速行动</color>",
+			"description": "执行了一次快速行动后，我方可以继续进行其他行动。\\n只有执行了一次战斗行动后，才会轮到对方行动。"
+		},
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "交给我吧！",
+			"description": "<color=#FFFFFFFF>我方下次执行「切换角色」行动时：</color>将此次切换视为「$[K2]」而非「$[K1]」。",
+			"cost": null,
+			"params": {
+				"K2": "<color=#FFFFFFFF>快速行动</color>",
+				"K1": "<color=#FFFFFFFF>战斗行动</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K2": "keyword",
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

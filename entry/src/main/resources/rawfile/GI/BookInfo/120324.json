@@ -1,0 +1,15 @@
+{
+	"id": 120324,
+	"name": "某人的日志",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120324,
+			"name": "某人的日志",
+			"description": "某人的日志",
+			"storyId": "601"
+		}
+	],
+	"route": "Someone's Journal"
+}

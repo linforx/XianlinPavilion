@@ -1,0 +1,39 @@
+{
+	"id": 120037,
+	"name": "教令院考察队临时报告",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120037,
+			"name": "教令院考察队临时报告",
+			"description": "教令院考察队临时报告",
+			"storyId": "446"
+		},
+		{
+			"id": 120349,
+			"name": "教令院调查团的日志·其三",
+			"description": "教令院调查团的日志·其三",
+			"storyId": "618"
+		},
+		{
+			"id": 120350,
+			"name": "教令院调查团的日志·其四",
+			"description": "教令院调查团的日志·其四",
+			"storyId": "619"
+		},
+		{
+			"id": 120357,
+			"name": "教令院调查团的日志·其一",
+			"description": "教令院调查团的日志·其一",
+			"storyId": "623"
+		},
+		{
+			"id": 120358,
+			"name": "教令院调查团的日志·其二",
+			"description": "教令院调查团的日志·其二",
+			"storyId": "624"
+		}
+	],
+	"route": "Akademiya Investigation Team's Interim Report"
+}

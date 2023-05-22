@@ -1,0 +1,86 @@
+{
+	"id": 212021,
+	"name": "重帘留香",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_HYDRO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Xingqiu",
+	"route": "The Scent Remained",
+	"storyTitle": "行秋·重帘留香",
+	"storyDetail": "他的运笔方法一直让人印象深刻。",
+	"source": "在猫尾酒馆中邀请行秋进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S12022": {
+			"name": "画雨笼山",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色$[K202]，生成<color=#FFFFFFFF>$[C112021]</color>。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"K202": "<color=#80C0FFFF>附着{SPRITE_PRESET#2102}水元素</color>",
+				"C112021": "雨帘剑"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Xingqiu_01"
+		},
+		"C112021": {
+			"name": "雨帘剑",
+			"description": "<color=#FFFFFFFF>我方出战角色受到至少为3的伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "重帘留香",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1202]</color>时，装备此牌。\\n$[A1202]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12022]</color>。\\n装备有此牌的$[A1202]生成的<color=#FFFFFFFF>$[C112021]</color>，初始$[K3]+1。\\n（牌组中包含$[A1202]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1202": "行秋",
+				"S12022": "画雨笼山",
+				"C112021": "雨帘剑",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1202]生成的<color=#FFFFFFFF>$[C112021]</color>，初始$[K3]+1。",
+			"subSkills": {
+				"S12022": "skill",
+				"C112021": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

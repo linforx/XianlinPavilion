@@ -1,0 +1,145 @@
+{
+	"id": 1105,
+	"name": "神里绫华",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_CRYO": "冰元素",
+		"GCG_TAG_WEAPON_SWORD": "单手剑",
+		"GCG_TAG_NATION_INAZUMA": "稻妻"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Ayaka",
+	"route": "Kamisato Ayaka",
+	"storyTitle": "白鹭霜华·神里绫华",
+	"storyDetail": "如霜凝华，如鹭在庭。",
+	"source": "在猫尾酒馆中邀请神里绫华进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K101": {
+			"name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C111051": {
+			"name": "霜见雪关扉",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K101]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"C111052": {
+			"name": "冰元素附魔",
+			"description": "所附属角色造成的$[K100]变为$[K101]。\\n（持续到回合结束）",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"11051": {
+			"name": "神里流·倾",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_01",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"11052": {
+			"name": "神里流·冰华",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ayaka_01",
+			"subSkills": null,
+			"keywords": {
+				"K101": "keyword"
+			}
+		},
+		"11053": {
+			"name": "神里流·霜灭",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C111051]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 4,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111051": "霜见雪关扉"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Ayaka_HD",
+			"subSkills": {
+				"C111051": "cardSkill"
+			},
+			"keywords": {
+				"K101": "keyword"
+			}
+		},
+		"11054": {
+			"name": "神里流·霰步",
+			"description": "【被动】此角色被切换为「出战角色」时，附属<color=#FFFFFFFF>$[C111052]</color>。",
+			"cost": null,
+			"params": {
+				"C111052": "冰元素附魔"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_PASSIVE": "被动技能"
+			},
+			"icon": "Skill_S_Ayaka_02",
+			"subSkills": {
+				"C111052": "cardSkill"
+			},
+			"keywords": null
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 211051,
+			"name": "寒天宣命祝词",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Ayaka"
+		}
+	]
+}

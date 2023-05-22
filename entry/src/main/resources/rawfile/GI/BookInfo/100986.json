@@ -1,0 +1,15 @@
+{
+	"id": 100986,
+	"name": "残缺的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100986,
+			"name": "残缺的笔记",
+			"description": "破旧残缺的书页，不知为何有一股陈腐粮食的气息。",
+			"storyId": "264"
+		}
+	],
+	"route": "Incomplete Notes"
+}

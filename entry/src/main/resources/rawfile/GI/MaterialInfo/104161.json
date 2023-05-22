@@ -1,0 +1,85 @@
+{
+	"name": "哀叙冰玉碎屑",
+	"description": "角色突破素材。",
+	"type": "角色突破素材",
+	"recipe": {
+		"50121": {
+			"104111": {
+				"icon": "UI_ItemIcon_104111",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50122": {
+			"104121": {
+				"icon": "UI_ItemIcon_104121",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50123": {
+			"104131": {
+				"icon": "UI_ItemIcon_104131",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50124": {
+			"104141": {
+				"icon": "UI_ItemIcon_104141",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50125": {
+			"104151": {
+				"icon": "UI_ItemIcon_104151",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50126": {
+			"104171": {
+				"icon": "UI_ItemIcon_104171",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "急冻树掉落",
+			"type": "single"
+		},
+		{
+			"name": "无相之冰掉落",
+			"type": "single"
+		},
+		{
+			"name": "纪念品商店兑换",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104161",
+	"rank": 2,
+	"route": "Shivada Jade Sliver"
+}

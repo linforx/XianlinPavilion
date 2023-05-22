@@ -1,0 +1,15 @@
+{
+	"id": 120017,
+	"name": "来自何处的歌",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100103",
+	"volume": [
+		{
+			"id": 120017,
+			"name": "来自何处的歌",
+			"description": "谁人落下的残破纸张。似乎是从乐谱上撕下来的一页。看上去经历了一些年月，已经变得非常脆弱。",
+			"storyId": "424"
+		}
+	],
+	"route": "A Song From Somewhere"
+}

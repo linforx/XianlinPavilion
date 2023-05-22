@@ -1,0 +1,33 @@
+{
+	"id": 333011,
+	"name": "唐杜尔烤鸡",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Tangduer",
+	"route": "Tandoori Roast Chicken",
+	"storyTitle": "唐杜尔烤鸡",
+	"storyDetail": "鸡肉在舌尖伴随着香料的节奏，跳了一支神秘迷人的须弥舞蹈，仿佛将人带入了节庆时分的宴会之中…\\n但就像烤鸡总会吃完，宴会也终有落幕之时。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "唐杜尔烤鸡",
+			"description": "本回合中，所有我方角色下一次<color=#FFFFFFFF>「元素战技」</color>造成的伤害+2。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

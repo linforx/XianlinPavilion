@@ -1,0 +1,72 @@
+{
+	"id": 211011,
+	"name": "唯此一心",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_CRYO": 5
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Ganyu",
+	"route": "Undivided Heart",
+	"storyTitle": "甘雨·唯此一心",
+	"storyDetail": "先矢夺人，好箭成霜。",
+	"source": "在猫尾酒馆中邀请甘雨进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S11013": {
+			"name": "霜华矢",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>2点$[K5]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 5
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_S_Ganyu_02"
+		},
+		"K5": {
+			"name": "<color=#FFFFFFFF>穿透伤害</color>",
+			"description": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "唯此一心",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1101]</color>时，装备此牌。\\n$[A1101]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11013]</color>。\\n装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的$[K5]改为3点。\\n（牌组中包含$[A1101]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 5
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1101": "甘雨",
+				"S11013": "霜华矢",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1101]使用<color=#FFFFFFFF>$[S11013]</color>时：如果此技能在本场对局中曾经被使用过，则其对敌方后台角色造成的$[K5]改为3点。",
+			"subSkills": {
+				"S11013": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K5": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

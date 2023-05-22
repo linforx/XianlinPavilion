@@ -1,0 +1,159 @@
+{
+	"id": 1101,
+	"name": "甘雨",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_CRYO": "冰元素",
+		"GCG_TAG_WEAPON_BOW": "弓",
+		"GCG_TAG_NATION_LIYUE": "璃月"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Ganyu",
+	"route": "Ganyu",
+	"storyTitle": "循循守月·甘雨",
+	"storyDetail": "「既然是明早前要，那这份通稿，只要熬夜写完就好。」",
+	"source": "在猫尾酒馆中邀请甘雨进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"K101": {
+			"name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+		},
+		"C111012": {
+			"name": "冰莲",
+			"description": "<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K5": {
+			"name": "<color=#FFFFFFFF>穿透伤害</color>",
+			"description": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+		},
+		"C111011": {
+			"name": "冰灵珠",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K101]，对所有敌方后台角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"11011": {
+			"name": "流天射术",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_02",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"11012": {
+			"name": "山泽麟迹",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C111012]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111012": "冰莲"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ganyu_01",
+			"subSkills": {
+				"C111012": "cardSkill"
+			},
+			"keywords": {
+				"K101": "keyword"
+			}
+		},
+		"11013": {
+			"name": "霜华矢",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>2点$[K5]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 5
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_S_Ganyu_02",
+			"subSkills": null,
+			"keywords": {
+				"K101": "keyword",
+				"K5": "keyword"
+			}
+		},
+		"11014": {
+			"name": "降众天华",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>1点$[K5]</color>，召唤<color=#FFFFFFFF>$[C111011]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>",
+				"C111011": "冰灵珠"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Ganyu_01_HD",
+			"subSkills": {
+				"C111011": "cardSkill"
+			},
+			"keywords": {
+				"K101": "keyword",
+				"K5": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 211011,
+			"name": "唯此一心",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Ganyu"
+		}
+	]
+}

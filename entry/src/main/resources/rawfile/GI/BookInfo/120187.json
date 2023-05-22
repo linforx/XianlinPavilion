@@ -1,0 +1,15 @@
+{
+	"id": 120187,
+	"name": "破损的石板",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120187,
+			"name": "破损的石板",
+			"description": "破损的石板",
+			"storyId": "516"
+		}
+	],
+	"route": "Damaged Stone Slate"
+}

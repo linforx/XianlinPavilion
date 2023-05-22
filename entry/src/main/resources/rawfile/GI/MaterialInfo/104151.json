@@ -1,0 +1,85 @@
+{
+	"name": "自在松石碎屑",
+	"description": "角色突破素材。",
+	"type": "角色突破素材",
+	"recipe": {
+		"50097": {
+			"104111": {
+				"icon": "UI_ItemIcon_104111",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50098": {
+			"104121": {
+				"icon": "UI_ItemIcon_104121",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50099": {
+			"104131": {
+				"icon": "UI_ItemIcon_104131",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50100": {
+			"104141": {
+				"icon": "UI_ItemIcon_104141",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50101": {
+			"104161": {
+				"icon": "UI_ItemIcon_104161",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50102": {
+			"104171": {
+				"icon": "UI_ItemIcon_104171",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "无相之风掉落",
+			"type": "single"
+		},
+		{
+			"name": "风蚀沙虫掉落",
+			"type": "single"
+		},
+		{
+			"name": "纪念品商店兑换",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104151",
+	"rank": 2,
+	"route": "Vayuda Turquoise Sliver"
+}

@@ -1,0 +1,44 @@
+{
+	"id": 332017,
+	"name": "下落斩",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 3
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Xialuo",
+	"route": "Plunging Strike",
+	"storyTitle": "坠空急袭法",
+	"storyDetail": "「…不要半途打开风之翼啊！要被发现了！」",
+	"source": "",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "下落斩",
+			"description": "$[K1]：切换到目标角色，然后该角色进行<color=#FFFFFFFF>「普通攻击」</color>。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>"
+			},
+			"tags": {
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

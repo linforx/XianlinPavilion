@@ -1,0 +1,102 @@
+{
+	"id": 211061,
+	"name": "战欲涌现",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_CRYO": 3,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Eula",
+	"route": "Wellspring of War-Lust",
+	"storyTitle": "优菈·战欲涌现",
+	"storyDetail": "冰浪怒涛，断绝深仇。",
+	"source": "在猫尾酒馆中邀请优菈进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S11063": {
+			"name": "凝浪之光剑",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C111062]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111062": "光降之剑"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Eula_01_HD"
+		},
+		"S11062": {
+			"name": "冰潮的涡旋",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，如果本角色未附属<color=#FFFFFFFF>$[C111061]</color>，则使其附属<color=#FFFFFFFF>$[C111061]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111061": "冷酷之心"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Eula_01"
+		},
+		"C111062": {
+			"name": "光降之剑",
+			"description": "<color=#FFFFFFFF>$[A1106]使用「普通攻击」或「元素战技」时：</color>此牌累积2点「能量层数」，但是$[A1106]不会获得充能。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成2点$[K100]；每有1点「能量层数」，都使此伤害+1。\\n（影响此牌「$[K3]」的效果会作用于「<color=#FFFFFFFF>能量层数</color>」。）",
+			"cost": null,
+			"params": {
+				"A1106": "优菈",
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "战欲涌现",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1106]</color>时，装备此牌。\\n$[A1106]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11063]</color>。\\n装备有此牌的$[A1106]使用<color=#FFFFFFFF>$[S11062]</color>时，会额外为<color=#FFFFFFFF>$[C111062]</color>累积1点「能量层数」。\\n（牌组中包含$[A1106]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1106": "优菈",
+				"S11063": "凝浪之光剑",
+				"S11062": "冰潮的涡旋",
+				"C111062": "光降之剑"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1106]使用<color=#FFFFFFFF>$[S11062]</color>时，会额外为<color=#FFFFFFFF>$[C111062]</color>累积1点「能量层数」。",
+			"subSkills": {
+				"S11063": "skill",
+				"S11062": "skill",
+				"C111062": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

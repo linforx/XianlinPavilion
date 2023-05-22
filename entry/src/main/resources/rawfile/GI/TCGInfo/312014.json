@@ -1,0 +1,44 @@
+{
+	"id": 312014,
+	"name": "追忆之注连",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_ZhuiyiTaozhuang",
+	"route": "Shimenawa's Reminiscence",
+	"storyTitle": "万彩瞬灭·追忆之注连",
+	"storyDetail": "「…世界之理本就无常，痴恋瞬灭之物，将遗失隽永的记忆，」\\n「失去记忆之人，无异于失去生命，是乃永恒黑暗的死亡…」",
+	"source": "",
+	"dictionary": {
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "追忆之注连",
+			"description": "<color=#FFFFFFFF>角色使用「元素战技」或装备「{SPRITE_PRESET#3006}天赋」时：</color>少花费1个元素骰。（每回合1次）\\n<color=#FFFFFFFF>如果角色具有至少2点$[K310]，</color>就使角色「普通攻击」和「元素战技」造成的伤害+1。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色使用「元素战技」或装备「{SPRITE_PRESET#3006}天赋」时：</color>少花费1个元素骰。（每回合1次）\\n<color=#FFFFFFFF>如果角色具有至少2点$[K310]，</color>就使角色「普通攻击」和「元素战技」造成的伤害+1。",
+			"subSkills": null,
+			"keywords": {
+				"K310": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 100711,
+	"name": "藏宝图",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100171",
+	"volume": [
+		{
+			"id": 100711,
+			"name": "藏宝图",
+			"description": "记载着宝藏线索的地图。",
+			"storyId": "182"
+		}
+	],
+	"route": "Treasure Map"
+}

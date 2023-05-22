@@ -1,0 +1,15 @@
+{
+	"id": 120218,
+	"name": "整洁的字条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120218,
+			"name": "整洁的字条",
+			"description": "一份整洁的字条",
+			"storyId": "542"
+		}
+	],
+	"route": "Neat Note"
+}

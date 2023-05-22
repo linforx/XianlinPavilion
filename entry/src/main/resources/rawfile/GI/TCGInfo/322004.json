@@ -1,0 +1,33 @@
+{
+	"id": 322004,
+	"name": "瓦格纳",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Wagner",
+	"route": "Wagner",
+	"storyTitle": "铁匠老板·瓦格纳",
+	"storyDetail": "「打铁依靠的不只是蛮力，还有日以继夜努力而流下的汗水，以及比锻铁还要结实的毅力！」",
+	"source": "在大世界与牌手瓦格纳的冒险挑战中完成挑战目标后获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "瓦格纳",
+			"description": "入场时附带2个「锻造原胚」。\\n<color=#FFFFFFFF>结束阶段：</color>补充1个「锻造原胚」。\\n<color=#FFFFFFFF>打出「{SPRITE_PRESET#3003}武器」手牌时：</color>如可能，则支付等同于「{SPRITE_PRESET#3003}武器」总费用数量的「锻造原胚」，以免费装备此「{SPRITE_PRESET#3003}武器」。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>结束阶段：</color>补充1个「锻造原胚」。\\n<color=#FFFFFFFF>打出「{SPRITE_PRESET#3003}武器」手牌时：</color>如可能，则支付等同于「{SPRITE_PRESET#3003}武器」总费用数量的「锻造原胚」，以免费装备此「{SPRITE_PRESET#3003}武器」。（每回合1次）"
+		}
+	},
+	"relatedEntries": null
+}

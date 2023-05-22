@@ -1,0 +1,15 @@
+{
+	"id": 120364,
+	"name": "矫论团的教谕",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120364,
+			"name": "矫论团的教谕",
+			"description": "矫论团的教谕",
+			"storyId": "630"
+		}
+	],
+	"route": "Teachings of the Skeptics"
+}

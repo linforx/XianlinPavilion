@@ -1,0 +1,44 @@
+{
+	"id": 312008,
+	"name": "绝缘之旗印",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_JueyuanTaozhuang",
+	"route": "Emblem of Severed Fate",
+	"storyTitle": "绝缘之旗印·华饰之兜",
+	"storyDetail": "浮生若梦十三年，\\n影峠绯雪翩跹烟，\\n再顾君已远。",
+	"source": "",
+	"dictionary": {
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "绝缘之旗印",
+			"description": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 3
+			},
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。",
+			"subSkills": null,
+			"keywords": {
+				"K310": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,115 @@
+{
+	"id": 1601,
+	"name": "凝光",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_GEO": "岩元素",
+		"GCG_TAG_WEAPON_CATALYST": "法器",
+		"GCG_TAG_NATION_LIYUE": "璃月"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Ningguang",
+	"route": "Ningguang",
+	"storyTitle": "掩月天权·凝光",
+	"storyDetail": "她保守着一个最大的秘密，那就是自己保守着璃月港的许多秘密。",
+	"source": "在猫尾酒馆中邀请凝光进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K106": {
+			"name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C116011": {
+			"name": "璇玑屏",
+			"description": "<color=#FFFFFFFF>我方出战角色受到至少为2的伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"16011": {
+			"name": "千金掷",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_Catalyst_MD",
+			"subSkills": null,
+			"keywords": {
+				"K106": "keyword"
+			}
+		},
+		"16012": {
+			"name": "璇玑屏",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C116011]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116011": "璇玑屏"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ningguang_01",
+			"subSkills": {
+				"C116011": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		},
+		"16013": {
+			"name": "天权崩玉",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；如果<color=#FFFFFFFF>$[C116011]</color>在场，就使此伤害+2。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 6,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116011": "璇玑屏"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Ningguang_01_HD",
+			"subSkills": {
+				"C116011": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 216011,
+			"name": "储之千日，用之一刻",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Ningguang"
+		}
+	]
+}

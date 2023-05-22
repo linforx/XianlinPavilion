@@ -1,0 +1,15 @@
+{
+	"id": 100845,
+	"name": "笔迹已经模糊的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 100845,
+			"name": "笔迹已经模糊的笔记",
+			"description": "笔迹已经模糊的笔记",
+			"storyId": "200"
+		}
+	],
+	"route": "Illegible Notes"
+}

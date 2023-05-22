@@ -1,0 +1,15 @@
+{
+	"id": 120041,
+	"name": "解剖记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120041,
+			"name": "解剖记录",
+			"description": "解剖记录",
+			"storyId": "450"
+		}
+	],
+	"route": "Dissection Records"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120210,
+	"name": "愚人众信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120210,
+			"name": "愚人众信件",
+			"description": "内部撤离行动公文",
+			"storyId": "536"
+		}
+	],
+	"route": "Fatui Letter"
+}

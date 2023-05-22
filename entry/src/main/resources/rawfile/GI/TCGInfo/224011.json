@@ -1,0 +1,61 @@
+{
+	"id": 224011,
+	"name": "汲能棱晶",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ELECTRO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Effigyelectric",
+	"route": "Absorbing Prism",
+	"storyTitle": "无相之雷·汲能棱晶",
+	"storyDetail": "「好机会！」\\n「嘿，它是我们这边的！」",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度无相之雷中完成挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"C124014": {
+			"name": "雷晶核心",
+			"description": "<color=#FFFFFFFF>所附属角色被击倒时：</color>移除此效果，使角色$[K54]，并治疗该角色到1点生命值。",
+			"cost": null,
+			"params": {
+				"K54": "<color=#FFFFFFFF>免于被击倒</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "汲能棱晶",
+			"description": "<color=#FFFFFFFF>$[K1]：</color>我方出战角色为<color=#FFFFFFFF>$[A2401]</color>时，治疗该角色3点，并附属<color=#FFFFFFFF>$[C124014]</color>。\\n（牌组中包含$[A2401]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A2401": "无相之雷",
+				"C124014": "雷晶核心"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": {
+				"C124014": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

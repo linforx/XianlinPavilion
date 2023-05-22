@@ -1,0 +1,15 @@
+{
+	"id": 120248,
+	"name": "部族行商的信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120248,
+			"name": "部族行商的信件",
+			"description": "部族行商的信件",
+			"storyId": "563"
+		}
+	],
+	"route": "Tribe Merchant's Letter"
+}

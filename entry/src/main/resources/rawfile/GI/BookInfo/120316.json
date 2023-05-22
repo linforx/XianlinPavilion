@@ -1,0 +1,15 @@
+{
+	"id": 120316,
+	"name": "失落铭文之探求",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120316,
+			"name": "失落铭文之探求",
+			"description": "从索希处获得的笔记。记录了有关散失碑文残片可能所在的线索。",
+			"storyId": "592"
+		}
+	],
+	"route": "In Pursuit of the Lost Inscription"
+}

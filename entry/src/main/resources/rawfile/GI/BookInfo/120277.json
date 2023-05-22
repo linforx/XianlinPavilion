@@ -1,0 +1,15 @@
+{
+	"id": 120277,
+	"name": "古老的书卷",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120277,
+			"name": "古老的书卷",
+			"description": "似乎是矫论团世代传承的古老文献，用古奥的文辞写成导致其中记录的内容难以解读。",
+			"storyId": "613"
+		}
+	],
+	"route": "Ancient Volume"
+}

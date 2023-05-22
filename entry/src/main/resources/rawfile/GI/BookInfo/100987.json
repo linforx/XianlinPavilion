@@ -1,0 +1,15 @@
+{
+	"id": 100987,
+	"name": "破烂的纸条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100987,
+			"name": "破烂的纸条",
+			"description": "一张皱皱的字条，其上字迹杂乱难辨。",
+			"storyId": "265"
+		}
+	],
+	"route": "Tattered Paper"
+}

@@ -15,7 +15,7 @@
 			},
 			"props": {
 				"GCG_PROP_HP": 10,
-				"GCG_PROP_ENERGY": 2
+				"GCG_PROP_ENERGY": 3
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Ganyu",
 			"route": "Ganyu",
@@ -121,7 +121,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Shenhe",
 			"route": "Shenhe",
-			"beta": true,
 			"sortOrder": 1107
 		},
 		"1201": {
@@ -190,7 +189,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Tartaglia",
 			"route": "Tartaglia",
-			"beta": true,
 			"sortOrder": 1204
 		},
 		"1205": {
@@ -293,7 +291,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Ambor",
 			"route": "Amber",
-			"beta": true,
 			"sortOrder": 1304
 		},
 		"1305": {
@@ -345,7 +342,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Hutao",
 			"route": "Hu Tao",
-			"beta": true,
 			"sortOrder": 1307
 		},
 		"1401": {
@@ -465,7 +461,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Shougun",
 			"route": "Raiden Shogun",
-			"beta": true,
 			"sortOrder": 1407
 		},
 		"1408": {
@@ -483,7 +478,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Yae",
 			"route": "Yae Miko",
-			"beta": true,
 			"sortOrder": 1408
 		},
 		"1501": {
@@ -535,7 +529,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Venti",
 			"route": "Venti",
-			"beta": true,
 			"sortOrder": 1503
 		},
 		"1504": {
@@ -553,7 +546,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Xiao",
 			"route": "Xiao",
-			"beta": true,
 			"sortOrder": 1504
 		},
 		"1601": {
@@ -605,7 +597,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Zhongli",
 			"route": "Zhongli",
-			"beta": true,
 			"sortOrder": 1603
 		},
 		"1605": {
@@ -674,7 +665,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Nahida",
 			"route": "Nahida",
-			"beta": true,
 			"sortOrder": 1703
 		},
 		"2101": {
@@ -692,7 +682,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Monster_FatuusMageice",
 			"route": "Fatui Cryo Cicin Mage",
-			"beta": true,
 			"sortOrder": 2101
 		},
 		"2201": {
@@ -761,7 +750,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Monster_DeaconFire",
 			"route": "Abyss Lector: Fathomless Flames",
-			"beta": true,
 			"sortOrder": 2302
 		},
 		"2401": {
@@ -779,7 +767,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Char_Monster_Effigyelectric",
 			"route": "Electro Hypostasis",
-			"beta": true,
 			"sortOrder": 2401
 		},
 		"2501": {
@@ -937,7 +924,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Shenhe",
 			"route": "Mystical Abandon",
-			"beta": true,
 			"sortOrder": 211071
 		},
 		"212011": {
@@ -999,7 +985,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Tartaglia",
 			"route": "Abyssal Mayhem: Hydrospout",
-			"beta": true,
 			"sortOrder": 212041
 		},
 		"212051": {
@@ -1015,7 +1000,7 @@
 				"GCG_COST_ENERGY": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Kokomi",
-			"route": "Tamanooya's Casket",
+			"route": "Tamakushi Casket",
 			"sortOrder": 212051
 		},
 		"212061": {
@@ -1092,7 +1077,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Ambor",
 			"route": "Bunny Triggered",
-			"beta": true,
 			"sortOrder": 213041
 		},
 		"213051": {
@@ -1138,7 +1122,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Hutao",
 			"route": "Sanguine Rouge",
-			"beta": true,
 			"sortOrder": 213071
 		},
 		"214011": {
@@ -1246,7 +1229,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Shougun",
 			"route": "Wishes Unnumbered",
-			"beta": true,
 			"sortOrder": 214071
 		},
 		"214081": {
@@ -1263,7 +1245,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Yae",
 			"route": "The Shrine's Sacred Shade",
-			"beta": true,
 			"sortOrder": 214081
 		},
 		"215011": {
@@ -1311,7 +1292,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Venti",
 			"route": "Embrace of Winds",
-			"beta": true,
 			"sortOrder": 215031
 		},
 		"215041": {
@@ -1328,7 +1308,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Xiao",
 			"route": "Conqueror of Evil: Guardian Yaksha",
-			"beta": true,
 			"sortOrder": 215041
 		},
 		"216011": {
@@ -1374,7 +1353,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli",
 			"route": "Dominance of Earth",
-			"beta": true,
 			"sortOrder": 216031
 		},
 		"216051": {
@@ -1437,7 +1415,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Tighnari",
 			"route": "The Seed of Stored Knowledge",
-			"beta": true,
 			"sortOrder": 217031
 		},
 		"221011": {
@@ -1453,7 +1430,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_MageIce",
 			"route": "Cicin's Cold Glare",
-			"beta": true,
 			"sortOrder": 221011
 		},
 		"222011": {
@@ -1514,7 +1490,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_DeaconFire",
 			"route": "Embers Rekindled",
-			"beta": true,
 			"sortOrder": 223021
 		},
 		"224011": {
@@ -1530,7 +1505,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Effigyelectric",
 			"route": "Absorbing Prism",
-			"beta": true,
 			"sortOrder": 224011
 		},
 		"225011": {
@@ -1637,7 +1611,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Ayus",
 			"route": "A Thousand Floating Dreams",
-			"beta": true,
 			"sortOrder": 311104
 		},
 		"311201": {
@@ -1698,7 +1671,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Amos",
 			"route": "Amos' Bow",
-			"beta": true,
 			"sortOrder": 311204
 		},
 		"311205": {
@@ -1714,7 +1686,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Widsith",
 			"route": "Elegy for the End",
-			"beta": true,
 			"sortOrder": 311205
 		},
 		"311301": {
@@ -1775,7 +1746,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_ClaymoreDvalin",
 			"route": "Skyward Pride",
-			"beta": true,
 			"sortOrder": 311304
 		},
 		"311305": {
@@ -1791,7 +1761,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Troupe",
 			"route": "The Bell",
-			"beta": true,
 			"sortOrder": 311305
 		},
 		"311401": {
@@ -1852,7 +1821,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Kunwu",
 			"route": "Vortex Vanquisher",
-			"beta": true,
 			"sortOrder": 311404
 		},
 		"311405": {
@@ -1868,7 +1836,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Narukami",
 			"route": "Engulfing Lightning",
-			"beta": true,
 			"sortOrder": 311405
 		},
 		"311501": {
@@ -1929,7 +1896,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_SwordDvalin",
 			"route": "Skyward Blade",
-			"beta": true,
 			"sortOrder": 311504
 		},
 		"311505": {
@@ -2057,7 +2023,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_JueyuanTaozhuang",
 			"route": "Emblem of Severed Fate",
-			"beta": true,
 			"sortOrder": 312008
 		},
 		"312009": {
@@ -2086,7 +2051,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_QianyanTaozhuang",
 			"route": "Tenacity of the Millelith",
-			"beta": true,
 			"sortOrder": 312010
 		},
 		"312011": {
@@ -2101,7 +2065,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ChenshaDanjian",
 			"route": "Thundering Poise",
-			"beta": true,
 			"sortOrder": 312011
 		},
 		"312012": {
@@ -2116,7 +2079,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ChenshaTaozhuang",
 			"route": "Vermillion Hereafter",
-			"beta": true,
 			"sortOrder": 312012
 		},
 		"312013": {
@@ -2131,7 +2093,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Zhuiyidanjian",
 			"route": "Capricious Visage",
-			"beta": true,
 			"sortOrder": 312013
 		},
 		"312014": {
@@ -2146,7 +2107,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ZhuiyiTaozhuang",
 			"route": "Shimenawa's Reminiscence",
-			"beta": true,
 			"sortOrder": 312014
 		},
 		"312101": {
@@ -2441,7 +2401,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Location_Tianshou",
 			"route": "Tenshukaku",
-			"beta": true,
 			"sortOrder": 321007
 		},
 		"321008": {
@@ -2470,7 +2429,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Location_Shanhu",
 			"route": "Sangonomiya Shrine",
-			"beta": true,
 			"sortOrder": 321009
 		},
 		"321010": {
@@ -2485,7 +2443,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Location_Xumi",
 			"route": "Sumeru City",
-			"beta": true,
 			"sortOrder": 321010
 		},
 		"321011": {
@@ -2498,7 +2455,6 @@
 			"props": null,
 			"icon": "UI_Gcg_CardFace_Assist_Location_Hengna",
 			"route": "Vanarana",
-			"beta": true,
 			"sortOrder": 321011
 		},
 		"321012": {
@@ -2513,7 +2469,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Location_Zhengshoui",
 			"route": "Chinju Forest",
-			"beta": true,
 			"sortOrder": 321012
 		},
 		"322001": {
@@ -2688,7 +2643,6 @@
 			"props": null,
 			"icon": "UI_Gcg_CardFace_Assist_NPC_Huasanli",
 			"route": "Hanachirusato",
-			"beta": true,
 			"sortOrder": 322013
 		},
 		"322014": {
@@ -2701,7 +2655,6 @@
 			"props": null,
 			"icon": "UI_Gcg_CardFace_Assist_NPC_Yingjin",
 			"route": "Kid Kujirai",
-			"beta": true,
 			"sortOrder": 322014
 		},
 		"322015": {
@@ -2716,7 +2669,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_NPC_Xudong",
 			"route": "Xudong",
-			"beta": true,
 			"sortOrder": 322015
 		},
 		"322016": {
@@ -2731,7 +2683,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_NPC_Dina",
 			"route": "Dunyarzad",
-			"beta": true,
 			"sortOrder": 322016
 		},
 		"322017": {
@@ -2746,7 +2697,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_NPC_Lana",
 			"route": "Rana",
-			"beta": true,
 			"sortOrder": 322017
 		},
 		"323001": {
@@ -2789,7 +2739,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Prop_Hongye",
 			"route": "Red Feather Fan",
-			"beta": true,
 			"sortOrder": 323003
 		},
 		"323004": {
@@ -2804,7 +2753,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Prop_Xunbao",
 			"route": "Treasure-Seeking Seelie",
-			"beta": true,
 			"sortOrder": 323004
 		},
 		"331101": {
@@ -2999,7 +2947,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Fengyuziyou",
 			"route": "Wind and Freedom",
-			"beta": true,
 			"sortOrder": 331801
 		},
 		"331802": {
@@ -3012,7 +2959,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Yanyuqiyue",
 			"route": "Stone and Contracts",
-			"beta": true,
 			"sortOrder": 331802
 		},
 		"331803": {
@@ -3023,7 +2969,6 @@
 			"props": null,
 			"icon": "UI_Gcg_CardFace_Event_Event_Leiyuyongheng",
 			"route": "Thunder and Eternity",
-			"beta": true,
 			"sortOrder": 331803
 		},
 		"331804": {
@@ -3036,7 +2981,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Caoyuzhihui",
 			"route": "Nature and Wisdom",
-			"beta": true,
 			"sortOrder": 331804
 		},
 		"332001": {
@@ -3177,7 +3121,7 @@
 			"type": "actionCard",
 			"tags": null,
 			"props": {
-				"GCG_COST_DICE_VOID": 2
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Songniyicheng",
 			"route": "Send Off",
@@ -3217,7 +3161,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Yurenzhongi",
 			"route": "Fatui Conspiracy",
-			"beta": true,
 			"sortOrder": 332016
 		},
 		"332017": {
@@ -3232,7 +3175,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Xialuo",
 			"route": "Plunging Strike",
-			"beta": true,
 			"sortOrder": 332017
 		},
 		"332018": {
@@ -3245,7 +3187,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Zhonggongji",
 			"route": "Heavy Strike",
-			"beta": true,
 			"sortOrder": 332018
 		},
 		"332019": {
@@ -3258,20 +3199,18 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Event_Wennisha",
 			"route": "The Legend of Vennessa",
-			"beta": true,
 			"sortOrder": 332019
 		},
 		"332020": {
 			"id": 332020,
-			"name": "？？？",
+			"name": "永远的友谊",
 			"type": "actionCard",
 			"tags": null,
 			"props": {
 				"GCG_COST_DICE_SAME": 2
 			},
-			"icon": "",
-			"route": "？？？",
-			"beta": true,
+			"icon": "UI_Gcg_CardFace_Event_Event_Yongyuandeyouyi",
+			"route": "Friendship Eternal",
 			"sortOrder": 332020
 		},
 		"333001": {
@@ -3392,7 +3331,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Food_Jiandan",
 			"route": "Teyvat Fried Egg",
-			"beta": true,
 			"sortOrder": 333009
 		},
 		"333010": {
@@ -3407,7 +3345,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Food_Cishen",
 			"route": "Sashimi Platter",
-			"beta": true,
 			"sortOrder": 333010
 		},
 		"333011": {
@@ -3422,7 +3359,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Food_Tangduer",
 			"route": "Tandoori Roast Chicken",
-			"beta": true,
 			"sortOrder": 333011
 		},
 		"333012": {
@@ -3437,7 +3373,6 @@
 			},
 			"icon": "UI_Gcg_CardFace_Event_Food_Huangyou",
 			"route": "Butter Crab",
-			"beta": true,
 			"sortOrder": 333012
 		}
 	}

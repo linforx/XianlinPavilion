@@ -1,0 +1,15 @@
+{
+	"id": 120220,
+	"name": "优菲的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 120220,
+			"name": "优菲的笔记",
+			"description": "优菲的笔记",
+			"storyId": "544"
+		}
+	],
+	"route": "Ufairah's Notes"
+}

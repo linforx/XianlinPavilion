@@ -1,0 +1,29 @@
+{
+	"id": 332004,
+	"name": "运筹帷幄",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Yunchouweiwo",
+	"route": "Strategize",
+	"storyTitle": "运筹帷幄",
+	"storyDetail": "「形势虽然错综复杂，但不外乎一百八十七种情况。」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "运筹帷幄",
+			"description": "抓2张牌。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,27 @@
+{
+	"id": 120038,
+	"name": "赞迪克的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120038,
+			"name": "赞迪克的笔记",
+			"description": "赞迪克的笔记",
+			"storyId": "447"
+		},
+		{
+			"id": 120139,
+			"name": "赞迪克的笔记",
+			"description": "",
+			"storyId": "486"
+		},
+		{
+			"id": 120212,
+			"name": "赞迪克的笔记",
+			"description": "赞迪克的笔记",
+			"storyId": "538"
+		}
+	],
+	"route": "Zandik's Note"
+}

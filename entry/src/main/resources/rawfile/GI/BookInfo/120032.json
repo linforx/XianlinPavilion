@@ -1,0 +1,15 @@
+{
+	"id": 120032,
+	"name": "启封的羊皮卷",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120009",
+	"volume": [
+		{
+			"id": 120032,
+			"name": "启封的羊皮卷",
+			"description": "一卷古老而神秘的羊皮纸，看上去是某个冒险家留下来的笔记。似乎不断有新的文字出现。",
+			"storyId": "453"
+		}
+	],
+	"route": "Unsealed Parchment"
+}

@@ -1,0 +1,33 @@
+{
+	"id": 333009,
+	"name": "提瓦特煎蛋",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 3
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Jiandan",
+	"route": "Teyvat Fried Egg",
+	"storyTitle": "提瓦特煎蛋",
+	"storyDetail": "有着阳光般和煦的口感，只一口便涌入了蓬勃生命力。\\n吃的时候务必细嚼慢咽，不要让蓬勃的生命力噎住了命运的喉咙。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "提瓦特煎蛋",
+			"description": "复苏目标角色，并治疗此角色1点。\\n（每回合中，最多通过「{SPRITE_PRESET#3101}料理」复苏1个角色，并且每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

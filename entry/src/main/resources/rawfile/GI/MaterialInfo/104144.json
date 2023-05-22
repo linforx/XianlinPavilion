@@ -1,0 +1,95 @@
+{
+	"name": "最胜紫晶",
+	"description": "角色突破素材。\\n「此身即是尘世最为殊胜尊贵之身。\\n「应持天下之大权。\\n「此身曾许诺予臣民一梦，既是千世万代不变不移的『永恒』。」",
+	"type": "角色突破素材",
+	"recipe": {
+		"15012": {
+			"104143": {
+				"icon": "UI_ItemIcon_104143",
+				"count": 3
+			}
+		},
+		"50091": {
+			"104114": {
+				"icon": "UI_ItemIcon_104114",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 27
+			}
+		},
+		"50092": {
+			"104124": {
+				"icon": "UI_ItemIcon_104124",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 27
+			}
+		},
+		"50093": {
+			"104134": {
+				"icon": "UI_ItemIcon_104134",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 27
+			}
+		},
+		"50094": {
+			"104154": {
+				"icon": "UI_ItemIcon_104154",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 27
+			}
+		},
+		"50095": {
+			"104164": {
+				"icon": "UI_ItemIcon_104164",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 27
+			}
+		},
+		"50096": {
+			"104174": {
+				"icon": "UI_ItemIcon_104174",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 27
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "75级以上无相之雷掉落",
+			"type": "single"
+		},
+		{
+			"name": "75级以上雷音权现掉落",
+			"type": "single"
+		},
+		{
+			"name": "75级以上掣电树掉落",
+			"type": "single"
+		},
+		{
+			"name": "合成获得",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104144",
+	"rank": 5,
+	"route": "Vajrada Amethyst Gemstone"
+}

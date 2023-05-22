@@ -1,0 +1,35 @@
+{
+	"id": 311304,
+	"name": "天空之傲",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_WEAPON": "武器",
+		"GCG_TAG_WEAPON_CLAYMORE": "双手剑"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Weapon_ClaymoreDvalin",
+	"route": "Skyward Pride",
+	"storyTitle": "斩裂晴空·天空之傲",
+	"storyDetail": "撼动高天之勇。守护万众的意志，让风之龙必诛恶秽的仇敌。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "天空之傲",
+			"description": "<color=#FFFFFFFF>角色造成的伤害+1</color>。\\n<color=#FFFFFFFF>每回合1次：</color>角色使用<color=#FFFFFFFF>「普通攻击」</color>造成的伤害额外+1。\\n（<color=#FFFFFFFF>「{SPRITE_PRESET#3203}双手剑」角色</color>才能装备。角色最多装备1件「{SPRITE_PRESET#3003}武器」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_WEAPON": "武器",
+				"GCG_TAG_WEAPON_CLAYMORE": "双手剑"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色造成的伤害+1</color>。\\n<color=#FFFFFFFF>每回合1次：</color>角色使用<color=#FFFFFFFF>「普通攻击」</color>造成的伤害额外+1。"
+		}
+	},
+	"relatedEntries": null
+}

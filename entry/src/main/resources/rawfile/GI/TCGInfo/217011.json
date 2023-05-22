@@ -1,0 +1,77 @@
+{
+	"id": 217011,
+	"name": "飞叶迴斜",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_DENDRO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Collei",
+	"route": "Floral Sidewinder",
+	"storyTitle": "柯莱·飞叶迴斜",
+	"storyDetail": "不要小看柯莱，更不要小看猫猫。",
+	"source": "在猫尾酒馆中邀请柯莱进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S17012": {
+			"name": "拂花偈叶",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Collei_01"
+		},
+		"K217": {
+			"name": "<color=#7EC236FF>{SPRITE_PRESET#2107}草元素相关反应</color>",
+			"description": "{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		},
+		"K107": {
+			"name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "飞叶迴斜",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1701]</color>时，装备此牌。\\n$[A1701]装备此牌后，立刻使用一次<color=#FFD780FF>$[S17012]</color>。\\n装备有此牌的$[A1701]使用了<color=#FFFFFFFF>$[S17012]</color>的回合中，我方角色的技能引发$[K217]后：造成1点$[K107]。（每回合1次）\\n（牌组中包含$[A1701]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1701": "柯莱",
+				"S17012": "拂花偈叶",
+				"K217": "<color=#7EC236FF>{SPRITE_PRESET#2107}草元素相关反应</color>",
+				"K107": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1701]使用了<color=#FFFFFFFF>$[S17012]</color>的回合中，我方角色的技能引发$[K217]后：造成1点$[K107]。（每回合1次）",
+			"subSkills": {
+				"S17012": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K217": "keyword",
+				"K107": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

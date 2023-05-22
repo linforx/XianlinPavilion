@@ -1,0 +1,29 @@
+{
+	"id": 332007,
+	"name": "鹤归之时",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Heguizhishi",
+	"route": "When the Crane Returned",
+	"storyTitle": "鹤归之时",
+	"storyDetail": "「彼时鹤归，茫茫天地无依靠，孤身离去。今日再会，新朋旧友坐满堂，共聚此时。」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "鹤归之时",
+			"description": "<color=#FFFFFFFF>我方下一次使用技能后：</color>将下一个我方后台角色切换到场上。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,76 @@
+{
+	"id": 22100501,
+	"name": "深罪浸礼者",
+	"type": "深渊",
+	"icon": "UI_MonsterIcon_Invoker_Archdeacon",
+	"route": "Iniquitous Baptist",
+	"title": "深罪浸礼者",
+	"specialName": "漆黑乐园的引路人",
+	"description": "驾驭了多种元素力量的深渊魔物，因为「进化」而获得了多余的肢体。\\n\\n<i>「『深渊』之本质归根到底是与元素所不能相容的。但即使是有神的元素也会为其所裹挟、扭曲，成为深邃意志道具。从结果与效益而言，所谓的『深渊』或许与小至盗宝团手中充满元素力量的器皿、大到『神之眼』没有过多的区别吧…」</i>\\n——谁人遗落在逾渊地墟的笔记",
+	"entries": {
+		"22100501": {
+			"id": 22100501,
+			"type": "MONSTER_BOSS",
+			"affix": [
+				{
+					"name": "深渊法师（水冰雷）",
+					"description": "深渊法师（水冰雷）",
+					"abilityName": [
+						"Monster_Invoker_Archdeacon_01_Born_Water_Ice_Thunder"
+					],
+					"isCommon": null
+				}
+			],
+			"hpDrops": [
+				{
+					"id": 22010030,
+					"hpPercent": 75
+				},
+				{
+					"id": 22010030,
+					"hpPercent": 50
+				},
+				{
+					"id": 22010030,
+					"hpPercent": 25
+				}
+			],
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 135.84,
+					"type": "GROW_CURVE_HP_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 100.48,
+					"type": "GROW_CURVE_ATTACK_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"reward": null
+		}
+	},
+	"tips": {
+		"304001": {
+			"images": [
+				"UI_Tutorial_179"
+			],
+			"description": "「深渊教团」的魔物，能够驱役多种元素进行战斗，并在战斗中运用对应的元素护盾抵御伤害。在战斗中，会创造元素之环，为威力强大的攻击进行吟唱。通过元素反应破坏所有的元素之环，或许就能阻止即将发生的灾祸吧。"
+		}
+	}
+}

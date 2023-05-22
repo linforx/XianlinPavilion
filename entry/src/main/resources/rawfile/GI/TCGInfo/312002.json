@@ -1,0 +1,33 @@
+{
+	"id": 312002,
+	"name": "幸运儿银冠",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_XingyunerDanjian",
+	"route": "Lucky Dog's Silver Circlet",
+	"storyTitle": "无忧之冕·幸运儿银冠",
+	"storyDetail": "「生来幸运的孩子，即便是凶险的陷阱，也为他准备着意想不到的宝藏。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "幸运儿银冠",
+			"description": "<color=#FFFFFFFF>角色使用「元素战技」后：</color>治疗自身2点。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色使用「元素战技」后：</color>治疗自身2点。（每回合1次）"
+		}
+	},
+	"relatedEntries": null
+}

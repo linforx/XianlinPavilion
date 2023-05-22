@@ -1,0 +1,27 @@
+{
+	"id": 120188,
+	"name": "达马山记事·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120188,
+			"name": "达马山记事·其一",
+			"description": "达马山记事·其一",
+			"storyId": "517"
+		},
+		{
+			"id": 120189,
+			"name": "达马山记事·其二",
+			"description": "达马山记事·其二",
+			"storyId": "518"
+		},
+		{
+			"id": 120190,
+			"name": "达马山记事·其三",
+			"description": "达马山记事·其三",
+			"storyId": "519"
+		}
+	],
+	"route": "Records of Mt. Damavand: Part I"
+}

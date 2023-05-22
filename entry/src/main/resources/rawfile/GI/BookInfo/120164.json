@@ -1,0 +1,21 @@
+{
+	"id": 120164,
+	"name": "《黯云之岛》",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100101",
+	"volume": [
+		{
+			"id": 120164,
+			"name": "《黯云之岛》",
+			"description": "(test)小说手稿前",
+			"storyId": "506"
+		},
+		{
+			"id": 120166,
+			"name": "《黯云之岛》",
+			"description": "(test)小说手稿后",
+			"storyId": "508"
+		}
+	],
+	"route": "\"The Isle of Darkling Clouds\""
+}

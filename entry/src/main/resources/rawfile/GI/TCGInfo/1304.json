@@ -1,0 +1,119 @@
+{
+	"id": 1304,
+	"name": "安柏",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_PYRO": "火元素",
+		"GCG_TAG_WEAPON_BOW": "弓",
+		"GCG_TAG_NATION_MONDSTADT": "蒙德"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Ambor",
+	"route": "Amber",
+	"storyTitle": "侦察骑士·安柏",
+	"storyDetail": "如果想要成为一名伟大的牌手…\\n首先，要有坐上牌桌的勇气。",
+	"source": "在猫尾酒馆中邀请安柏进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"K103": {
+			"name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+		},
+		"C113041": {
+			"name": "兔兔伯爵",
+			"description": "<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消2点伤害。\\n<color=#FFFFFFFF>$[K3]：1</color>，耗尽时不弃置此牌。\\n<color=#FFFFFFFF>结束阶段，如果$[K3]已耗尽：</color>弃置此牌，以造成2点$[K103]。",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>",
+				"K103": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K5": {
+			"name": "<color=#FFFFFFFF>穿透伤害</color>",
+			"description": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+		}
+	},
+	"talent": {
+		"13041": {
+			"name": "神射手",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_02",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"13042": {
+			"name": "爆弹玩偶",
+			"description": "召唤<color=#FFFFFFFF>$[C113041]</color>。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 3
+			},
+			"params": {
+				"C113041": "兔兔伯爵"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ambor_01",
+			"subSkills": {
+				"C113041": "cardSkill"
+			},
+			"keywords": null
+		},
+		"13043": {
+			"name": "箭雨",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成2点<color=#FFFFFFFF>$[K5]</color>。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Ambor_HD",
+			"subSkills": null,
+			"keywords": {
+				"K103": "keyword",
+				"K5": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 213041,
+			"name": "一触即发",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Ambor"
+		}
+	]
+}

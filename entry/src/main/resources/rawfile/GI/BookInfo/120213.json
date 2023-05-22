@@ -1,0 +1,27 @@
+{
+	"id": 120213,
+	"name": "印有教令院徽记的约契",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120213,
+			"name": "印有教令院徽记的约契",
+			"description": "印有教令院徽记的约契",
+			"storyId": "539"
+		},
+		{
+			"id": 120242,
+			"name": "印有教令院徽记的约契",
+			"description": "印有教令院徽记的约契",
+			"storyId": "560"
+		},
+		{
+			"id": 120243,
+			"name": "印有教令院徽记的约契",
+			"description": "印有教令院徽记的约契",
+			"storyId": "561"
+		}
+	],
+	"route": "Akademiya Emblem-Marked Contract"
+}

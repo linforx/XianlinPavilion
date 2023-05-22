@@ -1,0 +1,27 @@
+{
+	"id": 1038,
+	"name": "遐叶论经",
+	"rank": 4,
+	"icon": "UI_ItemIcon_120022",
+	"volume": [
+		{
+			"id": 120022,
+			"name": "遐叶论经·卷一",
+			"description": "古须弥学者撰写的行传，记述了草王于灾厄之年的行迹",
+			"storyId": "430"
+		},
+		{
+			"id": 120023,
+			"name": "遐叶论经·卷二",
+			"description": "古须弥学者撰写的行传，记述了草王于灾厄之年的行迹",
+			"storyId": "431"
+		},
+		{
+			"id": 120024,
+			"name": "遐叶论经·卷三",
+			"description": "古须弥学者撰写的行传，记述了草王于灾厄之年的行迹",
+			"storyId": "432"
+		}
+	],
+	"route": "The Folio of Foliage"
+}

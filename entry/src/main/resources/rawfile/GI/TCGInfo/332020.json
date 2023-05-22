@@ -1,0 +1,29 @@
+{
+	"id": 332020,
+	"name": "永远的友谊",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Yongyuandeyouyi",
+	"route": "Friendship Eternal",
+	"storyTitle": "挚友",
+	"storyDetail": "朋友不会永远离去，而是以另一种形式陪在我们身边。",
+	"source": "在活动「决斗！召唤之巅！」中获得",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "永远的友谊",
+			"description": "手牌数小于4的牌手抓牌，直到手牌数各为4张。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

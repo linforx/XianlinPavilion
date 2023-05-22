@@ -1,0 +1,15 @@
+{
+	"id": 100404,
+	"name": "石书辑录·卷一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100404",
+	"volume": [
+		{
+			"id": 100404,
+			"name": "石书辑录·卷一",
+			"description": "古代史家子苌将璃月古代记录历史的石板铭文加以翻译，编纂而成的史书，收录了许多简短破碎的史事。",
+			"storyId": "77"
+		}
+	],
+	"route": "Stone Tablet Compilations: Vol. I"
+}

@@ -1,0 +1,40 @@
+{
+	"id": 332009,
+	"name": "白垩之术",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Baiezhishu",
+	"route": "Calx's Arts",
+	"storyTitle": "炼金实验",
+	"storyDetail": "「不必紧张，你看，实验已经完成了，很成功。」",
+	"source": "初始牌组中获取",
+	"dictionary": {
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "白垩之术",
+			"description": "从最多2个我方后台角色身上，转移1点$[K310]到我方出战角色。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K310": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

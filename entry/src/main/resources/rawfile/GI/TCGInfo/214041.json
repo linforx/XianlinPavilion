@@ -1,0 +1,79 @@
+{
+	"id": 214041,
+	"name": "落羽的裁择",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ELECTRO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Cyno",
+	"route": "Featherfall Judgment",
+	"storyTitle": "赛诺·落羽的裁择",
+	"storyDetail": "「这便是我的决斗之魂。」",
+	"source": "在猫尾酒馆中邀请赛诺进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S14042": {
+			"name": "秘仪·律渊渡魂",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Cyno_01"
+		},
+		"C114041": {
+			"name": "启途誓使",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>累积1级「凭依」。\\n<color=#FFFFFFFF>根据「凭依」级数，提供效果：</color>\\n大于等于2级：$[K100]转化为$[K104]；\\n大于等于4级：造成的伤害+2；\\n大于等于6级时：「凭依」级数-4。",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K104": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "落羽的裁择",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1404]</color>时，装备此牌。\\n$[A1404]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14042]</color>。\\n装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数为3或5时使用<color=#FFFFFFFF>$[S14042]</color>时，造成的伤害额外+1。\\n（牌组中包含$[A1404]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1404": "赛诺",
+				"S14042": "秘仪·律渊渡魂",
+				"C114041": "启途誓使"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1404]在<color=#FFFFFFFF>$[C114041]</color>的「凭依」级数为3或5时使用<color=#FFFFFFFF>$[S14042]</color>时，造成的伤害额外+1。",
+			"subSkills": {
+				"S14042": "skill",
+				"C114041": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

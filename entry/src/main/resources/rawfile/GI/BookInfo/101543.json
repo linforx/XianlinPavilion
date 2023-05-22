@@ -1,0 +1,15 @@
+{
+	"id": 101543,
+	"name": "天领奉行上奏公文",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101543",
+	"volume": [
+		{
+			"id": 101543,
+			"name": "天领奉行上奏公文",
+			"description": "从九条孝行处取得，据说除了将军和九条孝行本人外，无人可知其内容。上面印有九条家主的印章。",
+			"storyId": "305"
+		}
+	],
+	"route": "Official Tenryou Commission Document"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 100616,
+	"name": "百货名鉴纵览",
+	"rank": 3,
+	"icon": "UI_ItemIcon_100616",
+	"volume": [
+		{
+			"id": 100616,
+			"name": "百货名鉴纵览",
+			"description": "（test）阅读物测试",
+			"storyId": "165"
+		}
+	],
+	"route": "An A-to-Z Guide to General Goods"
+}

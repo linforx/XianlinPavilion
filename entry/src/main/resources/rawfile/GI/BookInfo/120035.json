@@ -1,0 +1,15 @@
+{
+	"id": 120035,
+	"name": "神秘的羊皮卷",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120009",
+	"volume": [
+		{
+			"id": 120035,
+			"name": "神秘的羊皮卷",
+			"description": "一卷古老而神秘的羊皮纸，似乎记录了某个冒险家的终末。",
+			"storyId": "456"
+		}
+	],
+	"route": "Mysterious Parchment"
+}

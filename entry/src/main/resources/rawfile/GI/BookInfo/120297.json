@@ -1,0 +1,15 @@
+{
+	"id": 120297,
+	"name": "来宾食宿安排",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100721",
+	"volume": [
+		{
+			"id": 120297,
+			"name": "来宾食宿安排",
+			"description": "(test)风花节食宿安排",
+			"storyId": "587"
+		}
+	],
+	"route": "Food and Lodging Arrangements"
+}

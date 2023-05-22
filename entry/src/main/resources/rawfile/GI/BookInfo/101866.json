@@ -1,0 +1,15 @@
+{
+	"id": 101866,
+	"name": "一张纸条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 101866,
+			"name": "一张纸条",
+			"description": "写满歪斜笔迹皱巴巴的纸条。",
+			"storyId": "408"
+		}
+	],
+	"route": "A Note"
+}

@@ -1,0 +1,29 @@
+{
+	"id": 332014,
+	"name": "护法之誓",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 4
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Hufazhishi",
+	"route": "Guardian's Oath",
+	"storyTitle": "诸邪退散",
+	"storyDetail": "「三眼五显仙人，魈，听召前来守护。」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "护法之誓",
+			"description": "消灭所有「召唤物」。（不分敌我！）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 4
+			},
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

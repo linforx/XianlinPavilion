@@ -1,0 +1,15 @@
+{
+	"id": 100409,
+	"name": "列王与宗室史·序",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100409",
+	"volume": [
+		{
+			"id": 100409,
+			"name": "列王与宗室史·序",
+			"description": "着力于翔实刻画悠久而跌宕起伏的蒙德历史的学术书籍，由北大陆历史学会联合编著。",
+			"storyId": "82"
+		}
+	],
+	"route": "History of Kings and Clans: Prologue"
+}

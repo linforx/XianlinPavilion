@@ -1,0 +1,15 @@
+{
+	"id": 120373,
+	"name": "灵光碑文",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120373,
+			"name": "灵光碑文",
+			"description": "灵光碑文",
+			"storyId": "639"
+		}
+	],
+	"route": "Khvarena Monument Inscription"
+}

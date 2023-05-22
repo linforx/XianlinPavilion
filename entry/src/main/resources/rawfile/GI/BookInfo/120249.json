@@ -1,0 +1,15 @@
+{
+	"id": 120249,
+	"name": "婕德的便条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120249,
+			"name": "婕德的便条",
+			"description": "婕德的便条",
+			"storyId": "564"
+		}
+	],
+	"route": "Jeht's Note"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120048,
+	"name": "诊断报告",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120048,
+			"name": "诊断报告",
+			"description": "一页完好的医院文件记录，似乎是从簿册中脱落出来的。",
+			"storyId": "458"
+		}
+	],
+	"route": "Diagnostic Report"
+}

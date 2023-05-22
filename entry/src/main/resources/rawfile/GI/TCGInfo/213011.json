@@ -1,0 +1,65 @@
+{
+	"id": 213011,
+	"name": "流火焦灼",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Diluc",
+	"route": "Flowing Flame",
+	"storyTitle": "迪卢克·流火焦灼",
+	"storyDetail": "解决焦灼情况的一种简单手段。",
+	"source": "在猫尾酒馆中邀请迪卢克进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S13012": {
+			"name": "逆焰之刃",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。每回合第三次使用本技能时，伤害+2。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Diluc_01_01"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "流火焦灼",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1301]</color>时，装备此牌。\\n$[A1301]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13012]</color>。\\n装备有此牌的$[A1301]每回合第2次使用<color=#FFFFFFFF>$[S13012]</color>时，少花费1个{SPRITE_PRESET#1103}<color=#FF9999FF>火元素</color>。\\n（牌组中包含$[A1301]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1301": "迪卢克",
+				"S13012": "逆焰之刃"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1301]每回合第2次使用<color=#FFFFFFFF>$[S13012]</color>时，少花费1个{SPRITE_PRESET#1103}<color=#FF9999FF>火元素</color>。",
+			"subSkills": {
+				"S13012": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,74 @@
+{
+	"id": 216051,
+	"name": "荒泷第一",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_GEO": 1,
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Itto",
+	"route": "Arataki Ichiban",
+	"storyTitle": "荒泷一斗·荒泷第一",
+	"storyDetail": "无论如何，先在气势方面占据上风总没错。",
+	"source": "在猫尾酒馆中邀请荒泷一斗进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S16051": {
+			"name": "喧哗屋传说",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_04"
+		},
+		"K1007": {
+			"name": "<color=#FFFFFFFF>乱神之怪力</color>",
+			"description": "<color=#FFFFFFFF>所附属角色进行<color=#FFFFFFFF>重击</color>时：</color>造成的伤害+1。如果<color=#FFFFFFFF>可用次数</color>至少为2，则少花费1个<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（可叠加，最多叠加到3次）"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "荒泷第一",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1605]</color>时，装备此牌。\\n$[A1605]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16051]</color>。\\n装备有此牌的$[A1605]每回合第2次及以后使用<color=#FFFFFFFF>$[S16051]</color>时：如果触发$[K1007]，伤害额外+1。\\n（牌组中包含$[A1605]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_GEO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1605": "荒泷一斗",
+				"S16051": "喧哗屋传说",
+				"K1007": "<color=#FFFFFFFF>乱神之怪力</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1605]每回合第2次及以后使用<color=#FFFFFFFF>$[S16051]</color>时：如果触发$[K1007]，伤害额外+1。",
+			"subSkills": {
+				"S16051": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K1007": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

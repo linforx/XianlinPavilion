@@ -1,0 +1,15 @@
+{
+	"id": 120235,
+	"name": "被揉皱的名单",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120235,
+			"name": "被揉皱的名单",
+			"description": "被揉皱的名单",
+			"storyId": "553"
+		}
+	],
+	"route": "Crumpled Namelist"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120214,
+	"name": "巨大机械的能源系统复原图",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120214,
+			"name": "巨大机械的能源系统复原图",
+			"description": "巨大机械的能源系统复原图",
+			"storyId": "540"
+		}
+	],
+	"route": "Restored Blueprints of a Mechanical Behemoth's Power System"
+}

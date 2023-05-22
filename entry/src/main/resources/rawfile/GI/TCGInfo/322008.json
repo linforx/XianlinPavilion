@@ -1,0 +1,40 @@
+{
+	"id": 322008,
+	"name": "立本",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Assist_NPC_LiBen",
+	"route": "Liben",
+	"storyTitle": "百货奇货·立本",
+	"storyDetail": "「这个世界马上就要发生大事了！我这里有一笔好生意，你可愿意听听？」",
+	"source": "",
+	"dictionary": {
+		"K411": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+			"description": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "立本",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>收集我方未使用的元素骰（每种最多1个）。\\n<color=#FFFFFFFF>行动阶段开始时：</color>如果此牌已收集3个元素骰，则抓2张牌，生成2点$[K411]，然后弃置此牌。",
+			"cost": null,
+			"params": {
+				"K411": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K411": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

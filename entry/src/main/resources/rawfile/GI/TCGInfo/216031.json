@@ -1,0 +1,79 @@
+{
+	"id": 216031,
+	"name": "炊金馔玉",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_GEO": 5
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli",
+	"route": "Dominance of Earth",
+	"storyTitle": "钟离·炊金馔玉",
+	"storyDetail": "百川千仞，万古不移。",
+	"source": "在猫尾酒馆中邀请钟离进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S16033": {
+			"name": "地心·磐礴",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C116031]</color>，生成<color=#FFFFFFFF>$[C116032]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 5
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116031": "岩脊",
+				"C116032": "玉璋护盾"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Zhongli_02"
+		},
+		"K6": {
+			"name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+			"description": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+		},
+		"K106": {
+			"name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "炊金馔玉",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1603]</color>时，装备此牌。\\n$[A1603]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16033]</color>。\\n我方出战角色在$[K6]角色状态或$[K6]出战状态的保护下时，我方召唤物造成的$[K106]+1。\\n（牌组中包含$[A1603]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_GEO": 5
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1603": "钟离",
+				"S16033": "地心·磐礴",
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "我方出战角色在$[K6]角色状态或$[K6]出战状态的保护下时，我方召唤物造成的$[K106]+1。",
+			"subSkills": {
+				"S16033": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K6": "keyword",
+				"K106": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

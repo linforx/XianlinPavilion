@@ -1,0 +1,15 @@
+{
+	"id": 120347,
+	"name": "残破的工程记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120347,
+			"name": "残破的工程记录",
+			"description": "残破的工程记录",
+			"storyId": "616"
+		}
+	],
+	"route": "Ragged Engineering Notes"
+}

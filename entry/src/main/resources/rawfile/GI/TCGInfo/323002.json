@@ -1,0 +1,33 @@
+{
+	"id": 323002,
+	"name": "便携营养袋",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ITEM": "道具"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_Prop_NREMenu",
+	"route": "NRE",
+	"storyTitle": "应急摄入·便携料理",
+	"storyDetail": "「及时补充营养，以便剧烈运动。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "便携营养袋",
+			"description": "<color=#FFFFFFFF>入场时：</color>从牌组中随机抽取1张「{SPRITE_PRESET#3101}料理」事件。\\n<color=#FFFFFFFF>我方打出「{SPRITE_PRESET#3101}料理」事件牌时：</color>从牌组中随机抽取1张「{SPRITE_PRESET#3101}料理」事件。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ITEM": "道具"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

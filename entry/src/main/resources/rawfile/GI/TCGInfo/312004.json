@@ -1,0 +1,44 @@
+{
+	"id": 312004,
+	"name": "赌徒的耳环",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_DutuDanjian",
+	"route": "Gambler's Earrings",
+	"storyTitle": "喝雉呼卢·赌徒的耳环",
+	"storyDetail": "「在生死攸关的对局中，多一分冷静理智，便也就多了一缕得胜的希望。」",
+	"source": "",
+	"dictionary": {
+		"K411": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+			"description": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "赌徒的耳环",
+			"description": "<color=#FFFFFFFF>敌方角色被击倒后：</color>如果所附属角色为「出战角色」，则生成2个$[K411]。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": {
+				"K411": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>敌方角色被击倒后：</color>如果所附属角色为「出战角色」，则生成2个$[K411]。",
+			"subSkills": null,
+			"keywords": {
+				"K411": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

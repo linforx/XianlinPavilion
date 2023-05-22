@@ -1,0 +1,33 @@
+{
+	"id": 322005,
+	"name": "卯师傅",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Maoshifu",
+	"route": "Chef Mao",
+	"storyTitle": "灵光入味·卯师傅",
+	"storyDetail": "「用最大众的食材，最普适的口味，最精湛的手艺，做出最最好吃的料理！」\\n",
+	"source": "在大世界与牌手卯师傅的冒险挑战中完成挑战目标后获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "卯师傅",
+			"description": "<color=#FFFFFFFF>打出「{SPRITE_PRESET#3101}料理」事件牌后：</color>生成1个随机基础元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

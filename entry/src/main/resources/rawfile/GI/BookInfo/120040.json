@@ -1,0 +1,15 @@
+{
+	"id": 120040,
+	"name": "须弥考察队的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120040,
+			"name": "须弥考察队的笔记",
+			"description": "须弥考察队的笔记",
+			"storyId": "449"
+		}
+	],
+	"route": "Sumeru Investigation Team's Note"
+}

@@ -1,0 +1,50 @@
+{
+	"id": 322011,
+	"name": "田铁嘴",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Tiantiezui",
+	"route": "Iron Tongue Tian",
+	"storyTitle": "书接上回·田铁嘴",
+	"storyDetail": "「我来给您掰扯掰扯这个道理，您来听听原汁原味的评书！」",
+	"source": "在大世界与牌手田铁嘴的冒险挑战中完成挑战目标后获取",
+	"dictionary": {
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "田铁嘴",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>我方一名充能未满的角色获得1点$[K310]。（出战角色优先）\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K310": "keyword",
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

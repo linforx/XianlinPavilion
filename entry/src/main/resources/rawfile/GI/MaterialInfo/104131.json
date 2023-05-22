@@ -1,0 +1,81 @@
+{
+	"name": "生长碧翡碎屑",
+	"description": "角色突破素材。",
+	"type": "角色突破素材",
+	"recipe": {
+		"50049": {
+			"104111": {
+				"icon": "UI_ItemIcon_104111",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50050": {
+			"104121": {
+				"icon": "UI_ItemIcon_104121",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50051": {
+			"104141": {
+				"icon": "UI_ItemIcon_104141",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50052": {
+			"104151": {
+				"icon": "UI_ItemIcon_104151",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50053": {
+			"104161": {
+				"icon": "UI_ItemIcon_104161",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50054": {
+			"104171": {
+				"icon": "UI_ItemIcon_104171",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "翠翎恐蕈掉落",
+			"type": "single"
+		},
+		{
+			"name": "无相之草掉落",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104131",
+	"rank": 2,
+	"route": "Nagadus Emerald Sliver"
+}

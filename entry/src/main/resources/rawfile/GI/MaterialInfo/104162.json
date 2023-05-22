@@ -1,0 +1,91 @@
+{
+	"name": "哀叙冰玉断片",
+	"description": "角色突破素材。\\n「…抱歉…」",
+	"type": "角色突破素材",
+	"recipe": {
+		"15016": {
+			"104161": {
+				"icon": "UI_ItemIcon_104161",
+				"count": 3
+			}
+		},
+		"50127": {
+			"104112": {
+				"icon": "UI_ItemIcon_104112",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50128": {
+			"104122": {
+				"icon": "UI_ItemIcon_104122",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50129": {
+			"104132": {
+				"icon": "UI_ItemIcon_104132",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50130": {
+			"104142": {
+				"icon": "UI_ItemIcon_104142",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50131": {
+			"104152": {
+				"icon": "UI_ItemIcon_104152",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50132": {
+			"104172": {
+				"icon": "UI_ItemIcon_104172",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "40级以上急冻树掉落",
+			"type": "single"
+		},
+		{
+			"name": "40级以上无相之冰掉落",
+			"type": "single"
+		},
+		{
+			"name": "合成获得",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104162",
+	"rank": 3,
+	"route": "Shivada Jade Fragment"
+}

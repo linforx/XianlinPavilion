@@ -1,0 +1,15 @@
+{
+	"id": 100907,
+	"name": "某人留下的纸条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 100907,
+			"name": "某人留下的纸条",
+			"description": "某人留下的特殊的「御神签」。其中记载着某个地点。或许与玄冬林檎小姐的消失有关。",
+			"storyId": "228"
+		}
+	],
+	"route": "A Note Left by Someone"
+}

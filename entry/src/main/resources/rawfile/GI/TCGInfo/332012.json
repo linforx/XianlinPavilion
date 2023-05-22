@@ -1,0 +1,40 @@
+{
+	"id": 332012,
+	"name": "快快缝补术",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Kuaikuaifengbushu",
+	"route": "Quick Knit",
+	"storyTitle": "兔兔缝补",
+	"storyDetail": "兔兔伯爵八百九十三世，经久耐用的秘诀就在于此。",
+	"source": "初始牌组中获取",
+	"dictionary": {
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "快快缝补术",
+			"description": "选择一个我方「召唤物」，使其「$[K3]」+1。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

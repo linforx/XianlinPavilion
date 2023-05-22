@@ -1,0 +1,21 @@
+{
+	"id": 100562,
+	"name": "残破的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 100562,
+			"name": "残破的笔记",
+			"description": "某人写就的笔记。上面记载的东西似乎与这个地方有关…",
+			"storyId": "146"
+		},
+		{
+			"id": 101614,
+			"name": "残破的笔记",
+			"description": "从村庄中找到的残破笔记，记录了一些被岁月掩埋的旧人旧事。",
+			"storyId": "317"
+		}
+	],
+	"route": "Ragged Notebook"
+}

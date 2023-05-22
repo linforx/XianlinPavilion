@@ -1,0 +1,15 @@
+{
+	"id": 120329,
+	"name": "陈旧的纸张",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120329,
+			"name": "陈旧的纸张",
+			"description": "（test)萨齐因沙漠的资料",
+			"storyId": "594"
+		}
+	],
+	"route": "Old Papers"
+}

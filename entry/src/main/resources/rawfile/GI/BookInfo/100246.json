@@ -1,0 +1,15 @@
+{
+	"id": 100246,
+	"name": "《百人一揆～最强武斗大会篇～》样稿",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100110",
+	"volume": [
+		{
+			"id": 100246,
+			"name": "《百人一揆～最强武斗大会篇～》样稿",
+			"description": "",
+			"storyId": "346"
+		}
+	],
+	"route": "Draft Manuscript of \"Hyakunin Ikki: The Greatest Battle\""
+}

@@ -1,0 +1,15 @@
+{
+	"id": 101901,
+	"name": "一份似乎能防水的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 101901,
+			"name": "一份似乎能防水的笔记",
+			"description": "一份似乎能防水的笔记",
+			"storyId": "412"
+		}
+	],
+	"route": "A Seemingly Waterproof Note"
+}

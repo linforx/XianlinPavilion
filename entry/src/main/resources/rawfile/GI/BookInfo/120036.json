@@ -1,0 +1,15 @@
+{
+	"id": 120036,
+	"name": "古老的工作日志",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120036,
+			"name": "古老的工作日志",
+			"description": "古老的工作日志",
+			"storyId": "445"
+		}
+	],
+	"route": "Ancient Work Log"
+}

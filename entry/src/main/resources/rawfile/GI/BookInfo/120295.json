@@ -1,0 +1,15 @@
+{
+	"id": 120295,
+	"name": "来自须弥境内的信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120295,
+			"name": "来自须弥境内的信件",
+			"description": "一封书信",
+			"storyId": "585"
+		}
+	],
+	"route": "Missive From Sumeru"
+}

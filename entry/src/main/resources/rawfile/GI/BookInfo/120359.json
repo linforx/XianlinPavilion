@@ -1,0 +1,15 @@
+{
+	"id": 120359,
+	"name": "污损的命令书",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120359,
+			"name": "污损的命令书",
+			"description": "污损的命令书",
+			"storyId": "625"
+		}
+	],
+	"route": "Soiled Orders"
+}

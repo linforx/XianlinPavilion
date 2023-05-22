@@ -1,0 +1,40 @@
+{
+	"id": 322007,
+	"name": "提米",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Timmy",
+	"route": "Timmie",
+	"storyTitle": "纯白守候·提米",
+	"storyDetail": "「飞走的鸽子，还会回来吗？」",
+	"source": "在大世界与牌手提米的冒险挑战中完成挑战目标后获取",
+	"dictionary": {
+		"K411": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+			"description": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "提米",
+			"description": "<color=#FFFFFFFF>每回合自动触发1次：</color>此牌累积<color=#FFFFFFFF>1只「鸽子」</color>。\\n如果此牌已累积<color=#FFFFFFFF>3只「鸽子」</color>，则弃置此牌：抓1张牌，生成一点$[K411]。",
+			"cost": null,
+			"params": {
+				"K411": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K411": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

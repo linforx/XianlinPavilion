@@ -1,0 +1,45 @@
+{
+	"id": 120145,
+	"name": "远途勘探者留书·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101832",
+	"volume": [
+		{
+			"id": 120145,
+			"name": "远途勘探者留书·其一",
+			"description": "远途勘探者留书·其一",
+			"storyId": "492"
+		},
+		{
+			"id": 120146,
+			"name": "远途勘探者留书·其二",
+			"description": "远途勘探者留书·其二",
+			"storyId": "493"
+		},
+		{
+			"id": 120147,
+			"name": "远途勘探者留书·其三",
+			"description": "远途勘探者留书·其三",
+			"storyId": "494"
+		},
+		{
+			"id": 120148,
+			"name": "远途勘探者留书·其四",
+			"description": "远途勘探者留书·其四",
+			"storyId": "495"
+		},
+		{
+			"id": 120149,
+			"name": "远途勘探者留书·其五",
+			"description": "远途勘探者留书·其五",
+			"storyId": "496"
+		},
+		{
+			"id": 120150,
+			"name": "远途勘探者留书·其六",
+			"description": "远途勘探者留书·其六",
+			"storyId": "497"
+		}
+	],
+	"route": "Pathfinders' Log: I"
+}

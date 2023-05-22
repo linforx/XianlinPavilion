@@ -1,0 +1,122 @@
+{
+	"id": 2201,
+	"name": "纯水精灵·洛蒂娅",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_HYDRO": "水元素",
+		"GCG_TAG_WEAPON_NONE": "其他武器",
+		"GCG_TAG_CAMP_MONSTER": "魔物"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Monster_Oceanid",
+	"route": "Rhodeia of Loch",
+	"storyTitle": "净水之主·洛蒂娅",
+	"storyDetail": "「但，只要百川奔流，雨露不休，水就不会消失…」",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度纯水精灵·洛蒂娅中获得胜利后获取",
+	"dictionary": {
+		"K102": {
+			"name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+		},
+		"C122010": {
+			"name": "纯水幻形",
+			"description": "「纯水幻形」共有3种：\\n<color=#FFFFFFFF>花鼠</color>：结束阶段造成2点$[K102]，可用2次。\\n<color=#FFFFFFFF>飞鸢</color>：结束阶段造成1点$[K102]，可用3次。\\n<color=#FFFFFFFF>蛙</color>：抵挡1点出战角色受到的伤害，可用2次；耗尽后，在结束阶段造成2点$[K102]。",
+			"cost": null,
+			"params": {
+				"K102": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"22011": {
+			"name": "翻涌",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_Catalyst_MD",
+			"subSkills": null,
+			"keywords": {
+				"K102": "keyword"
+			}
+		},
+		"22012": {
+			"name": "纯水幻造",
+			"description": "随机召唤1种<color=#FFFFFFFF>$[C122010]</color>。（优先生成不同的类型）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"C122010": "纯水幻形"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "MonsterSkill_S_Oceanid_02",
+			"subSkills": {
+				"C122010": "cardSkill"
+			},
+			"keywords": null
+		},
+		"22013": {
+			"name": "林野百态",
+			"description": "随机召唤2种<color=#FFFFFFFF>$[C122010]</color>。（优先生成不同的类型）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 5
+			},
+			"params": {
+				"C122010": "纯水幻形"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "MonsterSkill_S_Oceanid_01",
+			"subSkills": {
+				"C122010": "cardSkill"
+			},
+			"keywords": null
+		},
+		"22014": {
+			"name": "潮涌与激流",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；我方每有1个召唤物，再使此伤害+2。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "MonsterSkill_E_Oceanid_01_HD",
+			"subSkills": null,
+			"keywords": {
+				"K102": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 222011,
+			"name": "百川奔流",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Chunshui"
+		}
+	]
+}

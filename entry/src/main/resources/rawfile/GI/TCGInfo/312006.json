@@ -1,0 +1,44 @@
+{
+	"id": 312006,
+	"name": "流放者头冠",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_LiufangzheDanjian",
+	"route": "Exile's Circlet",
+	"storyTitle": "贵胄之裔·流放者头冠",
+	"storyDetail": "「祸哉，那白银堆砌的大殿，你的冠冕何以被血淹没？」",
+	"source": "",
+	"dictionary": {
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "流放者头冠",
+			"description": "<color=#FFFFFFFF>角色使用「元素爆发」后：</color>所有我方后台角色获得1点$[K310]。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色使用「元素爆发」后：</color>所有我方后台角色获得1点$[K310]。（每回合1次）",
+			"subSkills": null,
+			"keywords": {
+				"K310": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

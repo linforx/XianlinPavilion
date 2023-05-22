@@ -1,0 +1,33 @@
+{
+	"id": 333010,
+	"name": "刺身拼盘",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Cishen",
+	"route": "Sashimi Platter",
+	"storyTitle": "刺身拼盘",
+	"storyDetail": "在厨师高超的刀工下，食材保留着最为巅峰的口感。入口时，仿佛依然带着生命力在唇齿间跳跃…\\n等一等，难道这些食材真的还…",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "刺身拼盘",
+			"description": "目标角色在本回合结束前，<color=#FFFFFFFF>「普通攻击」</color>造成的伤害+1。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

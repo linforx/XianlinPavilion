@@ -1,0 +1,15 @@
+{
+	"id": 120292,
+	"name": "「冒险家的经验」",
+	"rank": 1,
+	"icon": "UI_ItemIcon_104002",
+	"volume": [
+		{
+			"id": 120292,
+			"name": "「冒险家的经验」",
+			"description": "于连摹写的副本，与原本别无二致。\\n读完之后有种脑袋空空的奇妙感觉，只有时间白白被浪费，却没能获得任何经验…",
+			"storyId": "600"
+		}
+	],
+	"route": "\"Adventurer's Experience\""
+}

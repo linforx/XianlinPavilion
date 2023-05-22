@@ -1,0 +1,46 @@
+{
+	"id": 322009,
+	"name": "常九爷",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Changjiuye",
+	"route": "Chang the Ninth",
+	"storyTitle": "失意墨客·常九爷",
+	"storyDetail": "「未曾清贫难成人，尚有书卷伴吾身！」",
+	"source": "",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K5": {
+			"name": "<color=#FFFFFFFF>穿透伤害</color>",
+			"description": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "常九爷",
+			"description": "<color=#FFFFFFFF>双方角色使用技能后：</color>如果造成了$[K100]、$[K5]或引发了<color=#FFFFFFFF>元素反应</color>，此牌累积<color=#FFFFFFFF>1个「灵感」</color>。\\n如果此牌已累积<color=#FFFFFFFF>3个「灵感」</color>，弃置此牌：抓2张牌。",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword",
+				"K5": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

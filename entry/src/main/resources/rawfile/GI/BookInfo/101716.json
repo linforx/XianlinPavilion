@@ -1,0 +1,15 @@
+{
+	"id": 101716,
+	"name": "荒泷盛世豪鼓大祭典！",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101716",
+	"volume": [
+		{
+			"id": 101716,
+			"name": "荒泷盛世豪鼓大祭典！",
+			"description": "从款式到内容都很浮夸的邀请函，函中描绘了一场规模庞大、意义深远、堪称举国盛会般的大型活动，而你将作为尊贵的客人，成为盛会中最灿烂醒目的那颗明星。",
+			"storyId": "347"
+		}
+	],
+	"route": "The Almighty Arataki Great and Glorious Drumalong Festival!"
+}

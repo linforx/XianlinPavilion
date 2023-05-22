@@ -1,0 +1,44 @@
+{
+	"id": 333008,
+	"name": "兽肉薄荷卷",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Bohejuan",
+	"route": "Minty Meat Rolls",
+	"storyTitle": "兽肉薄荷卷",
+	"storyDetail": "虽然如今是这样的造型，但仔细想想，一开始到底是薄荷先卷的兽肉，还是兽肉先卷的薄荷呢？",
+	"source": "初始牌组中获取",
+	"dictionary": {
+		"K309": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+			"description": "可以用任意类型的元素骰子组合，来支付此类费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "兽肉薄荷卷",
+			"description": "目标角色在本回合结束前，之后三次<color=#FFFFFFFF>「普通攻击」</color>都少花费1个$[K309]。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": {
+				"K309": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K309": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,85 @@
+{
+	"id": 215031,
+	"name": "绪风之拥",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ANEMO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Venti",
+	"route": "Embrace of Winds",
+	"storyTitle": "温迪·绪风之拥",
+	"storyDetail": "「小心脚下。」",
+	"source": "在猫尾酒馆中邀请温迪进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S15032": {
+			"name": "高天之歌",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C115031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"C115031": "风域"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Venti_01"
+		},
+		"C115031": {
+			"name": "风域",
+			"description": "<color=#FFFFFFFF>我方执行「切换角色」行动时：</color>少花费1个元素骰。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K309": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+			"description": "可以用任意类型的元素骰子组合，来支付此类费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "绪风之拥",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1503]</color>时，装备此牌。\\n$[A1503]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15032]</color>。\\n装备有此牌的$[A1503]生成的<color=#FFFFFFFF>$[C115031]</color>触发后，会使本回合中我方角色下次<color=#FFFFFFFF>「普通攻击」</color>少花费1个$[K309]。\\n（牌组中包含$[A1503]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1503": "温迪",
+				"S15032": "高天之歌",
+				"C115031": "风域",
+				"K309": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1503]生成的<color=#FFFFFFFF>$[C115031]</color>触发后，会使本回合中我方角色下次<color=#FFFFFFFF>「普通攻击」</color>少花费1个$[K309]。",
+			"subSkills": {
+				"S15032": "skill",
+				"C115031": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K309": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

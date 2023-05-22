@@ -1,0 +1,117 @@
+{
+	"id": 120128,
+	"name": "依稀可以辨认的铭文",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120128,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "475"
+		},
+		{
+			"id": 120129,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "476"
+		},
+		{
+			"id": 120130,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "477"
+		},
+		{
+			"id": 120131,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "478"
+		},
+		{
+			"id": 120132,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "479"
+		},
+		{
+			"id": 120133,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "480"
+		},
+		{
+			"id": 120134,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "481"
+		},
+		{
+			"id": 120135,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "482"
+		},
+		{
+			"id": 120136,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "483"
+		},
+		{
+			"id": 120137,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "484"
+		},
+		{
+			"id": 120226,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "545"
+		},
+		{
+			"id": 120227,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "546"
+		},
+		{
+			"id": 120228,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "547"
+		},
+		{
+			"id": 120229,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "548"
+		},
+		{
+			"id": 120230,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "549"
+		},
+		{
+			"id": 120231,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "550"
+		},
+		{
+			"id": 120232,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "551"
+		},
+		{
+			"id": 120233,
+			"name": "依稀可以辨认的铭文",
+			"description": "",
+			"storyId": "552"
+		}
+	],
+	"route": "Vaguely-Readable Inscription"
+}

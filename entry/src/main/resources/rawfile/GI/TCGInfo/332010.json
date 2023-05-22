@@ -1,0 +1,25 @@
+{
+	"id": 332010,
+	"name": "诸武精通",
+	"type": "actionCard",
+	"tags": null,
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Event_Zhuwujingtong",
+	"route": "Master of Weaponry",
+	"storyTitle": "诸武精通",
+	"storyDetail": "「伙伴，看好了！真正的战士不会挑剔兵器！」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "诸武精通",
+			"description": "将一个装备在我方角色的「{SPRITE_PRESET#3003}武器」装备牌，转移给另一个武器类型相同的我方角色。",
+			"cost": null,
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

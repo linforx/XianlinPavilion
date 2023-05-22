@@ -1,0 +1,15 @@
+{
+	"id": 120244,
+	"name": "沾有酒香的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100356",
+	"volume": [
+		{
+			"id": 120244,
+			"name": "沾有酒香的信",
+			"description": "沾有淡淡的酒香，可以想象信件是在什么环境写出的。寄信的先生似乎自己也没指望这封信可以寄到。",
+			"storyId": "562"
+		}
+	],
+	"route": "Wine-Scented Letter"
+}

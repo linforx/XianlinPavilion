@@ -1,0 +1,15 @@
+{
+	"id": 100740,
+	"name": "遗落的冒险家笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100226",
+	"volume": [
+		{
+			"id": 100740,
+			"name": "遗落的冒险家笔记",
+			"description": "在遗迹中意外捡到的冒险家笔记，似乎记载着破解机关的线索。",
+			"storyId": "191"
+		}
+	],
+	"route": "Lost Adventure Notebook"
+}

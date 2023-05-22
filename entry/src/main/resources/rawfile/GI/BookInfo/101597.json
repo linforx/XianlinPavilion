@@ -1,0 +1,15 @@
+{
+	"id": 101597,
+	"name": "巫女曚云小传",
+	"rank": 3,
+	"icon": "UI_ItemIcon_101597",
+	"volume": [
+		{
+			"id": 101597,
+			"name": "巫女曚云小传",
+			"description": "对于海祇之民而言，有关魔神战争的传说必然是苦涩的。在千年传唱的诸多岛歌中，有一位名为「曚云」的巫女，曾乘着庞大的海兽追随大蛇作战，留下了悲壮的名声。",
+			"storyId": "309"
+		}
+	],
+	"route": "The Life of Mouun the Shrine Maiden"
+}

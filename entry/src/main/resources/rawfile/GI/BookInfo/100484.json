@@ -1,0 +1,15 @@
+{
+	"id": 100484,
+	"name": "霖铃精选诗集",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100484",
+	"volume": [
+		{
+			"id": 100484,
+			"name": "霖铃精选诗集",
+			"description": "霖铃自费出版的精装诗集，是她的处女作，也是引以为豪的代表作。",
+			"storyId": "125"
+		}
+	],
+	"route": "Linling's Anthology of Selected Poetry"
+}

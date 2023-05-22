@@ -1,0 +1,15 @@
+{
+	"id": 100469,
+	"name": "存疑的丘丘人语单句",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100003",
+	"volume": [
+		{
+			"id": 100469,
+			"name": "存疑的丘丘人语单句",
+			"description": "从艾拉·马斯克那拿到的单句清单，上面记载了许多丘丘人语的单句，后面有着对于内容的简单标注…",
+			"storyId": "118"
+		}
+	],
+	"route": "Draft Lines of Hilichurlian Poetry"
+}

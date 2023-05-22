@@ -1,0 +1,15 @@
+{
+	"id": 120047,
+	"name": "病历记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120047,
+			"name": "病历记录",
+			"description": "一页完好的医院文件记录，似乎是从簿册中脱落出来的。",
+			"storyId": "457"
+		}
+	],
+	"route": "Medical Records"
+}

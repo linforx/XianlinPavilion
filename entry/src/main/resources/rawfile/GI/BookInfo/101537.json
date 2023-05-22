@@ -1,0 +1,15 @@
+{
+	"id": 101537,
+	"name": "神樱大祓要略",
+	"rank": 3,
+	"icon": "UI_ItemIcon_100230",
+	"volume": [
+		{
+			"id": 101537,
+			"name": "神樱大祓要略",
+			"description": "记载着「神樱大祓」相关信息的残破书卷。某页有看起来像神社留下的朱砂印。",
+			"storyId": "252"
+		}
+	],
+	"route": "Sacred Sakura Cleansing Summary"
+}

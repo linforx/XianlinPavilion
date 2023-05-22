@@ -1,0 +1,15 @@
+{
+	"id": 120143,
+	"name": "关于实验用个体的初步检测",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120143,
+			"name": "关于实验用个体的初步检测",
+			"description": "厚厚一叠信件和研究文件，记录了某个「人类实验样本」的状态。",
+			"storyId": "490"
+		}
+	],
+	"route": "Preliminary Test on Experimental Subject"
+}

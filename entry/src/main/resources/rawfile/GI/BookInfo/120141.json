@@ -1,0 +1,15 @@
+{
+	"id": 120141,
+	"name": "残破的记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120141,
+			"name": "残破的记录",
+			"description": "",
+			"storyId": "488"
+		}
+	],
+	"route": "Ragged Records"
+}

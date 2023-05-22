@@ -1,0 +1,40 @@
+{
+	"id": 332015,
+	"name": "深渊的呼唤",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Abyssdehuhuan",
+	"route": "Abyssal Summons",
+	"storyTitle": "深渊的呼唤",
+	"storyDetail": "「Yaya ika！」",
+	"source": "",
+	"dictionary": {
+		"K1001": {
+			"name": "<color=#FFFFFFFF>随机「丘丘人」召唤物</color>",
+			"description": "可能出现的「丘丘人」召唤物共有4种：\\n<color=#FFFFFFFF>冰箭丘丘人</color>：结束阶段造成1点{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>，可用次数2。\\n<color=#FFFFFFFF>水丘丘萨满</color>：结束阶段造成1点{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>，可用次数2。\\n<color=#FFFFFFFF>冲锋丘丘人</color>：结束阶段造成1点{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>，可用次数2。\\n<color=#FFFFFFFF>雷箭丘丘人</color>：结束阶段造成1点{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>，可用次数2。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "深渊的呼唤",
+			"description": "召唤一个$[K1001]！\\n（牌组包含至少2个「{SPRITE_PRESET#3503}魔物」角色，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": {
+				"K1001": "<color=#FFFFFFFF>随机「丘丘人」召唤物</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K1001": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

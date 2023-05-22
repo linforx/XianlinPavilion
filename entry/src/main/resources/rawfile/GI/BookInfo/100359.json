@@ -1,0 +1,15 @@
+{
+	"id": 100359,
+	"name": "杰克的特调酒",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100359,
+			"name": "杰克的特调酒",
+			"description": "杰克的特调酒所需物品的清单。如果采用其他材料的话，会有出乎意料的效果吗？",
+			"storyId": "47"
+		}
+	],
+	"route": "Jack's Special"
+}

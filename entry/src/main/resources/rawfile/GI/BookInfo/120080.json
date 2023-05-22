@@ -1,0 +1,21 @@
+{
+	"id": 120080,
+	"name": "萨梅尔的留言",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120080,
+			"name": "萨梅尔的留言",
+			"description": "",
+			"storyId": "469"
+		},
+		{
+			"id": 120081,
+			"name": "萨梅尔的留言",
+			"description": "",
+			"storyId": "470"
+		}
+	],
+	"route": "Samail's Missive"
+}

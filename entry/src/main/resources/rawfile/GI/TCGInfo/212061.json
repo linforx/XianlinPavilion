@@ -1,0 +1,81 @@
+{
+	"id": 212061,
+	"name": "镜华风姿",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_HYDRO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Ayato",
+	"route": "Kyouka Fuushi",
+	"storyTitle": "神里绫人·镜华风姿",
+	"storyDetail": "在庭之椿，寒中清芬。",
+	"source": "在猫尾酒馆中邀请神里绫人进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S12062": {
+			"name": "神里流·镜花",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C112061]</color>。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"C112061": "泷廻鉴花"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ayato_01"
+		},
+		"C112061": {
+			"name": "泷廻鉴花",
+			"description": "所附属角色<color=#FFFFFFFF>普通攻击</color>造成的伤害+1，造成的$[K100]变为$[K102]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K102": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "镜华风姿",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1206]</color>时，装备此牌。\\n$[A1206]装备此牌后，立刻使用一次<color=#FFD780FF>$[S12062]</color>。\\n装备有此牌的$[A1206]触发<color=#FFFFFFFF>$[C112061]</color>的效果时，对于生命值不多于6的敌人伤害额外+1。\\n（牌组中包含$[A1206]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1206": "神里绫人",
+				"S12062": "神里流·镜花",
+				"C112061": "泷廻鉴花"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1206]触发<color=#FFFFFFFF>$[C112061]</color>的效果时，对于生命值不多于6的敌人伤害额外+1。",
+			"subSkills": {
+				"S12062": "skill",
+				"C112061": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

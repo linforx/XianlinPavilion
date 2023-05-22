@@ -1,0 +1,25 @@
+{
+	"id": 332011,
+	"name": "神宝迁宫祝词",
+	"type": "actionCard",
+	"tags": null,
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Event_Shenbaoqiangongzhuci",
+	"route": "Blessing of the Divine Relic's Installation",
+	"storyTitle": "神宝迁宫",
+	"storyDetail": "「呵呵…这下总该变得有意思起来了吧？」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "神宝迁宫祝词",
+			"description": "将一个装备在我方角色的「{SPRITE_PRESET#3004}圣遗物」装备牌，转移给另一个我方角色。",
+			"cost": null,
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

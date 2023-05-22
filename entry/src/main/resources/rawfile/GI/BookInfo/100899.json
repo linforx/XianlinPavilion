@@ -1,0 +1,15 @@
+{
+	"id": 100899,
+	"name": "林藏的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100899,
+			"name": "林藏的信",
+			"description": "传说中大海贼林藏留下的亲笔信，纸张皱巴巴的，或许曾被沾湿过。",
+			"storyId": "304"
+		}
+	],
+	"route": "Rinzou's Letter"
+}

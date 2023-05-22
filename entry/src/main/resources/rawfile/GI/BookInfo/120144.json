@@ -1,0 +1,15 @@
+{
+	"id": 120144,
+	"name": "转移通知文件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120144,
+			"name": "转移通知文件",
+			"description": "愚人众的正式通知文件，似乎与部队的转移目的地有关。",
+			"storyId": "491"
+		}
+	],
+	"route": "Transfer Notification"
+}

@@ -1,0 +1,29 @@
+{
+	"id": 331301,
+	"name": "元素共鸣：交织之火",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_RESONANCE": "元素共鸣"
+	},
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_ResonanceB_Fire",
+	"route": "Elemental Resonance: Woven Flames",
+	"storyTitle": "元素共鸣：交织之火",
+	"storyDetail": "红莲劫尽，败者归尘。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "元素共鸣：交织之火",
+			"description": "生成1个<color=#FF9999FF>{SPRITE_PRESET#1103}火元素骰</color>。\\n（牌组包含至少2个{SPRITE_PRESET#2103}<color=#FF9999FF>火元素</color>角色，才能加入牌组）",
+			"cost": null,
+			"params": null,
+			"tags": {
+				"GCG_TAG_RESONANCE": "元素共鸣"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

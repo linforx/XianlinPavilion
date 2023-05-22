@@ -1,0 +1,40 @@
+{
+	"id": 332013,
+	"name": "送你一程",
+	"type": "actionCard",
+	"tags": null,
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Songniyicheng",
+	"route": "Send Off",
+	"storyTitle": "送你一程",
+	"storyDetail": "「一波送走~往生堂服务品质保证，包您满意！」",
+	"source": "初始牌组中获取",
+	"dictionary": {
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "送你一程",
+			"description": "选择一个敌方「召唤物」，使其「$[K3]」-2。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

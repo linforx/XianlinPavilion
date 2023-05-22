@@ -1,0 +1,102 @@
+{
+	"id": 215041,
+	"name": "降魔·护法夜叉",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ANEMO": 3,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Xiao",
+	"route": "Conqueror of Evil: Guardian Yaksha",
+	"storyTitle": "魈·降魔",
+	"storyDetail": "诸邪退散，万恶皆除。",
+	"source": "在猫尾酒馆中邀请魈进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S15043": {
+			"name": "靖妖傩舞",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C115041]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 4,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"C115041": "夜叉傩面"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Xiao_01_HD"
+		},
+		"C115041": {
+			"name": "夜叉傩面",
+			"description": "所附属角色造成的$[K100]变为$[K105]，且角色造成的$[K105]+1。\\n<color=#FFFFFFFF>所附属角色进行$[K52]时：</color>伤害额外+2。\\n<color=#FFFFFFFF>所附属角色为出战角色，我方执行「切换角色」行动时：</color>少花费1个元素骰。（每回合1次）\\n<color=#FFFFFFFF>$[K4]：2</color>",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K105": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"K52": "<color=#FFFFFFFF>下落攻击</color>",
+				"K4": "<color=#FFFFFFFF>持续回合</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"S15042": {
+			"name": "风轮两立",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Xiao_01"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "降魔·护法夜叉",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1504]</color>时，装备此牌。\\n$[A1504]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15043]</color>。\\n装备有此牌的$[A1504]附属<color=#FFFFFFFF>$[C115041]</color>期间，使用<color=#FFFFFFFF>$[S15042]</color>时少花费1个{SPRITE_PRESET#1105}<color=#80FFD7FF>风元素</color>。（每附属1次<color=#FFFFFFFF>$[C115041]</color>，可触发2次）\\n（牌组中包含$[A1504]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1504": "魈",
+				"S15043": "靖妖傩舞",
+				"C115041": "夜叉傩面",
+				"S15042": "风轮两立"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1504]附属<color=#FFFFFFFF>$[C115041]</color>期间，使用<color=#FFFFFFFF>$[S15042]</color>时少花费1个{SPRITE_PRESET#1105}<color=#80FFD7FF>风元素</color>。（每附属1次<color=#FFFFFFFF>$[C115041]</color>，可触发2次）",
+			"subSkills": {
+				"S15043": "skill",
+				"C115041": "cardSkill",
+				"S15042": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

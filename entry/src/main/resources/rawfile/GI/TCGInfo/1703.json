@@ -1,0 +1,157 @@
+{
+	"id": 1703,
+	"name": "纳西妲",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_DENDRO": "草元素",
+		"GCG_TAG_WEAPON_CATALYST": "法器",
+		"GCG_TAG_NATION_SUMERU": "须弥"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Nahida",
+	"route": "Nahida",
+	"storyTitle": "白草净华·纳西妲",
+	"storyDetail": "白草净华，幽宫启蛰 。",
+	"source": "在猫尾酒馆中邀请纳西妲进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K107": {
+			"name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		},
+		"K5": {
+			"name": "<color=#FFFFFFFF>穿透伤害</color>",
+			"description": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C117031": {
+			"name": "蕴种印",
+			"description": "<color=#FFFFFFFF>任意具有「蕴种印」的所在阵营角色受到元素反应伤害后：</color>对所附属角色造成1点$[K5]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K4": {
+			"name": "<color=#FFFFFFFF>持续回合</color>",
+			"description": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+		},
+		"C117032": {
+			"name": "摩耶之殿",
+			"description": "<color=#FFFFFFFF>我方引发元素反应时：</color>伤害额外+1。\\n<color=#FFFFFFFF>$[K4]：2</color>",
+			"cost": null,
+			"params": {
+				"K4": "<color=#FFFFFFFF>持续回合</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"17031": {
+			"name": "行相",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_Catalyst_MD",
+			"subSkills": null,
+			"keywords": {
+				"K107": "keyword"
+			}
+		},
+		"17032": {
+			"name": "所闻遍计",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C117031]</color>；如果在附属前目标角色已附属有<color=#FFFFFFFF>$[C117031]</color>，就改为对所有敌方角色附属<color=#FFFFFFFF>$[C117031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"C117031": "蕴种印"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Nahida_01",
+			"subSkills": {
+				"C117031": "cardSkill"
+			},
+			"keywords": {
+				"K107": "keyword"
+			}
+		},
+		"17033": {
+			"name": "所闻遍计·真如",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，所有敌方角色附属<color=#FFFFFFFF>$[C117031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 5
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"C117031": "蕴种印"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Nahida_02",
+			"subSkills": {
+				"C117031": "cardSkill"
+			},
+			"keywords": {
+				"K107": "keyword"
+			}
+		},
+		"17034": {
+			"name": "心景幻成",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C117032]</color>。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 4,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"C117032": "摩耶之殿"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Nahida_01_HD",
+			"subSkills": {
+				"C117032": "cardSkill"
+			},
+			"keywords": {
+				"K107": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 217031,
+			"name": "心识蕴藏之种",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Tighnari"
+		}
+	]
+}

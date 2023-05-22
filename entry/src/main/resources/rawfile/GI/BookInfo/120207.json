@@ -1,0 +1,21 @@
+{
+	"id": 120207,
+	"name": "残损的记录·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120207,
+			"name": "残损的记录·其一",
+			"description": "残损的记录·其一",
+			"storyId": "533"
+		},
+		{
+			"id": 120208,
+			"name": "残损的记录·其二",
+			"description": "残损的记录·其二",
+			"storyId": "534"
+		}
+	],
+	"route": "Damaged Records: I"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 100842,
+	"name": "「破破岛」的壁画",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100721",
+	"volume": [
+		{
+			"id": 100842,
+			"name": "「破破岛」的壁画",
+			"description": "从「破破岛」的石壁上记录下来的壁画。画中描绘着五个奇怪的物体…",
+			"storyId": "202"
+		}
+	],
+	"route": "Broken Isle Mural"
+}

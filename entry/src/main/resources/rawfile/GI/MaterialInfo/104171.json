@@ -1,0 +1,89 @@
+{
+	"name": "坚牢黄玉碎屑",
+	"description": "角色突破素材。",
+	"type": "角色突破素材",
+	"recipe": {
+		"50145": {
+			"104111": {
+				"icon": "UI_ItemIcon_104111",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50146": {
+			"104121": {
+				"icon": "UI_ItemIcon_104121",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50147": {
+			"104131": {
+				"icon": "UI_ItemIcon_104131",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50148": {
+			"104141": {
+				"icon": "UI_ItemIcon_104141",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50149": {
+			"104151": {
+				"icon": "UI_ItemIcon_104151",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50150": {
+			"104161": {
+				"icon": "UI_ItemIcon_104161",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "无相之岩掉落",
+			"type": "single"
+		},
+		{
+			"name": "黄金王兽掉落",
+			"type": "single"
+		},
+		{
+			"name": "遗迹巨蛇掉落",
+			"type": "single"
+		},
+		{
+			"name": "纪念品商店兑换",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104171",
+	"rank": 2,
+	"route": "Prithiva Topaz Sliver"
+}

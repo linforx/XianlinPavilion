@@ -1,0 +1,33 @@
+{
+	"id": 321002,
+	"name": "骑士团图书馆",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_PLACE": "场地"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Assist_Location_MdLibrary",
+	"route": "Knights of Favonius Library",
+	"storyTitle": "北陆书籍集成之所",
+	"storyDetail": "「大部分馆藏皆可自由借阅，只是，切忌逾期归还…」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "骑士团图书馆",
+			"description": "<color=#FFFFFFFF>入场时：</color>选择任意元素骰重投。\\n<color=#FFFFFFFF>投掷阶段：</color>获得额外一次重投机会。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>投掷阶段：</color>获得额外一次重投机会。"
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 100841,
+	"name": "「危危岛」的壁画",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100721",
+	"volume": [
+		{
+			"id": 100841,
+			"name": "「危危岛」的壁画",
+			"description": "从「危危岛」的石壁上记录下来的壁画。画中似乎描绘着一场海难…",
+			"storyId": "201"
+		}
+	],
+	"route": "Minacious Isle Mural"
+}

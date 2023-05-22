@@ -1,0 +1,44 @@
+{
+	"id": 321007,
+	"name": "天守阁",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_PLACE": "场地"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_Location_Tianshou",
+	"route": "Tenshukaku",
+	"storyTitle": "千手百眼·天下人间",
+	"storyDetail": "「仅由此身，为这天下人间代行永恒。」",
+	"source": "",
+	"dictionary": {
+		"K411": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>",
+			"description": "{SPRITE_PRESET#1111}万能元素可以视为任何类型的元素，来支付各种费用。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "天守阁",
+			"description": "<color=#FFFFFFFF>行动阶段开始时：</color>如果我方的元素骰包含5种不同的元素，则生成1个$[K411]。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": {
+				"K411": "<color=#FFFFFFFF>{SPRITE_PRESET#1111}万能元素</color>"
+			},
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"icon": null,
+			"effect": "",
+			"subSkills": null,
+			"keywords": {
+				"K411": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

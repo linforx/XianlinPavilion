@@ -1,0 +1,15 @@
+{
+	"id": 101899,
+	"name": "老旧发黄的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 101899,
+			"name": "老旧发黄的笔记",
+			"description": "老旧发黄的笔记",
+			"storyId": "410"
+		}
+	],
+	"route": "Old Yellowed Notes"
+}

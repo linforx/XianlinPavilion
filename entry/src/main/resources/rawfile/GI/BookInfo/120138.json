@@ -1,0 +1,15 @@
+{
+	"id": 120138,
+	"name": "残缺的诊疗记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120138,
+			"name": "残缺的诊疗记录",
+			"description": "",
+			"storyId": "485"
+		}
+	],
+	"route": "Incomplete Medical Records"
+}

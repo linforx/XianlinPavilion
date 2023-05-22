@@ -1,0 +1,33 @@
+{
+	"id": 331202,
+	"name": "元素共鸣：愈疗之水",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_RESONANCE": "元素共鸣"
+	},
+	"props": {
+		"GCG_COST_DICE_HYDRO": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_ResonanceA_Water",
+	"route": "Elemental Resonance: Soothing Water",
+	"storyTitle": "元素共鸣：愈疗之水",
+	"storyDetail": "源清流洁，本盛末荣。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "元素共鸣：愈疗之水",
+			"description": "治疗我方出战角色2点。然后，治疗所有我方后台角色1点。\\n（牌组包含至少2个{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素</color>角色，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_RESONANCE": "元素共鸣"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

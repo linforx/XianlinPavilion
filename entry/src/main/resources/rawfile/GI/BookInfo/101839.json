@@ -1,0 +1,15 @@
+{
+	"id": 101839,
+	"name": "一封信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 101839,
+			"name": "一封信",
+			"description": "一封信。",
+			"storyId": "402"
+		}
+	],
+	"route": "A Letter"
+}

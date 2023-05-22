@@ -1,0 +1,172 @@
+{
+	"id": 1603,
+	"name": "钟离",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_GEO": "岩元素",
+		"GCG_TAG_WEAPON_POLE": "长柄武器",
+		"GCG_TAG_NATION_LIYUE": "璃月"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Zhongli",
+	"route": "Zhongli",
+	"storyTitle": "尘世闲游·钟离",
+	"storyDetail": "韬玉之石，可明八荒；灿若天星，纵横无双 。",
+	"source": "在猫尾酒馆中邀请钟离进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K106": {
+			"name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C116031": {
+			"name": "岩脊",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K106]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K6": {
+			"name": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+			"description": "此护盾所保护的角色受到伤害时，将会消耗护盾来抵消伤害。"
+		},
+		"C116032": {
+			"name": "玉璋护盾",
+			"description": "为我方出战角色提供<color=#FFFFFFFF>2点$[K6]</color>。",
+			"cost": null,
+			"params": {
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>"
+			},
+			"tags": {
+				"GCG_TAG_SHEILD": "护盾"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"C116033": {
+			"name": "石化",
+			"description": "<color=#FFFFFFFF>角色无法使用技能。</color>（持续到回合结束）",
+			"cost": null,
+			"params": null,
+			"tags": {
+				"GCG_TAG_FORBIDDEN_ATTACK": "无法行动"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"16031": {
+			"name": "岩雨",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_03",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"16032": {
+			"name": "地心",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C116031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116031": "岩脊"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Zhongli_01",
+			"subSkills": {
+				"C116031": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		},
+		"16033": {
+			"name": "地心·磐礴",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C116031]</color>，生成<color=#FFFFFFFF>$[C116032]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 5
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116031": "岩脊",
+				"C116032": "玉璋护盾"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Zhongli_02",
+			"subSkills": {
+				"C116031": "cardSkill",
+				"C116032": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		},
+		"16034": {
+			"name": "天星",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C116033]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 4,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116033": "石化"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Zhongli_01_HD",
+			"subSkills": {
+				"C116033": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 216031,
+			"name": "炊金馔玉",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli"
+		}
+	]
+}

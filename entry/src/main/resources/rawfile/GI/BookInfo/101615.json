@@ -1,0 +1,15 @@
+{
+	"id": 101615,
+	"name": "山石杂谈",
+	"rank": 3,
+	"icon": "UI_ItemIcon_100230",
+	"volume": [
+		{
+			"id": 101615,
+			"name": "山石杂谈",
+			"description": "记录了天衡山各种奇石传说，其中包含许多稀有的矿石。据说站在天衡山南部的湖中心，在黄昏之时沿着日落方向去寻找，就能找到传说中的秘华石。",
+			"storyId": "318"
+		}
+	],
+	"route": "Mountainous Miscellany"
+}

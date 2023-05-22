@@ -1,0 +1,15 @@
+{
+	"id": 100844,
+	"name": "「双双岛」的壁画",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100721",
+	"volume": [
+		{
+			"id": 100844,
+			"name": "「双双岛」的壁画",
+			"description": "从「双双岛」的石壁上记录下来的壁画。画中的山上有着一处特别的标记…",
+			"storyId": "204"
+		}
+	],
+	"route": "Twinning Isle Mural"
+}

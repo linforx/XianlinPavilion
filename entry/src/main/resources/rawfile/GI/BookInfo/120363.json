@@ -1,0 +1,15 @@
+{
+	"id": 120363,
+	"name": "怪异的抄本",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120363,
+			"name": "怪异的抄本",
+			"description": "怪异的抄本",
+			"storyId": "629"
+		}
+	],
+	"route": "Bizarre Transcript"
+}

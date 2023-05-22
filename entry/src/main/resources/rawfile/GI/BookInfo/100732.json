@@ -1,0 +1,75 @@
+{
+	"id": 100732,
+	"name": "侠客记·黑貉",
+	"rank": 3,
+	"icon": "UI_ItemIcon_100402",
+	"volume": [
+		{
+			"id": 100732,
+			"name": "侠客记·黑貉",
+			"description": "记录了璃月市井传说中诸多侠客的奇书，其中有些故事年代已远，但依旧十分受市井读者欢迎。",
+			"storyId": "186"
+		},
+		{
+			"id": 120194,
+			"name": "古绿洲记事·其一",
+			"description": "古绿洲记事·其一",
+			"storyId": "523"
+		},
+		{
+			"id": 120195,
+			"name": "古绿洲记事·其二",
+			"description": "古绿洲记事·其二",
+			"storyId": "524"
+		},
+		{
+			"id": 120196,
+			"name": "古绿洲记事·其三",
+			"description": "古绿洲记事·其三",
+			"storyId": "525"
+		},
+		{
+			"id": 120197,
+			"name": "古绿洲记事·其四",
+			"description": "古绿洲记事·其四",
+			"storyId": "526"
+		},
+		{
+			"id": 120198,
+			"name": "古绿洲记事·其五",
+			"description": "古绿洲记事·其五",
+			"storyId": "527"
+		},
+		{
+			"id": 120199,
+			"name": "古绿洲记事·其六",
+			"description": "古绿洲记事·其六",
+			"storyId": "528"
+		},
+		{
+			"id": 120237,
+			"name": "古绿洲记事·其七",
+			"description": "古绿洲记事·其七",
+			"storyId": "555"
+		},
+		{
+			"id": 120238,
+			"name": "古绿洲记事·其八",
+			"description": "古绿洲记事·其八",
+			"storyId": "556"
+		},
+		{
+			"id": 120239,
+			"name": "古绿洲记事·其九",
+			"description": "古绿洲记事·其九",
+			"storyId": "557"
+		},
+		{
+			"id": 120240,
+			"name": "古绿洲记事·其十",
+			"description": "古绿洲记事·其十",
+			"storyId": "558"
+		}
+	],
+	"route": "Records of the Gallant: Black Raccoons"
+}

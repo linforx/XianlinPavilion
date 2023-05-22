@@ -1,0 +1,97 @@
+{
+	"id": 226011,
+	"name": "重铸：岩盔",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_GEO": 4,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Rockbrute",
+	"route": "Stonehide Reforged",
+	"storyTitle": "刚躯岩铸",
+	"storyDetail": "似磐岩中生长而出的躯体，坚固之力在其身躯中流转。",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度丘丘岩盔王中完成挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S26013": {
+			"name": "Upa Shato",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 5,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "MonsterSkill_E_BruteRock_01_HD"
+		},
+		"C126011": {
+			"name": "岩盔",
+			"description": "<color=#FFFFFFFF>所附属角色受到伤害时：</color>抵消1点伤害。抵消$[K106]时，需额外消耗1次$[K3]。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+			"cost": null,
+			"params": {
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"C126012": {
+			"name": "坚岩之力",
+			"description": "角色造成的$[K100]变为$[K106]。\\n<color=#FFFFFFFF>每回合1次：</color>角色造成的伤害+1。\\n角色所附属的「$[C126011]」被移除后：也移除此状态。",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C126011": "岩盔"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "重铸：岩盔",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2601]</color>时，装备此牌。\\n$[A2601]装备此牌后，立刻使用一次<color=#FFD780FF>$[S26013]</color>。\\n装备有此牌的$[A2601]击倒敌方角色后；$[A2601]重新附属<color=#FFFFFFFF>$[C126011]</color>和<color=#FFFFFFFF>$[C126012]</color>。\\n（牌组中包含$[A2601]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_GEO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A2601": "丘丘岩盔王",
+				"S26013": "Upa Shato",
+				"C126011": "岩盔",
+				"C126012": "坚岩之力"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A2601]击倒敌方角色后；$[A2601]重新附属<color=#FFFFFFFF>$[C126011]</color>和<color=#FFFFFFFF>$[C126012]</color>。",
+			"subSkills": {
+				"S26013": "skill",
+				"C126011": "cardSkill",
+				"C126012": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

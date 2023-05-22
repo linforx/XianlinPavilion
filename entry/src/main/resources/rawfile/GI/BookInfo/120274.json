@@ -1,0 +1,15 @@
+{
+	"id": 120274,
+	"name": "夹在笔记中的示意图",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120274",
+	"volume": [
+		{
+			"id": 120274,
+			"name": "夹在笔记中的示意图",
+			"description": "从神秘的调查笔记中取出的示意图，似乎详细描绘了地下遗迹试验场的结构和「灵光绝唱」所在的位置…",
+			"storyId": "605"
+		}
+	],
+	"route": "Schematic Clipped Inside Notes"
+}

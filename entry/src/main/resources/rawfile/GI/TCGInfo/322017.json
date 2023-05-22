@@ -1,0 +1,33 @@
+{
+	"id": 322017,
+	"name": "拉娜",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Lana",
+	"route": "Rana",
+	"storyTitle": "记忆之珍·拉娜",
+	"storyDetail": "「我们还有很长的时间，一起重新认识森林的大、世界的大、未来的无限。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "拉娜",
+			"description": "<color=#FFFFFFFF>我方角色使用「元素战技」后：</color>生成1个我方下一个后台角色类型的元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120181,
+	"name": "旭东的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100356",
+	"volume": [
+		{
+			"id": 120181,
+			"name": "旭东的信",
+			"description": "旭东所留下的信，信封里似乎还夹着什么东西…",
+			"storyId": "510"
+		}
+	],
+	"route": "Xudong's Letter"
+}

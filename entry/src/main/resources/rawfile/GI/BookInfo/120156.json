@@ -1,0 +1,15 @@
+{
+	"id": 120156,
+	"name": "赛诺的来信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100242",
+	"volume": [
+		{
+			"id": 120156,
+			"name": "赛诺的来信",
+			"description": "由赛诺委托西达捎来的信件，似乎有着对当前状况的说明…",
+			"storyId": "503"
+		}
+	],
+	"route": "Cyno's Missive"
+}

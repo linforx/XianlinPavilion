@@ -1,0 +1,25 @@
+{
+	"id": 332003,
+	"name": "一掷乾坤",
+	"type": "actionCard",
+	"tags": null,
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Event_Yizhiqiankun",
+	"route": "Toss-Up",
+	"storyTitle": "一掷乾坤",
+	"storyDetail": "骰子掷下之前，无人知晓自己的命运。",
+	"source": "达成牌手手册的奖励条件后领取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "一掷乾坤",
+			"description": "选择任意元素骰<color=#FFFFFFFF>重投</color>，可重投2次。",
+			"cost": null,
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 101999,
+	"name": "雇主的命令",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101999",
+	"volume": [
+		{
+			"id": 101999,
+			"name": "雇主的命令",
+			"description": "（test）雇主的命令",
+			"storyId": "437"
+		}
+	],
+	"route": "Employer's Orders"
+}

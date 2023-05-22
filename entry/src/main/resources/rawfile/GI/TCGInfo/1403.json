@@ -1,0 +1,150 @@
+{
+	"id": 1403,
+	"name": "刻晴",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_ELECTRO": "雷元素",
+		"GCG_TAG_WEAPON_SWORD": "单手剑",
+		"GCG_TAG_NATION_LIYUE": "璃月"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Keqing",
+	"route": "Keqing",
+	"storyTitle": "霆霓快雨·刻晴",
+	"storyDetail": "她能构筑出许多从未设想过的牌组，拿下许多难以想象的胜利。",
+	"source": "在猫尾酒馆中邀请刻晴进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S14032": {
+			"name": "星斗归位",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成手牌<color=#FFFFFFFF>$[C114031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114031": "雷楔"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Keqing_01"
+		},
+		"K1002": {
+			"name": "<color=#FFFFFFFF>雷元素附魔</color>",
+			"description": "所附属角色造成的{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>变为{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>。\\n<color=#FFFFFFFF>持续回合</color>：2"
+		},
+		"K104": {
+			"name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		},
+		"C114031": {
+			"name": "雷楔",
+			"description": "$[K1]：将$[A1403]切换到场上，立刻使用$[S14032]。本次$[S14032]会为$[A1403]附属<color=#FFFFFFFF>$[K1002]</color>，但是不会再生成雷楔。\\n（$[A1403]使用$[S14032]时，如果此牌在手中：不会再生成雷楔，而是改为弃置此牌，并为$[A1403]附属<color=#FFFFFFFF>$[K1002]</color>）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1403": "刻晴",
+				"S14032": "星斗归位",
+				"K1002": "<color=#FFFFFFFF>雷元素附魔</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": ""
+		},
+		"K5": {
+			"name": "<color=#FFFFFFFF>穿透伤害</color>",
+			"description": "穿透伤害无法受到伤害加成，但是也无法被护盾、伤害免疫等效果抵消。"
+		}
+	},
+	"talent": {
+		"14031": {
+			"name": "云来剑法",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_01",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"14032": {
+			"name": "星斗归位",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成手牌<color=#FFFFFFFF>$[C114031]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114031": "雷楔"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Keqing_01",
+			"subSkills": {
+				"C114031": "cardSkill"
+			},
+			"keywords": {
+				"K104": "keyword"
+			}
+		},
+		"14033": {
+			"name": "天街巡游",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，对所有敌方后台角色造成<color=#FFFFFFFF>3点$[K5]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 4,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 4,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K5": "<color=#FFFFFFFF>穿透伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Keqing_01_HD",
+			"subSkills": null,
+			"keywords": {
+				"K104": "keyword",
+				"K5": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 214031,
+			"name": "抵天雷罚",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Keqing"
+		}
+	]
+}

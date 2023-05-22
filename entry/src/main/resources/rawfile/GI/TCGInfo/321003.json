@@ -1,0 +1,33 @@
+{
+	"id": 321003,
+	"name": "群玉阁",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_PLACE": "场地"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Assist_Location_Qunyuge",
+	"route": "Jade Chamber",
+	"storyTitle": "高阁入云坐看星",
+	"storyDetail": "「据说其中有千种珍宝，琳琅满目。」",
+	"source": "在大世界与牌手步云的冒险挑战中完成挑战目标后获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "群玉阁",
+			"description": "<color=#FFFFFFFF>投掷阶段：</color>2个元素骰初始总是投出我方出战角色类型的元素。",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

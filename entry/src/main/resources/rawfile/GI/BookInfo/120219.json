@@ -1,0 +1,15 @@
+{
+	"id": 120219,
+	"name": "婕德的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 120219,
+			"name": "婕德的信",
+			"description": "婕德的信",
+			"storyId": "543"
+		}
+	],
+	"route": "Jeht's Letter"
+}

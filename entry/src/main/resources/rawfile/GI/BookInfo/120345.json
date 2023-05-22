@@ -1,0 +1,15 @@
+{
+	"id": 120345,
+	"name": "无名冒险家的记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120345,
+			"name": "无名冒险家的记录",
+			"description": "遗失在沙漠中的字条，似乎是某位冒险家留下的。",
+			"storyId": "612"
+		}
+	],
+	"route": "Nameless Adventurer's Notes"
+}

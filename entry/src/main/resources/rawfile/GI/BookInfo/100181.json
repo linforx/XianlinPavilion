@@ -1,0 +1,15 @@
+{
+	"id": 100181,
+	"name": "与神性同行·序言",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100181",
+	"volume": [
+		{
+			"id": 100181,
+			"name": "与神性同行·序言",
+			"description": "「你有没有思考过，假如没有了神，我们的生活会怎样？」\\n在理智而幽默的叙述中，与作者一同拨开那团名为「神性」的迷雾。",
+			"storyId": "4"
+		}
+	],
+	"route": "Along with Divinity: Prologue"
+}

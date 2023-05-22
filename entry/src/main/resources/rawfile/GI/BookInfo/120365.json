@@ -1,0 +1,33 @@
+{
+	"id": 120365,
+	"name": "无名学者的记事·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120365,
+			"name": "无名学者的记事·其一",
+			"description": "无名学者的记事·其一",
+			"storyId": "631"
+		},
+		{
+			"id": 120366,
+			"name": "无名学者的记事·其二",
+			"description": "无名学者的记事·其二",
+			"storyId": "632"
+		},
+		{
+			"id": 120367,
+			"name": "无名学者的记事·其三",
+			"description": "无名学者的记事·其三",
+			"storyId": "633"
+		},
+		{
+			"id": 120368,
+			"name": "无名学者的记事·其四",
+			"description": "无名学者的记事·其四",
+			"storyId": "634"
+		}
+	],
+	"route": "Nameless Researcher's Notes (I)"
+}

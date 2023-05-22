@@ -1,0 +1,15 @@
+{
+	"id": 120351,
+	"name": "难以辨识的布告",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120351,
+			"name": "难以辨识的布告",
+			"description": "难以辨识的布告",
+			"storyId": "620"
+		}
+	],
+	"route": "Barely-Legible Bulletin"
+}

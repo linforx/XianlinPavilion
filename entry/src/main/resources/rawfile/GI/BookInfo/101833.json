@@ -1,0 +1,15 @@
+{
+	"id": 101833,
+	"name": "「紧急调整计划图」",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100173",
+	"volume": [
+		{
+			"id": 101833,
+			"name": "「紧急调整计划图」",
+			"description": "名为奥列格的愚人众不慎落下的计划书中所附地图，上面标注了所有营地的位置，以及愚人众进行巡逻的路线。",
+			"storyId": "471"
+		}
+	],
+	"route": "\"Emergency Adjustment Plan\""
+}

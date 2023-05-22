@@ -1,0 +1,85 @@
+{
+	"name": "燃愿玛瑙碎屑",
+	"description": "角色突破素材。",
+	"type": "角色突破素材",
+	"recipe": {
+		"50001": {
+			"104121": {
+				"icon": "UI_ItemIcon_104121",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50002": {
+			"104131": {
+				"icon": "UI_ItemIcon_104131",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50003": {
+			"104141": {
+				"icon": "UI_ItemIcon_104141",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50004": {
+			"104151": {
+				"icon": "UI_ItemIcon_104151",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50005": {
+			"104161": {
+				"icon": "UI_ItemIcon_104161",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		},
+		"50006": {
+			"104171": {
+				"icon": "UI_ItemIcon_104171",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 1
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "爆炎树掉落",
+			"type": "single"
+		},
+		{
+			"name": "无相之火掉落",
+			"type": "single"
+		},
+		{
+			"name": "纪念品商店兑换",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104111",
+	"rank": 2,
+	"route": "Agnidus Agate Sliver"
+}

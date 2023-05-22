@@ -1,0 +1,15 @@
+{
+	"id": 100452,
+	"name": "掇星攫辰天君的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 100452,
+			"name": "掇星攫辰天君的信",
+			"description": "掇星攫辰天君留下来的信",
+			"storyId": "110"
+		}
+	],
+	"route": "Letter from Starsnatcher"
+}

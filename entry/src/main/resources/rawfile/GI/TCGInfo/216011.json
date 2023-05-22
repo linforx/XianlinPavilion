@@ -1,0 +1,85 @@
+{
+	"id": 216011,
+	"name": "储之千日，用之一刻",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_GEO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Ningguang",
+	"route": "Strategic Reserve",
+	"storyTitle": "凝光·储之千日，用之一刻",
+	"storyDetail": "余裕，是自信的代名词。",
+	"source": "在猫尾酒馆中邀请凝光进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S16012": {
+			"name": "璇玑屏",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C116011]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116011": "璇玑屏"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ningguang_01"
+		},
+		"C116011": {
+			"name": "璇玑屏",
+			"description": "<color=#FFFFFFFF>我方出战角色受到至少为2的伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K106": {
+			"name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "储之千日，用之一刻",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1601]</color>时，装备此牌。\\n$[A1601]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16012]</color>。\\n装备有此牌的$[A1601]在场时，<color=#FFFFFFFF>$[C116011]</color>会使我方造成的<color=#FFE699FF>$[K106]</color>+1。\\n（牌组中包含$[A1601]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_GEO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1601": "凝光",
+				"S16012": "璇玑屏",
+				"C116011": "璇玑屏",
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1601]在场时，<color=#FFFFFFFF>$[C116011]</color>会使我方造成的<color=#FFE699FF>$[K106]</color>+1。",
+			"subSkills": {
+				"S16012": "skill",
+				"C116011": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K106": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

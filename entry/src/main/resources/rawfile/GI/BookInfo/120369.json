@@ -1,0 +1,33 @@
+{
+	"id": 120369,
+	"name": "古旧的佣兵笔记·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120369,
+			"name": "古旧的佣兵笔记·其一",
+			"description": "古旧的佣兵笔记·其一",
+			"storyId": "635"
+		},
+		{
+			"id": 120370,
+			"name": "古旧的佣兵笔记·其二",
+			"description": "古旧的佣兵笔记·其二",
+			"storyId": "636"
+		},
+		{
+			"id": 120371,
+			"name": "古旧的佣兵笔记·其三",
+			"description": "古旧的佣兵笔记·其三",
+			"storyId": "637"
+		},
+		{
+			"id": 120372,
+			"name": "古旧的佣兵笔记·其四",
+			"description": "古旧的佣兵笔记·其四",
+			"storyId": "638"
+		}
+	],
+	"route": "Mercenary's Aged Notes (I)"
+}

@@ -1,0 +1,60 @@
+{
+	"id": 211051,
+	"name": "寒天宣命祝词",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋"
+	},
+	"props": {
+		"GCG_COST_DICE_CRYO": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Ayaka",
+	"route": "Kanten Senmyou Blessing",
+	"storyTitle": "神里绫华·寒天宣命祝词",
+	"storyDetail": "雪鹤衔冰，翼影翩翩。",
+	"source": "在猫尾酒馆中邀请神里绫华进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"C111052": {
+			"name": "冰元素附魔",
+			"description": "所附属角色造成的$[K100]变为$[K101]。\\n（持续到回合结束）",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K101": {
+			"name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "寒天宣命祝词",
+			"description": "装备有此牌的<color=#FFFFFFFF>$[A1105]</color>生成的<color=#FFFFFFFF>$[C111052]</color>会使所附属角色造成的<color=#99FFFFFF>$[K101]</color>+1。\\n切换到装备有此牌的$[A1105]时：少花费1个元素骰。（每回合1次）\\n（牌组中包含$[A1105]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 2
+			},
+			"params": {
+				"A1105": "神里绫华",
+				"C111052": "冰元素附魔",
+				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋"
+			},
+			"icon": null,
+			"effect": "装备有此牌的<color=#FFFFFFFF>$[A1105]</color>生成的<color=#FFFFFFFF>$[C111052]</color>会使所附属角色造成的<color=#99FFFFFF>$[K101]</color>+1。\\n切换到装备有此牌的$[A1105]时：少花费1个元素骰。（每回合1次）",
+			"subSkills": {
+				"C111052": "cardSkill"
+			},
+			"keywords": {
+				"K101": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

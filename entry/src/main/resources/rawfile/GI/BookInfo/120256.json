@@ -1,0 +1,15 @@
+{
+	"id": 120256,
+	"name": "久岐忍的来信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120256,
+			"name": "久岐忍的来信",
+			"description": "（test）废弃",
+			"storyId": "566"
+		}
+	],
+	"route": "Letter from Kuki Shinobu"
+}

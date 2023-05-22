@@ -1,0 +1,15 @@
+{
+	"id": 120039,
+	"name": "索赫蕾的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120039,
+			"name": "索赫蕾的笔记",
+			"description": "索赫蕾的笔记",
+			"storyId": "448"
+		}
+	],
+	"route": "Sohreh's Note"
+}

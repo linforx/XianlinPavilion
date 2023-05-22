@@ -1,0 +1,27 @@
+{
+	"id": 1016,
+	"name": "浮浪记",
+	"rank": 3,
+	"icon": "UI_ItemIcon_100565",
+	"volume": [
+		{
+			"id": 100565,
+			"name": "浮浪记·潮起",
+			"description": "璃月被海兽侵扰的时代，无名船师的传奇故事。",
+			"storyId": "130"
+		},
+		{
+			"id": 100566,
+			"name": "浮浪记·狂涛",
+			"description": "在不息回荡的海歌中，船师与命运的强敌搏斗至最后。",
+			"storyId": "131"
+		},
+		{
+			"id": 100567,
+			"name": "浮浪记·潮息",
+			"description": "待到一切复归风平浪静，海风轻轻吟唱着归乡的故曲……",
+			"storyId": "132"
+		}
+	],
+	"route": "Tales From the Waves"
+}

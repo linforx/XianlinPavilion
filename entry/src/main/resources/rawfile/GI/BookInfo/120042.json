@@ -1,0 +1,15 @@
+{
+	"id": 120042,
+	"name": "残破的出勤记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_71700047",
+	"volume": [
+		{
+			"id": 120042,
+			"name": "残破的出勤记录",
+			"description": "残破的出勤记录",
+			"storyId": "451"
+		}
+	],
+	"route": "Ragged Attendance Record"
+}

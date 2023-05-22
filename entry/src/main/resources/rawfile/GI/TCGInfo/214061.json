@@ -1,0 +1,82 @@
+{
+	"id": 214061,
+	"name": "我界",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ELECTRO": 4,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Sara",
+	"route": "Sin of Pride",
+	"storyTitle": "九条裟罗·我界",
+	"storyDetail": "「持心正弦，遇敌必除！」",
+	"source": "在猫尾酒馆中邀请九条裟罗进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S14063": {
+			"name": "煌煌千道镇式",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C114062]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114062": "天狗咒雷·雷砾"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Sara_01_HD"
+		},
+		"C114063": {
+			"name": "鸣煌护持",
+			"description": "所附属角色<color=#FFFFFFFF>元素战技</color>和<color=#FFFFFFFF>元素爆发</color>造成的伤害+1。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "我界",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1406]</color>时，装备此牌。\\n$[A1406]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14063]</color>。\\n装备有此牌的$[A1406]在场时，我方附属有<color=#FFFFFFFF>$[C114063]</color>的{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素</color>角色，<color=#FFFFFFFF>元素战技</color>和<color=#FFFFFFFF>元素爆发</color>造成的伤害额外+1。\\n（牌组中包含$[A1406]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1406": "九条裟罗",
+				"S14063": "煌煌千道镇式",
+				"C114063": "鸣煌护持"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1406]在场时，我方附属有<color=#FFFFFFFF>$[C114063]</color>的{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素</color>角色，<color=#FFFFFFFF>元素战技</color>和<color=#FFFFFFFF>元素爆发</color>造成的伤害额外+1。",
+			"subSkills": {
+				"S14063": "skill",
+				"C114063": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

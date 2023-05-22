@@ -1,0 +1,33 @@
+{
+	"id": 322010,
+	"name": "艾琳",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Aileen",
+	"route": "Ellin",
+	"storyTitle": "骑士之梦·艾琳",
+	"storyDetail": "「精神与力量都要修行到位，才能使出琴大人那样沉稳的剑法！」",
+	"source": "在大世界与牌手艾琳的冒险挑战中完成挑战目标后获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "艾琳",
+			"description": "<color=#FFFFFFFF>我方角色使用本回合使用过的技能时：</color>少花费1个元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

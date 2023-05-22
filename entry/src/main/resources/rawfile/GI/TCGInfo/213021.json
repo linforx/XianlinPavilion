@@ -1,0 +1,70 @@
+{
+	"id": 213021,
+	"name": "交叉火力",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Xiangling",
+	"route": "Crossfire",
+	"storyTitle": "香菱·交叉火力",
+	"storyDetail": "在厨房里，这只是一种常规火力。",
+	"source": "在猫尾酒馆中邀请香菱进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S13022": {
+			"name": "锅巴出击",
+			"description": "召唤<color=#FFFFFFFF>$[C113021]</color>。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 3
+			},
+			"params": {
+				"C113021": "锅巴"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Xiangling_01"
+		},
+		"K103": {
+			"name": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2103}火元素，可发生元素反应：\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2101}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2102}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2103}{SPRITE_PRESET#2107}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "交叉火力",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1302]</color>时，装备此牌。\\n$[A1302]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13022]</color>。\\n装备有此牌的$[A1302]施放<color=#FFFFFFFF>$[S13022]</color>时，自身也会造成1点$[K103]。\\n（牌组中包含$[A1302]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1302": "香菱",
+				"S13022": "锅巴出击",
+				"K103": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1302]施放<color=#FFFFFFFF>$[S13022]</color>时，自身也会造成1点$[K103]。",
+			"subSkills": {
+				"S13022": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K103": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

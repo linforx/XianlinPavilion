@@ -1,0 +1,15 @@
+{
+	"id": 101724,
+	"name": "志琼的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100214",
+	"volume": [
+		{
+			"id": 101724,
+			"name": "志琼的信",
+			"description": "一位年轻冒险家留下的信，带着一点点苦涩的清心气味。",
+			"storyId": "353"
+		}
+	],
+	"route": "Zhiqiong's Letter"
+}

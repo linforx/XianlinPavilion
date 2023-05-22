@@ -1,0 +1,15 @@
+{
+	"id": 101606,
+	"name": "谜之传单",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101606",
+	"volume": [
+		{
+			"id": 101606,
+			"name": "谜之传单",
+			"description": "从希娜小姐后援会那里收到的传单，上面的形象好像有些眼熟…",
+			"storyId": "313"
+		}
+	],
+	"route": "Mysterious Flyer"
+}

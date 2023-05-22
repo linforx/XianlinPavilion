@@ -1,0 +1,15 @@
+{
+	"id": 120346,
+	"name": "古老的工程记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100112",
+	"volume": [
+		{
+			"id": 120346,
+			"name": "古老的工程记录",
+			"description": "古老的工程记录",
+			"storyId": "615"
+		}
+	],
+	"route": "Ancient Engineering Notes"
+}

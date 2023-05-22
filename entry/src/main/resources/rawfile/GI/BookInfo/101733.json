@@ -1,0 +1,15 @@
+{
+	"id": 101733,
+	"name": "枫原义庆的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101733",
+	"volume": [
+		{
+			"id": 101733,
+			"name": "枫原义庆的信",
+			"description": "藏在古旧花盆夹层中的空白纸张，沾上水后，就会浮现出尘封多年的秘密。\\n在将信上记述的真相告诉大家后，万叶说「这封信对你或许还有用」，便将它交给了你。",
+			"storyId": "362"
+		}
+	],
+	"route": "Kaedehara Yoshinori's Letter"
+}

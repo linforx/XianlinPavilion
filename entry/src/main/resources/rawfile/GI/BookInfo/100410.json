@@ -1,0 +1,15 @@
+{
+	"id": 100410,
+	"name": "古恩希尔德小传",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100410",
+	"volume": [
+		{
+			"id": 100410,
+			"name": "古恩希尔德小传",
+			"description": "近代蒙德史家埃克哈特·古恩希尔德筛选贵族时代的破碎传说，编写而成的历史著作，讲述了家族先祖古恩希尔德的故事。",
+			"storyId": "83"
+		}
+	],
+	"route": "Biography of Gunnhildr"
+}

@@ -1,0 +1,65 @@
+{
+	"id": 227011,
+	"name": "孢子增殖",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_DENDRO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Fungusgrass",
+	"route": "Proliferating Spores",
+	"storyTitle": "粉尘孢子云",
+	"storyDetail": "那是智慧远超一般生物的蕈兽之王布设的陷阱，鲜少有人能安然无恙地通过。",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度翠翎恐蕈中完成挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S27012": {
+			"name": "不稳定孢子云",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "MonsterSkill_S_FungusRaptor_01"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "孢子增殖",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2701]</color>时，装备此牌。\\n$[A2701]装备此牌后，立刻使用一次<color=#FFD780FF>$[S27012]</color>。\\n装备有此牌的$[A2701]，可累积的「活化激能」层数+1。\\n（牌组中包含$[A2701]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A2701": "翠翎恐蕈",
+				"S27012": "不稳定孢子云"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A2701]，可累积的「活化激能」层数+1。",
+			"subSkills": {
+				"S27012": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

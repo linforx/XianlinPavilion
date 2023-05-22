@@ -1,0 +1,15 @@
+{
+	"id": 101990,
+	"name": "饱饮之陵的记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101988",
+	"volume": [
+		{
+			"id": 101990,
+			"name": "饱饮之陵的记录",
+			"description": "从饱饮之陵中找到的石板。似乎是已经失落的文明留下的记录…",
+			"storyId": "441"
+		}
+	],
+	"route": "Record of the Tomb of Carouses"
+}

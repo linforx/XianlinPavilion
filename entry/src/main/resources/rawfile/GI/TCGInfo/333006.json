@@ -1,0 +1,33 @@
+{
+	"id": 333006,
+	"name": "蒙德土豆饼",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Tudoubin",
+	"route": "Mondstadt Hash Brown",
+	"storyTitle": "蒙德土豆饼",
+	"storyDetail": "香甜的口感，验证了某位提瓦特知名美食家的名言——能被冠以当地地名的菜肴，绝对不会难吃。",
+	"source": "达成牌手手册的奖励条件后领取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "蒙德土豆饼",
+			"description": "治疗目标角色2点。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,27 @@
+{
+	"id": 120191,
+	"name": "「黄铜面具」的教导·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120191,
+			"name": "「黄铜面具」的教导·其一",
+			"description": "「黄铜面具」的教导·其一",
+			"storyId": "520"
+		},
+		{
+			"id": 120192,
+			"name": "「黄铜面具」的教导·其二",
+			"description": "「黄铜面具」的教导·其二",
+			"storyId": "521"
+		},
+		{
+			"id": 120193,
+			"name": "「黄铜面具」的教导·其三",
+			"description": "「黄铜面具」的教导·其三",
+			"storyId": "522"
+		}
+	],
+	"route": "Dogma of the Brass Mask: Part I"
+}

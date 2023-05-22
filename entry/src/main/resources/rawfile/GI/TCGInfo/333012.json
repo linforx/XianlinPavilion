@@ -1,0 +1,33 @@
+{
+	"id": 333012,
+	"name": "黄油蟹蟹",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Huangyou",
+	"route": "Butter Crab",
+	"storyTitle": "黄油蟹蟹",
+	"storyDetail": "黄油浸润的蟹腿带着馥郁的香气，席卷味蕾，叫人无法抵抗这般鲜香的诱惑。\\n「再来一份谢谢！」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "黄油蟹蟹",
+			"description": "本回合中，所有我方角色下次受到的伤害-2。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120211,
+	"name": "一封遗留的书信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120211,
+			"name": "一封遗留的书信",
+			"description": "一封遗留的书信",
+			"storyId": "537"
+		}
+	],
+	"route": "An Abandoned Letter"
+}

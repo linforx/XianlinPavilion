@@ -1,0 +1,15 @@
+{
+	"id": 101706,
+	"name": "阿祇的地图",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100105",
+	"volume": [
+		{
+			"id": 101706,
+			"name": "阿祇的地图",
+			"description": "阿祇绘制的地图。上面有些标记。",
+			"storyId": "343"
+		}
+	],
+	"route": "Tsumi's Map"
+}

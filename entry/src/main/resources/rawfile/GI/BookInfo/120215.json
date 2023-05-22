@@ -1,0 +1,15 @@
+{
+	"id": 120215,
+	"name": "给阿德菲的密信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120215,
+			"name": "给阿德菲的密信",
+			"description": "给阿德菲的密信",
+			"storyId": "541"
+		}
+	],
+	"route": "Secret Letter to Aderfi"
+}

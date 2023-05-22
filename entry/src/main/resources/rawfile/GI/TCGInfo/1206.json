@@ -1,0 +1,133 @@
+{
+	"id": 1206,
+	"name": "神里绫人",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_HYDRO": "水元素",
+		"GCG_TAG_WEAPON_SWORD": "单手剑",
+		"GCG_TAG_NATION_INAZUMA": "稻妻"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Ayato",
+	"route": "Kamisato Ayato",
+	"storyTitle": "磐祭叶守·神里绫人",
+	"storyDetail": "神守之柏，已焕新材。",
+	"source": "在猫尾酒馆中邀请神里绫人进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K102": {
+			"name": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2102}水元素，可发生元素反应：\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2103}<color=#FFFFFFFF>蒸发</color>：本伤害+2\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2104}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2101}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）\\n{SPRITE_PRESET#2102}{SPRITE_PRESET#2107}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C112061": {
+			"name": "泷廻鉴花",
+			"description": "所附属角色<color=#FFFFFFFF>普通攻击</color>造成的伤害+1，造成的$[K100]变为$[K102]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K102": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"C112062": {
+			"name": "清净之园囿",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K102]。\\n<color=#FFFFFFFF>$[K3]：2</color>\\n\\n<color=#FFFFFFFF>此召唤物在场时：</color>我方角色「普通攻击」造成的伤害+1。",
+			"cost": null,
+			"params": {
+				"K102": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"12061": {
+			"name": "神里流·转",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_01",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"12062": {
+			"name": "神里流·镜花",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C112061]</color>。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"C112061": "泷廻鉴花"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Ayato_01",
+			"subSkills": {
+				"C112061": "cardSkill"
+			},
+			"keywords": {
+				"K102": "keyword"
+			}
+		},
+		"12063": {
+			"name": "神里流·水囿",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C112062]</color>。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"C112062": "清净之园囿"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Ayato_01_HD",
+			"subSkills": {
+				"C112062": "cardSkill"
+			},
+			"keywords": {
+				"K102": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 212061,
+			"name": "镜华风姿",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Ayato"
+		}
+	]
+}

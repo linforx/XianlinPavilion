@@ -1,0 +1,25 @@
+{
+	"id": 332002,
+	"name": "换班时间",
+	"type": "actionCard",
+	"tags": null,
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Event_Huanbanshijian",
+	"route": "Changing Shifts",
+	"storyTitle": "换班时间",
+	"storyDetail": "「大人的工作时间到了，小孩子快回去睡觉吧。」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "换班时间",
+			"description": "<color=#FFFFFFFF>我方下次执行「切换角色」行动时：</color>少花费1个元素骰。",
+			"cost": null,
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

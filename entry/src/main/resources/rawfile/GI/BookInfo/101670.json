@@ -1,0 +1,15 @@
+{
+	"id": 101670,
+	"name": "字迹娟秀的留信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100242",
+	"volume": [
+		{
+			"id": 101670,
+			"name": "字迹娟秀的留信",
+			"description": "字迹娟秀的留信",
+			"storyId": "328"
+		}
+	],
+	"route": "Beautifully-Written Note"
+}

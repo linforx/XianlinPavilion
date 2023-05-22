@@ -1,0 +1,85 @@
+{
+	"id": 222021,
+	"name": "镜锢之笼",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_HYDRO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Maidenwater",
+	"route": "Mirror Cage",
+	"storyTitle": "藏于镜中之秘",
+	"storyDetail": "「镜子啊，镜子啊，请你倒映…我的敌人，现在哪里？」",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度藏镜仕女中完成挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S22022": {
+			"name": "潋波绽破",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，目标角色附属<color=#FFFFFFFF>$[C122021]</color>。",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
+				"C122021": "水光破镜"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "MonsterSkill_S_FatuusMaidenWater_01"
+		},
+		"C122021": {
+			"name": "水光破镜",
+			"description": "所附属角色受到的水元素伤害+1。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n（同一方场上最多存在一个此状态）",
+			"cost": null,
+			"params": {
+				"K4": "<color=#FFFFFFFF>持续回合</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K4": {
+			"name": "<color=#FFFFFFFF>持续回合</color>",
+			"description": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "镜锢之笼",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A2202]</color>时，装备此牌。\\n$[A2202]装备此牌后，立刻使用一次<color=#FFD780FF>$[S22022]</color>。\\n装备有此牌的$[A2202]生成的<color=#FFFFFFFF>$[C122021]</color>获得以下效果：\\n初始$[K4]+1，并且会使所附属角色切换到其他角色时元素骰费用+1。\\n（牌组中包含$[A2202]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_HYDRO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A2202": "愚人众·藏镜仕女",
+				"S22022": "潋波绽破",
+				"C122021": "水光破镜",
+				"K4": "<color=#FFFFFFFF>持续回合</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A2202]生成的<color=#FFFFFFFF>$[C122021]</color>获得以下效果：\\n初始$[K4]+1，并且会使所附属角色切换到其他角色时元素骰费用+1。",
+			"subSkills": {
+				"S22022": "skill",
+				"C122021": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K4": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

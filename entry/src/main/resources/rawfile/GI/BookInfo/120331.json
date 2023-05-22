@@ -1,0 +1,33 @@
+{
+	"id": 120331,
+	"name": "赛事积分",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120331,
+			"name": "赛事积分",
+			"description": "（test)学院庆典比分_开始前",
+			"storyId": "596"
+		},
+		{
+			"id": 120332,
+			"name": "赛事积分",
+			"description": "（test)学院庆典比分_一阶段结束",
+			"storyId": "597"
+		},
+		{
+			"id": 120333,
+			"name": "赛事积分",
+			"description": "（test)学院庆典比分_二阶段结束",
+			"storyId": "598"
+		},
+		{
+			"id": 120334,
+			"name": "赛事积分",
+			"description": "（test)学院庆典比分_三阶段结束",
+			"storyId": "599"
+		}
+	],
+	"route": "Competition Scores"
+}

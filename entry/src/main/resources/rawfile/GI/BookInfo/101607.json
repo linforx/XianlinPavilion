@@ -1,0 +1,15 @@
+{
+	"id": 101607,
+	"name": "严谨的日程安排表",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100242",
+	"volume": [
+		{
+			"id": 101607,
+			"name": "严谨的日程安排表",
+			"description": "由你为凝光安排的日程表，各项事务都已罗列在上，清晰易读。",
+			"storyId": "314"
+		}
+	],
+	"route": "Rigorous Schedule"
+}

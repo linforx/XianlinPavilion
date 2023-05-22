@@ -1,0 +1,15 @@
+{
+	"id": 101711,
+	"name": "彦博的字条",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 101711,
+			"name": "彦博的字条",
+			"description": "还算完整的字条，其上字迹工整，似乎是为老朋友留下的信笺。",
+			"storyId": "344"
+		}
+	],
+	"route": "Yanbo's Note"
+}

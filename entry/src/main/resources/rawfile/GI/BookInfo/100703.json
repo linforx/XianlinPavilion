@@ -1,0 +1,15 @@
+{
+	"id": 100703,
+	"name": "感谢信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100111",
+	"volume": [
+		{
+			"id": 100703,
+			"name": "感谢信",
+			"description": "一张被揉皱了的纸条，纸条上的字迹很是潦草，能想象到写这份字条的人当时所处的状态。",
+			"storyId": "180"
+		}
+	],
+	"route": "Thank-You Letter"
+}

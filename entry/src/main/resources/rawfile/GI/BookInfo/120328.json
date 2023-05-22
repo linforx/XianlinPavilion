@@ -1,0 +1,15 @@
+{
+	"id": 120328,
+	"name": "桌上的资料",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120328,
+			"name": "桌上的资料",
+			"description": "（test)萨齐因相关的资料",
+			"storyId": "593"
+		}
+	],
+	"route": "Tabletop Documents"
+}

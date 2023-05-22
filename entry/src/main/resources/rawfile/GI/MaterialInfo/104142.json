@@ -1,0 +1,95 @@
+{
+	"name": "最胜紫晶断片",
+	"description": "角色突破素材。\\n「此身即是尘世最为殊胜尊贵之身。」",
+	"type": "角色突破素材",
+	"recipe": {
+		"15010": {
+			"104141": {
+				"icon": "UI_ItemIcon_104141",
+				"count": 3
+			}
+		},
+		"50079": {
+			"104112": {
+				"icon": "UI_ItemIcon_104112",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50080": {
+			"104122": {
+				"icon": "UI_ItemIcon_104122",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50081": {
+			"104132": {
+				"icon": "UI_ItemIcon_104132",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50082": {
+			"104152": {
+				"icon": "UI_ItemIcon_104152",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50083": {
+			"104162": {
+				"icon": "UI_ItemIcon_104162",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		},
+		"50084": {
+			"104172": {
+				"icon": "UI_ItemIcon_104172",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 3
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "40级以上无相之雷掉落",
+			"type": "single"
+		},
+		{
+			"name": "40级以上雷音权现掉落",
+			"type": "single"
+		},
+		{
+			"name": "40级以上掣电树掉落",
+			"type": "single"
+		},
+		{
+			"name": "合成获得",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104142",
+	"rank": 3,
+	"route": "Vajrada Amethyst Fragment"
+}

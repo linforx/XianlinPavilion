@@ -1,0 +1,33 @@
+{
+	"id": 312201,
+	"name": "酒渍船帽",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_Shuidanjian",
+	"route": "Wine-Stained Tricorne",
+	"storyTitle": "沉渊旧梦·酒渍船帽",
+	"storyDetail": "「酒渍的船帽被暴风扬入高空，逐浪乘波而去，而那注定失去故乡之人，进行着无望无求的纷争。」",
+	"source": "初始牌组中获取",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "酒渍船帽",
+			"description": "<color=#FFFFFFFF>角色使用技能或装备「{SPRITE_PRESET#3006}天赋」时：</color>少花费1个{SPRITE_PRESET#1102}<color=#80C0FFFF>水元素</color>。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>角色使用技能或装备「{SPRITE_PRESET#3006}天赋」时：</color>少花费1个{SPRITE_PRESET#1102}<color=#80C0FFFF>水元素</color>。（每回合1次）"
+		}
+	},
+	"relatedEntries": null
+}

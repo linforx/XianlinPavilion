@@ -1,0 +1,15 @@
+{
+	"id": 120021,
+	"name": "阿赫玛尔的故事",
+	"rank": 4,
+	"icon": "UI_ItemIcon_120021",
+	"volume": [
+		{
+			"id": 120021,
+			"name": "阿赫玛尔的故事",
+			"description": "有关某位不知名远古神王的故事，由飘忽的镇灵讲述，真实性不可查考",
+			"storyId": "429"
+		}
+	],
+	"route": "The Lay of Al-Ahmar"
+}

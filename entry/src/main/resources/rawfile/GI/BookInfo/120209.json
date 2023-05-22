@@ -1,0 +1,15 @@
+{
+	"id": 120209,
+	"name": "印有塔尼特徽记的记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120209,
+			"name": "印有塔尼特徽记的记录",
+			"description": "印有塔尼特徽记的记录",
+			"storyId": "535"
+		}
+	],
+	"route": "Tanit Emblem-Marked Records"
+}

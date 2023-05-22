@@ -1,0 +1,167 @@
+{
+	"id": 1605,
+	"name": "荒泷一斗",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_GEO": "岩元素",
+		"GCG_TAG_WEAPON_CLAYMORE": "双手剑",
+		"GCG_TAG_NATION_INAZUMA": "稻妻"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Itto",
+	"route": "Arataki Itto",
+	"storyTitle": "花坂豪快·荒泷一斗",
+	"storyDetail": "「荒泷卡牌游戏王中王一斗」",
+	"source": "在猫尾酒馆中邀请荒泷一斗进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"K1007": {
+			"name": "<color=#FFFFFFFF>乱神之怪力</color>",
+			"description": "<color=#FFFFFFFF>所附属角色进行<color=#FFFFFFFF>重击</color>时：</color>造成的伤害+1。如果<color=#FFFFFFFF>可用次数</color>至少为2，则少花费1个<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>。\\n<color=#FFFFFFFF><color=#FFFFFFFF>可用次数</color>：1</color>（可叠加，最多叠加到3次）"
+		},
+		"K106": {
+			"name": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2101}<color=#FFFFFFFF>结晶（冰）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2102}<color=#FFFFFFFF>结晶（水）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2103}<color=#FFFFFFFF>结晶（火）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。\\n{SPRITE_PRESET#2106}{SPRITE_PRESET#2104}<color=#FFFFFFFF>结晶（雷）</color>：本伤害+1，我方出战角色获得1点护盾（可叠加，最多2点）。"
+		},
+		"K51": {
+			"name": "<color=#FFFFFFFF>重击</color>",
+			"description": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+		},
+		"K309": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>",
+			"description": "可以用任意类型的元素骰子组合，来支付此类费用。"
+		},
+		"C116051": {
+			"name": "阿丑",
+			"description": "<color=#FFFFFFFF>我方出战角色受到伤害时：</color>抵消1点伤害。\\n<color=#FFFFFFFF>$[K3]：1</color>，耗尽时不弃置此牌。\\n<color=#FFFFFFFF>此召唤物在场期间可触发1次：</color>我方角色受到伤害后，为$[A1605]附属$[K1007]。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成1点$[K106]。",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>",
+				"A1605": "荒泷一斗",
+				"K1007": "<color=#FFFFFFFF>乱神之怪力</color>",
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"C116054": {
+			"name": "乱神之怪力",
+			"description": "<color=#FFFFFFFF>所附属角色进行$[K51]时：</color>造成的伤害+1。如果$[K3]至少为2，则少花费1个$[K309]。\\n<color=#FFFFFFFF>$[K3]：1</color>（可叠加，最多叠加到3次）",
+			"cost": null,
+			"params": {
+				"K51": "<color=#FFFFFFFF>重击</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>",
+				"K309": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K4": {
+			"name": "<color=#FFFFFFFF>持续回合</color>",
+			"description": "每回合结束阶段，<color=#FFFFFFFF>持续回合</color>-1；\\n<color=#FFFFFFFF>持续回合</color>耗尽后，立刻弃置此牌。"
+		},
+		"C116053": {
+			"name": "怒目鬼王",
+			"description": "所附属角色<color=#FFFFFFFF>普通攻击</color>造成的伤害+2，造成的$[K100]变为$[K106]。\\n<color=#FFFFFFFF>$[K4]：2</color>\\n<color=#FFFFFFFF>所附属角色普通攻击后：</color>为其附属$[K1007]。（每回合1次）",
+			"cost": null,
+			"params": {
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"K4": "<color=#FFFFFFFF>持续回合</color>",
+				"K1007": "<color=#FFFFFFFF>乱神之怪力</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"16051": {
+			"name": "喧哗屋传说",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_04",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"16052": {
+			"name": "魔杀绝技·赤牛发破！",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C116051]</color>，本角色附属<color=#FFFFFFFF>$[C116054]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116051": "阿丑",
+				"C116054": "乱神之怪力"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Itto_01",
+			"subSkills": {
+				"C116051": "cardSkill",
+				"C116054": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		},
+		"16053": {
+			"name": "最恶鬼王·一斗轰临！！",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C116053]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 5,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116053": "怒目鬼王"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Itto_01_HD",
+			"subSkills": {
+				"C116053": "cardSkill"
+			},
+			"keywords": {
+				"K106": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 216051,
+			"name": "荒泷第一",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Itto"
+		}
+	]
+}

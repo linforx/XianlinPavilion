@@ -1,0 +1,82 @@
+{
+	"id": 216021,
+	"name": "支援就交给我吧",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_GEO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Noel",
+	"route": "I Got Your Back",
+	"storyTitle": "诺艾尔·支援就交给我吧",
+	"storyDetail": "坚毅之心，才是最牢固的岩铠。",
+	"source": "在猫尾酒馆中邀请诺艾尔进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S16022": {
+			"name": "护心铠",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C116021]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"C116021": "护体岩铠"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Noel_01"
+		},
+		"C116021": {
+			"name": "护体岩铠",
+			"description": "为我方出战角色提供<color=#FFFFFFFF>2点$[K6]</color>。\\n此$[K6]耗尽前，我方受到的$[K100]减半。（向上取整）",
+			"cost": null,
+			"params": {
+				"K6": "{SPRITE_PRESET#4007}<color=#FFFFFFFF>护盾</color>",
+				"K100": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_SHEILD": "护盾"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "支援就交给我吧",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1602]</color>时，装备此牌。\\n$[A1602]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16022]</color>。\\n装备有此牌的$[A1602]生成的<color=#FFFFFFFF>$[C116021]</color>，会在$[A1602]使用<color=#FFFFFFFF>普通攻击</color>后，治疗我方所有角色1点。（每回合1次）\\n（牌组中包含$[A1602]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1602": "诺艾尔",
+				"S16022": "护心铠",
+				"C116021": "护体岩铠"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1602]生成的<color=#FFFFFFFF>$[C116021]</color>，会在$[A1602]使用<color=#FFFFFFFF>普通攻击</color>后，治疗我方所有角色1点。（每回合1次）",
+			"subSkills": {
+				"S16022": "skill",
+				"C116021": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

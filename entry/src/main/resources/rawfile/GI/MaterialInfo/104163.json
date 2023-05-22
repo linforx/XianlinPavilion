@@ -1,0 +1,91 @@
+{
+	"name": "哀叙冰玉块",
+	"description": "角色突破素材。\\n「…抱歉…\\n「让你们一起和我背负了整个世界的哀思。」",
+	"type": "角色突破素材",
+	"recipe": {
+		"15017": {
+			"104162": {
+				"icon": "UI_ItemIcon_104162",
+				"count": 3
+			}
+		},
+		"50133": {
+			"104113": {
+				"icon": "UI_ItemIcon_104113",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 9
+			}
+		},
+		"50134": {
+			"104123": {
+				"icon": "UI_ItemIcon_104123",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 9
+			}
+		},
+		"50135": {
+			"104133": {
+				"icon": "UI_ItemIcon_104133",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 9
+			}
+		},
+		"50136": {
+			"104143": {
+				"icon": "UI_ItemIcon_104143",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 9
+			}
+		},
+		"50137": {
+			"104153": {
+				"icon": "UI_ItemIcon_104153",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 9
+			}
+		},
+		"50138": {
+			"104173": {
+				"icon": "UI_ItemIcon_104173",
+				"count": 1
+			},
+			"104201": {
+				"icon": "UI_ItemIcon_104201",
+				"count": 9
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "60级以上急冻树掉落",
+			"type": "single"
+		},
+		{
+			"name": "60级以上无相之冰掉落",
+			"type": "single"
+		},
+		{
+			"name": "合成获得",
+			"type": "single"
+		}
+	],
+	"icon": "UI_ItemIcon_104163",
+	"rank": 4,
+	"route": "Shivada Jade Chunk"
+}

@@ -1,0 +1,15 @@
+{
+	"id": 100788,
+	"name": "丘丘语速查手册",
+	"rank": 4,
+	"icon": "UI_ItemIcon_100788",
+	"volume": [
+		{
+			"id": 100788,
+			"name": "丘丘语速查手册",
+			"description": "民俗学家艾拉·马斯克编写的丘丘语实用速查手册，但其可靠度仍需实际验证。",
+			"storyId": "197"
+		}
+	],
+	"route": "Handy Handbook of Hilichurlian"
+}

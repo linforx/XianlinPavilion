@@ -1,0 +1,15 @@
+{
+	"id": 120018,
+	"name": "牧童与魔瓶的故事",
+	"rank": 4,
+	"icon": "UI_ItemIcon_120018",
+	"volume": [
+		{
+			"id": 120018,
+			"name": "牧童与魔瓶的故事",
+			"description": "牧童在沙漠中偶遇银瓶，以及其中囚禁的不速之客的故事。",
+			"storyId": "426"
+		}
+	],
+	"route": "The Shepherd and the Magic Bottle"
+}

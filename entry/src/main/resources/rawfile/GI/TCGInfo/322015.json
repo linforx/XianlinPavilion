@@ -1,0 +1,33 @@
+{
+	"id": 322015,
+	"name": "旭东",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Xudong",
+	"route": "Xudong",
+	"storyTitle": "吃饱再说·旭东",
+	"storyDetail": "「有问题？哎呀，吃饱再说也不迟。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "旭东",
+			"description": "<color=#FFFFFFFF>打出「{SPRITE_PRESET#3101}料理」事件牌时：</color>少花费2个元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

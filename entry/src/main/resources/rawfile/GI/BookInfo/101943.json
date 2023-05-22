@@ -1,0 +1,15 @@
+{
+	"id": 101943,
+	"name": "染红的布料",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101926",
+	"volume": [
+		{
+			"id": 101943,
+			"name": "染红的布料",
+			"description": "",
+			"storyId": "414"
+		}
+	],
+	"route": "Red-Dyed Fabric"
+}

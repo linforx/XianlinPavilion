@@ -1,0 +1,15 @@
+{
+	"id": 100387,
+	"name": "《古华派的大师兄》",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100178",
+	"volume": [
+		{
+			"id": 100387,
+			"name": "《古华派的大师兄》",
+			"description": "常九爷所写的小说，从其厚度和重量可以看出他投入的心血。",
+			"storyId": "65"
+		}
+	],
+	"route": "First Apprentice of Guhua"
+}

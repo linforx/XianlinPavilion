@@ -1,0 +1,15 @@
+{
+	"id": 120325,
+	"name": "某人的备忘",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120001",
+	"volume": [
+		{
+			"id": 120325,
+			"name": "某人的备忘",
+			"description": "某人的备忘",
+			"storyId": "602"
+		}
+	],
+	"route": "Someone's Memo"
+}

@@ -1,0 +1,33 @@
+{
+	"id": 333007,
+	"name": "烤蘑菇披萨",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_FOOD": "料理"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Food_Kaomogupisa",
+	"route": "Mushroom Pizza",
+	"storyTitle": "烤蘑菇披萨",
+	"storyDetail": "据说有学者曾通过精密计算，研究出披萨的「最公平切法」，但由于太麻烦，根本没有人使用…",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "烤蘑菇披萨",
+			"description": "治疗目标角色1点，两回合内结束阶段再治疗此角色1点。\\n（每回合每个角色最多食用1次「{SPRITE_PRESET#3101}料理」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_FOOD": "料理"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

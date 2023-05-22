@@ -1,0 +1,15 @@
+{
+	"id": 120200,
+	"name": "征发令石板",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120200,
+			"name": "征发令石板",
+			"description": "征发令石板",
+			"storyId": "529"
+		}
+	],
+	"route": "Conscription Slate"
+}

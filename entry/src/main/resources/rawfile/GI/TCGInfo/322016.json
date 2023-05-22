@@ -1,0 +1,33 @@
+{
+	"id": 322016,
+	"name": "迪娜泽黛",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Dina",
+	"route": "Dunyarzad",
+	"storyTitle": "挚诚信心·迪娜泽黛",
+	"storyDetail": "「我们是为了不留遗憾而活着的，对吗？」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "迪娜泽黛",
+			"description": "<color=#FFFFFFFF>打出「{SPRITE_PRESET#3103}伙伴」支援牌时：</color>少花费1个元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

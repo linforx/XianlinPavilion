@@ -1,0 +1,15 @@
+{
+	"id": 120236,
+	"name": "仓库物资订单",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100437",
+	"volume": [
+		{
+			"id": 120236,
+			"name": "仓库物资订单",
+			"description": "仓库物资订单",
+			"storyId": "554"
+		}
+	],
+	"route": "Warehouse Inventory Records"
+}

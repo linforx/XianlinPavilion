@@ -1,0 +1,15 @@
+{
+	"id": 100843,
+	"name": "无名岛屿的壁画",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100721",
+	"volume": [
+		{
+			"id": 100843,
+			"name": "无名岛屿的壁画",
+			"description": "从无名岛屿的石壁上记录下来的壁画。画中似乎描绘着一次营救的场景…",
+			"storyId": "203"
+		}
+	],
+	"route": "Nameless Island Mural"
+}

@@ -1,0 +1,100 @@
+{
+	"id": 214081,
+	"name": "神篱之御荫",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ELECTRO": 3,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Yae",
+	"route": "The Shrine's Sacred Shade",
+	"storyTitle": "八重神子·神篱之御荫",
+	"storyDetail": "「欸…雷光凄美啊…」",
+	"source": "在猫尾酒馆中邀请八重神子进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S14083": {
+			"name": "大密法·天狐显真",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；如果我方场上存在<color=#FFFFFFFF>$[C114081]</color>，则将其消灭，然后生成<color=#FFFFFFFF>$[C114083]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 4,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114081": "杀生樱",
+				"C114083": "天狐霆雷"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Yae_01_HD"
+		},
+		"C114081": {
+			"name": "杀生樱",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K104]；\\n<color=#FFFFFFFF>$[K3]：3</color>（可叠加，最多叠加到6次）\\n<color=#FFFFFFFF>我方宣布结束时：</color>如果此牌的$[K3]至少为4，则造成1点$[K104]。（需消耗$[K3]）",
+			"cost": null,
+			"params": {
+				"K104": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"S14082": {
+			"name": "野干役咒·杀生樱",
+			"description": "召唤<color=#FFFFFFFF>$[C114081]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"C114081": "杀生樱"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Yae_01"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "神篱之御荫",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1408]</color>时，装备此牌。\\n$[A1408]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14083]</color>。\\n装备有此牌的$[A1408]通过<color=#FFFFFFFF>$[S14083]</color>消灭了<color=#FFFFFFFF>$[C114081]</color>后，本回合下次使用<color=#FFFFFFFF>$[S14082]</color>时少花费2个元素骰。\\n（牌组中包含$[A1408]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1408": "八重神子",
+				"S14083": "大密法·天狐显真",
+				"C114081": "杀生樱",
+				"S14082": "野干役咒·杀生樱"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1408]通过<color=#FFFFFFFF>$[S14083]</color>消灭了<color=#FFFFFFFF>$[C114081]</color>后，本回合下次使用<color=#FFFFFFFF>$[S14082]</color>时少花费2个元素骰。",
+			"subSkills": {
+				"S14083": "skill",
+				"C114081": "cardSkill",
+				"S14082": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

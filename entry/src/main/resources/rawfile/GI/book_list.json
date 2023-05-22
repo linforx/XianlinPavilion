@@ -1,0 +1,1880 @@
+{
+	"items": {
+		"1": {
+			"id": 1,
+			"name": "蒲公英海的狐狸",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100188",
+			"route": "The Fox in the Dandelion Sea"
+		},
+		"2": {
+			"id": 2,
+			"name": "丘丘人诗歌选",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100196",
+			"route": "Hilichurl Ballad Selection"
+		},
+		"3": {
+			"id": 3,
+			"name": "少女薇拉的忧郁",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100178",
+			"route": "Vera's Melancholy"
+		},
+		"4": {
+			"id": 4,
+			"name": "野猪公主",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100202",
+			"route": "The Boar Princess"
+		},
+		"5": {
+			"id": 5,
+			"name": "蒙德高塔",
+			"rank": 2,
+			"icon": "UI_ItemIcon_100208",
+			"route": "The Mondstadt Tower"
+		},
+		"21": {
+			"id": 21,
+			"name": "白之公主与六侏儒",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100215",
+			"route": "The Pale Princess and the Six Pygmies"
+		},
+		"24": {
+			"id": 24,
+			"name": "温妮莎传奇",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100182",
+			"route": "The Legend of Vennessa"
+		},
+		"1006": {
+			"id": 1006,
+			"name": "冒险家罗尔德的日志",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100226",
+			"route": "Diary of Roald the Adventurer"
+		},
+		"1007": {
+			"id": 1007,
+			"name": "谁人的日志",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100229",
+			"route": "Someone's Diary"
+		},
+		"1008": {
+			"id": 1008,
+			"name": "绝云记闻",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100399",
+			"route": "Records of Jueyun"
+		},
+		"1009": {
+			"id": 1009,
+			"name": "丘丘人习俗考察",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100406",
+			"route": "Hilichurl Cultural Customs"
+		},
+		"1010": {
+			"id": 1010,
+			"name": "侍从骑士之歌",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100411",
+			"route": "Ballads of the Squire"
+		},
+		"1011": {
+			"id": 1011,
+			"name": "神霄折戟录",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100364",
+			"route": "Legend of the Shattered Halberd"
+		},
+		"1012": {
+			"id": 1012,
+			"name": "碎梦奇珍",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Heart's Desire"
+		},
+		"1014": {
+			"id": 1014,
+			"name": "清泉之心",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100480",
+			"route": "Heart of Clear Springs"
+		},
+		"1015": {
+			"id": 1015,
+			"name": "丘丘语诗歌试作",
+			"rank": 2,
+			"icon": "UI_ItemIcon_100003",
+			"route": "Draft Hilichurl Ballads"
+		},
+		"1016": {
+			"id": 1016,
+			"name": "浮浪记",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100565",
+			"route": "Tales From the Waves"
+		},
+		"1017": {
+			"id": 1017,
+			"name": "犬又二分之一",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100568",
+			"route": "Hex & Hound"
+		},
+		"1018": {
+			"id": 1018,
+			"name": "竹林月夜",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100573",
+			"route": "Moonlit Bamboo Forest"
+		},
+		"1019": {
+			"id": 1019,
+			"name": "醉客轶事",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100577",
+			"route": "A Drunkard's Tale"
+		},
+		"1022": {
+			"id": 1022,
+			"name": "帝君尘游记",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100578",
+			"route": "Rex Incognito"
+		},
+		"1023": {
+			"id": 1023,
+			"name": "荒山孤剑录",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100579",
+			"route": "Legend of the Lone Sword"
+		},
+		"1024": {
+			"id": 1024,
+			"name": "璃月风土志",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100403",
+			"route": "Customs of Liyue"
+		},
+		"1025": {
+			"id": 1025,
+			"name": "连心珠",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100642",
+			"route": "String of Pearls"
+		},
+		"1026": {
+			"id": 1026,
+			"name": "侠客记",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100402",
+			"route": "Records of the Gallant"
+		},
+		"1027": {
+			"id": 1027,
+			"name": "林间风",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100201",
+			"route": "Breeze Amidst the Forest"
+		},
+		"1028": {
+			"id": 1028,
+			"name": "提瓦特游览指南",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100222",
+			"route": "Teyvat Travel Guide"
+		},
+		"1029": {
+			"id": 1029,
+			"name": "鹮巷物语",
+			"rank": 4,
+			"icon": "UI_ItemIcon_101507",
+			"route": "Toki Alley Tales"
+		},
+		"1030": {
+			"id": 1030,
+			"name": "新六狐传",
+			"rank": 4,
+			"icon": "UI_ItemIcon_101523",
+			"route": "New Chronicles of the Six Kitsune"
+		},
+		"1031": {
+			"id": 1031,
+			"name": "哈玛瓦兰战记",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101529",
+			"route": "The Saga of Hamavaran"
+		},
+		"1032": {
+			"id": 1032,
+			"name": "沉秋拾剑录",
+			"rank": 4,
+			"icon": "UI_ItemIcon_101532",
+			"route": "A Legend of Sword"
+		},
+		"1033": {
+			"id": 1033,
+			"name": "亡国的美奈姬",
+			"rank": 4,
+			"icon": "UI_ItemIcon_101548",
+			"route": "Princess Mina of the Fallen Nation"
+		},
+		"1034": {
+			"id": 1034,
+			"name": "菲谢尔皇女夜谭",
+			"rank": 4,
+			"icon": "UI_ItemIcon_101554",
+			"route": "Flowers for Princess Fischl"
+		},
+		"1035": {
+			"id": 1035,
+			"name": "珍说澄研真影打",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101599",
+			"route": "Treasured Tales of the Chouken Shinkageuchi"
+		},
+		"1036": {
+			"id": 1036,
+			"name": "白夜国馆藏",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100930",
+			"route": "The Byakuyakoku Collection"
+		},
+		"1037": {
+			"id": 1037,
+			"name": "希鲁伊与希琳的故事",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120019",
+			"route": "The Tale of Shiruyeh and Shirin"
+		},
+		"1038": {
+			"id": 1038,
+			"name": "遐叶论经",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120022",
+			"route": "The Folio of Foliage"
+		},
+		"1039": {
+			"id": 1039,
+			"name": "浮槃歌卷",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120025",
+			"route": "Scroll of Streaming Song"
+		},
+		"1040": {
+			"id": 1040,
+			"name": "千夜故事集",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120074",
+			"route": "A Thousand Nights"
+		},
+		"100181": {
+			"id": 100181,
+			"name": "与神性同行·序言",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100181",
+			"route": "Along with Divinity: Prologue"
+		},
+		"100222": {
+			"id": 100222,
+			"name": "千年孤独",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100221",
+			"route": "1000 Years of Loneliness"
+		},
+		"100242": {
+			"id": 100242,
+			"name": "给盗宝团的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100242",
+			"route": "Letter to the Treasure Hoarders"
+		},
+		"100246": {
+			"id": 100246,
+			"name": "《百人一揆～最强武斗大会篇～》样稿",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100110",
+			"route": "Draft Manuscript of \"Hyakunin Ikki: The Greatest Battle\""
+		},
+		"100348": {
+			"id": 100348,
+			"name": "古德温的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Godwin's Letter"
+		},
+		"100350": {
+			"id": 100350,
+			"name": "可莉的本子",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100350",
+			"route": "Klee's Notebook"
+		},
+		"100352": {
+			"id": 100352,
+			"name": "杜拉夫的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Draff's Letter"
+		},
+		"100354": {
+			"id": 100354,
+			"name": "莎拉的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Sara's Letter"
+		},
+		"100357": {
+			"id": 100357,
+			"name": "昆恩的特调酒",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Quinn's Special"
+		},
+		"100358": {
+			"id": 100358,
+			"name": "玛格丽特的特调酒",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Margaret's Special"
+		},
+		"100359": {
+			"id": 100359,
+			"name": "杰克的特调酒",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Jack's Special"
+		},
+		"100360": {
+			"id": 100360,
+			"name": "杜拉夫的特调酒",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Draff's Special"
+		},
+		"100366": {
+			"id": 100366,
+			"name": "岩神传说：炉灶之神",
+			"rank": 2,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Legend of the Geo Archon: God of the Stove"
+		},
+		"100387": {
+			"id": 100387,
+			"name": "《古华派的大师兄》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100178",
+			"route": "First Apprentice of Guhua"
+		},
+		"100392": {
+			"id": 100392,
+			"name": "孤峡的藏宝图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "Treasure Map of Lone Gorge"
+		},
+		"100401": {
+			"id": 100401,
+			"name": "玑衡经",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100401",
+			"route": "Verses of Equilibrium"
+		},
+		"100404": {
+			"id": 100404,
+			"name": "石书辑录·卷一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100404",
+			"route": "Stone Tablet Compilations: Vol. I"
+		},
+		"100405": {
+			"id": 100405,
+			"name": "天衡绝倒集",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100405",
+			"route": "Humor From Tianheng"
+		},
+		"100409": {
+			"id": 100409,
+			"name": "列王与宗室史·序",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100409",
+			"route": "History of Kings and Clans: Prologue"
+		},
+		"100410": {
+			"id": 100410,
+			"name": "古恩希尔德小传",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100410",
+			"route": "Biography of Gunnhildr"
+		},
+		"100413": {
+			"id": 100413,
+			"name": "提瓦特野外救急食谱",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100413",
+			"route": "Teyvat Wilderness Survivalist's Recipes"
+		},
+		"100426": {
+			"id": 100426,
+			"name": "护法仙众夜叉录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100426",
+			"route": "Yakshas: The Guardian Adepti"
+		},
+		"100442": {
+			"id": 100442,
+			"name": "旅行者的笔记",
+			"rank": 2,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Traveler's Notes"
+		},
+		"100452": {
+			"id": 100452,
+			"name": "掇星攫辰天君的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Letter from Starsnatcher"
+		},
+		"100460": {
+			"id": 100460,
+			"name": "从石碑上抄下来的文字",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100362",
+			"route": "Transcription from a stone tablet"
+		},
+		"100469": {
+			"id": 100469,
+			"name": "存疑的丘丘人语单句",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100003",
+			"route": "Draft Lines of Hilichurlian Poetry"
+		},
+		"100470": {
+			"id": 100470,
+			"name": "(test)艾拉·马斯克的诗歌翻译",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100229",
+			"route": "Other Undefined"
+		},
+		"100484": {
+			"id": 100484,
+			"name": "霖铃精选诗集",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100484",
+			"route": "Linling's Anthology of Selected Poetry"
+		},
+		"100562": {
+			"id": 100562,
+			"name": "残破的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Ragged Notebook"
+		},
+		"100564": {
+			"id": 100564,
+			"name": "骑士团指导手册·第五版",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100564",
+			"route": "Knights of Favonius Handbook - 5th Edition"
+		},
+		"100616": {
+			"id": 100616,
+			"name": "百货名鉴纵览",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100616",
+			"route": "An A-to-Z Guide to General Goods"
+		},
+		"100617": {
+			"id": 100617,
+			"name": "山与海之书",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100617",
+			"route": "Of Mountains and Seas"
+		},
+		"100641": {
+			"id": 100641,
+			"name": "璃月风土志·琉璃百合",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100403",
+			"route": "Customs of Liyue: Glaze Lilies"
+		},
+		"100645": {
+			"id": 100645,
+			"name": "古老的考察日志·其之一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100645",
+			"route": "Ancient Investigation Journal: Part I"
+		},
+		"100703": {
+			"id": 100703,
+			"name": "感谢信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100111",
+			"route": "Thank-You Letter"
+		},
+		"100711": {
+			"id": 100711,
+			"name": "藏宝图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100171",
+			"route": "Treasure Map"
+		},
+		"100712": {
+			"id": 100712,
+			"name": "奇怪的纸条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Strange Note"
+		},
+		"100715": {
+			"id": 100715,
+			"name": "珠玑宝矿",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100616",
+			"route": "Meadow of Gems"
+		},
+		"100732": {
+			"id": 100732,
+			"name": "侠客记·黑貉",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100402",
+			"route": "Records of the Gallant: Black Raccoons"
+		},
+		"100740": {
+			"id": 100740,
+			"name": "遗落的冒险家笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100226",
+			"route": "Lost Adventure Notebook"
+		},
+		"100788": {
+			"id": 100788,
+			"name": "丘丘语速查手册",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100788",
+			"route": "Handy Handbook of Hilichurlian"
+		},
+		"100798": {
+			"id": 100798,
+			"name": "「御神签」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100798",
+			"route": "Fortune Slip"
+		},
+		"100807": {
+			"id": 100807,
+			"name": "诡谲的「御神签」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100798",
+			"route": "Strange Fortune Slip"
+		},
+		"100832": {
+			"id": 100832,
+			"name": "有些残破的木板",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100307",
+			"route": "Slightly Damaged Wooden Plank"
+		},
+		"100833": {
+			"id": 100833,
+			"name": "略有腐坏的木板",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100307",
+			"route": "Somewhat Rotten Wooden Plank"
+		},
+		"100841": {
+			"id": 100841,
+			"name": "「危危岛」的壁画",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Minacious Isle Mural"
+		},
+		"100842": {
+			"id": 100842,
+			"name": "「破破岛」的壁画",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Broken Isle Mural"
+		},
+		"100843": {
+			"id": 100843,
+			"name": "无名岛屿的壁画",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Nameless Island Mural"
+		},
+		"100844": {
+			"id": 100844,
+			"name": "「双双岛」的壁画",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Twinning Isle Mural"
+		},
+		"100845": {
+			"id": 100845,
+			"name": "笔迹已经模糊的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Illegible Notes"
+		},
+		"100851": {
+			"id": 100851,
+			"name": "无名小岛的壁画",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Nameless Islet Mural"
+		},
+		"100899": {
+			"id": 100899,
+			"name": "林藏的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Rinzou's Letter"
+		},
+		"100905": {
+			"id": 100905,
+			"name": "《第七个武士》台本",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "\"The Seventh Samurai\" Script"
+		},
+		"100907": {
+			"id": 100907,
+			"name": "某人留下的纸条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "A Note Left by Someone"
+		},
+		"100916": {
+			"id": 100916,
+			"name": "略带香味的书信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100356",
+			"route": "Lightly-Perfumed Letter"
+		},
+		"100929": {
+			"id": 100929,
+			"name": "常世国龙蛇传",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100929",
+			"route": "The Serpent and Drakes of Tokoyokoku"
+		},
+		"100969": {
+			"id": 100969,
+			"name": "一封家信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Family Letter"
+		},
+		"100970": {
+			"id": 100970,
+			"name": "残破的信笺",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Tattered Letter"
+		},
+		"100971": {
+			"id": 100971,
+			"name": "药师的笔记本·一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Pharmacist's Notebook (I)"
+		},
+		"100974": {
+			"id": 100974,
+			"name": "开封的信笺",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Unsealed Letter"
+		},
+		"100975": {
+			"id": 100975,
+			"name": "稻叶藤三郎久藏 绝笔",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Inaba Tousaburou Kyuuzou's Final Words"
+		},
+		"100978": {
+			"id": 100978,
+			"name": "「神居岛崩炮」位置图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "Kamuijima Cannon Map"
+		},
+		"100979": {
+			"id": 100979,
+			"name": "秘密笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Secret Notes"
+		},
+		"100986": {
+			"id": 100986,
+			"name": "残缺的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Incomplete Notes"
+		},
+		"100987": {
+			"id": 100987,
+			"name": "破烂的纸条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Tattered Paper"
+		},
+		"101528": {
+			"id": 101528,
+			"name": "珊瑚宫记",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101528",
+			"route": "Sangonomiya Chronicles"
+		},
+		"101537": {
+			"id": 101537,
+			"name": "神樱大祓要略",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100230",
+			"route": "Sacred Sakura Cleansing Summary"
+		},
+		"101543": {
+			"id": 101543,
+			"name": "天领奉行上奏公文",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101543",
+			"route": "Official Tenryou Commission Document"
+		},
+		"101555": {
+			"id": 101555,
+			"name": "鹮巷物语·六",
+			"rank": 4,
+			"icon": "UI_ItemIcon_101507",
+			"route": "Toki Alley Tales (VI)"
+		},
+		"101559": {
+			"id": 101559,
+			"name": "装有信件的漂流瓶",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100349",
+			"route": "Drifting Bottle With Letter"
+		},
+		"101560": {
+			"id": 101560,
+			"name": "鬼武道",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100230",
+			"route": "Onibudou"
+		},
+		"101580": {
+			"id": 101580,
+			"name": "留给岻伽的「藏宝图」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "A Treasure Map Left for Shitoki"
+		},
+		"101590": {
+			"id": 101590,
+			"name": "十分潦草的藏宝图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101590",
+			"route": "Scrawled Treasure Map"
+		},
+		"101596": {
+			"id": 101596,
+			"name": "珊瑚宫民间信仰初勘",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101596",
+			"route": "A Preliminary Study of Sangonomiya Folk Belief"
+		},
+		"101597": {
+			"id": 101597,
+			"name": "巫女曚云小传",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101597",
+			"route": "The Life of Mouun the Shrine Maiden"
+		},
+		"101598": {
+			"id": 101598,
+			"name": "「东王」史辩",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101598",
+			"route": "Debates on the \"Viceroy of the East\""
+		},
+		"101606": {
+			"id": 101606,
+			"name": "谜之传单",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101606",
+			"route": "Mysterious Flyer"
+		},
+		"101607": {
+			"id": 101607,
+			"name": "严谨的日程安排表",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100242",
+			"route": "Rigorous Schedule"
+		},
+		"101608": {
+			"id": 101608,
+			"name": "简要的日程安排表",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100242",
+			"route": "Simple Schedule"
+		},
+		"101613": {
+			"id": 101613,
+			"name": "村庄变迁记录",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100230",
+			"route": "Records of a Changing Village"
+		},
+		"101615": {
+			"id": 101615,
+			"name": "山石杂谈",
+			"rank": 3,
+			"icon": "UI_ItemIcon_100230",
+			"route": "Mountainous Miscellany"
+		},
+		"101616": {
+			"id": 101616,
+			"name": "字迹工整的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Neatly-Written Note"
+		},
+		"101621": {
+			"id": 101621,
+			"name": "盗宝团的藏宝图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "Treasure Hoarders' Treasure Map"
+		},
+		"101664": {
+			"id": 101664,
+			"name": "特别的「御神签」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100798",
+			"route": "Special Fortune Slip"
+		},
+		"101666": {
+			"id": 101666,
+			"name": "「磐键」位置示意图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "Bedrock Key Location Diagram"
+		},
+		"101670": {
+			"id": 101670,
+			"name": "字迹娟秀的留信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100242",
+			"route": "Beautifully-Written Note"
+		},
+		"101672": {
+			"id": 101672,
+			"name": "柳达希卡的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Lyudochka's Letter"
+		},
+		"101674": {
+			"id": 101674,
+			"name": "「愚人众暗语表」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Fatui Code Sheet"
+		},
+		"101679": {
+			"id": 101679,
+			"name": "柳达希卡的签文",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100798",
+			"route": "Lyudochka's Fortune Slip"
+		},
+		"101706": {
+			"id": 101706,
+			"name": "阿祇的地图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100105",
+			"route": "Tsumi's Map"
+		},
+		"101711": {
+			"id": 101711,
+			"name": "彦博的字条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Yanbo's Note"
+		},
+		"101712": {
+			"id": 101712,
+			"name": "尼古拉的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Nikolay's Letter"
+		},
+		"101716": {
+			"id": 101716,
+			"name": "荒泷盛世豪鼓大祭典！",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101716",
+			"route": "The Almighty Arataki Great and Glorious Drumalong Festival!"
+		},
+		"101717": {
+			"id": 101717,
+			"name": "工地记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101717",
+			"route": "Worksite Records"
+		},
+		"101721": {
+			"id": 101721,
+			"name": "陈旧的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Old Notes"
+		},
+		"101724": {
+			"id": 101724,
+			"name": "志琼的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Zhiqiong's Letter"
+		},
+		"101725": {
+			"id": 101725,
+			"name": "到港时刻表",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100105",
+			"route": "Arrival Schedule"
+		},
+		"101726": {
+			"id": 101726,
+			"name": "五歌仙资料汇总",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Five Kasen Summary"
+		},
+		"101727": {
+			"id": 101727,
+			"name": "《五歌仙容彩·翠光篇》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101726",
+			"route": "The Five Kasen's Splendor: Suikou"
+		},
+		"101732": {
+			"id": 101732,
+			"name": "古老的锻造图谱",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101732",
+			"route": "Ancient Forging Blueprint"
+		},
+		"101733": {
+			"id": 101733,
+			"name": "枫原义庆的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101733",
+			"route": "Kaedehara Yoshinori's Letter"
+		},
+		"101760": {
+			"id": 101760,
+			"name": "秘宝所藏之海图·全",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "A Complete Chart of Ako's Treasure"
+		},
+		"101764": {
+			"id": 101764,
+			"name": "《异邦人喧哗旅：吹向金发武士的死亡之风》台本",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "\"Outlander Brigade: When the Wind of Death Blew Towards the Blond Samurai\" Script"
+		},
+		"101765": {
+			"id": 101765,
+			"name": "《无生忍》台本",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "\"Mushounin\" Script"
+		},
+		"101767": {
+			"id": 101767,
+			"name": "转生成雷电将军，然后天下无敌",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101767",
+			"route": "Shogun Almighty: Reborn as Raiden With Unlimited Power"
+		},
+		"101768": {
+			"id": 101768,
+			"name": "拜托了我的狐仙宫司",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101768",
+			"route": "Pretty Please, Kitsune Guuji?"
+		},
+		"101769": {
+			"id": 101769,
+			"name": "出发吧！嘟嘟可",
+			"rank": 3,
+			"icon": "UI_ItemIcon_101646",
+			"route": "Let's Go, Dodoco!"
+		},
+		"101770": {
+			"id": 101770,
+			"name": "赤穗秘宝所藏·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100171",
+			"route": "Ako's Treasure: Location 1"
+		},
+		"101783": {
+			"id": 101783,
+			"name": "神秘的信笺",
+			"rank": 1,
+			"icon": "UI_ItemIcon_108087",
+			"route": "Mysterious Letter"
+		},
+		"101798": {
+			"id": 101798,
+			"name": "航路留书",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100171",
+			"route": "Sea Route Log"
+		},
+		"101799": {
+			"id": 101799,
+			"name": "循路留书·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100171",
+			"route": "Route Log: I"
+		},
+		"101833": {
+			"id": 101833,
+			"name": "「紧急调整计划图」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "\"Emergency Adjustment Plan\""
+		},
+		"101838": {
+			"id": 101838,
+			"name": "一份字迹优美的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Elegantly-Written Note"
+		},
+		"101839": {
+			"id": 101839,
+			"name": "一封信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "A Letter"
+		},
+		"101866": {
+			"id": 101866,
+			"name": "一张纸条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "A Note"
+		},
+		"101893": {
+			"id": 101893,
+			"name": "法医室的研究日志内页",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Forensic Office Research Log Excerpt"
+		},
+		"101894": {
+			"id": 101894,
+			"name": "似乎是什么人手写的笔记…",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Some Person's Notes"
+		},
+		"101899": {
+			"id": 101899,
+			"name": "老旧发黄的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "Old Yellowed Notes"
+		},
+		"101901": {
+			"id": 101901,
+			"name": "一份似乎能防水的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100214",
+			"route": "A Seemingly Waterproof Note"
+		},
+		"101934": {
+			"id": 101934,
+			"name": "线人暗号表",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101934",
+			"route": "Informant Code Chart"
+		},
+		"101943": {
+			"id": 101943,
+			"name": "染红的布料",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101926",
+			"route": "Red-Dyed Fabric"
+		},
+		"101945": {
+			"id": 101945,
+			"name": "镀银怀表",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101945",
+			"route": "Silver Pocket Watch"
+		},
+		"101964": {
+			"id": 101964,
+			"name": "佩尔西科夫的手稿",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100105",
+			"route": "Persikov's Manuscript"
+		},
+		"101967": {
+			"id": 101967,
+			"name": "箱底的藏宝图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100173",
+			"route": "Treasure Map in a Box"
+		},
+		"101988": {
+			"id": 101988,
+			"name": "透明遗迹的记录·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101988",
+			"route": "Transparent Ruins Record (I)"
+		},
+		"101989": {
+			"id": 101989,
+			"name": "吞羊岩的记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101988",
+			"route": "Record of Lamb-Devourer Rock"
+		},
+		"101990": {
+			"id": 101990,
+			"name": "饱饮之陵的记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101988",
+			"route": "Record of the Tomb of Carouses"
+		},
+		"101991": {
+			"id": 101991,
+			"name": "索赫尔的考古笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101991",
+			"route": "Soheil's Old Notes"
+		},
+		"101992": {
+			"id": 101992,
+			"name": "阿如的倒影的记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101988",
+			"route": "Record of Aaru's Shut"
+		},
+		"101993": {
+			"id": 101993,
+			"name": "暮夜剧团团长的手稿",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Twilight Theater Head's Notes"
+		},
+		"101995": {
+			"id": 101995,
+			"name": "没有署名的纸条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100111",
+			"route": "Unsigned Note"
+		},
+		"101999": {
+			"id": 101999,
+			"name": "雇主的命令",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101999",
+			"route": "Employer's Orders"
+		},
+		"120009": {
+			"id": 120009,
+			"name": "诡异的羊皮卷",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120009",
+			"route": "Strange Parchment"
+		},
+		"120017": {
+			"id": 120017,
+			"name": "来自何处的歌",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100103",
+			"route": "A Song From Somewhere"
+		},
+		"120018": {
+			"id": 120018,
+			"name": "牧童与魔瓶的故事",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120018",
+			"route": "The Shepherd and the Magic Bottle"
+		},
+		"120021": {
+			"id": 120021,
+			"name": "阿赫玛尔的故事",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120021",
+			"route": "The Lay of Al-Ahmar"
+		},
+		"120028": {
+			"id": 120028,
+			"name": "灵光颂",
+			"rank": 4,
+			"icon": "UI_ItemIcon_100229",
+			"route": "An Ode to Khvarena"
+		},
+		"120032": {
+			"id": 120032,
+			"name": "启封的羊皮卷",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120009",
+			"route": "Unsealed Parchment"
+		},
+		"120033": {
+			"id": 120033,
+			"name": "引路的羊皮卷",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120009",
+			"route": "Guiding Parchment"
+		},
+		"120034": {
+			"id": 120034,
+			"name": "低语的羊皮卷",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120009",
+			"route": "Whispering Parchment"
+		},
+		"120035": {
+			"id": 120035,
+			"name": "神秘的羊皮卷",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120009",
+			"route": "Mysterious Parchment"
+		},
+		"120036": {
+			"id": 120036,
+			"name": "古老的工作日志",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Ancient Work Log"
+		},
+		"120037": {
+			"id": 120037,
+			"name": "教令院考察队临时报告",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Akademiya Investigation Team's Interim Report"
+		},
+		"120038": {
+			"id": 120038,
+			"name": "赞迪克的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Zandik's Note"
+		},
+		"120039": {
+			"id": 120039,
+			"name": "索赫蕾的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Sohreh's Note"
+		},
+		"120040": {
+			"id": 120040,
+			"name": "须弥考察队的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Sumeru Investigation Team's Note"
+		},
+		"120041": {
+			"id": 120041,
+			"name": "解剖记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Dissection Records"
+		},
+		"120042": {
+			"id": 120042,
+			"name": "残破的出勤记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Ragged Attendance Record"
+		},
+		"120047": {
+			"id": 120047,
+			"name": "病历记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Medical Records"
+		},
+		"120048": {
+			"id": 120048,
+			"name": "诊断报告",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Diagnostic Report"
+		},
+		"120059": {
+			"id": 120059,
+			"name": "字迹优雅的笔记本",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "An Elegantly-Written Note"
+		},
+		"120080": {
+			"id": 120080,
+			"name": "萨梅尔的留言",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Samail's Missive"
+		},
+		"120114": {
+			"id": 120114,
+			"name": "古旧地图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120114",
+			"route": "Ancient Map"
+		},
+		"120116": {
+			"id": 120116,
+			"name": "封藏资料「归寂之庭」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Sealed Materials: The Court of Desolation"
+		},
+		"120128": {
+			"id": 120128,
+			"name": "依稀可以辨认的铭文",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Vaguely-Readable Inscription"
+		},
+		"120138": {
+			"id": 120138,
+			"name": "残缺的诊疗记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Incomplete Medical Records"
+		},
+		"120140": {
+			"id": 120140,
+			"name": "不知何人的日记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Someone's Diary"
+		},
+		"120141": {
+			"id": 120141,
+			"name": "残破的记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Ragged Records"
+		},
+		"120142": {
+			"id": 120142,
+			"name": "内部撤离行动公文",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Internal Withdrawal Document"
+		},
+		"120143": {
+			"id": 120143,
+			"name": "关于实验用个体的初步检测",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Preliminary Test on Experimental Subject"
+		},
+		"120144": {
+			"id": 120144,
+			"name": "转移通知文件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Transfer Notification"
+		},
+		"120145": {
+			"id": 120145,
+			"name": "远途勘探者留书·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101832",
+			"route": "Pathfinders' Log: I"
+		},
+		"120152": {
+			"id": 120152,
+			"name": "活动公告",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Event Notice"
+		},
+		"120153": {
+			"id": 120153,
+			"name": "海妮耶的笔记 第一段",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Haniyyah's Notes - First Part"
+		},
+		"120156": {
+			"id": 120156,
+			"name": "赛诺的来信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100242",
+			"route": "Cyno's Missive"
+		},
+		"120161": {
+			"id": 120161,
+			"name": "神秘的愚人众信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100105",
+			"route": "Mysterious Fatui Letter"
+		},
+		"120163": {
+			"id": 120163,
+			"name": "《有关稻妻踏鞴砂地区可能存在的重大历史事件简析》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100101",
+			"route": "\"A Brief Analysis of Possible Events of Historical Importance in the Tatarasuna Area\""
+		},
+		"120164": {
+			"id": 120164,
+			"name": "《黯云之岛》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100101",
+			"route": "\"The Isle of Darkling Clouds\""
+		},
+		"120180": {
+			"id": 120180,
+			"name": "解读出的内容",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Derived Contents"
+		},
+		"120181": {
+			"id": 120181,
+			"name": "旭东的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100356",
+			"route": "Xudong's Letter"
+		},
+		"120182": {
+			"id": 120182,
+			"name": "居尔城记事·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Records of Gurabad: Part I"
+		},
+		"120187": {
+			"id": 120187,
+			"name": "破损的石板",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Damaged Stone Slate"
+		},
+		"120188": {
+			"id": 120188,
+			"name": "达马山记事·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Records of Mt. Damavand: Part I"
+		},
+		"120191": {
+			"id": 120191,
+			"name": "「黄铜面具」的教导·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Dogma of the Brass Mask: Part I"
+		},
+		"120200": {
+			"id": 120200,
+			"name": "征发令石板",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Conscription Slate"
+		},
+		"120204": {
+			"id": 120204,
+			"name": "佐娅·雪奈茨芙娜大尉的行动报告·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Captain Zoya Snezhevna's Report (I)"
+		},
+		"120207": {
+			"id": 120207,
+			"name": "残损的记录·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Damaged Records: I"
+		},
+		"120209": {
+			"id": 120209,
+			"name": "印有塔尼特徽记的记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Tanit Emblem-Marked Records"
+		},
+		"120210": {
+			"id": 120210,
+			"name": "愚人众信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Fatui Letter"
+		},
+		"120211": {
+			"id": 120211,
+			"name": "一封遗留的书信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "An Abandoned Letter"
+		},
+		"120213": {
+			"id": 120213,
+			"name": "印有教令院徽记的约契",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Akademiya Emblem-Marked Contract"
+		},
+		"120214": {
+			"id": 120214,
+			"name": "巨大机械的能源系统复原图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Restored Blueprints of a Mechanical Behemoth's Power System"
+		},
+		"120215": {
+			"id": 120215,
+			"name": "给阿德菲的密信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Secret Letter to Aderfi"
+		},
+		"120218": {
+			"id": 120218,
+			"name": "整洁的字条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Neat Note"
+		},
+		"120219": {
+			"id": 120219,
+			"name": "婕德的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Jeht's Letter"
+		},
+		"120220": {
+			"id": 120220,
+			"name": "优菲的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Ufairah's Notes"
+		},
+		"120235": {
+			"id": 120235,
+			"name": "被揉皱的名单",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Crumpled Namelist"
+		},
+		"120236": {
+			"id": 120236,
+			"name": "仓库物资订单",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Warehouse Inventory Records"
+		},
+		"120241": {
+			"id": 120241,
+			"name": "雇佣守则石板",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Employment Code of Conduct Tablet"
+		},
+		"120244": {
+			"id": 120244,
+			"name": "沾有酒香的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100356",
+			"route": "Wine-Scented Letter"
+		},
+		"120248": {
+			"id": 120248,
+			"name": "部族行商的信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Tribe Merchant's Letter"
+		},
+		"120249": {
+			"id": 120249,
+			"name": "婕德的便条",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100437",
+			"route": "Jeht's Note"
+		},
+		"120256": {
+			"id": 120256,
+			"name": "久岐忍的来信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Letter from Kuki Shinobu"
+		},
+		"120260": {
+			"id": 120260,
+			"name": "(test)提纳里的来信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "？？？"
+		},
+		"120274": {
+			"id": 120274,
+			"name": "夹在笔记中的示意图",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120274",
+			"route": "Schematic Clipped Inside Notes"
+		},
+		"120275": {
+			"id": 120275,
+			"name": "雷内的调查笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120275",
+			"route": "Rene's Investigation Notes"
+		},
+		"120276": {
+			"id": 120276,
+			"name": "某人留下的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Notes Left by Someone"
+		},
+		"120277": {
+			"id": 120277,
+			"name": "古老的书卷",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Ancient Volume"
+		},
+		"120292": {
+			"id": 120292,
+			"name": "「冒险家的经验」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_104002",
+			"route": "\"Adventurer's Experience\""
+		},
+		"120293": {
+			"id": 120293,
+			"name": "「知慧仙灵」留下的画片",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Picture Left by the Wisdom Seelie"
+		},
+		"120295": {
+			"id": 120295,
+			"name": "来自须弥境内的信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Missive From Sumeru"
+		},
+		"120296": {
+			"id": 120296,
+			"name": "来自稻妻的长途信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Inazuman Mail From Afar"
+		},
+		"120297": {
+			"id": 120297,
+			"name": "来宾食宿安排",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100721",
+			"route": "Food and Lodging Arrangements"
+		},
+		"120301": {
+			"id": 120301,
+			"name": "俱利般地谱·识",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120301",
+			"route": "Korybantes Score: Vijnana"
+		},
+		"120302": {
+			"id": 120302,
+			"name": "俱利般地谱·想",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120302",
+			"route": "Korybantes Score: Samjna"
+		},
+		"120303": {
+			"id": 120303,
+			"name": "俱利般地谱·色",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120303",
+			"route": "Korybantes Score: Rupa"
+		},
+		"120304": {
+			"id": 120304,
+			"name": "俱利般地谱·行",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120304",
+			"route": "Korybantes Score: Sankhara"
+		},
+		"120305": {
+			"id": 120305,
+			"name": "俱利般地谱·受",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120305",
+			"route": "Korybantes Score: Vedana"
+		},
+		"120316": {
+			"id": 120316,
+			"name": "失落铭文之探求",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "In Pursuit of the Lost Inscription"
+		},
+		"120324": {
+			"id": 120324,
+			"name": "某人的日志",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Someone's Journal"
+		},
+		"120325": {
+			"id": 120325,
+			"name": "某人的备忘",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Someone's Memo"
+		},
+		"120328": {
+			"id": 120328,
+			"name": "桌上的资料",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Tabletop Documents"
+		},
+		"120329": {
+			"id": 120329,
+			"name": "陈旧的纸张",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Old Papers"
+		},
+		"120330": {
+			"id": 120330,
+			"name": "模糊的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Unclear Notes"
+		},
+		"120331": {
+			"id": 120331,
+			"name": "赛事积分",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120001",
+			"route": "Competition Scores"
+		},
+		"120345": {
+			"id": 120345,
+			"name": "无名冒险家的记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Nameless Adventurer's Notes"
+		},
+		"120346": {
+			"id": 120346,
+			"name": "古老的工程记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Ancient Engineering Notes"
+		},
+		"120347": {
+			"id": 120347,
+			"name": "残破的工程记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Ragged Engineering Notes"
+		},
+		"120348": {
+			"id": 120348,
+			"name": "何人遗留的信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Someone's Abandoned Letter"
+		},
+		"120351": {
+			"id": 120351,
+			"name": "难以辨识的布告",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Barely-Legible Bulletin"
+		},
+		"120352": {
+			"id": 120352,
+			"name": "古旧的日记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Ancient Journal"
+		},
+		"120353": {
+			"id": 120353,
+			"name": "不知何人的记录·其二",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Records of Unknown Attribution (II)"
+		},
+		"120359": {
+			"id": 120359,
+			"name": "污损的命令书",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Soiled Orders"
+		},
+		"120361": {
+			"id": 120361,
+			"name": "遗落的笔记残页·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Pages From Some Lost Notes (I)"
+		},
+		"120363": {
+			"id": 120363,
+			"name": "怪异的抄本",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Bizarre Transcript"
+		},
+		"120364": {
+			"id": 120364,
+			"name": "矫论团的教谕",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Teachings of the Skeptics"
+		},
+		"120365": {
+			"id": 120365,
+			"name": "无名学者的记事·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Nameless Researcher's Notes (I)"
+		},
+		"120369": {
+			"id": 120369,
+			"name": "古旧的佣兵笔记·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Mercenary's Aged Notes (I)"
+		},
+		"120373": {
+			"id": 120373,
+			"name": "灵光碑文",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100112",
+			"route": "Khvarena Monument Inscription"
+		}
+	}
+}

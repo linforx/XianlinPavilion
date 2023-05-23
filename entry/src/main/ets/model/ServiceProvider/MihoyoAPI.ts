@@ -413,7 +413,7 @@ class MihoyoAPI {
         let json;
         try {
             // 尝试将结果解析为json数据并返回
-            json = JSON.parse(String(hres.result));
+            json = JSON.parse(hres.result as string);
             res.success = (json.retcode == 0);
             res.code = json.retcode;
             res.message = json.message || errorMsgMap[`${json.retcode}`];

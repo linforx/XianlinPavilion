@@ -49,3 +49,4 @@ const joinParams2Url = (host: string, params: {}) => {
 }
 
 export { crypto, Logger, getRandomString, joinParams2Url }
+export default { crypto, Logger, getRandomString, joinParams2Url }

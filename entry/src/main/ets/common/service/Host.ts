@@ -17,5 +17,8 @@ export default {
     BbsApi: 'https://bbs-api.miyoushe.com',
     PassportApi: 'https://passport-api.mihoyo.com',
     PassportApiV4: 'https://passport-api-v4.mihoyo.com',
-    WebStaticMihoyoReferer: 'https://webstatic.mihoyo.com'
+    WebStaticMihoyoReferer: 'https://webstatic.mihoyo.com',
+    // 以下host提供原神面板查询服务
+    EnkaNetwork: 'https://enka.network',
+    EnkaMicrogg: 'https://enka.microgg.cn'
 }

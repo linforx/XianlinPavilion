@@ -5,7 +5,9 @@
  * Description:
  */
 
-import SaltType from './SaltType'
+import SaltType from './SaltType';
+import Configuration from '@ohos.app.ability.Configuration';
+import bundleManager from '@ohos.bundle.bundleManager';
 
 // thanks for Snap.Hutao
 
@@ -17,11 +19,11 @@ function getGuid() {
     return (S4() + S4() + '-' + S4() + '-' + S4() + '-' + S4() + '-' + S4() + S4() + S4())
 }
 
-export default
-class CoreEnvironment {
+export default class CoreEnvironment {
     // 米游社Rpc版本
     public static miHoYoBBSXrpcVersion: string = '2.44.1'
     public static miHoYoBBSUserAgent: string = `Mozilla/5.0 (Linux; Android 12) Mobile miHoYoBBS/${CoreEnvironment.miHoYoBBSXrpcVersion}`
+    public static APPUserAgent: string = `XianlinPavilion/1.0.0`
     public static DynamicSecretSalts: Map<SaltType, string> = new Map([
         [SaltType.K2, 'dZAwGk4e9aC0MXXItkwnHamjA1x30IYw'],
         [SaltType.LK2, 'IEIZiKYaput2OCKQprNuGsog1NZc1FkS'],

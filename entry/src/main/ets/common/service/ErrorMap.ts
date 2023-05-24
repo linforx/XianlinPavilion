@@ -2,7 +2,7 @@
  * @FileName: ErrorMap
  * @Author: Administrator
  * @Date: 2023/5/23 19:42
- * Description:
+ * Description: 米哈游接口错误码解释
  */
 
 const errorMsgMap = {

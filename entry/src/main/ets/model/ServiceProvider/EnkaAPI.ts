@@ -13,6 +13,7 @@ import Response from '../../common/service/Response';
 
 export default class enkaAPI {
     private url: string = ''
+
     public applyGetGameInfo(config: { hostOption: number, diyHost?: string, uid: string }) {
         if (config.diyHost) {
             this.url = `${config.diyHost}/api/uid/${config.uid}`
@@ -28,7 +29,6 @@ export default class enkaAPI {
                     this.url = `${apiMap.EnkaNetwork}${config.uid}`
             }
         }
-
     }
 
     public async getResponseAsync() {
@@ -88,4 +88,5 @@ export default class enkaAPI {
 
         return res;
     }
+
 }

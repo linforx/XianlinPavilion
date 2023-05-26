@@ -5,13 +5,19 @@
  * Description:
  */
 
-import JSMD5 from './md5'
-import Logger from './Logger'
+import MD5 from './md5'
+import logger from './Logger'
+import { parse, stringify } from './lossless-json/index'
 import common from '@ohos.app.ability.common'
 import util from '@ohos.util'
 
-var crypto = {
-    MD5: (value: string) => JSMD5(value)
+const crypto = {
+    MD5
+}
+
+const losslessJSON = {
+    parse,
+    stringify
 }
 
 const chars: string = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
@@ -26,6 +32,9 @@ function RandomIndex(min, max, i){
     //返回最终索引值
     return index
 }
+
+const LOGGER_PREFIX: string = 'XianlinPavilion';
+const Logger = new logger(LOGGER_PREFIX, 0xFF02)
 
 const getRandomString = (len: number) => {
     let min = 0, max = charsLower.length-1, _str = ''
@@ -58,4 +67,5 @@ const readRawfileTextAsync = async (context: common.Context, filePath: string, e
     return retStr
 }
 
-export { crypto, Logger, getRandomString, joinParams2Url, readRawfileTextAsync }
+export { crypto, losslessJSON, Logger, getRandomString, joinParams2Url, readRawfileTextAsync }
+export default { crypto, losslessJSON, Logger, getRandomString, joinParams2Url, readRawfileTextAsync }

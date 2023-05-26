@@ -7,8 +7,6 @@
 
 import hilog from '@ohos.hilog';
 
-const LOGGER_PREFIX: string = 'XianlinPavilion';
-
 class Logger {
     private domain: number;
     private prefix: string;
@@ -45,4 +43,4 @@ class Logger {
     }
 }
 
-export default new Logger(LOGGER_PREFIX, 0xFF02);
+export default Logger;

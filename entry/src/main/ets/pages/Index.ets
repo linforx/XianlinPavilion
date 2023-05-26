@@ -1,4 +1,5 @@
-import { readRawfileTextAsync } from '../common/utils/Utils'
+import EnkaAPI from '../model/ServiceProvider/EnkaAPI'
+
 
 @Entry
 @Component
@@ -14,9 +15,15 @@ struct Index {
           .fontSize(50)
           .fontWeight(FontWeight.Bold)
           .onClick(async () => {
-            let str = await readRawfileTextAsync(this.context, 'EnkaAPIResource/characters.json')
-            let json = JSON.parse(str)
-            console.warn(`${json['10000002']['NameTextMapHash']}`)
+            let characters = await EnkaAPI.getCharactersMapAsync(this.context)
+            let loc = await EnkaAPI.getLocalizationMapAsync(this.context)
+            let response = await new EnkaAPI()
+              .applyGetGameInfo({ hostOption: 0, uid: '151157466' })
+              .getResponseAsync()
+            if (response.success) {
+              var data = JSON.parse(response.data)
+              console.warn(`${data['avatarInfoList'][0]['fightPropMap']['22']}`)
+            }
           })
       }
       .width('100%')

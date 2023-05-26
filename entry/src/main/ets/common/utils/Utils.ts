@@ -7,6 +7,8 @@
 
 import JSMD5 from './md5'
 import Logger from './Logger'
+import common from '@ohos.app.ability.common'
+import util from '@ohos.util'
 
 var crypto = {
     MD5: (value: string) => JSMD5(value)
@@ -48,5 +50,12 @@ const joinParams2Url = (host: string, params: {}) => {
     return host
 }
 
-export { crypto, Logger, getRandomString, joinParams2Url }
-export default { crypto, Logger, getRandomString, joinParams2Url }
+const readRawfileTextAsync = async (context: common.Context, filePath: string, encoding: string = 'utf-8') => {
+    let value = await context.resourceManager.getRawFileContent(filePath)
+    let decoder = util.TextDecoder.create(encoding, { ignoreBOM : true })
+    let retStr = decoder.decodeWithStream( value , {stream: false})
+
+    return retStr
+}
+
+export { crypto, Logger, getRandomString, joinParams2Url, readRawfileTextAsync }

@@ -11,18 +11,13 @@ export default struct PageMoreButton {
   @Prop titleHeight: number
   private menus: { desc: string, action: () => void, icon?: string | Resource | PixelMap }[] = []
 
-  dialogController: CustomDialogController = new CustomDialogController({
-    builder: Menus({ menuList: this.menus }),
-    customStyle: true,
-    alignment: DialogAlignment.TopEnd,
-    offset: { dx: -15, dy: this.titleHeight }
-  })
+
 
   build() {
     Button() {
       Column() {
         Image($r('app.media.ic_public_more'))
-          .height('64%')
+          .height(45)
           .aspectRatio(1)
       }
       .justifyContent(FlexAlign.Center)
@@ -30,25 +25,18 @@ export default struct PageMoreButton {
     }
     .type(ButtonType.Normal)
     .backgroundColor('#00000000')
-    .height('100%')
+    .height(60)
     .aspectRatio(1)
     .borderRadius(8)
     .clip(true)
-    .onClick((event) => {
-      this.dialogController.open()
-    })
+    .bindMenu(this.Menus())
   }
-}
 
-@CustomDialog
-struct Menus {
-  controller: CustomDialogController
-  private menuList: { desc: string, action: () => void, icon?: string | Resource | PixelMap }[]
-
-  build() {
+  @Builder
+  Menus() {
     Column() {
       List() {
-        ForEach(this.menuList, (item: { desc: string, action: () => void, icon?: string | Resource | PixelMap }) => {
+        ForEach(this.menus, (item) => {
           ListItem() {
             Button() {
               Row() {
@@ -59,6 +47,7 @@ struct Menus {
                 }
                 Text(item.desc)
                   .fontSize(20)
+                  .fontSize($r('app.color.text_color'))
                   .margin({ top: 10, bottom: 10 })
                   .textOverflow({ overflow: TextOverflow.Ellipsis })
               }
@@ -69,7 +58,7 @@ struct Menus {
             }
             .type(ButtonType.Normal)
             .backgroundColor('#00000000')
-            .borderRadius(14)
+            .borderRadius(18)
             .height(52)
             .width('100%')
             .clip(true)
@@ -78,20 +67,21 @@ struct Menus {
               promptAction.showToast({
                 message: 'action 执行'
               })
-              this.controller.close()
             })
           }
         })
       }
-      .divider({ strokeWidth: 1, startMargin: 15, endMargin: 15 })
+      .divider({ strokeWidth: 1, startMargin: 15, endMargin: 15, color: $r('app.color.stroke_line_color') })
       .width('100%')
-      .constraintSize({ maxHeight: this.menuList.length * 52 })
-      .borderRadius(14)
+      .height(this.menus.length * 52)
+      .constraintSize({ maxHeight: this.menus.length * 52 })
+      .borderRadius(18)
       .clip(true)
     }
     .width(160)
-    .backgroundColor('#fff')
-    .borderRadius(16)
-    .padding(5)
+    .backgroundColor($r('app.color.card_background_color'))
+    .borderRadius(20)
+    .padding(2)
   }
 }
+

@@ -3,6 +3,26 @@
     {
       "name": "text_color",
       "value": "#ededed"
+    },
+    {
+      "name": "sub_text_color",
+      "value": "#bfbfbf"
+    },
+    {
+      "name": "high_light_text_color",
+      "value": "#5291ff"
+    },
+    {
+      "name": "stroke_line_color",
+      "value": "#4c4d4f"
+    },
+    {
+      "name": "page_background_color",
+      "value": "#000000"
+    },
+    {
+      "name": "card_background_color",
+      "value": "#4c4c4e"
     }
   ]
 }

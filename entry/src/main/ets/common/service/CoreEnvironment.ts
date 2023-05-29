@@ -23,7 +23,7 @@ export default class CoreEnvironment {
     // 米游社Rpc版本
     public static miHoYoBBSXrpcVersion: string = '2.44.1'
     public static miHoYoBBSUserAgent: string = `Mozilla/5.0 (Linux; Android 12) Mobile miHoYoBBS/${CoreEnvironment.miHoYoBBSXrpcVersion}`
-    public static APPUserAgent: string = `XianlinPavilion/1.0.0`
+    public static APPUserAgent: string = `XianlinPavilion/${globalThis.BundleInfo?.versionName}`
     public static DynamicSecretSalts: Map<SaltType, string> = new Map([
         [SaltType.K2, 'dZAwGk4e9aC0MXXItkwnHamjA1x30IYw'],
         [SaltType.LK2, 'IEIZiKYaput2OCKQprNuGsog1NZc1FkS'],

@@ -10,7 +10,8 @@ enum CookieType {
     CookieToken,
     LToken,
     BothCLToken,
-    SToken
+    SToken,
+    All
 }
 
 export default CookieType

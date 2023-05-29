@@ -2,7 +2,7 @@
  * @FileName: UserInfoCard
  * @Author: Administrator
  * @Date: 2023/5/28 13:57
- * Description:
+ * Description: 游戏角色信息卡，游戏角色选择器控件的子控件，展示角色信息
  */
 
 import GameRoleInfo from '../../../viewmodel/page/Index/GameRoleInfo'

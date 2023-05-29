@@ -2,7 +2,7 @@
  * @FileName: AccountInfo
  * @Author: Administrator
  * @Date: 2023/5/28 16:38
- * Description:
+ * Description: 账户信息UI类
  */
 
 import User from '../../../model/User/User'

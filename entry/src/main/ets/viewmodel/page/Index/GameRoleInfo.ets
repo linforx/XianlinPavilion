@@ -2,7 +2,7 @@
  * @FileName: GameRoleInfo
  * @Author: Administrator
  * @Date: 2023/5/28 14:02
- * Description:
+ * Description: 游戏角色信息UI类
  */
 
 import GameRole from '../../../model/User/GameRole'

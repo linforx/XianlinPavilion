@@ -14,25 +14,25 @@ import GameRoleInfoCard from '../view/page/Index/GameRoleInfoCard'
 @Component
 struct Index {
   private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
-  @State ready_exit: boolean = false
-  @State title: string = '仙麟阁'
-  @State titleHeight: number = 76
-  @State selIndex: 0 | 1 = 0
-  tabController: TabsController = new TabsController()
+  @State ready_exit: boolean = false                    // 标识第一次返回按钮已按下
+  @State title: string = '仙麟阁'                        // 首页标题（应用名）
+  @State titleHeight: number = 76                       // 标题栏高度
+  @State selIndex: 0 | 1 = 0                            // 标识选中的是原神分区（0）还是星穹铁道分区（1）
+  tabController: TabsController = new TabsController()  // 分区控制器
 
-  @State userList: User[] = globalThis.userList
-  selUser: User = null
-  selGameRole_genshin: GameRole = null
-  selGameRole_starrail: GameRole = null
-  @State selAccount: AccountInfo = new AccountInfo(this.selUser)
-  @State selGameRoleInfo_genshin: GameRoleInfo = new GameRoleInfo(new GameRole({}), '')
-  @State selGameRoleInfo_starrail: GameRoleInfo = new GameRoleInfo(new GameRole({}), '')
+  @State userList: User[] = globalThis.userList         // 用户列表，由Start页面处理完成后获取
+  selUser: User = null                                  // 选中的用户
+  selGameRole_genshin: GameRole = null                  // 选中的原神角色
+  selGameRole_starrail: GameRole = null                 // 选中的星铁角色
+  @State selAccount: AccountInfo = new AccountInfo(this.selUser)                                // 与选中的账号信息关联的UI对象
+  @State selGameRoleInfo_genshin: GameRoleInfo = new GameRoleInfo(new GameRole({}), '')         // 与选中的原神角色信息关联的UI对象
+  @State selGameRoleInfo_starrail: GameRoleInfo = new GameRoleInfo(new GameRole({}), '')        // 与选中的星铁角色信息关联的UI对象
 
-  @State showAMCP: boolean = false
-  @State loginTip: string = ''
+  @State showAMCP: boolean = false                      // 账户管理中心面板显隐控制
+  @State loginTip: string = ''                          // 登录状态信息提示
 
-  @State gameRoleList: GameRole[] = []
-  gameRoleChooseDialogController_genshin: CustomDialogController = new CustomDialogController({
+  @State gameRoleList: GameRole[] = []                  // 所选账户的游戏角色列表，弹出游戏角色选择器时从网络加载
+  gameRoleChooseDialogController_genshin: CustomDialogController = new CustomDialogController({         // 原神角色选择器弹窗控制器
     builder: GameRoleChooseDialog({
       selGameRoleInfo: $selGameRoleInfo_genshin,
       gameRoleList: $gameRoleList,
@@ -44,7 +44,7 @@ struct Index {
     }),
     customStyle: true
   })
-  gameRoleChooseDialogController_starrail: CustomDialogController = new CustomDialogController({
+  gameRoleChooseDialogController_starrail: CustomDialogController = new CustomDialogController({        // 星铁角色选择器弹窗控制器
     builder: GameRoleChooseDialog({
       selGameRoleInfo: $selGameRoleInfo_starrail,
       gameRoleList: $gameRoleList,
@@ -68,7 +68,7 @@ struct Index {
     if (game == 'starrail' && !this.selGameRole_starrail) return '请选择一个角色'
   }
 
-  async onPageShow() {
+  async updateSelUserInfo() {
     for (let i = 0; i < this.userList.length; ++i) {
       if (this.userList[i].uid == globalThis.selAccountUid) {
         this.loginTip = '登录中'
@@ -97,7 +97,10 @@ struct Index {
         this.loginTip = ''
       }
     }
+  }
 
+  async onPageShow() {
+    await this.updateSelUserInfo()
   }
 
   onBackPress() {
@@ -119,12 +122,13 @@ struct Index {
       Navigation() {
         Stack() {
           Tabs({ barPosition: BarPosition.End, controller: this.tabController }) {
+            // 原神分区
             TabContent() {
               List() {
                 ListItem() {
                   Column() {
                     List() {
-                      ListItem() {
+                      ListItem() {        // 游戏角色控制入口控件
                         Button() {
                           Row() {
                             Image(this.selAccount.accountHeadImg)
@@ -167,7 +171,7 @@ struct Index {
                           }
                         })
                       }
-                      ListItem() {
+                      ListItem() {        // 帐户管理入口控件
                         Button() {
                           Row() {
                             Column()
@@ -210,6 +214,7 @@ struct Index {
               .width('100%')
             }
             .tabBar(this.genshinBar())
+            // 星穹铁道分区
             TabContent() {
               Column() {
                 List() {
@@ -267,7 +272,7 @@ struct Index {
           .onChange((index) => {
             this.selIndex = index as 0 | 1
           })
-
+          // 帐户控制中心面板控件
           this.AccountManageCenterPanel()
         }
       }
@@ -435,6 +440,7 @@ struct Index {
   }
 }
 
+// 游戏角色选择器面板
 @CustomDialog
 struct GameRoleChooseDialog {
   @Link selGameRoleInfo: GameRoleInfo

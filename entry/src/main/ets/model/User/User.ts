@@ -126,7 +126,7 @@ export default class User {
     public static createDefaultAccount() {
         return new User({
             user_info: {
-                'uid': '253237280',
+                'uid': '154114645',
                 'nickname': '测试账户',
                 'introduce': '',
                 'avatar_url': 'https://img-static.mihoyo.com/communityweb/upload/ca38485367778c82961deea9b4fcfe8a.png'

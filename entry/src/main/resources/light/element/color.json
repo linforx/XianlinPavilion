@@ -13,8 +13,24 @@
       "value": "#0a59f7"
     },
     {
+      "name": "clickable_text_color",
+      "value": "#0a59f7"
+    },
+    {
+      "name": "primary_text_inversion",
+      "value": "#ffffff"
+    },
+    {
+      "name": "secondary_text_inversion",
+      "value": "#99ffffff"
+    },
+    {
+      "name": "panel_background_color",
+      "value": "#50ffffff"
+    },
+    {
       "name": "stroke_line_color",
-      "value": "#cdcdcd"
+      "value": "#33000000"
     },
     {
       "name": "page_background_color",

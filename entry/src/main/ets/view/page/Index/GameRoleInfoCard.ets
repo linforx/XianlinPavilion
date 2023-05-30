@@ -10,45 +10,36 @@ import GameRoleInfo from '../../../viewmodel/page/Index/GameRoleInfo'
 @Component
 export default struct GameRoleInfoCard {
   @Link selectIndex: number
-  private selectUID: string
-  private index
+  private index: number
   private role: GameRoleInfo
+
   build() {
     Button() {
       Row() {
         Column() {
           Text(this.role.nickname)
-            .fontColor($r('app.color.text_color'))
+            .fontColor(this.selectIndex == this.index ? $r('app.color.primary_text_inversion') : $r('app.color.text_color'))
             .fontSize(16)
           Text(this.role.gameUid)
-            .fontColor($r('app.color.sub_text_color'))
+            .fontColor(this.selectIndex == this.index ? $r('app.color.secondary_text_inversion') : $r('app.color.text_color'))
             .fontSize(16)
         }
         .height(50)
         .justifyContent(FlexAlign.SpaceBetween)
         .alignItems(HorizontalAlign.Start)
         .margin({ left: 10 })
-
-        Blank()
-
-        Radio({ value: `Radio${this.index}`, group: 'gameRoleRadioGroup' })
-          .checked(this.role.gameUid == this.selectUID)
-          .height(15)
-          .width(15)
-          .onChange((isChecked: boolean) => {
-            if (isChecked) {
-              this.selectIndex = this.index
-            }
-            console.log(`Radio${this.index} status is ` + isChecked)
-          })
       }
       .width('100%')
     }
-    .width('61.4%')
+    .width('80%')
+    .constraintSize({ maxWidth: 300 })
     .type(ButtonType.Normal)
-    .backgroundColor('#00000000')
+    .backgroundColor(this.selectIndex == this.index ? $r('app.color.high_light_text_color') : '#00000000')
     .borderRadius(10)
     .padding({ top: 10, bottom: 10, left: 5, right: 5 })
     .clip(true)
+    .onClick(() => {
+      this.selectIndex = this.index
+    })
   }
 }

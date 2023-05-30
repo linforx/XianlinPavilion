@@ -43,7 +43,9 @@ export default struct AccountManageCenter {
                 .height(15)
                 .width(15)
                 .onChange((isChecked: boolean) => {
-                  console.log(`Radio${index} status is ` + isChecked)
+                  if (isChecked) {
+                    globalThis.selAccountUid = user.uid
+                  }
                 })
             }
             .padding({ top: 10, bottom: 10, left: 5, right: 5 })

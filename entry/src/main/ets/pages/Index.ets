@@ -323,8 +323,9 @@ struct Index {
           AccountManageCenter({ userList: $userList })
         }
       }
+      .backdropBlur(40)
     }
-    .backgroundColor($r('app.color.page_background_color'))
+    .backgroundColor($r('app.color.panel_background_color'))
     .type(PanelType.Foldable)
     .mode(PanelMode.Half)
     .miniHeight(100)
@@ -332,6 +333,7 @@ struct Index {
     .onChange((width: number, height: number, mode: PanelMode) => {
       if (mode == 0) {
         this.showAMCP = false
+        this.updateSelUserInfo()
       }
     })
   }
@@ -450,12 +452,22 @@ struct GameRoleChooseDialog {
   cancel: () => void
   confirm: (role: GameRole) => void
 
+  aboutToAppear() {
+    let i = 0;
+    for (let role of this.gameRoleList) {
+      if (role.gameUid == this.selGameRoleInfo.gameUid) {
+        this.selIndex = i
+      }
+      ++i
+    }
+  }
+
   build() {
     Column() {
       List({ space: 10 }) {
         ForEach(this.gameRoleList, (role: GameRole, index: number) => {
           ListItem() {
-            GameRoleInfoCard({ selectIndex: $selIndex, index: index, role: new GameRoleInfo(role), selectUID: this.selGameRoleInfo.gameUid })
+            GameRoleInfoCard({ selectIndex: $selIndex, index: index, role: new GameRoleInfo(role) })
           }
         })
       }
@@ -491,6 +503,7 @@ struct GameRoleChooseDialog {
       }
       .width('100%')
       .justifyContent(FlexAlign.SpaceAround)
+      .margin(10)
     }
     .backgroundColor($r('app.color.page_background_color'))
     .width('88%')

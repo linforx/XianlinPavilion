@@ -51,6 +51,7 @@ export default struct AccountManageCenter {
             .padding({ top: 10, bottom: 10, left: 5, right: 5 })
             .width('100%')
             .backgroundColor($r('app.color.card_background_color'))
+            .backdropBlur(40)
             .borderRadius(10)
             .clip(true)
           }

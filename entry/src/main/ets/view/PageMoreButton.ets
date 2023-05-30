@@ -17,7 +17,7 @@ export default struct PageMoreButton {
     Button() {
       Column() {
         Image($r('app.media.ic_public_more'))
-          .height(45)
+          .height(40)
           .aspectRatio(1)
       }
       .justifyContent(FlexAlign.Center)

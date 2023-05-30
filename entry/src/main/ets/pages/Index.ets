@@ -209,62 +209,101 @@ struct Index {
                 .backgroundColor($r('app.color.card_background_color'))
                 .clip(true)
               }
-              .padding({ left: 10, right: 10 })
+              .padding({ left: 15, right: 15 })
               .height('100%')
               .width('100%')
             }
             .tabBar(this.genshinBar())
             // 星穹铁道分区
             TabContent() {
-              Column() {
-                List() {
-                  ListItem() {
-                    Column() {
-                      Button() {
-                        Row() {
-                          Image($r('app.media.app_icon'))
+              List() {
+                ListItem() {
+                  Column() {
+                    List() {
+                      ListItem() {        // 游戏角色控制入口控件
+                        Button() {
+                          Row() {
+                            Image(this.selAccount.accountHeadImg)
+                              .height(40)
+                              .aspectRatio(1)
+                              .borderRadius(20)
+                            Column() {
+                              Text(this.selGameRoleInfo_starrail.nickname ? this.selGameRoleInfo_starrail.nickname : (this.loginTip ? this.loginTip : this.getAccountTip('starrail')))
+                                .fontColor($r('app.color.text_color'))
+                                .fontSize(16)
+                                .fontWeight(FontWeight.Medium)
+
+                              Text(this.selGameRoleInfo_starrail.gameUid ? this.selGameRoleInfo_starrail.gameUid : '*********')
+                                .fontColor($r('app.color.sub_text_color'))
+                                .fontSize(16)
+                            }
                             .height(40)
-                            .borderRadius(20)
-                          Column() {
-                            Text('昵称')
-                              .fontColor($r('app.color.text_color'))
-                              .fontSize(16)
-                              .fontWeight(FontWeight.Medium)
+                            .margin({ left: 10, right: 10 })
+                            .justifyContent(FlexAlign.SpaceBetween)
+                            .alignItems(HorizontalAlign.Start)
 
-                            Text('151157466')
-                              .fontColor($r('app.color.sub_text_color'))
-                              .fontSize(16)
+                            Blank()
+
+                            Image($r('app.media.ic_public_arrow_right'))
+                              .height(25)
                           }
-                          .margin({ left: 10, right: 10 })
-                          .alignItems(HorizontalAlign.Start)
-
-                          Blank()
-
-                          Image($r('app.media.ic_public_arrow_right'))
-                            .height(25)
+                          .margin({ left: 5, right: 5, top: 15, bottom: 15 })
+                          .width('100%')
                         }
-                        .padding({ left: 5, right: 5, top: 20, bottom: 20 })
-                        .width('100%')
+                        .type(ButtonType.Normal)
+                        .borderRadius(16)
+                        .backgroundColor('#00000000')
+                        .onClick(() => {
+                          if (this.selUser) {
+                            this.selUser.getGameRoleListAsync()
+                              .then((list) => {
+                                this.gameRoleList = list
+                                this.gameRoleChooseDialogController_starrail.open()
+                              })
+                          }
+                        })
                       }
-                      .type(ButtonType.Normal)
-                      .borderRadius(18)
-                      .backgroundColor('#00000000')
+                      ListItem() {        // 帐户管理入口控件
+                        Button() {
+                          Row() {
+                            Column()
+                              .width(40)
+
+                            Text('账号管理')
+                              .fontColor($r('app.color.text_color'))
+                              .fontSize(18)
+                              .fontWeight(FontWeight.Medium)
+                              .margin({ left: 10 })
+
+                            Blank()
+
+                            Image($r('app.media.ic_public_arrow_right'))
+                              .height(25)
+                          }
+                          .margin({ left: 5, right: 5, top: 15, bottom: 15 })
+                          .width('100%')
+                        }
+                        .type(ButtonType.Normal)
+                        .borderRadius(16)
+                        .backgroundColor('#00000000')
+                        .onClick(() => {
+                          this.showAMCP = true
+                        })
+                      }
                     }
-                    .width('100%')
-                    .padding(3)
+                    .divider({ strokeWidth: 1, startMargin: 60, endMargin: 16, color: $r('app.color.stroke_line_color') })
+
                   }
-                  .borderRadius(20)
-                  .backgroundColor($r('app.color.card_background_color'))
-                  .clip(true)
+                  .width('100%')
+                  .padding(5)
                 }
-                .padding({ left: 10, right: 10 })
-                .height('100%')
-                .width('100%')
+                .borderRadius(20)
+                .backgroundColor($r('app.color.card_background_color'))
+                .clip(true)
               }
-              .justifyContent(FlexAlign.Start)
-              .alignItems(HorizontalAlign.Center)
-              .width('100%')
+              .padding({ left: 15, right: 15 })
               .height('100%')
+              .width('100%')
             }
             .tabBar(this.starrailBar())
           }
@@ -323,7 +362,6 @@ struct Index {
           AccountManageCenter({ userList: $userList })
         }
       }
-      .backdropBlur(40)
     }
     .backgroundColor($r('app.color.panel_background_color'))
     .type(PanelType.Foldable)

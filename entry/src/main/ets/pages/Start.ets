@@ -1,6 +1,5 @@
 import bundleManager from '@ohos.bundle.bundleManager';
 import router from '@ohos.router';
-import MihoyoAPI from '../model/ServiceProvider/MihoyoAPI';
 import User from '../model/User/User';
 
 @Entry
@@ -31,9 +30,7 @@ struct Page {
   build() {
     Row() {
       Column() {
-        Text(this.message)
-          .fontSize(50)
-          .fontWeight(FontWeight.Bold)
+
       }
       .width('100%')
     }

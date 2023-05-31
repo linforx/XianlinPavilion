@@ -27,12 +27,9 @@ export default class User {
         }
     }
 
-    public constructor(json_data: Object, cookie: string) {
+    public constructor(cookie: string, uid?: string) {
         this.cookie = new Cookie(cookie)
-        this.uid = json_data['user_info']['uid'] ?? ''
-        this.nickname = json_data['user_info']['nickname'] ?? ''
-        this.introduce = json_data['user_info']['introduce'] ?? ''
-        this.accountHeadImg = json_data['user_info']['avatar_url'] ?? ''
+        this.uid = uid ?? ''
     }
 
     public async updateMultiCookieAsync() {
@@ -124,13 +121,6 @@ export default class User {
     }
 
     public static createDefaultAccount() {
-        return new User({
-            user_info: {
-                'uid': '154114645',
-                'nickname': '测试账户',
-                'introduce': '',
-                'avatar_url': 'https://img-static.mihoyo.com/communityweb/upload/ca38485367778c82961deea9b4fcfe8a.png'
-            }
-        }, 'YourSToken')
+        return new User('YourSToken', '253237280')
     }
 }

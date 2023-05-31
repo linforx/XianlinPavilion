@@ -25,8 +25,16 @@
       "value": "#99ffffff"
     },
     {
+      "name": "warning_color",
+      "value": "#e84026"
+    },
+    {
       "name": "panel_background_color",
       "value": "#e6f0f0f0"
+    },
+    {
+      "name": "general_control_background_color",
+      "value": "#19000000"
     },
     {
       "name": "stroke_line_color",

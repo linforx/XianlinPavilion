@@ -8,7 +8,11 @@ import GameRole from '../model/User/GameRole'
 import AccountInfo from '../viewmodel/page/Index/AccountInfo'
 import GameRoleInfo from '../viewmodel/page/Index/GameRoleInfo'
 import GameRoleInfoCard from '../view/page/Index/GameRoleInfoCard'
+import MihoyoAPI from '../model/ServiceProvider/MihoyoAPI'
+import Cookie from '../model/User/Cookie'
+import GameRoleChooseDialog from '../view/page/Index/GameRoleChooseDialog'
 
+/* 本页面中出现的Account指代User的UI相关信息 */
 
 @Entry
 @Component
@@ -20,7 +24,8 @@ struct Index {
   @State selIndex: 0 | 1 = 0                            // 标识选中的是原神分区（0）还是星穹铁道分区（1）
   tabController: TabsController = new TabsController()  // 分区控制器
 
-  @State userList: User[] = globalThis.userList         // 用户列表，由Start页面处理完成后获取
+  @State userList: User[] = globalThis.userList ?? []   // 用户列表，由Start页面处理完成后获取
+  @State accountInfoList: AccountInfo[] = []            // 与用户列表相关的账户列表UI对象
   selUser: User = null                                  // 选中的用户
   selGameRole_genshin: GameRole = null                  // 选中的原神角色
   selGameRole_starrail: GameRole = null                 // 选中的星铁角色
@@ -38,8 +43,10 @@ struct Index {
       gameRoleList: $gameRoleList,
       cancel: () => {},
       confirm: (role: GameRole) => {
+        // 更新Index页面的选中信息，刷新UI节点
         this.selGameRole_genshin = role
         this.selGameRoleInfo_genshin = new GameRoleInfo(role)
+        this.selUser.gameRoleChosen.Genshin.uid = role.gameUid
       }
     }),
     customStyle: true
@@ -52,57 +59,49 @@ struct Index {
       confirm: (role: GameRole) => {
         this.selGameRole_starrail = role
         this.selGameRoleInfo_starrail = new GameRoleInfo(role)
+        this.selUser.gameRoleChosen.StarRail.uid = role.gameUid
       }
     }),
     customStyle: true
   })
 
-  exitApp() {
-    this.context.terminateSelf()
-  }
+  isAddingAccount: boolean = false
 
-  getAccountTip(game: string) {
-    if (this.userList.length == 0) return '请创建你的账户'
-    if (!this.selUser) return '请选择一个账户'
-    if (game == 'genshin' && !this.selGameRole_genshin) return '请选择一个角色'
-    if (game == 'starrail' && !this.selGameRole_starrail) return '请选择一个角色'
-  }
 
-  async updateSelUserInfo() {
-    for (let i = 0; i < this.userList.length; ++i) {
-      if (this.userList[i].uid == globalThis.selAccountUid) {
-        this.loginTip = '登录中'
-        // 更新选中帐户的信息
-        this.selUser = this.userList[i]
-        await this.selUser.updateBBSCookieAsync()
-        await this.selUser.updateUserInfoAsync()
-        let gameRoles = await this.selUser.getGameRoleListAsync()
-        for (let role of gameRoles) {
-          if (this.selUser.gameRoleChosen.Genshin.uid && (this.selUser.gameRoleChosen.Genshin.uid == role.gameUid)) {
-            this.selGameRole_genshin = role
+
+  // 页面呈现生命周期函数
+  async onPageShow() {
+    if (this.isAddingAccount) {
+      // 处理Login页面返回后续
+      if (globalThis.userCookie) {
+        let cookie = globalThis.userCookie
+        let newUser = new User(cookie)
+        let success = await newUser.updateMultiCookieAsync()
+        if (!success) {
+          promptAction.showToast({
+            message: '帐户创建失败'
+          })
+        } else {
+          let new_userList: User[] = []
+          await newUser.updateBBSCookieAsync()
+          await newUser.updateUserInfoAsync()
+          for (let i = 0; i < this.userList.length; ++i) {
+            if (this.userList[i].uid == newUser.uid) continue
+            new_userList.push(this.userList[i])
           }
-          if (this.selUser.gameRoleChosen.StarRail.uid && (this.selUser.gameRoleChosen.StarRail.uid == role.gameUid)) {
-            this.selGameRole_starrail = role
-          }
-        }
 
-        if (this.selGameRole_genshin) {
-          this.selGameRoleInfo_genshin = new GameRoleInfo(this.selGameRole_genshin)
+          new_userList.push(newUser)
+          this.userList = new_userList
         }
-        if (this.selGameRole_starrail) {
-          this.selGameRoleInfo_starrail = new GameRoleInfo(this.selGameRole_starrail)
-        }
-
-        this.selAccount = new AccountInfo(this.selUser)
-        this.loginTip = ''
+      } else {
+        promptAction.showToast({
+          message: '帐户创建操作已取消'
+        })
       }
     }
+    await this.updateSelUserInfoAsync()
   }
-
-  async onPageShow() {
-    await this.updateSelUserInfo()
-  }
-
+  // 页面返回回调函数
   onBackPress() {
     // 实现双击返回退出应用
     if (this.ready_exit) {
@@ -116,7 +115,7 @@ struct Index {
 
     return true
   }
-
+  // 页面布局函数
   build() {
     Column() {
       Navigation() {
@@ -326,10 +325,87 @@ struct Index {
     .backgroundColor($r('app.color.page_background_color'))
   }
 
+  exitApp() {
+    this.context.terminateSelf()
+  }
+
+  getAccountTip(game: string) {
+    if (this.userList.length == 0) return '请创建你的账户'
+    if (!this.selUser) return '请选择一个账户'
+    if (game == 'genshin' && !this.selGameRole_genshin) return '请选择一个角色'
+    if (game == 'starrail' && !this.selGameRole_starrail) return '请选择一个角色'
+  }
+
+  // 异步更新选中的用户的信息，刷新用户列表并将新的选中信息（用户、原神角色、星铁角色）广播到全局（globalThis）
+  async updateSelUserInfoAsync() {
+    // 更新选中用户的账户信息
+    let i: number
+    for (i = 0; i < this.userList.length; ++i) {
+      if (this.userList[i].uid == globalThis.selAccountUid) {
+        this.loginTip = '登录中'
+        // 更新选中帐户的信息
+        this.selUser = this.userList[i]
+        await this.selUser.updateBBSCookieAsync()
+        await this.selUser.updateUserInfoAsync()
+        globalThis.SelUser = this.selUser                         // 更新全局“当前用户”
+        // 刷新账号下的游戏角色列表
+        let gameRoles = await this.selUser.getGameRoleListAsync()
+        console.warn(`genshinrole: ${this.selUser.gameRoleChosen.Genshin.uid}`)
+        console.warn(`starrailrole: ${this.selUser.gameRoleChosen.StarRail.uid}`)
+        for (let role of gameRoles) {
+          if (this.selUser.gameRoleChosen.Genshin.uid && (this.selUser.gameRoleChosen.Genshin.uid == role.gameUid)) {
+            this.selGameRole_genshin = role
+          }
+          if (this.selUser.gameRoleChosen.StarRail.uid && (this.selUser.gameRoleChosen.StarRail.uid == role.gameUid)) {
+            this.selGameRole_starrail = role
+          }
+        }
+
+        if (this.selGameRole_genshin) {
+          this.selGameRoleInfo_genshin = new GameRoleInfo(this.selGameRole_genshin)
+          globalThis.SelGIRole = this.selGameRole_genshin         // 更新全局“选中的原神角色”
+        } else {
+          globalThis.SelGIRole = null
+        }
+        if (this.selGameRole_starrail) {
+          this.selGameRoleInfo_starrail = new GameRoleInfo(this.selGameRole_starrail)
+          globalThis.SelHSRRole = this.selGameRole_starrail       // 更新全局“选中的崩坏：星穹铁道角色”
+        } else {
+          globalThis.SelHSRRole = null
+        }
+        // 刷新头像
+        this.selAccount = new AccountInfo(this.selUser)
+        // 登录完成
+        this.loginTip = ''
+        globalThis.selAccountUid = this.selUser.uid
+
+        break
+      }
+    }
+    if (i == this.userList.length) {      // 没用选中角色，清除旧的游戏角色选中信息
+      this.selUser = null
+      this.selAccount = new AccountInfo(this.selUser)
+      this.selGameRole_genshin = null
+      this.selGameRole_starrail = null
+      this.selGameRoleInfo_genshin = new GameRoleInfo(new GameRole({}), '')
+      this.selGameRoleInfo_starrail = new GameRoleInfo(new GameRole({}), '')
+    }
+    // 刷新页面账户列表信息节点
+    let new_accountInfoList: AccountInfo[] = []
+    for (let user of this.userList) {
+      new_accountInfoList.push(new AccountInfo(user))
+    }
+    this.accountInfoList = new_accountInfoList
+  }
+
+  // 帐户控制中心面板入口组件
   @Builder
   AccountManageCenterPanel() {
     Panel(this.showAMCP) { // 展示日程
       Column() {
+        Image($r('app.media.ic_user_portrait'))
+          .height(30)
+          .aspectRatio(1)
         Text('帐户管理中心')
           .fontSize(16)
           .fontColor($r('app.color.text_color'))
@@ -337,8 +413,8 @@ struct Index {
 
         Button() {
           Row() {
-            Text('添加账户')
-              .fontSize(20)
+            Text('登录账户')
+              .fontSize(18)
               .fontColor($r('app.color.high_light_text_color'))
           }
           .width('100%')
@@ -346,21 +422,21 @@ struct Index {
           .justifyContent(FlexAlign.Center)
         }
         .type(ButtonType.Normal)
-        .height(50)
-        .width(200)
+        .height(40)
+        .width(160)
         .borderRadius(10)
         .backgroundColor($r('app.color.card_background_color'))
         .alignSelf(ItemAlign.End)
         .margin(10)
         .onClick(() => {
+          this.isAddingAccount = true
+          globalThis.userCookie = ''
           router.pushUrl({
             url: 'pages/Login'
           })
         })
 
-        Scroll() {
-          AccountManageCenter({ userList: $userList })
-        }
+        AccountManageCenter({ userList: $userList, accountInfoList: $accountInfoList })
       }
     }
     .backgroundColor($r('app.color.panel_background_color'))
@@ -371,7 +447,7 @@ struct Index {
     .onChange((width: number, height: number, mode: PanelMode) => {
       if (mode == 0) {
         this.showAMCP = false
-        this.updateSelUserInfo()
+        this.updateSelUserInfoAsync()
       }
     })
   }
@@ -477,76 +553,5 @@ struct Index {
     .alignItems(VerticalAlign.Bottom)
     .height('100%')
     .width('100%')
-  }
-}
-
-// 游戏角色选择器面板
-@CustomDialog
-struct GameRoleChooseDialog {
-  @Link selGameRoleInfo: GameRoleInfo
-  @Link gameRoleList: GameRole[]
-  @State selIndex: number = -1
-  controller: CustomDialogController
-  cancel: () => void
-  confirm: (role: GameRole) => void
-
-  aboutToAppear() {
-    let i = 0;
-    for (let role of this.gameRoleList) {
-      if (role.gameUid == this.selGameRoleInfo.gameUid) {
-        this.selIndex = i
-      }
-      ++i
-    }
-  }
-
-  build() {
-    Column() {
-      List({ space: 10 }) {
-        ForEach(this.gameRoleList, (role: GameRole, index: number) => {
-          ListItem() {
-            GameRoleInfoCard({ selectIndex: $selIndex, index: index, role: new GameRoleInfo(role) })
-          }
-        })
-      }
-      .width('100%')
-      .constraintSize({ maxHeight: 5 * 52 })
-      .alignListItem(ListItemAlign.Center)
-
-      Row() {
-        Button('取消')
-          .type(ButtonType.Normal)
-          .backgroundColor('#00000000')
-          .height(40)
-          .width(150)
-          .borderRadius(20)
-          .fontSize(18)
-          .fontColor($r('app.color.text_color'))
-          .onClick(() => {
-            this.cancel()
-            this.controller.close()
-          })
-        Button('确认')
-          .type(ButtonType.Normal)
-          .backgroundColor('#00000000')
-          .height(40)
-          .width(150)
-          .borderRadius(20)
-          .fontSize(18)
-          .fontColor($r('app.color.high_light_text_color'))
-          .onClick(() => {
-            this.confirm(this.selIndex >= 0 ? this.gameRoleList[this.selIndex] : null)
-            this.controller.close()
-          })
-      }
-      .width('100%')
-      .justifyContent(FlexAlign.SpaceAround)
-      .margin(10)
-    }
-    .backgroundColor($r('app.color.page_background_color'))
-    .width('88%')
-    .constraintSize({ maxWidth: 400 })
-    .padding({ top: 15, bottom: 15, left: 10, right: 10 })
-    .borderRadius(20)
   }
 }

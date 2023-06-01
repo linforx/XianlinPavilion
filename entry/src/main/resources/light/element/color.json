@@ -29,6 +29,14 @@
       "value": "#e84026"
     },
     {
+      "name": "call_color",
+      "value": "#64bb5c"
+    },
+    {
+      "name": "purple_color",
+      "value": "#ac49f5"
+    },
+    {
       "name": "panel_background_color",
       "value": "#e6f0f0f0"
     },

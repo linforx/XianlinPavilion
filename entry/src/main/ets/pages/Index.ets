@@ -1,3 +1,5 @@
+import Want from '@ohos.app.ability.Want';
+import wantConstant from '@ohos.ability.wantConstant';
 import router from '@ohos.router'
 import PageMoreButton from '../view/PageMoreButton'
 import common from '@ohos.app.ability.common'
@@ -11,6 +13,8 @@ import GameRoleInfoCard from '../view/page/Index/GameRoleInfoCard'
 import MihoyoAPI from '../model/ServiceProvider/MihoyoAPI'
 import Cookie from '../model/User/Cookie'
 import GameRoleChooseDialog from '../view/page/Index/GameRoleChooseDialog'
+import GI_DailyNoteCard from '../view/page/Index/GI_DailyNoteCard';
+import GI_DailyNoteInfo from '../viewmodel/page/Index/GI_DailyNoteInfo';
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 
@@ -47,6 +51,8 @@ struct Index {
         this.selGameRole_genshin = role
         this.selGameRoleInfo_genshin = new GameRoleInfo(role)
         this.selUser.gameRoleChosen.Genshin.uid = role.gameUid
+        globalThis.SelGIRole = this.selGameRole_genshin         // 更新全局“选中的原神角色”
+        this.updateGIDataAsync()
       }
     }),
     customStyle: true
@@ -60,6 +66,7 @@ struct Index {
         this.selGameRole_starrail = role
         this.selGameRoleInfo_starrail = new GameRoleInfo(role)
         this.selUser.gameRoleChosen.StarRail.uid = role.gameUid
+        globalThis.SelHSRRole = this.selGameRole_starrail       // 更新全局“选中的崩坏：星穹铁道角色”
       }
     }),
     customStyle: true
@@ -67,6 +74,9 @@ struct Index {
 
   isAddingAccount: boolean = false
 
+  /* 原神游戏数据 */
+  @State GI_DailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo()
+  @State GI_DailyNoteDataUpdateFlag: boolean = false
 
 
   // 页面呈现生命周期函数
@@ -103,15 +113,8 @@ struct Index {
   }
   // 页面返回回调函数
   onBackPress() {
-    // 实现双击返回退出应用
-    if (this.ready_exit) {
-      this.exitApp()
-    } else {
-      this.ready_exit = true
-      setTimeout(() => {
-        this.ready_exit = false
-      }, 1000)
-    }
+    // 直接返回桌面
+    this.backHome()
 
     return true
   }
@@ -123,7 +126,7 @@ struct Index {
           Tabs({ barPosition: BarPosition.End, controller: this.tabController }) {
             // 原神分区
             TabContent() {
-              List() {
+              List({ space: 20 }) {
                 ListItem() {
                   Column() {
                     List() {
@@ -203,6 +206,13 @@ struct Index {
                   }
                   .width('100%')
                   .padding(5)
+                }
+                .borderRadius(20)
+                .backgroundColor($r('app.color.card_background_color'))
+                .clip(true)
+
+                ListItem() {
+                  GI_DailyNoteCard({ data: $GI_DailyNoteData, isUpdating: $GI_DailyNoteDataUpdateFlag })
                 }
                 .borderRadius(20)
                 .backgroundColor($r('app.color.card_background_color'))
@@ -324,9 +334,27 @@ struct Index {
     .height('100%')
     .backgroundColor($r('app.color.page_background_color'))
   }
-
+  // 退出应用
   exitApp() {
     this.context.terminateSelf()
+  }
+  // 返回桌面
+  backHome() {
+    let want: Want = {
+      bundleName: 'com.huawei.android.launcher',
+      abilityName:'com.huawei.android.launcher.unihome.UniHomeLauncher',
+      action: 'android.intent.action.MAIN',
+      flags: wantConstant.Flags.FLAG_NOT_OHOS_COMPONENT,
+      entities: ['android.intent.category.LAUNCHER']
+    }
+    console.warn('返回桌面')
+    this.context.startAbility(want, (error) => {
+      if (error) {
+        promptAction.showToast({
+          message: '拉起桌面失败: error.code = ' + error.code
+        })
+      }
+    })
   }
 
   getAccountTip(game: string) {
@@ -364,6 +392,7 @@ struct Index {
         if (this.selGameRole_genshin) {
           this.selGameRoleInfo_genshin = new GameRoleInfo(this.selGameRole_genshin)
           globalThis.SelGIRole = this.selGameRole_genshin         // 更新全局“选中的原神角色”
+          this.updateGIDataAsync()        // 异步执行原神分区数据刷新
         } else {
           globalThis.SelGIRole = null
         }
@@ -396,6 +425,25 @@ struct Index {
       new_accountInfoList.push(new AccountInfo(user))
     }
     this.accountInfoList = new_accountInfoList
+  }
+
+  async updateGIDataAsync() {
+    // 更新体力数据
+    this.GI_DailyNoteDataUpdateFlag = true
+    let dailyNoteData = await this.selUser.getGIDailyNoteDateAsync()
+    let dailyNoteInfo = new GI_DailyNoteInfo(dailyNoteData)
+    this.GI_DailyNoteDataUpdateFlag = false
+    animateTo({
+      duration: 600,
+      curve: Curve.EaseInOut,
+      iterations: 1,
+      playMode: PlayMode.Normal,
+      onFinish: () => {
+        console.info('play end')
+      }
+    }, () => {
+      this.GI_DailyNoteData = dailyNoteInfo
+    })
   }
 
   // 帐户控制中心面板入口组件

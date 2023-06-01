@@ -365,7 +365,7 @@ class MihoyoAPI {
 
     // 发起请求并等待结果返回
     // 参数: void
-    // 返回: this.method
+    // 返回: Response
     public async getResponseAsync() {
         let requester = http.createHttp()
         let hres: http.HttpResponse = null

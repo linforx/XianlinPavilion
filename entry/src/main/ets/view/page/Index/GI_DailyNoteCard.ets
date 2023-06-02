@@ -15,6 +15,7 @@ export default struct GI_DailyNoteCard {
   @Link isUpdating: boolean
 
   getUpdateTime() {
+    if (this.data.updateTime == 0) return ''
     let date = new Date(this.data.updateTime);
 
     let year = date.getFullYear(); // 获取年份
@@ -39,7 +40,7 @@ export default struct GI_DailyNoteCard {
   }
 
   getHomeCoinTip() {
-    if (this.data.currentResin == this.data.maxHomeCoin) return '洞天宝钱已存满'
+    if (this.data.currentHomeCoin == this.data.maxHomeCoin) return '洞天宝钱已存满'
     let dayArray = ['日', '一', '二', '三', '四', '五', '六']
     let timeNow = Date.now()
     let today = new Date()
@@ -102,7 +103,7 @@ export default struct GI_DailyNoteCard {
 
         Blank()
 
-        Text(`上次更新时间 ${this.getUpdateTime()}`)
+        Text(`上次更新时间: ${this.getUpdateTime()}`)
           .height(20)
           .fontSize(10)
           .fontColor($r('app.color.sub_text_color'))

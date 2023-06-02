@@ -14,6 +14,8 @@ import newsList from './API/newsList'
 import postFull from './API/postFull'
 import userInfo from './API/userInfo'
 import verifyVerification from './API/verifyVerification'
+import deviceLogin from './API/deviceLogin'
+import saveDevice from './API/saveDevice'
 
 export default {
     actionTicket,
@@ -24,5 +26,7 @@ export default {
     gameRoleInfo,
     userInfo,
     newsList,
-    postFull
+    postFull,
+    deviceLogin,
+    saveDevice
 }

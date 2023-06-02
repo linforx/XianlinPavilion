@@ -36,7 +36,6 @@ class MihoyoAPI {
             'x-rpc-app_version': CoreEnvironment.miHoYoBBSXrpcVersion,
             'x-rpc-sys_version': '12',
             'x-rpc-channel': 'mihoyo',
-            'x-rpc-device_id': CoreEnvironment.deviceId,
             'x-rpc-device_name': Utils.getRandomString(Math.floor(Math.random() * 10) + 1),
             'x-rpc-device_model': deviceInfo.productModel
         };
@@ -178,6 +177,46 @@ class MihoyoAPI {
         this.data['geetest_seccode'] = `${validate}|jordan`;
         this.data['geetest_challenge'] = challenge;
         this.data['geetest_validate'] = validate;
+
+        return this;
+    }
+
+    // 设备登录
+    // 参数: device_id(string), device_name(string)， registration_id(string)
+    // 返回: this
+    public applyDeviceLogin(deviceId: string, deviceName: string, registrationId: string) {
+        let api = apiMap.deviceLogin
+
+        this.url = api.url;
+        this.params = api.params;
+        this.method = api.method;
+        this.data = api.body;
+        this.data['device_id'] = deviceId;
+        this.data['device_name'] = deviceName;
+        this.data['registration_id'] = registrationId;
+        this.data['app_version'] = CoreEnvironment.miHoYoBBSXrpcVersion;
+        this.data['os_version'] = '25';
+        this.data['platform'] = 'Android';
+
+        return this;
+    }
+
+    // 设备保存
+    // 参数: device_id(string), device_name(string)， registration_id(string)
+    // 返回: this
+    public applySaveDevice(deviceId: string, deviceName: string, registrationId: string) {
+        let api = apiMap.saveDevice
+
+        this.url = api.url;
+        this.params = api.params;
+        this.method = api.method;
+        this.data = api.body;
+        this.data['device_id'] = deviceId;
+        this.data['device_name'] = deviceName;
+        this.data['registration_id'] = registrationId;
+        this.data['app_version'] = CoreEnvironment.miHoYoBBSXrpcVersion;
+        this.data['os_version'] = '25';
+        this.data['platform'] = 'Android';
 
         return this;
     }

@@ -32,10 +32,60 @@ export default class User {
             uid: ''
         }
     }
+    public deviceFP: string = ''
+    public deviceId: string = ''
 
     public constructor(cookie: string, uid?: string) {
         this.cookie = new Cookie(cookie)
         this.uid = uid ?? ''
+
+        this.registerDeviceAsync()
+    }
+
+    private async registerDeviceAsync() {
+        let deviceFP = this.cookie.getByName('DEVICEFP')
+        let deviceId = this.cookie.getByName('_MHYUUID')
+        let RegId = this.genRegistrationId()
+        let response = await new MihoyoAPI()
+            .applyDeviceLogin(deviceId, deviceFP, RegId)
+            .HeadersAddWith('x-rpc-client_type', '2')
+            .HeadersAddWith('x-rpc-sys_version', '7.1.2')
+            .HeadersAddWith('x-rpc-channel', 'release')
+            .HeadersAddWith('x-rpc-device_id', deviceId)
+            .HeadersAddWith('x-rpc-device_fp', deviceFP)
+            .HeadersAddWith('x-rpc-device_name', `${deviceInfo.brand} ${deviceInfo.productModel}`)
+            .HeadersAddWith('x-rpc-device_model', `${deviceInfo.productModel}`)
+            .setReferer(Host.AppMihoyoReferer)
+            .setCookie(this.cookie.getByType(CookieType.SToken))
+            .getResponseAsync()
+        if (response.success) {
+            response = await new MihoyoAPI()
+                .applySaveDevice(deviceId, deviceFP, RegId)
+                .HeadersAddWith('x-rpc-client_type', '2')
+                .HeadersAddWith('x-rpc-sys_version', '7.1.2')
+                .HeadersAddWith('x-rpc-channel', 'release')
+                .HeadersAddWith('x-rpc-device_id', deviceId)
+                .HeadersAddWith('x-rpc-device_fp', deviceFP)
+                .HeadersAddWith('x-rpc-device_name', `${deviceInfo.brand} ${deviceInfo.productModel}`)
+                .HeadersAddWith('x-rpc-device_model', `${deviceInfo.productModel}`)
+                .setReferer(Host.AppMihoyoReferer)
+                .setCookie(this.cookie.getByType(CookieType.SToken))
+                .getResponseAsync()
+        }
+
+        this.deviceFP = deviceFP
+        this.deviceId = deviceId
+    }
+
+    private genRegistrationId() {
+        function S1 () {
+            return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(5)
+        }
+        let id = ''
+        for (let i = 0; i < 19; ++i) {
+            id += S1()
+        }
+        return id
     }
 
     public async updateMultiCookieAsync() {
@@ -156,9 +206,9 @@ export default class User {
             .setReferer('https://webstatic.mihoyo.com')
             .setOrigin('https://webstatic.mihoyo.com')
             .HeadersAddWith('x-rpc-sys_version', '7.1.2')
-            .HeadersAddWith('x-rpc-device_id', '5f3b6eec-58a4-3a6d-b544-51566d011b42')
-            .HeadersAddWith('x-rpc-device_fp', '38d7ee6529d18')
-            .HeadersAddWith('x-rpc-device_name', 'Samsung%20SM-G9810')
+            .HeadersAddWith('x-rpc-device_id', this.deviceId)
+            .HeadersAddWith('x-rpc-device_fp', this.deviceFP)
+            .HeadersAddWith('x-rpc-device_name', `${deviceInfo.brand} ${deviceInfo.productModel}`)
             .HeadersAddWith('x-rpc-page', `v${CoreEnvironment.miHoYoBBSGIToolVersion}-ys_#/ys`)
             .HeadersAddWith('X-Requested-With', 'com.mihoyo.hyperion')
             .HeadersAddWith('x-rpc-tool_verison', `v${CoreEnvironment.miHoYoBBSGIToolVersion}-ys`)

@@ -74,8 +74,8 @@ export default struct GameRoleChooseDialog {
     }
     .backgroundColor($r('app.color.page_background_color'))
     .width('88%')
-    .constraintSize({ maxWidth: 400 })
-    .padding({ top: 15, bottom: 15, left: 10, right: 10 })
+    .constraintSize({ maxWidth: 350 })
+    .padding({ top: 15, bottom: 15, left: 15, right: 15 })
     .borderRadius(20)
   }
 }

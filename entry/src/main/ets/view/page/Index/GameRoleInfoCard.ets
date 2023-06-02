@@ -21,18 +21,31 @@ export default struct GameRoleInfoCard {
             .fontColor(this.selectIndex == this.index ? $r('app.color.primary_text_inversion') : $r('app.color.text_color'))
             .fontSize(16)
           Text(this.role.gameUid)
-            .fontColor(this.selectIndex == this.index ? $r('app.color.secondary_text_inversion') : $r('app.color.text_color'))
+            .fontColor(this.selectIndex == this.index ? $r('app.color.secondary_text_inversion') : $r('app.color.sub_text_color'))
             .fontSize(16)
         }
         .height(50)
         .justifyContent(FlexAlign.SpaceBetween)
         .alignItems(HorizontalAlign.Start)
         .margin({ left: 10 })
+
+        Column() {
+          Text('服务器')
+            .fontColor(this.selectIndex == this.index ? $r('app.color.secondary_text_inversion') : $r('app.color.sub_text_color'))
+            .fontSize(16)
+          Text(this.role.regionName)
+            .fontColor(this.selectIndex == this.index ? $r('app.color.primary_text_inversion') : $r('app.color.text_color'))
+            .fontSize(16)
+        }
+        .height(50)
+        .justifyContent(FlexAlign.SpaceBetween)
+        .alignItems(HorizontalAlign.End)
+        .margin({ right: 10 })
       }
       .width('100%')
+      .justifyContent(FlexAlign.SpaceBetween)
     }
-    .width('80%')
-    .constraintSize({ maxWidth: 300 })
+    .width('100%')
     .type(ButtonType.Normal)
     .backgroundColor(this.selectIndex == this.index ? $r('app.color.high_light_text_color') : '#00000000')
     .borderRadius(10)

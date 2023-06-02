@@ -13,9 +13,11 @@ export default class GameRoleInfo {
     this.headImg = account_head_img ?? ''
     this.nickname = game_role?.nickname
     this.gameUid = game_role?.gameUid
+    this.regionName = game_role.regionName
   }
 
   public headImg: string | Resource = ''
   public nickname: string = ''
   public gameUid: string = ''
+  public regionName: string = ''
 }

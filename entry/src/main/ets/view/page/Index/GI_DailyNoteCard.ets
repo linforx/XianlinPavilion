@@ -6,13 +6,13 @@
  */
 
 import GI_DailyNoteInfo from '../../../viewmodel/page/Index/GI_DailyNoteInfo'
-import prompt from '@ohos.prompt'
 import promptAction from '@ohos.promptAction'
 
 @Component
 export default struct GI_DailyNoteCard {
   @Link data: GI_DailyNoteInfo
   @Link isUpdating: boolean
+
 
   getUpdateTime() {
     if (this.data.updateTime == 0) return ''

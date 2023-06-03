@@ -446,7 +446,7 @@ class MihoyoAPI {
         if (hres.responseCode != http.ResponseCode.OK) {
             res.success = false;
             res.code = hres.responseCode;
-            res.message = `response error: ${hres.responseCode}}`;
+            res.message = `response error: ${hres.responseCode}`;
         }
 
         let json;

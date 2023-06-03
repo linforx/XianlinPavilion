@@ -1,9 +1,10 @@
-import Want from '@ohos.app.ability.Want';
-import wantConstant from '@ohos.ability.wantConstant';
+import Want from '@ohos.app.ability.Want'
+import wantConstant from '@ohos.ability.wantConstant'
 import router from '@ohos.router'
 import PageMoreButton from '../view/PageMoreButton'
 import common from '@ohos.app.ability.common'
 import promptAction from '@ohos.promptAction'
+import animator, { AnimatorResult } from '@ohos.animator'
 import AccountManageCenter from '../view/page/Index/AccountManageCenter'
 import User from '../model/User/User'
 import GameRole from '../model/User/GameRole'
@@ -13,8 +14,9 @@ import GameRoleInfoCard from '../view/page/Index/GameRoleInfoCard'
 import MihoyoAPI from '../model/ServiceProvider/MihoyoAPI'
 import Cookie from '../model/User/Cookie'
 import GameRoleChooseDialog from '../view/page/Index/GameRoleChooseDialog'
-import GI_DailyNoteCard from '../view/page/Index/GI_DailyNoteCard';
-import GI_DailyNoteInfo from '../viewmodel/page/Index/GI_DailyNoteInfo';
+import GI_DailyNoteCard from '../view/page/Index/GI_DailyNoteCard'
+import GI_DailyNoteInfo from '../viewmodel/page/Index/GI_DailyNoteInfo'
+import Animator from '@ohos.animator'
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 

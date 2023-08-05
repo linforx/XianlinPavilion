@@ -18,9 +18,8 @@ struct Page {
       url: 'pages/Index'
     })
 
-    let userList: User[] = [User.createDefaultAccount()]
+    let userList: User[] = []
 
-    globalThis.selAccountUid = '253237280'
     globalThis.userList = userList
     router.pushUrl({
       url: 'pages/Index'

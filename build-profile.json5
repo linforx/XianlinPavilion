@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_XianlinPavilion_com.forlinx.xianlinpavilion_2850086000483979975.cer",
+          "storePassword": "0000001BC8A9FB3B6BCF51450BE4369B6437FE8EE1279E2226D30C210CF864904E067B1F2CBE8DBDD616B6",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B8FE690F36E3D23AD8272E4123FBD65F71A4D286CA46106EF46F57FB7C6089A21284767F63E434E",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_XianlinPavilion_com.forlinx.xianlinpavilion_2850086000483979975.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_XianlinPavilion_com.forlinx.xianlinpavilion_2850086000483979975.p12"
+        }
+      }
+    ],
     "compileSdkVersion": 9,
     "compatibleSdkVersion": 9,
     "products": [

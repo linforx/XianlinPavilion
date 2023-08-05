@@ -93,6 +93,7 @@ struct Index {
           promptAction.showToast({
             message: '帐户创建失败'
           })
+          return
         } else {
           let new_userList: User[] = []
           await newUser.updateBBSCookieAsync()
@@ -109,6 +110,7 @@ struct Index {
         promptAction.showToast({
           message: '帐户创建操作已取消'
         })
+        return
       }
     }
     await this.updateSelUserInfoAsync()
@@ -331,10 +333,12 @@ struct Index {
         builder: this.NavigationTitle,
         height: this.titleHeight
       })
+      .margin({ bottom: `${globalThis?.avoidArea?.bottomRect?.height ?? 120}px` })
     }
     .width('100%')
     .height('100%')
     .backgroundColor($r('app.color.page_background_color'))
+    .padding({ top: `${globalThis?.avoidArea?.topRect?.height ?? 120}px` })
   }
   // 退出应用
   exitApp() {
@@ -557,9 +561,8 @@ struct Index {
       }
       .type(ButtonType.Normal)
       .backgroundColor('#00000000')
-      .height('61.4%')
+      .height('80%')
       .width('100%')
-      .padding({ left: 10, right: 10 })
     }
     .justifyContent(FlexAlign.Center)
     .alignItems(VerticalAlign.Bottom)
@@ -595,9 +598,8 @@ struct Index {
       }
       .type(ButtonType.Normal)
       .backgroundColor('#00000000')
-      .height('61.4%')
+      .height('80%')
       .width('100%')
-      .padding({ left: 10, right: 10 })
     }
     .justifyContent(FlexAlign.Center)
     .alignItems(VerticalAlign.Bottom)

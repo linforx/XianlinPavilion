@@ -184,22 +184,7 @@ export default class User {
             })
             return
         }
-        let httpClient = http.createHttp()
-        await httpClient.request(`https://api-takumi-record.mihoyo.com/game_record/app/genshin/api/dailyNote?server=${role.region}&role_id=${role.gameUid}`,{
-            header: {
-                'Accept': '*/*',
-                'Access-Control-Request-Method': 'GET',
-                'Access-Control-Request-Headers': 'ds,x-rpc-app_version,x-rpc-client_type,x-rpc-device_fp,x-rpc-device_id,x-rpc-device_name,x-rpc-page,x-rpc-sys_version,x-rpc-tool_verison',
-                'Origin': 'https://webstatic.mihoyo.com',
-                'Referer': 'https://webstatic.mihoyo.com',
-                'User-Agent': CoreEnvironment.miHoYoBBSUserAgent,
-                'X-Requested-With': 'com.mihoyo.hyperion',
-                'Sec-Fetch-Mode': 'cors',
-                'Sec-Fetch-Site': 'same-site',
-                'Sec-Fetch-Dest': 'empty'
-            },
-            method: http.RequestMethod.OPTIONS
-        })
+
         let response = await new GenshinAPI()
             .applyDailyNote(role.gameUid, role.region)
             .setCookie(this.cookie.getByType(CookieType.BothCLToken))

@@ -47,7 +47,7 @@ export default struct PageMoreButton {
                 }
                 Text(item.desc)
                   .fontSize(20)
-                  .fontSize($r('app.color.text_color'))
+                  .fontColor($r('app.color.text_color'))
                   .margin({ top: 10, bottom: 10 })
                   .textOverflow({ overflow: TextOverflow.Ellipsis })
               }

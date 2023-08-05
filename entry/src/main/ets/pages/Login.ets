@@ -7,7 +7,7 @@ import promptAction from '@ohos.promptAction';
 @Component
 struct Login {
   @State url: string = 'Hello World'
-  private mihoyoLogin: string = 'https://www.baidu.com/'
+  private mihoyoLogin: string = 'https://user.mihoyo.com/#/login/captcha'
   @State progress: number = 0;
   @State hideProgress: Visibility = Visibility.None;
   @State titleHeight: number = 76
@@ -27,8 +27,6 @@ struct Login {
               .domStorageAccess(true)
               .javaScriptAccess(true)
               .geolocationAccess(true)
-              .zoomAccess(true)
-              .overviewModeAccess(false)
 
             Button('我已登录')
               .fontColor($r('app.color.text_color'))
@@ -40,7 +38,7 @@ struct Login {
               .onClick(() => {
                 this.controller.runJavaScript('document.cookie', (err, result) => {
                   if (result.includes('login_ticket')) {
-                    globalThis.cookies = result
+                    globalThis.userCookie = new String(result)
                     console.info(`The document.cookie return cookie is: ${result}`)
                     router.back()
                   } else {
@@ -60,17 +58,17 @@ struct Login {
         .height('100%')
         .width('100%')
       }
-      .width('100%')
-      .height('100%')
+      .mode(NavigationMode.Stack)
       .title({
         builder: this.NavigationTitle,
         height: this.titleHeight
       })
-      .mode(NavigationMode.Stack)
+      .margin({ bottom: `${globalThis?.avoidArea?.bottomRect?.height ?? 120}px` })
     }
     .backgroundColor($r('app.color.page_background_color'))
     .width('100%')
     .height('100%')
+    .padding({ top: `${globalThis?.avoidArea?.topRect?.height ?? 120}px` })
   }
 
   @Builder

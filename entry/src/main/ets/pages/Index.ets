@@ -107,6 +107,7 @@ struct Index {
     for (let user of this.userList) {
       await user.updateUserInfoAsync()
     }
+    await this.updateSelUserInfoAsync()
   }
 
   // 从本地数据库中读取账户列表
@@ -115,9 +116,9 @@ struct Index {
     let predicate = new relationalStore.RdbPredicates('account')
     predicate.greaterThan('id', 0)
     try {
-      let accountInfoList = await DBHelper.queryInTableAccountAsync(predicate, tableAccount.fields)
+      let accountDataList = await DBHelper.queryInTableAccountAsync(predicate, tableAccount.fields)
       let userList: User[] = []
-      for (let item of accountInfoList) {
+      for (let item of accountDataList) {
         userList.push(new User(item['cookies'], item['account_id']))
       }
       this.userList = userList
@@ -132,6 +133,7 @@ struct Index {
   // 页面呈现生命周期函数
   async onPageShow() {
     if (this.isAddingAccount) {
+      this.isAddingAccount = false
       let cookie = router.getParams()?.['cookie'] ?? ''
       if (!cookie) {
         this.isAddingAccount = false
@@ -143,7 +145,6 @@ struct Index {
       // 处理帐户创建过程
       await this.accountAddEventHandler(cookie)
       await this.updateSelUserInfoAsync()
-      this.isAddingAccount = false
     }
     router.clear()
   }

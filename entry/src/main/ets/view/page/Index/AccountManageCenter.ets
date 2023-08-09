@@ -10,6 +10,8 @@ import User from '../../../model/User/User'
 import AccountInfo from '../../../viewmodel/page/Index/AccountInfo'
 import promptAction from '@ohos.promptAction'
 import appSetting from '../../../common/preference/appSetting'
+import { getDBHelper } from '../../../common/database/DatabaseHelper'
+import relationalStore from '@ohos.data.relationalStore'
 
 @Component
 export default struct AccountManageCenter {
@@ -18,6 +20,23 @@ export default struct AccountManageCenter {
   @Link accountInfoList: AccountInfo[]
 
   async deletUser(uid: string) {
+    let DBHelper = getDBHelper(this.context)
+    let predicates = new relationalStore.RdbPredicates('account')
+    predicates.equalTo('account_id', uid)
+    if (await DBHelper.existInTableAsync(predicates)) {
+      if (await DBHelper.deleteInTableAsync(predicates) <= 0) {
+        promptAction.showToast({
+          message: '删除账户失败'
+        })
+        return
+      }
+    }
+    else {
+      promptAction.showToast({
+        message: '数据库查无此账号'
+      })
+    }
+
     let index: number
     for (index = 0; index < this.userList.length; ++index) {
       if (this.userList[index].uid == uid) {
@@ -47,7 +66,14 @@ export default struct AccountManageCenter {
 
     if (globalThis.selAccountUid == uid) {
       globalThis.selAccountUid = ''
+      await appSetting.deleteAsync('selAccountUid')
+      await appSetting.deleteAsync('selGIRoleUid')
+      await appSetting.deleteAsync('selHSRRoleUid')
+      await appSetting.flushAsync()
     }
+    promptAction.showToast({
+      message: '删除成功'
+    })
   }
 
   build() {

@@ -59,6 +59,10 @@ export default class Cookie {
         return this.cookieObj[name] ?? ''
     }
 
+    public toString() {
+        return Cookie.stringifyCookie(this.cookieObj)
+    }
+
     public static parseCookie(cookieStr: string): Object {
         let cookieJson = {}
 
@@ -81,8 +85,8 @@ export default class Cookie {
     public static stringifyCookie(cookieJson: Object): string {
         let str = ''
         for (let key in cookieJson) {
-            str += key + '=' + cookieJson[key] + ';'
+            str += key + '=' + cookieJson[key] + '; '
         }
-        return str.trim()
+        return str.trim().replace(/;$/, '')
     }
 }

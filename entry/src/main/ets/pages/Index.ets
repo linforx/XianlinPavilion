@@ -17,6 +17,10 @@ import GameRoleChooseDialog from '../view/page/Index/GameRoleChooseDialog'
 import GI_DailyNoteCard from '../view/page/Index/GI_DailyNoteCard'
 import GI_DailyNoteInfo from '../viewmodel/page/Index/GI_DailyNoteInfo'
 import Animator from '@ohos.animator'
+import { getDBHelper } from '../common/database/DatabaseHelper'
+import relationalStore from '@ohos.data.relationalStore'
+import tableAccount from '../common/database/tables/account'
+import appSetting from '../common/preference/appSetting'
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 
@@ -48,12 +52,21 @@ struct Index {
       selGameRoleInfo: $selGameRoleInfo_genshin,
       gameRoleList: $gameRoleList,
       cancel: () => {},
-      confirm: (role: GameRole) => {
+      confirm: async (role: GameRole) => {
         // 更新Index页面的选中信息，刷新UI节点
         this.selGameRole_genshin = role
         this.selGameRoleInfo_genshin = new GameRoleInfo(role)
         this.selUser.gameRoleChosen.Genshin.uid = role.gameUid
         globalThis.SelGIRole = this.selGameRole_genshin         // 更新全局“选中的原神角色”
+        if (await appSetting.putAsync('selGIRoleUid', this.selUser.gameRoleChosen.Genshin.uid)) {
+          if (!(await appSetting.flushAsync())) {
+            promptAction.showToast({
+              message: '原神角色选中保存失败'
+            })
+          }
+        } else {
+          console.error('无法向preference中存入信息')
+        }
         this.updateGIDataAsync()
       }
     }),
@@ -64,11 +77,20 @@ struct Index {
       selGameRoleInfo: $selGameRoleInfo_starrail,
       gameRoleList: $gameRoleList,
       cancel: () => {},
-      confirm: (role: GameRole) => {
+      confirm: async (role: GameRole) => {
         this.selGameRole_starrail = role
         this.selGameRoleInfo_starrail = new GameRoleInfo(role)
         this.selUser.gameRoleChosen.StarRail.uid = role.gameUid
         globalThis.SelHSRRole = this.selGameRole_starrail       // 更新全局“选中的崩坏：星穹铁道角色”
+        if (await appSetting.putAsync('selHSRRoleUid', this.selUser.gameRoleChosen.StarRail.uid)) {
+          if (!(await appSetting.flushAsync())) {
+            promptAction.showToast({
+              message: '星穹铁道角色选中保存失败'
+            })
+          }
+        } else {
+          console.error('无法向preference中存入信息')
+        }
       }
     }),
     customStyle: true
@@ -80,40 +102,50 @@ struct Index {
   @State GI_DailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo()
   @State GI_DailyNoteDataUpdateFlag: boolean = false
 
+  async aboutToAppear() {
+    await this.getAccountFromDatabaseAsync()
+    for (let user of this.userList) {
+      await user.updateUserInfoAsync()
+    }
+  }
+
+  // 从本地数据库中读取账户列表
+  async getAccountFromDatabaseAsync() {
+    let DBHelper = getDBHelper(this.context)
+    let predicate = new relationalStore.RdbPredicates('account')
+    predicate.greaterThan('id', 0)
+    try {
+      let accountInfoList = await DBHelper.queryInTableAccountAsync(predicate, tableAccount.fields)
+      let userList: User[] = []
+      for (let item of accountInfoList) {
+        userList.push(new User(item['cookies'], item['account_id']))
+      }
+      this.userList = userList
+    } catch (err) {
+      promptAction.showToast({
+        message: '无法从本地数据库中读取帐户信息'
+      })
+    }
+    await this.updateSelUserInfoAsync()
+  }
 
   // 页面呈现生命周期函数
   async onPageShow() {
     if (this.isAddingAccount) {
-      // 处理Login页面返回后续
-      if (globalThis.userCookie) {
-        let cookie = globalThis.userCookie
-        let newUser = new User(cookie)
-        let success = await newUser.updateMultiCookieAsync()
-        if (!success) {
-          promptAction.showToast({
-            message: '帐户创建失败'
-          })
-          return
-        } else {
-          let new_userList: User[] = []
-          await newUser.updateBBSCookieAsync()
-          await newUser.updateUserInfoAsync()
-          for (let i = 0; i < this.userList.length; ++i) {
-            if (this.userList[i].uid == newUser.uid) continue
-            new_userList.push(this.userList[i])
-          }
-
-          new_userList.push(newUser)
-          this.userList = new_userList
-        }
-      } else {
+      let cookie = router.getParams()?.['cookie'] ?? ''
+      if (!cookie) {
+        this.isAddingAccount = false
         promptAction.showToast({
-          message: '帐户创建操作已取消'
+          message: '帐户创建已取消'
         })
         return
       }
+      // 处理帐户创建过程
+      await this.accountAddEventHandler(cookie)
+      await this.updateSelUserInfoAsync()
+      this.isAddingAccount = false
     }
-    await this.updateSelUserInfoAsync()
+    router.clear()
   }
   // 页面返回回调函数
   onBackPress() {
@@ -320,7 +352,7 @@ struct Index {
             }
             .tabBar(this.starrailBar())
           }
-          .animationDuration(300)
+          .animationDuration(0)
           .onChange((index) => {
             this.selIndex = index as 0 | 1
           })
@@ -381,9 +413,10 @@ struct Index {
         this.selUser = this.userList[i]
         await this.selUser.updateBBSCookieAsync()
         await this.selUser.updateUserInfoAsync()
-        globalThis.SelUser = this.selUser                         // 更新全局“当前用户”
         // 刷新账号下的游戏角色列表
         let gameRoles = await this.selUser.getGameRoleListAsync()
+        this.selUser.gameRoleChosen.Genshin.uid = globalThis.selGIRoleUid
+        this.selUser.gameRoleChosen.StarRail.uid = globalThis.selHSRRoleUid
         console.warn(`genshinrole: ${this.selUser.gameRoleChosen.Genshin.uid}`)
         console.warn(`starrailrole: ${this.selUser.gameRoleChosen.StarRail.uid}`)
         for (let role of gameRoles) {
@@ -394,6 +427,7 @@ struct Index {
             this.selGameRole_starrail = role
           }
         }
+        globalThis.SelUser = this.selUser                         // 更新全局“当前用户”
 
         if (this.selGameRole_genshin) {
           this.selGameRoleInfo_genshin = new GameRoleInfo(this.selGameRole_genshin)
@@ -455,7 +489,7 @@ struct Index {
   // 帐户控制中心面板入口组件
   @Builder
   AccountManageCenterPanel() {
-    Panel(this.showAMCP) { // 展示日程
+    Panel(this.showAMCP) {
       Column() {
         Image($r('app.media.ic_user_portrait'))
           .height(30)
@@ -484,7 +518,7 @@ struct Index {
         .margin(10)
         .onClick(() => {
           this.isAddingAccount = true
-          globalThis.userCookie = ''
+          console.log(JSON.stringify(this.isAddingAccount))
           router.pushUrl({
             url: 'pages/Login'
           })
@@ -496,6 +530,7 @@ struct Index {
     .backgroundColor($r('app.color.panel_background_color'))
     .type(PanelType.Foldable)
     .mode(PanelMode.Half)
+    .halfHeight(500)
     .miniHeight(100)
     .dragBar(true) // 默认开启
     .onChange((width: number, height: number, mode: PanelMode) => {
@@ -504,6 +539,33 @@ struct Index {
         this.updateSelUserInfoAsync()
       }
     })
+  }
+  // 处理添加帐户的函数，获取米游社帐户cookie
+  async accountAddEventHandler(cookie: string) {
+    promptAction.showToast({
+      message: '获取帐户信息...'
+    })
+    let newUser = new User(cookie)
+    let success = await newUser.updateMultiCookieAsync()
+    if (!success) {
+      promptAction.showToast({
+        message: '帐户创建失败'
+      })
+      return
+    } else {
+      let new_userList: User[] = []
+      await newUser.updateBBSCookieAsync()
+      await newUser.updateUserInfoAsync()
+      for (let i = 0; i < this.userList.length; ++i) {
+        if (this.userList[i].uid == newUser.uid) continue
+        new_userList.push(this.userList[i])
+      }
+
+      new_userList.push(newUser)
+      this.userList = new_userList
+
+      await newUser.flush(this.context)
+    }
   }
 
   @Builder

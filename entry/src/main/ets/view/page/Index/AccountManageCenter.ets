@@ -5,12 +5,15 @@
  * Description: 帐户管理中心控件
  */
 
+import common from '@ohos.app.ability.common'
 import User from '../../../model/User/User'
 import AccountInfo from '../../../viewmodel/page/Index/AccountInfo'
 import promptAction from '@ohos.promptAction'
+import appSetting from '../../../common/preference/appSetting'
 
 @Component
 export default struct AccountManageCenter {
+  private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
   @Link userList: User[]
   @Link accountInfoList: AccountInfo[]
 
@@ -58,9 +61,18 @@ export default struct AccountManageCenter {
                 .height(15)
                 .width(15)
                 .margin(10)
-                .onChange((isChecked: boolean) => {
+                .onChange(async (isChecked: boolean) => {
                   if (isChecked) {
                     globalThis.selAccountUid = account.uid
+                    if (await appSetting.putAsync('selAccountUid', account.uid)) {
+                      if (!(await appSetting.flushAsync())) {
+                        promptAction.showToast({
+                          message: '帐户切换保存失败'
+                        })
+                      }
+                    } else {
+                      console.error('无法向preference中存入信息')
+                    }
                   }
                 })
 

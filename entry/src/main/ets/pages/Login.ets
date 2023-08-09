@@ -2,10 +2,12 @@ import PageBackButton from '../view/PageBackButton';
 import webview from '@ohos.web.webview';
 import router from '@ohos.router';
 import promptAction from '@ohos.promptAction';
+import common from '@ohos.app.ability.common';
 
 @Entry
 @Component
 struct Login {
+  private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
   @State url: string = 'Hello World'
   private mihoyoLogin: string = 'https://user.mihoyo.com/#/login/captcha'
   @State progress: number = 0;
@@ -23,7 +25,7 @@ struct Login {
             .width('100%')
           Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Center }) {
             Web({ src: this.mihoyoLogin, controller: this.controller })
-              .width('100%')
+              .zoomAccess(true)
               .domStorageAccess(true)
               .javaScriptAccess(true)
               .geolocationAccess(true)
@@ -38,9 +40,15 @@ struct Login {
               .onClick(() => {
                 this.controller.runJavaScript('document.cookie', (err, result) => {
                   if (result.includes('login_ticket')) {
-                    globalThis.userCookie = new String(result)
+                    result = result.replace(/^"|"$/g, '')
                     console.info(`The document.cookie return cookie is: ${result}`)
-                    router.back()
+
+                    router.pushUrl({
+                      url: 'pages/Index',
+                      params: {
+                        cookie: result
+                      }
+                    }, router.RouterMode.Single)
                   } else {
                     promptAction.showToast({
                       message: '请登录后再点击完成'

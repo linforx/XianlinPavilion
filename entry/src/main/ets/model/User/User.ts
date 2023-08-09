@@ -17,6 +17,9 @@ import GenshinAPI from '../ServiceProvider/GenshinAPI'
 import DynamicSecretVersion from '../../common/service/DynamicSecretVersion'
 import SaltType from '../../common/service/SaltType'
 import deviceInfo from '@ohos.deviceInfo'
+import { DatabaseHelper, getDBHelper } from '../../common/database/DatabaseHelper'
+import common from '@ohos.app.ability.common'
+import relationalStore from '@ohos.data.relationalStore'
 
 export default class User {
     public cookie: Cookie = null
@@ -214,5 +217,45 @@ export default class User {
 
     public static createDefaultAccount() {
         return new User('YourSToken', '253237280')
+    }
+
+    // 将帐户信息持久化保持在数据库中
+    public async flush(context: common.Context) {
+        let DBHelper = getDBHelper(context)
+        if (await DBHelper.initStorageAsync()) {
+            let predicates = new relationalStore.RdbPredicates('account')
+            predicates.equalTo('account_id', this.uid)
+            let id: number = 0;
+            let valueBucket = {
+                account_id: this.uid,
+                cookies: this.cookie.toString()
+            }
+            try {
+                if (await DBHelper.existInTableAsync(predicates)) {
+                    id = await DBHelper.updateInTableAsync(predicates, valueBucket)
+                }
+                else {
+                    id = await DBHelper.insertToTableAsync('account', valueBucket)
+                }
+            } catch(err) {
+                console.error(JSON.stringify(err))
+            }
+
+            if (id > 0) {
+                promptAction.showToast({
+                    message: '帐户信息持久化成功'
+                })
+            }
+            else {
+                promptAction.showToast({
+                    message: '帐户信息持久化失败'
+                })
+            }
+        }
+        else {
+            promptAction.showToast({
+                message: '数据库初始化失败'
+            })
+        }
     }
 }

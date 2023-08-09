@@ -8,6 +8,7 @@
 import GameRole from '../../../model/User/GameRole'
 import GameRoleInfo from '../../../viewmodel/page/Index/GameRoleInfo'
 import GameRoleInfoCard from './GameRoleInfoCard'
+import appSetting from '../../../common/preference/appSetting'
 
 
 @CustomDialog

@@ -12,7 +12,7 @@ struct Login {
   private mihoyoLogin: string = 'https://user.mihoyo.com/#/login/captcha'
   @State progress: number = 0;
   @State hideProgress: Visibility = Visibility.None;
-  @State titleHeight: number = 76
+  @State titleHeight: number = 70
   controller: WebviewController = new webview.WebviewController()
 
   build() {
@@ -94,8 +94,8 @@ struct Login {
     Row() {
       PageBackButton()
 
-      Text(this.mihoyoLogin)
-        .fontSize(16)
+      Text('登录米哈游通行证')
+        .fontSize(24)
         .fontColor($r('app.color.text_color'))
         .fontWeight(FontWeight.Bold)
 

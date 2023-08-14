@@ -78,7 +78,7 @@ export default struct PageMoreButton {
       .borderRadius(18)
       .clip(true)
     }
-    .width(160)
+    .width(180)
     .backgroundColor($r('app.color.card_background_color'))
     .borderRadius(20)
     .padding(2)

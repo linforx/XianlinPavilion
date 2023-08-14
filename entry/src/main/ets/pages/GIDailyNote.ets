@@ -45,7 +45,8 @@ struct GIDailyNote {
   @State url: string = 'Hello World'
   @State progress: number = 0;
   @State hideProgress: Visibility = Visibility.None;
-  @State titleHeight: number = 60
+  @State titleHeight: number = 70
+  @State title: string = '验证码验证'
   controller: WebviewController = new webview.WebviewController()
   ports: webview.WebMessagePort[]
   private user: User = null
@@ -208,8 +209,8 @@ struct GIDailyNote {
     Row() {
       PageBackButton()
 
-      Text(this.url)
-        .fontSize(16)
+      Text(this.title)
+        .fontSize(24)
         .fontColor($r('app.color.text_color'))
         .fontWeight(FontWeight.Bold)
         .maxLines(1)

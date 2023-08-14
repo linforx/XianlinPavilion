@@ -254,6 +254,10 @@ struct Index {
                 .borderRadius(20)
                 .backgroundColor($r('app.color.card_background_color'))
                 .clip(true)
+
+                ListItem() {
+                  
+                }
               }
               .padding({ left: 15, right: 15 })
               .height('100%')

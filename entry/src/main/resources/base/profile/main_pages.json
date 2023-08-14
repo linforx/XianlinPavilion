@@ -2,6 +2,8 @@
   "src": [
     "pages/Start",
     "pages/Index",
-    "pages/Login"
+    "pages/Login",
+    "pages/GIDailyNote",
+    "pages/GI_MyAvatars"
   ]
 }

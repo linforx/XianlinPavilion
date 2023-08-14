@@ -18,17 +18,23 @@ struct Login {
   build() {
     Column() {
       Navigation() {
-        Column() {
-          Progress({ value: this.progress, total: 100 })
-            .color('#0000ff')
-            .visibility(this.hideProgress)
-            .width('100%')
+        Stack({ alignContent: Alignment.Top }) {
           Flex({ direction: FlexDirection.Column, alignItems: ItemAlign.Center }) {
             Web({ src: this.mihoyoLogin, controller: this.controller })
               .zoomAccess(true)
               .domStorageAccess(true)
               .javaScriptAccess(true)
               .geolocationAccess(true)
+              .pinchSmooth(true)
+              .onPageBegin(() => {
+                this.hideProgress = Visibility.Visible
+              })
+              .onPageEnd(() => {
+                this.hideProgress = Visibility.None
+              })
+              .onProgressChange(event =>{
+                this.progress = event.newProgress
+              })
 
             Button('我已登录')
               .fontColor($r('app.color.text_color'))
@@ -62,6 +68,10 @@ struct Login {
           }
           .height('100%')
           .width('100%')
+          Progress({ value: this.progress, total: 100 })
+            .color('#0000ff')
+            .visibility(this.hideProgress)
+            .width('100%')
         }
         .height('100%')
         .width('100%')

@@ -7,6 +7,7 @@
 
 import GI_DailyNoteInfo from '../../../viewmodel/page/Index/GI_DailyNoteInfo'
 import promptAction from '@ohos.promptAction'
+import router from '@ohos.router'
 
 @Component
 export default struct GI_DailyNoteCard {
@@ -394,5 +395,10 @@ export default struct GI_DailyNoteCard {
     .clip(true)
     .backdropBlur(40)
     .padding(10)
+    .onClick(() => {
+      router.pushUrl({
+        url: 'pages/GIDailyNote'
+      })
+    })
   }
 }

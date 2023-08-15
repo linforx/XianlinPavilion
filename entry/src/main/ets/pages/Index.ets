@@ -21,6 +21,7 @@ import { getDBHelper } from '../common/database/DatabaseHelper'
 import relationalStore from '@ohos.data.relationalStore'
 import tableAccount from '../common/database/tables/account'
 import appSetting from '../common/preference/appSetting'
+import GI_SignDialog from '../view/page/Index/GI_SignDialog'
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 
@@ -36,9 +37,9 @@ struct Index {
 
   @State userList: User[] = globalThis.userList ?? []   // 用户列表，由Start页面处理完成后获取
   @State accountInfoList: AccountInfo[] = []            // 与用户列表相关的账户列表UI对象
-  selUser: User = null                                  // 选中的用户
-  selGameRole_genshin: GameRole = null                  // 选中的原神角色
-  selGameRole_starrail: GameRole = null                 // 选中的星铁角色
+  @State selUser: User = null                                  // 选中的用户
+  @State selGameRole_genshin: GameRole = null                  // 选中的原神角色
+  @State selGameRole_starrail: GameRole = null                 // 选中的星铁角色
   @State selAccount: AccountInfo = new AccountInfo(this.selUser)                                // 与选中的账号信息关联的UI对象
   @State selGameRoleInfo_genshin: GameRoleInfo = new GameRoleInfo(new GameRole({}), '')         // 与选中的原神角色信息关联的UI对象
   @State selGameRoleInfo_starrail: GameRoleInfo = new GameRoleInfo(new GameRole({}), '')        // 与选中的星铁角色信息关联的UI对象
@@ -96,11 +97,17 @@ struct Index {
     customStyle: true
   })
 
-  isAddingAccount: boolean = false
+  isAddingAccount: boolean = false      // 是否在添加账户
+  isFirstEntry: boolean = true          // 是否第一次进入页面
 
   /* 原神游戏数据 */
   @State GI_DailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo()
   @State GI_DailyNoteDataUpdateFlag: boolean = false
+
+  signGialogController_genshin: CustomDialogController = new CustomDialogController({
+    builder: GI_SignDialog({ role: $selGameRole_genshin, user: $selUser }),
+    customStyle: true
+  })
 
   async aboutToAppear() {
     await this.getAccountFromDatabaseAsync()
@@ -127,12 +134,12 @@ struct Index {
         message: '无法从本地数据库中读取帐户信息'
       })
     }
-    await this.updateSelUserInfoAsync()
   }
 
   // 页面呈现生命周期函数
   async onPageShow() {
     if (this.isAddingAccount) {
+      // 添加帐户
       this.isAddingAccount = false
       let cookie = router.getParams()?.['cookie'] ?? ''
       if (!cookie) {
@@ -145,6 +152,12 @@ struct Index {
       // 处理帐户创建过程
       await this.accountAddEventHandler(cookie)
       await this.updateSelUserInfoAsync()
+    }
+    if (this.isFirstEntry) {
+      this.isFirstEntry = false
+    }
+    else {
+      this.updateGIDataAsync()
     }
     router.clear()
   }
@@ -256,7 +269,7 @@ struct Index {
                 .clip(true)
 
                 ListItem() {
-                  
+
                 }
               }
               .padding({ left: 15, right: 15 })

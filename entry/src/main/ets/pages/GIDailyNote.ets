@@ -8,35 +8,6 @@ import CoreEnvironment from '../common/service/CoreEnvironment'
 import MihoyoJSInterface from '../model/Web/Bridge/MihoyoJSInterface'
 import GameRole from '../model/User/GameRole';
 
-const htmlScripts: string = "" +
-"var h5Port;" +
-"var output = document.querySelector(\'.output\');" +
-"window.addEventListener(\'message\', function (event) {" +
-"    if (event.data === \'__init_port__\') {" +
-"        console.warn('init port');" +
-"        if (event.ports[0] !== null) {" +
-"            h5Port = event.ports[0];" +
-"            h5Port.onmessage = function (event) {" +
-"              var msg = \'Got message from ets:\';" +
-"              var result = event.data;" +
-"              if (typeof(result) === \'string\') {" +
-"                console.info(`received string message from html5, string is: ${result}`);" +
-"                msg = msg + result;" +
-"              } else if (typeof(result) === \'object\') {" +
-"                if (result instanceof ArrayBuffer) {" +
-"                  console.info(`received arraybuffer from html5, length is: ${result.byteLength}`);" +
-"                  msg = msg + \'lenght is \' + result.byteLength;" +
-"                } else {" +
-"                  console.info(\'not support\');" +
-"                }" +
-"              } else {" +
-"                console.info(\'not support\');" +
-"              }" +
-"            }" +
-"        }" +
-"        console.warn('init port done');" +
-"    }" +
-"})"
 
 @Entry
 @Component
@@ -46,7 +17,7 @@ struct GIDailyNote {
   @State progress: number = 0;
   @State hideProgress: Visibility = Visibility.None;
   @State titleHeight: number = 70
-  @State title: string = '验证码验证'
+  @State title: string = '验证当前角色'
   controller: WebviewController = new webview.WebviewController()
   ports: webview.WebMessagePort[]
   private user: User = null
@@ -59,7 +30,7 @@ struct GIDailyNote {
     this.role = globalThis.SelGIRole as GameRole
     let query = `role_id=${this.role.gameUid}&server=${this.role.region}`
     this.url = `https://webstatic.mihoyo.com/app/community-game-records/index.html?bbs_presentation_style=fullscreen#/ys/daily/?${query}`
-    // 初始化Web客户端Cookie
+    this.title += `: ${this.role.nickname}`
   }
 
   setCookie(name: string, value: string, domain?: string, expires: number = 1, path: string = '/') {
@@ -151,6 +122,7 @@ struct GIDailyNote {
                 this.loadDone = true
 
                 try {
+                  // 初始化Web客户端Cookie
                   console.warn('set cookie')
                   let domain = '.mihoyo.com'
                   webview.WebCookieManager.putAcceptCookieEnabled(true)
@@ -224,3 +196,32 @@ struct GIDailyNote {
     .padding(8)
   }
 }
+const htmlScripts: string = "" +
+"var h5Port;" +
+"var output = document.querySelector(\'.output\');" +
+"window.addEventListener(\'message\', function (event) {" +
+"    if (event.data === \'__init_port__\') {" +
+"        console.warn('init port');" +
+"        if (event.ports[0] !== null) {" +
+"            h5Port = event.ports[0];" +
+"            h5Port.onmessage = function (event) {" +
+"              var msg = \'Got message from ets:\';" +
+"              var result = event.data;" +
+"              if (typeof(result) === \'string\') {" +
+"                console.info(`received string message from html5, string is: ${result}`);" +
+"                msg = msg + result;" +
+"              } else if (typeof(result) === \'object\') {" +
+"                if (result instanceof ArrayBuffer) {" +
+"                  console.info(`received arraybuffer from html5, length is: ${result.byteLength}`);" +
+"                  msg = msg + \'lenght is \' + result.byteLength;" +
+"                } else {" +
+"                  console.info(\'not support\');" +
+"                }" +
+"              } else {" +
+"                console.info(\'not support\');" +
+"              }" +
+"            }" +
+"        }" +
+"        console.warn('init port done');" +
+"    }" +
+"})"

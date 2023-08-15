@@ -3,6 +3,7 @@ import webview from '@ohos.web.webview';
 import router from '@ohos.router';
 import promptAction from '@ohos.promptAction';
 import common from '@ohos.app.ability.common';
+import CoreEnvironment from '../common/service/CoreEnvironment';
 
 @Entry
 @Component
@@ -25,7 +26,7 @@ struct Login {
               .domStorageAccess(true)
               .javaScriptAccess(true)
               .geolocationAccess(true)
-              .pinchSmooth(true)
+              .userAgent(CoreEnvironment.miHoYoBBSUserAgent)
               .onPageBegin(() => {
                 this.hideProgress = Visibility.Visible
               })

@@ -1,41 +1,34 @@
-@Entry
+import FunctionEntryCard from './FuntionEntryCard'
+
 @Component
 export default struct FunctionEntryContainer {
+  private functions = [
+    { title: '我的角色', icon: $rawfile('GI/resource/others/roleIcon.png'), targetPage: 'pages/GI_MyAvatars' },
+  ]
+  @State bgColors: Color[] = [Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Color.Grey, Color.Blue, Color.Brown]
+  @State currentBp: string = 'unknown'
+
   build() {
-    GridRow() {
-      GridCol({ span: { sm: 12 } }) {
-        GridRow() {
-          GridCol({ span: { sm: 2 } }) {
+    Column() {
+      GridRow({
+        columns: 12,
+        gutter: { x: 5, y: 10 },
+        direction: GridRowDirection.Row
+      }) {
+        ForEach(this.functions, (item) => {
+          GridCol({ span: { xs: 4, sm: 3, md: 2, lg: 1 } }) {
             Row() {
-              Text('left').fontSize(24)
+              FunctionEntryCard({ title: item.title, icon: item.icon, targetPage: item.targetPage })
             }
-            .justifyContent(FlexAlign.Center)
-            .height('90%')
-          }.backgroundColor('#ff41dbaa')
-
-          GridCol({ span: { sm: 10 } }) {
-            Row() {
-              Text('right').fontSize(24)
-            }
-            .justifyContent(FlexAlign.Center)
-            .height('90%')
-          }.backgroundColor('#ff4168db')
-        }
-        .backgroundColor('#19000000')
-        .height('100%')
-      }
-
-      GridCol({ span: { sm: 12 } }) {
-        Row() {
-          Text('footer')
             .width('100%')
-            .textAlign(TextAlign.Center)
-        }
-        .width('100%')
-        .height('10%')
-        .backgroundColor(Color.Pink)
+            .height(80)
+          }
+          .borderWidth(2)
+          .borderRadius(8)
+        })
       }
+      .width('100%')
+      .height('100%')
     }
-    .width('100%')
   }
 }

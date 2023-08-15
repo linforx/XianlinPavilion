@@ -22,6 +22,7 @@ import relationalStore from '@ohos.data.relationalStore'
 import tableAccount from '../common/database/tables/account'
 import appSetting from '../common/preference/appSetting'
 import GI_SignDialog from '../view/page/Index/GI_SignDialog'
+import FunctionEntryContainer from '../view/page/Index/FunctionEntryContainer'
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 
@@ -269,7 +270,7 @@ struct Index {
                 .clip(true)
 
                 ListItem() {
-
+                  FunctionEntryContainer()
                 }
               }
               .padding({ left: 15, right: 15 })

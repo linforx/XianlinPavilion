@@ -18,18 +18,26 @@ struct GI_MyAvatars {
   @State hideProgress: Visibility = Visibility.None;
   @State titleHeight: number = 76
 
-  async aboutToAppear() {
+  aboutToAppear() {
     this.user = globalThis.SelUser as User
     this.role = globalThis.SelGIRole as GameRole
     if (!this.role || !this.user) {
       router.back()
     }
-    let res = await new GenshinAPI()
-      .applyCharacter(this.role.gameUid, this.role.region)
-      .setCookie(this.user.cookie.getByType(CookieType.BothCLToken))
-      .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
-      .getResponseAsync()
-    console.warn(res.data)
+
+    this.getDataFromMihoyoServerAsync()
+  }
+
+  async getDataFromMihoyoServerAsync() {
+    try {
+      let res = await new GenshinAPI()
+        .applyCharacter(this.role.gameUid, this.role.region)
+        .setCookie(this.user.cookie.getByType(CookieType.BothCLToken))
+        .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
+        .getResponseAsync()
+    } catch (err) {
+      console.warn(err)
+    }
   }
 
   build() {

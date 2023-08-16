@@ -23,8 +23,8 @@ export default struct FunctionEntryContainer {
             .width('100%')
             .height(80)
           }
-          .borderWidth(2)
           .borderRadius(8)
+          .clip(true)
         })
       }
       .width('100%')

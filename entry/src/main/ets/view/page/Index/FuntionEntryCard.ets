@@ -6,29 +6,34 @@ export default struct FunctionEntryCard {
   private targetPage: string = ''
 
   build() {
-    Column({ space: 5 }) {
-      Row() {
-        Image(this.icon)
-          .width(40)
-          .aspectRatio(1)
-      }
-      .justifyContent(FlexAlign.Center)
-      .width(40)
-      .aspectRatio(1)
-      .borderRadius(8)
-      .clip(true)
+    Button() {
+      Column({ space: 5 }) {
+        Row() {
+          Image(this.icon)
+            .width(40)
+            .aspectRatio(1)
+        }
+        .justifyContent(FlexAlign.Center)
+        .width(40)
+        .aspectRatio(1)
+        .borderRadius(8)
+        .clip(true)
 
-      Row() {
-        Text(this.title)
-          .fontColor($r('app.color.text_color'))
-          .fontSize(16)
-          .maxLines(1)
+        Row() {
+          Text(this.title)
+            .fontColor($r('app.color.text_color'))
+            .fontSize(16)
+            .maxLines(1)
+        }
+        .justifyContent(FlexAlign.Center)
       }
       .justifyContent(FlexAlign.Center)
+      .width('100%')
+      .height('100%')
     }
-    .width('100%')
-    .height('100%')
-    .justifyContent(FlexAlign.Center)
+    .type(ButtonType.Normal)
+    .borderRadius(20)
+    .backgroundColor($r('app.color.card_background_color'))
     .onClick(() => {
       console.log('转跳子功能页: ' + this.title)
       router.pushUrl({

@@ -16,7 +16,7 @@ struct GI_MyAvatars {
   private role: GameRole = null
   @State progress: number = 0;
   @State hideProgress: Visibility = Visibility.None;
-  @State titleHeight: number = 76
+  @State titleHeight: number = 70
 
   aboutToAppear() {
     this.user = globalThis.SelUser as User
@@ -64,7 +64,7 @@ struct GI_MyAvatars {
       PageBackButton()
 
       Text('我的角色')
-        .fontSize(16)
+        .fontSize(24)
         .fontColor($r('app.color.text_color'))
         .fontWeight(FontWeight.Bold)
 

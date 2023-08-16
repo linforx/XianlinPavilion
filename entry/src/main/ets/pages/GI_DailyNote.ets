@@ -11,7 +11,7 @@ import GameRole from '../model/User/GameRole';
 
 @Entry
 @Component
-struct GIDailyNote {
+struct GI_DailyNote {
   private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
   @State url: string = 'Hello World'
   @State progress: number = 0;

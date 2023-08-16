@@ -3,7 +3,7 @@
     "pages/Start",
     "pages/Index",
     "pages/Login",
-    "pages/GIDailyNote",
+    "pages/GI_DailyNote",
     "pages/GI_MyAvatars"
   ]
 }

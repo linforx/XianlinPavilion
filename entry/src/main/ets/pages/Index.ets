@@ -389,7 +389,7 @@ struct Index {
     .width('100%')
     .height('100%')
     .backgroundColor($r('app.color.page_background_color'))
-    .padding({ top: `${globalThis?.avoidArea?.topRect?.height ?? 120}px`, left: 10, right: 10 })
+    .padding({ top: `${globalThis?.avoidArea?.topRect?.height ?? 120}px`, left: 8, right: 8 })
   }
   // 退出应用
   exitApp() {

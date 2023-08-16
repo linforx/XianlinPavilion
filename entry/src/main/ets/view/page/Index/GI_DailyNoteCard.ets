@@ -397,7 +397,7 @@ export default struct GI_DailyNoteCard {
     .padding(10)
     .onClick(() => {
       router.pushUrl({
-        url: 'pages/GIDailyNote'
+        url: 'pages/GI_DailyNote'
       })
     })
   }

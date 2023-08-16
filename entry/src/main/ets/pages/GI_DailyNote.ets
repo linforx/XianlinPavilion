@@ -51,11 +51,7 @@ struct GI_DailyNote {
     }
 
     let script = `document.cookie='${cookie}'`
-    console.warn('run js: ' + script)
     this.controller.runJavaScript(script)
-      .then(value => {
-        console.log('script result: ' + value)
-      })
   }
 
   registerHtmlEtsMessagePorts() {
@@ -134,8 +130,6 @@ struct GI_DailyNote {
                   this.setCookie('ltoken', this.user.cookie.getByName('ltoken'), domain)
 
                   console.warn('set cookie done')
-                  console.warn('.mihoyo.com: ' + webview.WebCookieManager.getCookie('.mihoyo.com'))
-
                 } catch (error) {
                   console.error(`ErrorCode: ${error.code},  Message: ${error.message}`);
                 }

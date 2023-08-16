@@ -50,7 +50,6 @@ export default struct GI_SignDialog {
   taskQueue: Queue = new Queue()
 
   aboutToAppear() {
-    let query = ``
     this.url = `https://webstatic.mihoyo.com/bbs/event/signin-ys/index.html?act_id=e202009291139501`
   }
 
@@ -72,11 +71,7 @@ export default struct GI_SignDialog {
     }
 
     let script = `document.cookie='${cookie}'`
-    console.warn('run js: ' + script)
     this.webview_controller.runJavaScript(script)
-      .then(value => {
-        console.log('script result: ' + value)
-      })
   }
 
   isLastDigitGreaterThanTwo(input: string): boolean {
@@ -165,8 +160,6 @@ export default struct GI_SignDialog {
                 this.setCookie('ltoken', this.user.cookie.getByName('ltoken'), domain)
 
                 console.warn('set cookie done')
-                console.warn('.mihoyo.com: ' + webview.WebCookieManager.getCookie('.mihoyo.com'))
-
               } catch (error) {
                 console.error(`ErrorCode: ${error.code},  Message: ${error.message}`);
               }

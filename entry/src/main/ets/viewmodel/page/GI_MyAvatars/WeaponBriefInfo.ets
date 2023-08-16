@@ -6,5 +6,5 @@ export default class WeaponBriefInfo {
   public rarity: number
   public icon: string
   public level: number
-  public affixs: number
+  public affixLevel: number
 }

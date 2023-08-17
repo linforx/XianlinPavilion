@@ -1,0 +1,15 @@
+{
+	"id": 120532,
+	"name": "残损的日志",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120532",
+	"volume": [
+		{
+			"id": 120532,
+			"name": "残损的日志",
+			"description": "残损的日志",
+			"storyId": "679"
+		}
+	],
+	"route": "Damaged Diary"
+}

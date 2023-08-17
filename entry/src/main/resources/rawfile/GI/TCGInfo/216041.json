@@ -1,0 +1,86 @@
+{
+	"id": 216041,
+	"name": "神性之陨",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_GEO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Albedo",
+	"route": "Descent of Divinity",
+	"storyTitle": "阿贝多·神性之陨",
+	"storyDetail": "「确认对局策略的过程，也是一种缜密的计算…」",
+	"source": "在猫尾酒馆中邀请阿贝多进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S16042": {
+			"name": "创生法·拟造阳华",
+			"description": "召唤<color=#FFFFFFFF>$[C116041]</color>。",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"C116041": "阳华"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Albedo_01"
+		},
+		"C116041": {
+			"name": "阳华",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K106]。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>此召唤物在场时：</color>我方角色进行$[K52]时少花费1个$[K309]。（每回合1次）",
+			"cost": null,
+			"params": {
+				"K106": "{SPRITE_PRESET#2106}<color=#FFE699FF>岩元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>",
+				"K52": "<color=#FFFFFFFF>下落攻击</color>",
+				"K309": "<color=#FFFFFFFF>{SPRITE_PRESET#1109}无色元素</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K52": {
+			"name": "<color=#FFFFFFFF>下落攻击</color>",
+			"description": "角色被切换为「出战角色」后，本回合内的下一个战斗行动若为「普通攻击」，则被视为「下落攻击」。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "神性之陨",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1604]</color>时，装备此牌。\\n$[A1604]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16042]</color>。\\n装备有此牌的$[A1604]在场时，如果我方场上存在<color=#FFFFFFFF>$[C116041]</color>，则我方角色进行$[K52]时造成的伤害+1。\\n（牌组中包含$[A1604]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1604": "阿贝多",
+				"S16042": "创生法·拟造阳华",
+				"C116041": "阳华",
+				"K52": "<color=#FFFFFFFF>下落攻击</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1604]在场时，如果我方场上存在<color=#FFFFFFFF>$[C116041]</color>，则我方角色进行$[K52]时造成的伤害+1。",
+			"subSkills": {
+				"S16042": "skill",
+				"C116041": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K52": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

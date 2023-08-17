@@ -54,6 +54,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -149,6 +150,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"20010503": {
@@ -208,62 +210,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
-			"reward": null
-		},
-		"20010581": {
-			"id": 20010581,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "感电免疫",
-					"description": "免疫感电伤害和效果",
-					"abilityName": [
-						"MonsterAffix_ShockResist"
-					],
-					"isCommon": null
-				},
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010014,
-					"hpPercent": 60
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 10.8672,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 7.536,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.1
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

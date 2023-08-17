@@ -82,6 +82,7 @@
 				"rockSubHurt": 0.7,
 				"physicalSubHurt": 0.4
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -297,6 +298,7 @@
 				"rockSubHurt": 0.7,
 				"physicalSubHurt": 0.4
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -512,6 +514,7 @@
 				"rockSubHurt": 0.7,
 				"physicalSubHurt": 0.4
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -727,6 +730,7 @@
 				"rockSubHurt": 0.7,
 				"physicalSubHurt": 0.4
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -909,6 +913,7 @@
 				"rockSubHurt": 0.7,
 				"physicalSubHurt": 0.4
 			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

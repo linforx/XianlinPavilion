@@ -9,7 +9,7 @@
 	},
 	"props": {
 		"GCG_PROP_HP": 10,
-		"GCG_PROP_ENERGY": 3
+		"GCG_PROP_ENERGY": 2
 	},
 	"icon": "UI_Gcg_CardFace_Char_Avatar_Razor",
 	"route": "Razor",
@@ -87,10 +87,10 @@
 			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C114021]</color>。",
 			"cost": {
 				"GCG_COST_DICE_ELECTRO": 3,
-				"GCG_COST_ENERGY": 3
+				"GCG_COST_ENERGY": 2
 			},
 			"params": {
-				"D__KEY__DAMAGE": 5,
+				"D__KEY__DAMAGE": 3,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
 				"C114021": "雷狼"
 			},

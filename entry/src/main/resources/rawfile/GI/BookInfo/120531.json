@@ -1,0 +1,15 @@
+{
+	"id": 120531,
+	"name": "航海日志残片",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120531",
+	"volume": [
+		{
+			"id": 120531,
+			"name": "航海日志残片",
+			"description": "航海日志残片",
+			"storyId": "678"
+		}
+	],
+	"route": "Navigation Log Fragment"
+}

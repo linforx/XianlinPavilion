@@ -1,0 +1,15 @@
+{
+	"id": 120483,
+	"name": "古老的调查报告",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120483",
+	"volume": [
+		{
+			"id": 120483,
+			"name": "古老的调查报告",
+			"description": "（test）物资需求单",
+			"storyId": "672"
+		}
+	],
+	"route": "Ancient Investigative Report"
+}

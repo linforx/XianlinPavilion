@@ -53,6 +53,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -103,42 +104,25 @@
 				}
 			}
 		},
-		"26050681": {
-			"id": 26050681,
+		"26050901": {
+			"id": 26050901,
 			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
+			"affix": null,
 			"hpDrops": [
 				{
 					"id": 22010012,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010012,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010012,
-					"hpPercent": 25
+					"hpPercent": 60
 				}
 			],
 			"prop": [
 				{
 					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 108.672,
+					"initValue": 54.336,
 					"type": "GROW_CURVE_HP_2"
 				},
 				{
 					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 50.24,
+					"initValue": 25.12,
 					"type": "GROW_CURVE_ATTACK"
 				},
 				{
@@ -150,78 +134,63 @@
 			"resistance": {
 				"fireSubHurt": 0.1,
 				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.3,
+				"waterSubHurt": 0.2,
 				"elecSubHurt": 0.1,
 				"windSubHurt": 0.1,
 				"iceSubHurt": 0.1,
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
-			"reward": null
-		},
-		"26050682": {
-			"id": 26050682,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "通用技能-水泡",
-					"description": "水伤害通用技能-详见文档",
-					"abilityName": [
-						"GeneralSkill_WaterDamage_Bubble"
-					],
-					"isCommon": true
+			"fundamentalForce": null,
+			"reward": {
+				"202": {
+					"rank": 3,
+					"icon": "UI_ItemIcon_202"
 				},
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
+				"112041": {
+					"rank": 2,
+					"icon": "UI_ItemIcon_112041",
+					"count": "5.2526"
+				},
+				"112042": {
+					"rank": 3,
+					"icon": "UI_ItemIcon_112042",
+					"count": "1.4006"
+				},
+				"112043": {
+					"rank": 4,
+					"icon": "UI_ItemIcon_112043",
+					"count": "0.3502"
+				},
+				"400022": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10005_4"
+				},
+				"400023": {
+					"rank": 4,
+					"icon": "UI_RelicIcon_10005_4"
+				},
+				"400032": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10007_4"
+				},
+				"400033": {
+					"rank": 4,
+					"icon": "UI_RelicIcon_10007_4"
+				},
+				"400042": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10009_4"
+				},
+				"400043": {
+					"rank": 4,
+					"icon": "UI_RelicIcon_10009_4"
+				},
+				"400062": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10013_4"
 				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010012,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010012,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010012,
-					"hpPercent": 25
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 108.672,
-					"type": "GROW_CURVE_HP_2"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 50.24,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.3,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.3
-			},
-			"reward": null
+			}
 		}
 	},
 	"tips": {

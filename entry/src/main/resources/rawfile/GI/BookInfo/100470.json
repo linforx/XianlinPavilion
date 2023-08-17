@@ -63,6 +63,18 @@
 			"name": "（test）赛芭的蔷薇",
 			"description": "（test）赛芭的蔷薇",
 			"storyId": "474"
+		},
+		{
+			"id": 120326,
+			"name": "（test)乐园信件",
+			"description": "(test）一封书信",
+			"storyId": "603"
+		},
+		{
+			"id": 120482,
+			"name": "（test）阅读物",
+			"description": "（test）西摩尔制造实录",
+			"storyId": "671"
 		}
 	],
 	"route": "Other Undefined"

@@ -53,6 +53,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"21020702": {
@@ -120,6 +121,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"21020703": {
@@ -176,126 +178,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
-			"reward": null
-		},
-		"21020781": {
-			"id": 21020781,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 25
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 40.752,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 60.288,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.3
-			},
-			"reward": null
-		},
-		"21020782": {
-			"id": 21020782,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "通用技能-雷光矩阵",
-					"description": "电伤害通用技能-详见文档",
-					"abilityName": [
-						"GeneralSkill_ElecDamage_Arc"
-					],
-					"isCommon": true
-				},
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 25
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 40.752,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 60.288,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.3
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

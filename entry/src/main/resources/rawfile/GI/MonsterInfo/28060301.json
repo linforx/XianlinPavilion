@@ -49,6 +49,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060302": {
@@ -83,6 +84,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

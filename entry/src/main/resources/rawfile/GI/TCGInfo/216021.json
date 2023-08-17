@@ -53,7 +53,7 @@
 	"talent": {
 		"27014": {
 			"name": "支援就交给我吧",
-			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1602]</color>时，装备此牌。\\n$[A1602]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16022]</color>。\\n装备有此牌的$[A1602]生成的<color=#FFFFFFFF>$[C116021]</color>，会在$[A1602]使用<color=#FFFFFFFF>普通攻击</color>后，治疗我方所有角色1点。（每回合1次）\\n（牌组中包含$[A1602]，才能加入牌组）",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1602]</color>时，装备此牌。\\n$[A1602]装备此牌后，立刻使用一次<color=#FFD780FF>$[S16022]</color>。\\n$[A1602]<color=#FFFFFFFF>普通攻击</color>后：如果此牌和<color=#FFFFFFFF>$[C116021]</color>仍在场，则治疗我方所有角色1点。（每回合1次）\\n（牌组中包含$[A1602]，才能加入牌组）",
 			"cost": {
 				"GCG_COST_DICE_GEO": 3
 			},
@@ -68,7 +68,7 @@
 				"GCG_TAG_SLOWLY": "战斗行动"
 			},
 			"icon": null,
-			"effect": "装备有此牌的$[A1602]生成的<color=#FFFFFFFF>$[C116021]</color>，会在$[A1602]使用<color=#FFFFFFFF>普通攻击</color>后，治疗我方所有角色1点。（每回合1次）",
+			"effect": "$[A1602]<color=#FFFFFFFF>普通攻击</color>后：如果此牌和<color=#FFFFFFFF>$[C116021]</color>仍在场，则治疗我方所有角色1点。（每回合1次）",
 			"subSkills": {
 				"S16022": "skill",
 				"C116021": "cardSkill"

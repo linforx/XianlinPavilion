@@ -45,6 +45,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -147,110 +148,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
-			"reward": null
-		},
-		"21030581": {
-			"id": 21030581,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010016,
-					"hpPercent": 60
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 13.584,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 50.24,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.5,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.1
-			},
-			"reward": null
-		},
-		"21030582": {
-			"id": 21030582,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "通用技能-冰牢",
-					"description": "冰伤害通用技能-详见文档",
-					"abilityName": [
-						"GeneralSkill_IceDamage_Prison"
-					],
-					"isCommon": true
-				},
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010016,
-					"hpPercent": 60
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 13.584,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 50.24,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.5,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.1
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

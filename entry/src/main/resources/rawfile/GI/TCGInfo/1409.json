@@ -1,0 +1,152 @@
+{
+	"id": 1409,
+	"name": "丽莎",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_ELECTRO": "雷元素",
+		"GCG_TAG_WEAPON_CATALYST": "法器",
+		"GCG_TAG_NATION_MONDSTADT": "蒙德"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Lisa",
+	"route": "Lisa",
+	"storyTitle": "蔷薇魔女·丽莎",
+	"storyDetail": "追寻魔导的奥秘，静待真相的机缘。",
+	"source": "在猫尾酒馆中邀请丽莎进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"S14092": {
+			"name": "苍雷",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；如果敌方出战角色未附属<color=#FFFFFFFF>$[C114091]</color>，则使其附属<color=#FFFFFFFF>$[C114091]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114091": "引雷"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Lisa_01"
+		},
+		"K104": {
+			"name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		},
+		"K51": {
+			"name": "<color=#FFFFFFFF>重击</color>",
+			"description": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+		},
+		"C114091": {
+			"name": "引雷",
+			"description": "此状态初始具有2层「引雷」；重复附属时，叠加1层「引雷」。「引雷」最多可以叠加到4层。\\n<color=#FFFFFFFF>结束阶段：</color>叠加1层「引雷」。\\n\\n<color=#FFFFFFFF>所附属角色受到$[S14092]伤害时：</color>移除此状态，每层「引雷」使此伤害+1。",
+			"cost": null,
+			"params": {
+				"S14092": "苍雷"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C114092": {
+			"name": "蔷薇雷光",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成2点$[K104]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K104": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"14091": {
+			"name": "指尖雷暴",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；\\n如果此技能为$[K51]，则使敌方出战角色附属<color=#FFFFFFFF>$[C114091]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K51": "<color=#FFFFFFFF>重击</color>",
+				"C114091": "引雷"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_Catalyst_MD",
+			"subSkills": {
+				"C114091": "cardSkill"
+			},
+			"keywords": {
+				"K104": "keyword",
+				"K51": "keyword"
+			}
+		},
+		"14092": {
+			"name": "苍雷",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]；如果敌方出战角色未附属<color=#FFFFFFFF>$[C114091]</color>，则使其附属<color=#FFFFFFFF>$[C114091]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114091": "引雷"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Lisa_01",
+			"subSkills": {
+				"C114091": "cardSkill"
+			},
+			"keywords": {
+				"K104": "keyword"
+			}
+		},
+		"14093": {
+			"name": "蔷薇的雷光",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C114092]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114092": "蔷薇雷光"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Lisa_01_HD",
+			"subSkills": {
+				"C114092": "cardSkill"
+			},
+			"keywords": {
+				"K104": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 214091,
+			"name": "脉冲的魔女",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Lisa"
+		}
+	]
+}

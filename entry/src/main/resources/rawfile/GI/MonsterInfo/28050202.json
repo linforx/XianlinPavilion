@@ -8,40 +8,6 @@
 	"specialName": null,
 	"description": "神出鬼没的怪盗，盗窃宝物仅仅出于纯粹的天性。\\n身上背负着华丽钱袋的盗宝鼬，作为盗宝鼬种群中的长者，它们寻找财宝与躲避追猎的本领更加精湛。甚至还会在游戏中将技巧「教授」给群落内的晚辈们。身为更有经验的「盗贼」，它们收集到的摩拉也更加丰厚。\\n虽然从缴获的藏金盗宝鼬钱袋的情况而言，恐怕也没有丰厚到哪里去吧…",
 	"entries": {
-		"28050201": {
-			"id": 28050201,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "盗宝鼬-等级1",
-					"description": "盗宝鼬-等级1标识",
-					"abilityName": [
-						"MonsterAffix_Thoarder_Weasel_Level_01"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
 		"28050202": {
 			"id": 28050202,
 			"type": "MONSTER_ORDINARY",
@@ -74,108 +40,7 @@
 				}
 			],
 			"resistance": null,
-			"reward": null
-		},
-		"28050203": {
-			"id": 28050203,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "盗宝鼬-等级3",
-					"description": "盗宝鼬-等级3标识",
-					"abilityName": [
-						"MonsterAffix_Thoarder_Weasel_Level_03"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28050204": {
-			"id": 28050204,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "盗宝鼬-等级1",
-					"description": "盗宝鼬-等级1标识",
-					"abilityName": [
-						"MonsterAffix_Thoarder_Weasel_Level_01"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28050211": {
-			"id": 28050211,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "盗宝鼬-等级1",
-					"description": "盗宝鼬-等级1标识",
-					"abilityName": [
-						"MonsterAffix_Thoarder_Weasel_Level_01"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28050212": {
@@ -210,65 +75,7 @@
 				}
 			],
 			"resistance": null,
-			"reward": null
-		},
-		"28050213": {
-			"id": 28050213,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "盗宝鼬-等级3",
-					"description": "盗宝鼬-等级3标识",
-					"abilityName": [
-						"MonsterAffix_Thoarder_Weasel_Level_03"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28050221": {
-			"id": 28050221,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28050222": {
@@ -294,31 +101,7 @@
 				}
 			],
 			"resistance": null,
-			"reward": null
-		},
-		"28050223": {
-			"id": 28050223,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

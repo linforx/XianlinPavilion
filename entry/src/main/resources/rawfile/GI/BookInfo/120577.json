@@ -1,0 +1,87 @@
+{
+	"id": 120577,
+	"name": "神秘的书页·其一",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120577",
+	"volume": [
+		{
+			"id": 120577,
+			"name": "神秘的书页·其一",
+			"description": "",
+			"storyId": "690"
+		},
+		{
+			"id": 120578,
+			"name": "神秘的书页·其二",
+			"description": "",
+			"storyId": "691"
+		},
+		{
+			"id": 120579,
+			"name": "神秘的书页·其三",
+			"description": "",
+			"storyId": "692"
+		},
+		{
+			"id": 120580,
+			"name": "神秘的书页·其四",
+			"description": "",
+			"storyId": "693"
+		},
+		{
+			"id": 120581,
+			"name": "神秘的书页·其五",
+			"description": "",
+			"storyId": "694"
+		},
+		{
+			"id": 120582,
+			"name": "神秘的书页·其六",
+			"description": "",
+			"storyId": "695"
+		},
+		{
+			"id": 120583,
+			"name": "神秘的书页·其七",
+			"description": "",
+			"storyId": "696"
+		},
+		{
+			"id": 120584,
+			"name": "神秘的书页·其八",
+			"description": "",
+			"storyId": "697"
+		},
+		{
+			"id": 120585,
+			"name": "神秘的书页·其九",
+			"description": "",
+			"storyId": "698"
+		},
+		{
+			"id": 120586,
+			"name": "神秘的书页·其十",
+			"description": "",
+			"storyId": "699"
+		},
+		{
+			"id": 120587,
+			"name": "神秘的书页·其十一",
+			"description": "",
+			"storyId": "700"
+		},
+		{
+			"id": 120588,
+			"name": "神秘的书页·其十二",
+			"description": "",
+			"storyId": "701"
+		},
+		{
+			"id": 120589,
+			"name": "神秘的书页·其十三",
+			"description": "",
+			"storyId": "702"
+		}
+	],
+	"route": "Enigmatic Page (I)"
+}

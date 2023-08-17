@@ -26,7 +26,7 @@
 				"GCG_COST_DICE_HYDRO": 3
 			},
 			"params": {
-				"D__KEY__DAMAGE": 3,
+				"D__KEY__DAMAGE": 2,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2102}<color=#80C0FFFF>水元素伤害</color>",
 				"C122021": "水光破镜"
 			},

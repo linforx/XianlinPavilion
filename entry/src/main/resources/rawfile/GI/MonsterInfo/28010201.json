@@ -31,11 +31,12 @@
 				}
 			],
 			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		},
-		"28010202": {
-			"id": 28010202,
-			"type": "MONSTER_ENV_ANIMAL",
+		"28210201": {
+			"id": 28210201,
+			"type": "MONSTER_ORDINARY",
 			"affix": null,
 			"hpDrops": null,
 			"prop": [
@@ -56,156 +57,7 @@
 				}
 			],
 			"resistance": null,
-			"reward": null
-		},
-		"28010203": {
-			"id": 28010203,
-			"type": "MONSTER_ENV_ANIMAL",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28010204": {
-			"id": 28010204,
-			"type": "MONSTER_ENV_ANIMAL",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28010205": {
-			"id": 28010205,
-			"type": "MONSTER_ENV_ANIMAL",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28010206": {
-			"id": 28010206,
-			"type": "MONSTER_ENV_ANIMAL",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28010207": {
-			"id": 28010207,
-			"type": "MONSTER_ENV_ANIMAL",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28010208": {
-			"id": 28010208,
-			"type": "MONSTER_ENV_ANIMAL",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

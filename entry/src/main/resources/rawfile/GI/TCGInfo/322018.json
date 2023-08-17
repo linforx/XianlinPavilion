@@ -1,0 +1,33 @@
+{
+	"id": 322018,
+	"name": "老章",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ALLY": "伙伴"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Assist_NPC_Laozhang",
+	"route": "Master Zhang",
+	"storyTitle": "宝兵百锻出·老章",
+	"storyDetail": "在成为一柄利剑前，铁块总是得经历许多焦灼的挫折。",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "老章",
+			"description": "<color=#FFFFFFFF>我方打出「{SPRITE_PRESET#3003}武器」手牌时：</color>少花费1个元素骰；我方场上每有一个已装备「{SPRITE_PRESET#3003}武器」的角色，就额外少花费1个元素骰。（每回合1次）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

@@ -1,0 +1,15 @@
+{
+	"id": 120590,
+	"name": "散落的书页",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120577",
+	"volume": [
+		{
+			"id": 120590,
+			"name": "散落的书页",
+			"description": "自神秘空间中取得的古老纸张，似乎可证明那并非梦境…",
+			"storyId": "703"
+		}
+	],
+	"route": "Scattered Page"
+}

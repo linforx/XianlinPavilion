@@ -53,6 +53,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.5
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -168,62 +169,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
-			"reward": null
-		},
-		"24010281": {
-			"id": 24010281,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010040,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010040,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010040,
-					"hpPercent": 25
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 81.504,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 175.84,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.5
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

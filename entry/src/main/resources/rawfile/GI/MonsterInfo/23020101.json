@@ -49,6 +49,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -164,6 +165,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

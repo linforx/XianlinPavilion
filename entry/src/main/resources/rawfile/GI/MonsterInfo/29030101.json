@@ -8,78 +8,6 @@
 	"specialName": "「公子」",
 	"description": "愚人众执行官第十一席，「公子」达达利亚。\\n自不祥的「邪眼」之中汲取力量，以至暗之地习得的武艺战斗。\\n\\n拥有无穷争斗欲望的纯粹战士。\\n每次浴血的纷争、每场生死攸关的挑战，于他而言皆是快意试炼。\\n人皆言年轻的「公子」战绩远近闻名。\\n但他本人却对这种大话从来不以为然。\\n\\n毕竟…\\n<i>「你的命运将成为纷争的风暴之眼，</i>\\n<i>「铁剑交错的声响是常伴你的奏乐。</i>\\n<i>「踏入至暗之处的漆黑记忆，</i>\\n<i>「终将成为你颠覆世界的力量吧。」</i>",
 	"entries": {
-		"29030101": {
-			"id": 29030101,
-			"type": "MONSTER_BOSS",
-			"affix": [
-				{
-					"name": "剧情任务-难度调节标签",
-					"description": "剧情任务-难度调节标签",
-					"abilityName": [
-						"MonsterAffix_Quest_Adjust"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 81.504,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 75.36,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"waterSubHurt": 0.5
-			},
-			"reward": null
-		},
-		"29030102": {
-			"id": 29030102,
-			"type": "MONSTER_BOSS",
-			"affix": [
-				{
-					"name": "剧情任务-难度调节标签",
-					"description": "剧情任务-难度调节标签",
-					"abilityName": [
-						"MonsterAffix_Quest_Adjust"
-					],
-					"isCommon": null
-				}
-			],
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 81.504,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 75.36,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"elecSubHurt": 0.5
-			},
-			"reward": null
-		},
 		"29030103": {
 			"id": 29030103,
 			"type": "MONSTER_BOSS",
@@ -115,60 +43,7 @@
 				"waterSubHurt": 0.7,
 				"elecSubHurt": 0.7
 			},
-			"reward": null
-		},
-		"29030104": {
-			"id": 29030104,
-			"type": "MONSTER_BOSS",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 81.504,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 125.6,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"waterSubHurt": 0.5
-			},
-			"reward": null
-		},
-		"29030105": {
-			"id": 29030105,
-			"type": "MONSTER_BOSS",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 81.504,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 125.6,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"elecSubHurt": 0.5
-			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"29030106": {
@@ -197,6 +72,7 @@
 				"waterSubHurt": 0.7,
 				"elecSubHurt": 0.7
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,

@@ -40,7 +40,7 @@
 			"description": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
 			"cost": null,
 			"params": {
-				"D__KEY__DAMAGE": 2,
+				"D__KEY__DAMAGE": 3,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>"
 			},
 			"tags": {

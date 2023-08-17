@@ -45,6 +45,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -81,110 +82,6 @@
 					"count": "0.07"
 				}
 			}
-		},
-		"26120381": {
-			"id": 26120381,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010012,
-					"hpPercent": 60
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 27.168,
-					"type": "GROW_CURVE_HP_2"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 37.68,
-					"type": "GROW_CURVE_ATTACK_2"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.3,
-				"waterSubHurt": 0.3,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.1
-			},
-			"reward": null
-		},
-		"26120382": {
-			"id": 26120382,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "通用技能-水泡",
-					"description": "水伤害通用技能-详见文档",
-					"abilityName": [
-						"GeneralSkill_WaterDamage_Bubble"
-					],
-					"isCommon": true
-				},
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010012,
-					"hpPercent": 60
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 27.168,
-					"type": "GROW_CURVE_HP_2"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 37.68,
-					"type": "GROW_CURVE_ATTACK_2"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.3,
-				"waterSubHurt": 0.3,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.1
-			},
-			"reward": null
 		}
 	},
 	"tips": {

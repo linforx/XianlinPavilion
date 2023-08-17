@@ -43,5 +43,10 @@
 			"icon": "UI_RelicIcon_15021_3"
 		}
 	},
-	"source": null
+	"source": [
+		{
+			"name": "还圣奥迹获得",
+			"type": "single"
+		}
+	]
 }

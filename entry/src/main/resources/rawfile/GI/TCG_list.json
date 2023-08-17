@@ -123,6 +123,23 @@
 			"route": "Shenhe",
 			"sortOrder": 1107
 		},
+		"1108": {
+			"id": 1108,
+			"name": "七七",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_CRYO": "冰元素",
+				"GCG_TAG_WEAPON_SWORD": "单手剑",
+				"GCG_TAG_NATION_LIYUE": "璃月"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 3
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Qiqi",
+			"route": "Qiqi",
+			"sortOrder": 1108
+		},
 		"1201": {
 			"id": 1201,
 			"name": "芭芭拉",
@@ -224,6 +241,23 @@
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Ayato",
 			"route": "Kamisato Ayato",
 			"sortOrder": 1206
+		},
+		"1207": {
+			"id": 1207,
+			"name": "坎蒂丝",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_HYDRO": "水元素",
+				"GCG_TAG_WEAPON_POLE": "长柄武器",
+				"GCG_TAG_NATION_SUMERU": "须弥"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Candace",
+			"route": "Candace",
+			"sortOrder": 1207
 		},
 		"1301": {
 			"id": 1301,
@@ -344,6 +378,23 @@
 			"route": "Hu Tao",
 			"sortOrder": 1307
 		},
+		"1308": {
+			"id": 1308,
+			"name": "烟绯",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_PYRO": "火元素",
+				"GCG_TAG_WEAPON_CATALYST": "法器",
+				"GCG_TAG_NATION_LIYUE": "璃月"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Feiyan",
+			"route": "Yanfei",
+			"sortOrder": 1308
+		},
 		"1401": {
 			"id": 1401,
 			"name": "菲谢尔",
@@ -372,7 +423,7 @@
 			},
 			"props": {
 				"GCG_PROP_HP": 10,
-				"GCG_PROP_ENERGY": 3
+				"GCG_PROP_ENERGY": 2
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Razor",
 			"route": "Razor",
@@ -480,6 +531,23 @@
 			"route": "Yae Miko",
 			"sortOrder": 1408
 		},
+		"1409": {
+			"id": 1409,
+			"name": "丽莎",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_ELECTRO": "雷元素",
+				"GCG_TAG_WEAPON_CATALYST": "法器",
+				"GCG_TAG_NATION_MONDSTADT": "蒙德"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Lisa",
+			"route": "Lisa",
+			"sortOrder": 1409
+		},
 		"1501": {
 			"id": 1501,
 			"name": "砂糖",
@@ -548,6 +616,23 @@
 			"route": "Xiao",
 			"sortOrder": 1504
 		},
+		"1505": {
+			"id": 1505,
+			"name": "枫原万叶",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_ANEMO": "风元素",
+				"GCG_TAG_WEAPON_SWORD": "单手剑",
+				"GCG_TAG_NATION_INAZUMA": "稻妻"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Kazuha",
+			"route": "Kaedehara Kazuha",
+			"sortOrder": 1505
+		},
 		"1601": {
 			"id": 1601,
 			"name": "凝光",
@@ -598,6 +683,23 @@
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Zhongli",
 			"route": "Zhongli",
 			"sortOrder": 1603
+		},
+		"1604": {
+			"id": 1604,
+			"name": "阿贝多",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_GEO": "岩元素",
+				"GCG_TAG_WEAPON_SWORD": "单手剑",
+				"GCG_TAG_NATION_MONDSTADT": "蒙德"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Albedo",
+			"route": "Albedo",
+			"sortOrder": 1604
 		},
 		"1605": {
 			"id": 1605,
@@ -926,6 +1028,22 @@
 			"route": "Mystical Abandon",
 			"sortOrder": 211071
 		},
+		"211081": {
+			"id": 211081,
+			"name": "起死回骸",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_CRYO": 5,
+				"GCG_COST_ENERGY": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Qiqi",
+			"route": "Rite of Resurrection",
+			"sortOrder": 211081
+		},
 		"212011": {
 			"id": 212011,
 			"name": "光辉的季节",
@@ -1017,6 +1135,22 @@
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Ayato",
 			"route": "Kyouka Fuushi",
 			"sortOrder": 212061
+		},
+		"212071": {
+			"id": 212071,
+			"name": "衍溢的汐潮",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_HYDRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Candace",
+			"route": "The Overflow",
+			"sortOrder": 212071
 		},
 		"213011": {
 			"id": 213011,
@@ -1123,6 +1257,22 @@
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Hutao",
 			"route": "Sanguine Rouge",
 			"sortOrder": 213071
+		},
+		"213081": {
+			"id": 213081,
+			"name": "最终解释权",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_PYRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Feiyan",
+			"route": "Right of Final Interpretation",
+			"sortOrder": 213081
 		},
 		"214011": {
 			"id": 214011,
@@ -1247,6 +1397,20 @@
 			"route": "The Shrine's Sacred Shade",
 			"sortOrder": 214081
 		},
+		"214091": {
+			"id": 214091,
+			"name": "脉冲的魔女",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋"
+			},
+			"props": {
+				"GCG_COST_DICE_ELECTRO": 1
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Lisa",
+			"route": "Pulsating Witch",
+			"sortOrder": 214091
+		},
 		"215011": {
 			"id": 215011,
 			"name": "混元熵增论",
@@ -1310,6 +1474,21 @@
 			"route": "Conqueror of Evil: Guardian Yaksha",
 			"sortOrder": 215041
 		},
+		"215051": {
+			"id": 215051,
+			"name": "风物之诗咏",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Kazuha",
+			"route": "Poetics of Fuubutsu",
+			"sortOrder": 215051
+		},
 		"216011": {
 			"id": 216011,
 			"name": "储之千日，用之一刻",
@@ -1354,6 +1533,21 @@
 			"icon": "UI_Gcg_CardFace_Modify_Talent_Zhongli",
 			"route": "Dominance of Earth",
 			"sortOrder": 216031
+		},
+		"216041": {
+			"id": 216041,
+			"name": "神性之陨",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_GEO": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Albedo",
+			"route": "Descent of Divinity",
+			"sortOrder": 216041
 		},
 		"216051": {
 			"id": 216051,
@@ -1613,6 +1807,21 @@
 			"route": "A Thousand Floating Dreams",
 			"sortOrder": 311104
 		},
+		"311105": {
+			"id": 311105,
+			"name": "盈满之实",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_WEAPON": "武器",
+				"GCG_TAG_WEAPON_CATALYST": "法器"
+			},
+			"props": {
+				"GCG_COST_DICE_VOID": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Weapon_Arakalari",
+			"route": "Fruit of Fulfillment",
+			"sortOrder": 311105
+		},
 		"311201": {
 			"id": 311201,
 			"name": "鸦羽弓",
@@ -1687,6 +1896,21 @@
 			"icon": "UI_Gcg_CardFace_Modify_Weapon_Widsith",
 			"route": "Elegy for the End",
 			"sortOrder": 311205
+		},
+		"311206": {
+			"id": 311206,
+			"name": "王下近侍",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_WEAPON": "武器",
+				"GCG_TAG_WEAPON_BOW": "弓"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Weapon_Wangxia",
+			"route": "King's Squire",
+			"sortOrder": 311206
 		},
 		"311301": {
 			"id": 311301,
@@ -2005,7 +2229,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 2
+				"GCG_COST_DICE_SAME": 1
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Huashi",
 			"route": "Ornate Kabuto",
@@ -2019,7 +2243,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_JueyuanTaozhuang",
 			"route": "Emblem of Severed Fate",
@@ -2061,7 +2285,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ChenshaDanjian",
 			"route": "Thundering Poise",
@@ -2075,7 +2299,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 3
+				"GCG_COST_DICE_VOID": 3
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ChenshaTaozhuang",
 			"route": "Vermillion Hereafter",
@@ -2089,7 +2313,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Zhuiyidanjian",
 			"route": "Capricious Visage",
@@ -2103,7 +2327,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 3
+				"GCG_COST_DICE_VOID": 3
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ZhuiyiTaozhuang",
 			"route": "Shimenawa's Reminiscence",
@@ -2117,7 +2341,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_BinDanjian",
 			"route": "Broken Rime's Echo",
@@ -2131,7 +2355,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_BinTaozhuang",
 			"route": "Blizzard Strayer",
@@ -2145,7 +2369,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Shuidanjian",
 			"route": "Wine-Stained Tricorne",
@@ -2159,7 +2383,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Shuitaozhuang",
 			"route": "Heart of Depth",
@@ -2173,7 +2397,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Monvdanjian",
 			"route": "Witch's Scorching Hat",
@@ -2187,7 +2411,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Monvtaozhuang",
 			"route": "Crimson Witch of Flames",
@@ -2201,7 +2425,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Leidanjia",
 			"route": "Thunder Summoner's Crown",
@@ -2215,7 +2439,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_Leitaozhuang",
 			"route": "Thundering Fury",
@@ -2229,7 +2453,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_FengDanjian",
 			"route": "Viridescent Venerer's Diadem",
@@ -2243,7 +2467,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_FengTaozhuang",
 			"route": "Viridescent Venerer",
@@ -2257,7 +2481,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_YanDanjian",
 			"route": "Mask of Solitude Basalt",
@@ -2271,7 +2495,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_YanTaozhuang",
 			"route": "Archaic Petra",
@@ -2285,7 +2509,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_CaoDanjian",
 			"route": "Laurel Coronet",
@@ -2299,7 +2523,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_CaoTaozhuang",
 			"route": "Deepwood Memories",
@@ -2340,9 +2564,7 @@
 			"tags": {
 				"GCG_TAG_PLACE": "场地"
 			},
-			"props": {
-				"GCG_COST_DICE_SAME": 1
-			},
+			"props": null,
 			"icon": "UI_Gcg_CardFace_Assist_Location_Qunyuge",
 			"route": "Jade Chamber",
 			"sortOrder": 321003
@@ -2470,6 +2692,18 @@
 			"icon": "UI_Gcg_CardFace_Assist_Location_Zhengshoui",
 			"route": "Chinju Forest",
 			"sortOrder": 321012
+		},
+		"321013": {
+			"id": 321013,
+			"name": "黄金屋",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"props": null,
+			"icon": "UI_Gcg_CardFace_Assist_Location_Huangjinwu",
+			"route": "Golden House",
+			"sortOrder": 321013
 		},
 		"322001": {
 			"id": 322001,
@@ -2699,6 +2933,34 @@
 			"route": "Rana",
 			"sortOrder": 322017
 		},
+		"322018": {
+			"id": 322018,
+			"name": "老章",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"icon": "UI_Gcg_CardFace_Assist_NPC_Laozhang",
+			"route": "Master Zhang",
+			"sortOrder": 322018
+		},
+		"322019": {
+			"id": 322019,
+			"name": "塞塔蕾",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"icon": "UI_Gcg_CardFace_Assist_NPC_Saileita",
+			"route": "Setaria",
+			"sortOrder": 322019
+		},
 		"323001": {
 			"id": 323001,
 			"name": "参量质变仪",
@@ -2754,6 +3016,49 @@
 			"icon": "UI_Gcg_CardFace_Assist_Prop_Xunbao",
 			"route": "Treasure-Seeking Seelie",
 			"sortOrder": 323004
+		},
+		"330001": {
+			"id": 330001,
+			"name": "旧时庭园",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"props": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"icon": "UI_Gcg_CardFace_Event_Event_Jiangjun",
+			"route": "Ancient Courtyard",
+			"sortOrder": 330001
+		},
+		"330002": {
+			"id": 330002,
+			"name": "磐岩盟契",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"props": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"icon": "UI_Gcg_CardFace_Event_Event_Chuanglong",
+			"route": "Covenant of Rock",
+			"sortOrder": 330002
+		},
+		"330003": {
+			"id": 330003,
+			"name": "愉舞欢游",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1,
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"icon": "UI_Gcg_CardFace_Event_Event_Qingdian",
+			"route": "Joyous Celebration",
+			"sortOrder": 330003
 		},
 		"331101": {
 			"id": 331101,
@@ -3212,6 +3517,26 @@
 			"icon": "UI_Gcg_CardFace_Event_Event_Yongyuandeyouyi",
 			"route": "Friendship Eternal",
 			"sortOrder": 332020
+		},
+		"332021": {
+			"id": 332021,
+			"name": "大梦的曲调",
+			"type": "actionCard",
+			"tags": null,
+			"props": null,
+			"icon": "UI_Gcg_CardFace_Event_Event_Dameng",
+			"route": "Rhythm of the Great Dream",
+			"sortOrder": 332021
+		},
+		"332022": {
+			"id": 332022,
+			"name": "藏锋何处",
+			"type": "actionCard",
+			"tags": null,
+			"props": null,
+			"icon": "UI_Gcg_CardFace_Event_Event_Cangfen",
+			"route": "Where Is the Unseen Razor?",
+			"sortOrder": 332022
 		},
 		"333001": {
 			"id": 333001,

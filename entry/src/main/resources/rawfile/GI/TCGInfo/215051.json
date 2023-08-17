@@ -1,0 +1,66 @@
+{
+	"id": 215051,
+	"name": "风物之诗咏",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ANEMO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Kazuha",
+	"route": "Poetics of Fuubutsu",
+	"storyTitle": "枫原万叶·风物之诗咏",
+	"storyDetail": "在对局之中，也隐有风雅之礼。\\n至少…对局双方都「落牌无悔」。",
+	"source": "在猫尾酒馆中邀请枫原万叶进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S15052": {
+			"name": "千早振",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C115051]</color>。\\n如果此技能引发了扩散，则将<color=#FFFFFFFF>$[C115051]</color>转换为被扩散的元素。\\n<color=#FFFFFFFF>此技能结算后：</color>我方切换到后一个角色。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"C115051": "乱岚拨止"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Kazuha_01"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "风物之诗咏",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1505]</color>时，装备此牌。\\n$[A1505]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15052]</color>。\\n装备有此牌的$[A1505]引发扩散反应后：使我方角色和召唤物接下来2次所造成的被扩散元素类型的伤害+1。（每种元素类型分别计算次数）\\n（牌组中包含$[A1505]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1505": "枫原万叶",
+				"S15052": "千早振"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1505]引发扩散反应后：使我方角色和召唤物接下来2次所造成的被扩散元素类型的伤害+1。（每种元素类型分别计算次数）",
+			"subSkills": {
+				"S15052": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

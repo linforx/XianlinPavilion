@@ -101,7 +101,7 @@
 				"GCG_COST_ENERGY": 2
 			},
 			"params": {
-				"D__KEY__DAMAGE": 2,
+				"D__KEY__DAMAGE": 3,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
 				"C113022": "旋火轮"
 			},

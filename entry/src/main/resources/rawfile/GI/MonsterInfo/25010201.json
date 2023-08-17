@@ -49,6 +49,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -112,6 +113,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"25010204": {
@@ -155,6 +157,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"25010205": {
@@ -207,6 +210,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"25010206": {
@@ -250,6 +254,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"25010207": {
@@ -293,6 +298,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"25010208": {
@@ -345,359 +351,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": -0.2
 			},
-			"reward": null
-		},
-		"25010209": {
-			"id": 25010209,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010210": {
-			"id": 25010210,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010211": {
-			"id": 25010211,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010212": {
-			"id": 25010212,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010213": {
-			"id": 25010213,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010214": {
-			"id": 25010214,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010215": {
-			"id": 25010215,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
-			"reward": null
-		},
-		"25010281": {
-			"id": 25010281,
-			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010010,
-					"hpPercent": 66
-				},
-				{
-					"id": 22010010,
-					"hpPercent": 33
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 16.3008,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 15.072,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": -0.2
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

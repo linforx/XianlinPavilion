@@ -53,6 +53,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -188,62 +189,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
-			"reward": null
-		},
-		"26020181": {
-			"id": 26020181,
-			"type": "MONSTER_BOSS",
-			"affix": [
-				{
-					"name": "3.7UGC40体特判GV",
-					"description": "3.7UGC40体特判GV",
-					"abilityName": [
-						"MonsterAffix_Activity_UGC_BossMark"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010036,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010036,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010036,
-					"hpPercent": 25
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 95.088,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 62.8,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.7,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.3
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

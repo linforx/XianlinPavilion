@@ -1,0 +1,39 @@
+{
+	"id": 120477,
+	"name": "古老的日志",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120477",
+	"volume": [
+		{
+			"id": 120477,
+			"name": "古老的日志",
+			"description": "（test）研究元能机关的记录",
+			"storyId": "666"
+		},
+		{
+			"id": 120478,
+			"name": "古老的日志",
+			"description": "（test）元能介质到荒光记录",
+			"storyId": "667"
+		},
+		{
+			"id": 120479,
+			"name": "古老的日志",
+			"description": "（test）荒光能量实质化记录",
+			"storyId": "668"
+		},
+		{
+			"id": 120480,
+			"name": "古老的日志",
+			"description": "（test）机械运动入门",
+			"storyId": "669"
+		},
+		{
+			"id": 120481,
+			"name": "古老的日志",
+			"description": "（test）试验助手的笔记",
+			"storyId": "670"
+		}
+	],
+	"route": "Ancient Log"
+}

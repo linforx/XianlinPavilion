@@ -1,0 +1,33 @@
+{
+	"id": 330002,
+	"name": "磐岩盟契",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_LEGEND": "秘传"
+	},
+	"props": {
+		"GCG_COST_DICE_LEGEND": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Chuanglong",
+	"route": "Covenant of Rock",
+	"storyTitle": "磐岩盟契",
+	"storyDetail": "「岩王爷赐予他看清事物的双眼，与他约法三章。此后那龙便常伴岩王爷左右，随侍征战南北…」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "磐岩盟契",
+			"description": "<color=#FFFFFFFF>我方剩余元素骰数量为0时，才能打出：</color>生成2个不同的基础元素骰。\\n（整局游戏只能打出一张「{SPRITE_PRESET#3007}秘传」卡牌；这张牌一定在你的起始手牌中）",
+			"cost": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

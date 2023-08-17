@@ -70,6 +70,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -221,78 +222,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
-			"reward": null
-		},
-		"20040181": {
-			"id": 20040181,
-			"type": "MONSTER_BOSS",
-			"affix": [
-				{
-					"name": "电抗-100%",
-					"description": "同系伤害抵抗-电-100%",
-					"abilityName": [
-						"MonsterAffix_ElementResist_Electric_03"
-					],
-					"isCommon": null
-				},
-				{
-					"name": "感电免疫",
-					"description": "免疫感电伤害和效果",
-					"abilityName": [
-						"MonsterAffix_ShockResist"
-					],
-					"isCommon": null
-				},
-				{
-					"name": "3.7UGC40体特判GV",
-					"description": "3.7UGC40体特判GV",
-					"abilityName": [
-						"MonsterAffix_Activity_UGC_BossMark"
-					],
-					"isCommon": true
-				}
-			],
-			"hpDrops": [
-				{
-					"id": 22010034,
-					"hpPercent": 75
-				},
-				{
-					"id": 22010034,
-					"hpPercent": 50
-				},
-				{
-					"id": 22010034,
-					"hpPercent": 25
-				}
-			],
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 95.088,
-					"type": "GROW_CURVE_HP"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 75.36,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 500,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": {
-				"fireSubHurt": 0.1,
-				"grassSubHurt": 0.1,
-				"waterSubHurt": 0.1,
-				"elecSubHurt": 0.1,
-				"windSubHurt": 0.1,
-				"iceSubHurt": 0.1,
-				"rockSubHurt": 0.1,
-				"physicalSubHurt": 0.1
-			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

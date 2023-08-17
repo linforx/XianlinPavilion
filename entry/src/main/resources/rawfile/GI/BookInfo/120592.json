@@ -1,0 +1,15 @@
+{
+	"id": 120592,
+	"name": "一个故事",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120477",
+	"volume": [
+		{
+			"id": 120592,
+			"name": "一个故事",
+			"description": "",
+			"storyId": "680"
+		}
+	],
+	"route": "A Story"
+}

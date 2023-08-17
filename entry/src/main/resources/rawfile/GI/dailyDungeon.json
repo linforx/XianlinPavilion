@@ -107,6 +107,33 @@
 				114040
 			],
 			"city": 4
+		},
+		"domainofMasteryRhymingRhythm": {
+			"id": 4463,
+			"name": "精通秘境：旋韵",
+			"reward": [
+				102,
+				202,
+				105,
+				104338,
+				104339,
+				104340
+			],
+			"city": 5
+		},
+		"domainofForgeryRoboticRuse": {
+			"id": 4473,
+			"name": "炼武秘境：机思",
+			"reward": [
+				102,
+				202,
+				105,
+				114049,
+				114050,
+				114051,
+				114052
+			],
+			"city": 5
 		}
 	},
 	"tuesday": {
@@ -217,6 +244,33 @@
 				114044
 			],
 			"city": 4
+		},
+		"domainofMasteryAdmonishingEngraving": {
+			"id": 4493,
+			"name": "精通秘境：箴铭",
+			"reward": [
+				102,
+				202,
+				105,
+				104341,
+				104342,
+				104343
+			],
+			"city": 5
+		},
+		"domainofForgeryArtisanship": {
+			"id": 4503,
+			"name": "炼武秘境：匠理",
+			"reward": [
+				102,
+				202,
+				105,
+				114053,
+				114054,
+				114055,
+				114056
+			],
+			"city": 5
 		}
 	},
 	"wednesday": {
@@ -327,6 +381,33 @@
 				114048
 			],
 			"city": 4
+		},
+		"domainofMasteryChimingRecitation": {
+			"id": 4497,
+			"name": "精通秘境：琅诵",
+			"reward": [
+				102,
+				202,
+				105,
+				104344,
+				104345,
+				104346
+			],
+			"city": 5
+		},
+		"domainofForgeryCuriousContraptions": {
+			"id": 4507,
+			"name": "炼武秘境：奇械",
+			"reward": [
+				102,
+				202,
+				105,
+				114057,
+				114058,
+				114059,
+				114060
+			],
+			"city": 5
 		}
 	},
 	"thursday": {
@@ -437,6 +518,33 @@
 				114040
 			],
 			"city": 4
+		},
+		"domainofMasteryRhymingRhythm": {
+			"id": 4463,
+			"name": "精通秘境：旋韵",
+			"reward": [
+				102,
+				202,
+				105,
+				104338,
+				104339,
+				104340
+			],
+			"city": 5
+		},
+		"domainofForgeryRoboticRuse": {
+			"id": 4473,
+			"name": "炼武秘境：机思",
+			"reward": [
+				102,
+				202,
+				105,
+				114049,
+				114050,
+				114051,
+				114052
+			],
+			"city": 5
 		}
 	},
 	"friday": {
@@ -547,6 +655,33 @@
 				114044
 			],
 			"city": 4
+		},
+		"domainofMasteryAdmonishingEngraving": {
+			"id": 4493,
+			"name": "精通秘境：箴铭",
+			"reward": [
+				102,
+				202,
+				105,
+				104341,
+				104342,
+				104343
+			],
+			"city": 5
+		},
+		"domainofForgeryArtisanship": {
+			"id": 4503,
+			"name": "炼武秘境：匠理",
+			"reward": [
+				102,
+				202,
+				105,
+				114053,
+				114054,
+				114055,
+				114056
+			],
+			"city": 5
 		}
 	},
 	"saturday": {
@@ -657,6 +792,33 @@
 				114048
 			],
 			"city": 4
+		},
+		"domainofMasteryChimingRecitation": {
+			"id": 4497,
+			"name": "精通秘境：琅诵",
+			"reward": [
+				102,
+				202,
+				105,
+				104344,
+				104345,
+				104346
+			],
+			"city": 5
+		},
+		"domainofForgeryCuriousContraptions": {
+			"id": 4507,
+			"name": "炼武秘境：奇械",
+			"reward": [
+				102,
+				202,
+				105,
+				114057,
+				114058,
+				114059,
+				114060
+			],
+			"city": 5
 		}
 	},
 	"sunday": {
@@ -983,6 +1145,87 @@
 				114048
 			],
 			"city": 4
+		},
+		"domainofMasteryRhymingRhythm": {
+			"id": 4463,
+			"name": "精通秘境：旋韵",
+			"reward": [
+				102,
+				202,
+				105,
+				104338,
+				104339,
+				104340
+			],
+			"city": 5
+		},
+		"domainofMasteryAdmonishingEngraving": {
+			"id": 4493,
+			"name": "精通秘境：箴铭",
+			"reward": [
+				102,
+				202,
+				105,
+				104341,
+				104342,
+				104343
+			],
+			"city": 5
+		},
+		"domainofMasteryChimingRecitation": {
+			"id": 4497,
+			"name": "精通秘境：琅诵",
+			"reward": [
+				102,
+				202,
+				105,
+				104344,
+				104345,
+				104346
+			],
+			"city": 5
+		},
+		"domainofForgeryRoboticRuse": {
+			"id": 4473,
+			"name": "炼武秘境：机思",
+			"reward": [
+				102,
+				202,
+				105,
+				114049,
+				114050,
+				114051,
+				114052
+			],
+			"city": 5
+		},
+		"domainofForgeryArtisanship": {
+			"id": 4503,
+			"name": "炼武秘境：匠理",
+			"reward": [
+				102,
+				202,
+				105,
+				114053,
+				114054,
+				114055,
+				114056
+			],
+			"city": 5
+		},
+		"domainofForgeryCuriousContraptions": {
+			"id": 4507,
+			"name": "炼武秘境：奇械",
+			"reward": [
+				102,
+				202,
+				105,
+				114057,
+				114058,
+				114059,
+				114060
+			],
+			"city": 5
 		}
 	}
 }

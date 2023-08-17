@@ -1,0 +1,15 @@
+{
+	"id": 120310,
+	"name": "似乎有着一股穿透纸背的谐谑感的花体字留言",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120310",
+	"volume": [
+		{
+			"id": 120310,
+			"name": "似乎有着一股穿透纸背的谐谑感的花体字留言",
+			"description": "在「琉形蜃境」中意外发现的怀表，有着金灿灿的色泽和摩拉式样的外壳纹路，与伊迪娅所说的故事之中，「千奇澴回」项目之初的资深冒险家留下的摩拉怀表极为相仿，不知价值几何。\\n不过，伊迪娅也说过，「重点不在于怀表或宝藏的价值，而是宝藏中蕴藏的故事…」，或许用金钱衡量这个年代久远的「见证物」的珍贵程度，并不是最妥当的做法…",
+			"storyId": "591"
+		}
+	],
+	"route": "There seems to be a message written on the paper. The font has a flourish to it, and the humor penetrates through the back of the paper."
+}

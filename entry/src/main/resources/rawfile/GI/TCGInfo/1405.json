@@ -26,7 +26,7 @@
 			"description": "（需准备1个行动轮）\\n造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
 			"cost": null,
 			"params": {
-				"D__KEY__DAMAGE": 2,
+				"D__KEY__DAMAGE": 3,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>"
 			},
 			"tags": {
@@ -125,11 +125,11 @@
 			"name": "斫雷",
 			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C114053]</color>。",
 			"cost": {
-				"GCG_COST_DICE_ELECTRO": 4,
+				"GCG_COST_DICE_ELECTRO": 3,
 				"GCG_COST_ENERGY": 3
 			},
 			"params": {
-				"D__KEY__DAMAGE": 3,
+				"D__KEY__DAMAGE": 2,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
 				"C114053": "雷兽之盾"
 			},

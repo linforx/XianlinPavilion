@@ -1,0 +1,15 @@
+{
+	"id": 120462,
+	"name": "负罪求赎者所遗",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100229",
+	"volume": [
+		{
+			"id": 120462,
+			"name": "负罪求赎者所遗",
+			"description": "从「琉形蜃境」中寻找到的一张信纸，折叠整齐，折痕处泛黄，看的出来是很久以前有人遗留在蜃境之中的物件。",
+			"storyId": "675"
+		}
+	],
+	"route": "Absolution-Seeker's Testament"
+}

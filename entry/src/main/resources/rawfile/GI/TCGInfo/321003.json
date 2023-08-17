@@ -5,9 +5,7 @@
 	"tags": {
 		"GCG_TAG_PLACE": "场地"
 	},
-	"props": {
-		"GCG_COST_DICE_SAME": 1
-	},
+	"props": null,
 	"icon": "UI_Gcg_CardFace_Assist_Location_Qunyuge",
 	"route": "Jade Chamber",
 	"storyTitle": "高阁入云坐看星",
@@ -18,9 +16,7 @@
 		"27014": {
 			"name": "群玉阁",
 			"description": "<color=#FFFFFFFF>投掷阶段：</color>2个元素骰初始总是投出我方出战角色类型的元素。",
-			"cost": {
-				"GCG_COST_DICE_SAME": 1
-			},
+			"cost": null,
 			"params": null,
 			"tags": {
 				"GCG_TAG_PLACE": "场地"

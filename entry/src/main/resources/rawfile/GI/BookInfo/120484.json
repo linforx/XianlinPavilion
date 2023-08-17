@@ -1,0 +1,15 @@
+{
+	"id": 120484,
+	"name": "古老的博物志节选",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120484",
+	"volume": [
+		{
+			"id": 120484,
+			"name": "古老的博物志节选",
+			"description": "（test）水幕房间故事集",
+			"storyId": "673"
+		}
+	],
+	"route": "Ancient Natural History Excerpts"
+}

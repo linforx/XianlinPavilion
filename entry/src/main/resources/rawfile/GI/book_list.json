@@ -273,6 +273,27 @@
 			"icon": "UI_ItemIcon_120074",
 			"route": "A Thousand Nights"
 		},
+		"1041": {
+			"id": 1041,
+			"name": "雷穆利亚衰亡史",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120404",
+			"route": "The History of the Decline and Fall of Remuria"
+		},
+		"1042": {
+			"id": 1042,
+			"name": "枫丹动物寓言集",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120407",
+			"route": "Fables de Fontaine"
+		},
+		"1043": {
+			"id": 1043,
+			"name": "怪盗与名侦探：虹彩胸针之谜",
+			"rank": 4,
+			"icon": "UI_ItemIcon_120410",
+			"route": "Robben versus Chesterton: Iridescent Brooch"
+		},
 		"100181": {
 			"id": 100181,
 			"name": "与神性同行·序言",
@@ -1230,7 +1251,7 @@
 			"name": "灵光颂",
 			"rank": 4,
 			"icon": "UI_ItemIcon_100229",
-			"route": "An Ode to Khvarena"
+			"route": "An Ode to Soul-Light"
 		},
 		"120032": {
 			"id": 120032,
@@ -1617,6 +1638,13 @@
 			"icon": "UI_ItemIcon_100437",
 			"route": "Jeht's Note"
 		},
+		"120252": {
+			"id": 120252,
+			"name": "散落在地却又保存完好的手记残页·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_71700047",
+			"route": "Scattered Yet Well-Preserved Pages (I)"
+		},
 		"120256": {
 			"id": 120256,
 			"name": "久岐忍的来信",
@@ -1728,6 +1756,34 @@
 			"rank": 1,
 			"icon": "UI_ItemIcon_120305",
 			"route": "Korybantes Score: Vedana"
+		},
+		"120306": {
+			"id": 120306,
+			"name": "残破布袋中的留言",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120309",
+			"route": "Note in a Tattered Bag"
+		},
+		"120307": {
+			"id": 120307,
+			"name": "字迹秀美的信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120309",
+			"route": "A Letter With Lovely Handwriting"
+		},
+		"120308": {
+			"id": 120308,
+			"name": "字迹稚嫩的日记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120309",
+			"route": "Journal with Juvenile Handwriting"
+		},
+		"120310": {
+			"id": 120310,
+			"name": "似乎有着一股穿透纸背的谐谑感的花体字留言",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120310",
+			"route": "There seems to be a message written on the paper. The font has a flourish to it, and the humor penetrates through the back of the paper."
 		},
 		"120316": {
 			"id": 120316,
@@ -1882,6 +1938,83 @@
 			"rank": 1,
 			"icon": "UI_ItemIcon_100112",
 			"route": "Khvarena Monument Inscription"
+		},
+		"120399": {
+			"id": 120399,
+			"name": "薇涅尔的笔记本",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101991",
+			"route": "Vigneire's Notebook"
+		},
+		"120462": {
+			"id": 120462,
+			"name": "负罪求赎者所遗",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100229",
+			"route": "Absolution-Seeker's Testament"
+		},
+		"120477": {
+			"id": 120477,
+			"name": "古老的日志",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120477",
+			"route": "Ancient Log"
+		},
+		"120483": {
+			"id": 120483,
+			"name": "古老的调查报告",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120483",
+			"route": "Ancient Investigative Report"
+		},
+		"120484": {
+			"id": 120484,
+			"name": "古老的博物志节选",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120484",
+			"route": "Ancient Natural History Excerpts"
+		},
+		"120485": {
+			"id": 120485,
+			"name": "古老的记事",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120485",
+			"route": "Ancient Notes"
+		},
+		"120531": {
+			"id": 120531,
+			"name": "航海日志残片",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120531",
+			"route": "Navigation Log Fragment"
+		},
+		"120532": {
+			"id": 120532,
+			"name": "残损的日志",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120532",
+			"route": "Damaged Diary"
+		},
+		"120577": {
+			"id": 120577,
+			"name": "神秘的书页·其一",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120577",
+			"route": "Enigmatic Page (I)"
+		},
+		"120590": {
+			"id": 120590,
+			"name": "散落的书页",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120577",
+			"route": "Scattered Page"
+		},
+		"120592": {
+			"id": 120592,
+			"name": "一个故事",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120477",
+			"route": "A Story"
 		}
 	}
 }

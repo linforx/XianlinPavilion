@@ -31,10 +31,11 @@
 				}
 			],
 			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		},
-		"28020702": {
-			"id": 28020702,
+		"28220701": {
+			"id": 28220701,
 			"type": "MONSTER_ORDINARY",
 			"affix": null,
 			"hpDrops": null,
@@ -56,6 +57,7 @@
 				}
 			],
 			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

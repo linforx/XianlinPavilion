@@ -1,0 +1,15 @@
+{
+	"id": 120485,
+	"name": "古老的记事",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120485",
+	"volume": [
+		{
+			"id": 120485,
+			"name": "古老的记事",
+			"description": "（test）学院长日记",
+			"storyId": "674"
+		}
+	],
+	"route": "Ancient Notes"
+}

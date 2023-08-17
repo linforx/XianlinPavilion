@@ -1,0 +1,69 @@
+{
+	"id": 211081,
+	"name": "起死回骸",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_CRYO": 5,
+		"GCG_COST_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Qiqi",
+	"route": "Rite of Resurrection",
+	"storyTitle": "七七·起死回骸",
+	"storyDetail": "「要…活下去…」",
+	"source": "在猫尾酒馆中邀请七七进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S11083": {
+			"name": "仙法·救苦度厄",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C111082]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111082": "度厄真符"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Qiqi_01_HD"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "起死回骸",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1108]</color>时，装备此牌。\\n$[A1108]装备此牌后，立刻使用一次<color=#FFD780FF>$[S11083]</color>。\\n装备有此牌的$[A1108]使用<color=#FFFFFFFF>$[S11083]</color>时，复苏我方所有倒下的角色，并治疗其2点。（整场牌局限制2次）\\n（牌组中包含$[A1108]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 5,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1108": "七七",
+				"S11083": "仙法·救苦度厄"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1108]使用<color=#FFFFFFFF>$[S11083]</color>时，复苏我方所有倒下的角色，并治疗其2点。（整场牌局限制2次）",
+			"subSkills": {
+				"S11083": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

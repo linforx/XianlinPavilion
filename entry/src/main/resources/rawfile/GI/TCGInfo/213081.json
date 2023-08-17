@@ -1,0 +1,74 @@
+{
+	"id": 213081,
+	"name": "最终解释权",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 1,
+		"GCG_COST_DICE_VOID": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Feiyan",
+	"route": "Right of Final Interpretation",
+	"storyTitle": "烟绯·最终解释权",
+	"storyDetail": "「在打牌这方面，自然是…律无禁止即可为呀。」",
+	"source": "在猫尾酒馆中邀请烟绯进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S13081": {
+			"name": "火漆制印",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_Catalyst_MD"
+		},
+		"K51": {
+			"name": "<color=#FFFFFFFF>重击</color>",
+			"description": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "最终解释权",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1308]</color>时，装备此牌。\\n$[A1308]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13081]</color>。\\n装备有此牌的$[A1308]进行$[K51]时：对生命值不多于6的敌人造成的伤害+1。\\n（牌组中包含$[A1308]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1308": "烟绯",
+				"S13081": "火漆制印",
+				"K51": "<color=#FFFFFFFF>重击</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1308]进行$[K51]时：对生命值不多于6的敌人造成的伤害+1。",
+			"subSkills": {
+				"S13081": "skill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K51": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

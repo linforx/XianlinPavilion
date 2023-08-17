@@ -1,0 +1,33 @@
+{
+	"id": 330001,
+	"name": "旧时庭园",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_LEGEND": "秘传"
+	},
+	"props": {
+		"GCG_COST_DICE_LEGEND": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Jiangjun",
+	"route": "Ancient Courtyard",
+	"storyTitle": "旧时庭园",
+	"storyDetail": "「空蝉幽世此浮生，岂非渺然梦寤时。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "旧时庭园",
+			"description": "<color=#FFFFFFFF>我方有角色已装备「{SPRITE_PRESET#3003}武器」或「{SPRITE_PRESET#3004}圣遗物」时，才能打出：</color>本回合中，我方下次打出「{SPRITE_PRESET#3003}武器」或「{SPRITE_PRESET#3004}圣遗物」装备牌时少花费2个元素骰。\\n（整局游戏只能打出一张「{SPRITE_PRESET#3007}秘传」卡牌；这张牌一定在你的起始手牌中）",
+			"cost": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

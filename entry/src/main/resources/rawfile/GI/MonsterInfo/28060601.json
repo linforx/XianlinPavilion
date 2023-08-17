@@ -49,6 +49,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060602": {
@@ -100,6 +101,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060603": {
@@ -151,6 +153,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060604": {
@@ -185,6 +188,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060605": {
@@ -228,6 +232,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060606": {
@@ -271,6 +276,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060609": {
@@ -322,6 +328,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060610": {
@@ -365,6 +372,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060611": {
@@ -408,6 +416,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060612": {
@@ -451,6 +460,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060613": {
@@ -494,6 +504,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"28060614": {
@@ -537,6 +548,267 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
+			"reward": null
+		},
+		"28061101": {
+			"id": 28061101,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "3.0驮兽背包词缀-愚人众",
+					"description": "愚人众背包",
+					"abilityName": [
+						"Monster_Megamoth_Accessory_Fatuus"
+					],
+					"isCommon": true
+				},
+				{
+					"name": "3.0 动物通用血条显示控件",
+					"description": "3.0 动物通用血条显示控件",
+					"abilityName": [
+						"Monster_Animal_Common_BillboardControl"
+					],
+					"isCommon": true
+				}
+			],
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 21.7344,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 22.608,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
+		},
+		"28061201": {
+			"id": 28061201,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "3.0驮兽背包词缀-盗宝团",
+					"description": "盗宝团背包",
+					"abilityName": [
+						"Monster_Megamoth_Accessory_Thoarder"
+					],
+					"isCommon": true
+				},
+				{
+					"name": "3.0 动物通用血条显示控件",
+					"description": "3.0 动物通用血条显示控件",
+					"abilityName": [
+						"Monster_Animal_Common_BillboardControl"
+					],
+					"isCommon": true
+				}
+			],
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 16.3008,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 17.584,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
+		},
+		"28061301": {
+			"id": 28061301,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "3.0驮兽背包词缀-盗宝团",
+					"description": "盗宝团背包",
+					"abilityName": [
+						"Monster_Megamoth_Accessory_Thoarder"
+					],
+					"isCommon": true
+				},
+				{
+					"name": "3.0 动物通用血条显示控件",
+					"description": "3.0 动物通用血条显示控件",
+					"abilityName": [
+						"Monster_Animal_Common_BillboardControl"
+					],
+					"isCommon": true
+				}
+			],
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 16.3008,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 17.584,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
+		},
+		"28061401": {
+			"id": 28061401,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "3.0驮兽背包词缀-丘丘人1",
+					"description": "丘丘人1背包",
+					"abilityName": [
+						"Monster_Megamoth_Accessory_Hili01"
+					],
+					"isCommon": true
+				},
+				{
+					"name": "3.0 动物通用血条显示控件",
+					"description": "3.0 动物通用血条显示控件",
+					"abilityName": [
+						"Monster_Animal_Common_BillboardControl"
+					],
+					"isCommon": true
+				}
+			],
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 10.8672,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 12.56,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
+		},
+		"28061402": {
+			"id": 28061402,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "3.0驮兽背包词缀-丘丘人2",
+					"description": "丘丘人2背包",
+					"abilityName": [
+						"Monster_Megamoth_Accessory_Hili02"
+					],
+					"isCommon": true
+				},
+				{
+					"name": "3.0 动物通用血条显示控件",
+					"description": "3.0 动物通用血条显示控件",
+					"abilityName": [
+						"Monster_Animal_Common_BillboardControl"
+					],
+					"isCommon": true
+				}
+			],
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 10.8672,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 12.56,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

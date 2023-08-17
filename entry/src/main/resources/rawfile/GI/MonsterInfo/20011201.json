@@ -45,6 +45,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"202": {
 					"rank": 3,
@@ -90,6 +91,7 @@
 				}
 			],
 			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"20011203": {
@@ -157,6 +159,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"20011204": {
@@ -208,27 +211,31 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
-		"20011281": {
-			"id": 20011281,
+		"20011205": {
+			"id": 20011205,
 			"type": "MONSTER_ORDINARY",
 			"affix": [
 				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
+					"name": "永不入战-活动",
+					"description": "关闭怪物受击、嘲讽、广播入战",
 					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
+						"MonsterAffix_NeverCombat"
+					],
+					"isCommon": null
+				},
+				{
+					"name": "3.8冒险家试炼特殊史莱姆",
+					"description": "3.8冒险家试炼特殊史莱姆",
+					"abilityName": [
+						"MonsterAffix_Slime_SimpleStick_V3_8_AdventurerTrial"
 					],
 					"isCommon": true
 				}
 			],
-			"hpDrops": [
-				{
-					"id": 22010011,
-					"hpPercent": 60
-				}
-			],
+			"hpDrops": null,
 			"prop": [
 				{
 					"propType": "FIGHT_PROP_BASE_HP",
@@ -256,6 +263,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.1
 			},
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

@@ -182,6 +182,22 @@
 			"icon": "UI_MonsterIcon_Oceanid",
 			"route": "Oceanid"
 		},
+		"20051001": {
+			"id": 20051001,
+			"name": "浊水粉碎幻灵",
+			"type": "ELEMENTAL",
+			"icon": "UI_MonsterIcon_Necalevia_Normal",
+			"route": "Tainted Water-Splitting Phantasm",
+			"beta": true
+		},
+		"20051101": {
+			"id": 20051101,
+			"name": "浊水喷吐幻灵",
+			"type": "ELEMENTAL",
+			"icon": "UI_MonsterIcon_Necalevia_Big",
+			"route": "Tainted Water-Spouting Phantasm",
+			"beta": true
+		},
 		"20060101": {
 			"id": 20060101,
 			"name": "水飘浮灵",
@@ -581,6 +597,38 @@
 			"icon": "UI_MonsterIcon_Invoker_Archdeacon",
 			"route": "Iniquitous Baptist"
 		},
+		"22110101": {
+			"id": 22110101,
+			"name": "大型碎石隙境原体",
+			"type": "ABYSS",
+			"icon": "UI_MonsterIcon_Ovacua_Order_01",
+			"route": "Large Shatterstone Breacher Primus",
+			"beta": true
+		},
+		"22110201": {
+			"id": 22110201,
+			"name": "碎石隙境原体",
+			"type": "ABYSS",
+			"icon": "UI_MonsterIcon_Ovacua_Order_02",
+			"route": "Shatterstone Breacher Primus",
+			"beta": true
+		},
+		"22110301": {
+			"id": 22110301,
+			"name": "大型狂蔓隙境原体",
+			"type": "ABYSS",
+			"icon": "UI_MonsterIcon_Ovacua_Chaos_01",
+			"route": "Large Overgrown Breacher Primus",
+			"beta": true
+		},
+		"22110401": {
+			"id": 22110401,
+			"name": "狂蔓隙境原体",
+			"type": "ABYSS",
+			"icon": "UI_MonsterIcon_Ovacua_Chaos_02",
+			"route": "Overgrown Breacher Primus",
+			"beta": true
+		},
 		"23010101": {
 			"id": 23010101,
 			"name": "愚人众先遣队·冰铳重卫士",
@@ -763,12 +811,101 @@
 			"icon": "UI_MonsterIcon_Monolith_Starchild",
 			"route": "Algorithm of Semi-Intransient Matrix of Overseer Network"
 		},
-		"25010101": {
-			"id": 25010101,
-			"name": "盗宝团·「溜溜」",
-			"type": "HUMAN",
-			"icon": "UI_MonsterIcon_Thoarder_Male_NoWeapon_01",
-			"route": "Treasure Hoarders: Liuliu"
+		"24060401": {
+			"id": 24060401,
+			"name": "机关·地质勘探型",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Probe",
+			"route": "Geological Survey Mek",
+			"beta": true
+		},
+		"24068101": {
+			"id": 24068101,
+			"name": "机关·侦察记录型",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Sentry",
+			"route": "Recon Log Mek",
+			"beta": true
+		},
+		"24068201": {
+			"id": 24068201,
+			"name": "机关·算力增幅器",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Pylon",
+			"route": "Arithmetic Enhancer Mek",
+			"beta": true
+		},
+		"24068301": {
+			"id": 24068301,
+			"name": "机关·水下勘测型",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Recon",
+			"route": "Underwater Survey Mek",
+			"beta": true
+		},
+		"24068501": {
+			"id": 24068501,
+			"name": "机关·水下巡游型",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Nautilus",
+			"route": "Underwater Patrol Mek",
+			"beta": true
+		},
+		"24068701": {
+			"id": 24068701,
+			"name": "机关·灵活采集型",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Assimilator",
+			"route": "Nimble Harvester Mek",
+			"beta": true
+		},
+		"24068801": {
+			"id": 24068801,
+			"name": "攻坚特化型机关",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_01",
+			"route": "Assault Specialist Mek",
+			"beta": true
+		},
+		"24068901": {
+			"id": 24068901,
+			"name": "压制特化型机关",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Ruggiero_02",
+			"route": "Suppression Specialist Mek",
+			"beta": true
+		},
+		"24069001": {
+			"id": 24069001,
+			"name": "歼灭特化型机关",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Bradamante",
+			"route": "Annihilation Specialist Mek",
+			"beta": true
+		},
+		"24069101": {
+			"id": 24069101,
+			"name": "机关·区域警戒型",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_LengthShifter",
+			"route": "Area Alert Mek",
+			"beta": true
+		},
+		"24069201": {
+			"id": 24069201,
+			"name": "建造特化型机关",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Excavator",
+			"route": "Construction Specialist Mek",
+			"beta": true
+		},
+		"24070301": {
+			"id": 24070301,
+			"name": "冰风组曲",
+			"type": "AUTOMATRON",
+			"icon": "UI_MonsterIcon_MachinaIustitia_Nutcracker",
+			"route": "Icewind Suite",
+			"beta": true
 		},
 		"25010201": {
 			"id": 25010201,
@@ -812,26 +949,12 @@
 			"icon": "UI_MonsterIcon_Thoarder_Male_Rogue_Fat_01",
 			"route": "Treasure Hoarders: Handyman"
 		},
-		"25020101": {
-			"id": 25020101,
-			"name": "盗宝团·「怪鸟」",
-			"type": "HUMAN",
-			"icon": "UI_MonsterIcon_Thoarder_Male_Crossbow_01",
-			"route": "Treasure Hoarders: Raptor"
-		},
 		"25020201": {
 			"id": 25020201,
 			"name": "盗宝团·神射手",
 			"type": "HUMAN",
 			"icon": "UI_MonsterIcon_Thoarder_Male_Hunter_01",
 			"route": "Treasure Hoarders: Marksman"
-		},
-		"25030101": {
-			"id": 25030101,
-			"name": "盗宝团·「卡门」",
-			"type": "HUMAN",
-			"icon": "UI_MonsterIcon_Thoarder_Male_Shovel_01",
-			"route": "Treasure Hoarders: Carmen"
 		},
 		"25030201": {
 			"id": 25030201,
@@ -846,27 +969,6 @@
 			"type": "HUMAN",
 			"icon": "UI_MonsterIcon_Thoarder_Male_Sailor_01",
 			"route": "Treasure Hoarders: Seaman"
-		},
-		"25040101": {
-			"id": 25040101,
-			"name": "盗宝团·「大姐头」",
-			"type": "HUMAN",
-			"icon": "UI_MonsterIcon_Thoarder_Female_Hatchet_01",
-			"route": "Treasure Hoarders: Boss"
-		},
-		"25050101": {
-			"id": 25050101,
-			"name": "千岩军士兵",
-			"type": "HUMAN",
-			"icon": "UI_MonsterIcon_Millelith_Male_01",
-			"route": "Millelith Soldier"
-		},
-		"25050201": {
-			"id": 25050201,
-			"name": "千岩军教头",
-			"type": "HUMAN",
-			"icon": "UI_MonsterIcon_Millelith_Male_02",
-			"route": "Millelith Sergeant"
 		},
 		"25060101": {
 			"id": 25060101,
@@ -1260,6 +1362,150 @@
 			"icon": "UI_MonsterIcon_Sandworm",
 			"route": "Setekh Wenut"
 		},
+		"26151001": {
+			"id": 26151001,
+			"name": "猎刀鳐",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_MantaRay_Larva_01",
+			"route": "Hunter's Ray",
+			"beta": true
+		},
+		"26151101": {
+			"id": 26151101,
+			"name": "猎刀鳐",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_MantaRay_Larva_02",
+			"route": "Hunter's Ray",
+			"beta": true
+		},
+		"26152101": {
+			"id": 26152101,
+			"name": "重甲蟹",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_HermitCrab_Larva_01",
+			"route": "Armored Crab",
+			"beta": true
+		},
+		"26152201": {
+			"id": 26152201,
+			"name": "重甲蟹",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_HermitCrab_Larva_02",
+			"route": "Armored Crab",
+			"beta": true
+		},
+		"26153101": {
+			"id": 26153101,
+			"name": "膨膨兽",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_Seal_Larva_01",
+			"route": "Blubberbeast",
+			"beta": true
+		},
+		"26154101": {
+			"id": 26154101,
+			"name": "帽子水母",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_JellyFish_Larva_01",
+			"route": "Hat Jellyfish",
+			"beta": true
+		},
+		"26154201": {
+			"id": 26154201,
+			"name": "帽子水母",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_JellyFish_Larva_02",
+			"route": "Hat Jellyfish",
+			"beta": true
+		},
+		"26155101": {
+			"id": 26155101,
+			"name": "泡泡海马",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_SeaHorse_Larva_01",
+			"route": "Bubbly Seahorse",
+			"beta": true
+		},
+		"26155201": {
+			"id": 26155201,
+			"name": "泡泡海马",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_SeaHorse_Larva_02",
+			"route": "Bubbly Seahorse",
+			"beta": true
+		},
+		"26155301": {
+			"id": 26155301,
+			"name": "泡泡海马",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_SeaHorse_Larva_03",
+			"route": "Bubbly Seahorse",
+			"beta": true
+		},
+		"26156101": {
+			"id": 26156101,
+			"name": "球球章鱼",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_Octopus_Larva_01",
+			"route": "Ball Octopus",
+			"beta": true
+		},
+		"26156201": {
+			"id": 26156201,
+			"name": "球球章鱼",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_Octopus_Larva_02",
+			"route": "Ball Octopus",
+			"beta": true
+		},
+		"26157101": {
+			"id": 26157101,
+			"name": "天使海兔",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_Aplysia_Larva_01",
+			"route": "Angelic Sea Hare",
+			"beta": true
+		},
+		"26157201": {
+			"id": 26157201,
+			"name": "天使海兔",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_Aplysia_Larva_02",
+			"route": "Angelic Sea Hare",
+			"beta": true
+		},
+		"26160101": {
+			"id": 26160101,
+			"name": "坚盾重甲蟹",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_HermitCrab_Mature",
+			"route": "Sternshield Crab",
+			"beta": true
+		},
+		"26160201": {
+			"id": 26160201,
+			"name": "大天使海兔",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_Aplysia_Mature",
+			"route": "Cherubic Sea Hare",
+			"beta": true
+		},
+		"26160301": {
+			"id": 26160301,
+			"name": "泡泡雄海马",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_SeaHorse_Mature",
+			"route": "Bubbler Seahorse",
+			"beta": true
+		},
+		"26160302": {
+			"id": 26160302,
+			"name": "铁甲熔火帝皇",
+			"type": "BEAST",
+			"icon": "UI_MonsterIcon_HermitCrab_Primo",
+			"route": "Emperor of Fire and Iron",
+			"beta": true
+		},
 		"28010101": {
 			"id": 28010101,
 			"name": "黄金蟹",
@@ -1442,13 +1688,6 @@
 			"icon": "UI_AnimalIcon_Boar_01",
 			"route": "Forest Boar"
 		},
-		"28020302": {
-			"id": 28020302,
-			"name": "小野林猪",
-			"type": "ANIMAL",
-			"icon": "UI_AnimalIcon_Boar_02",
-			"route": "Forest Piglet"
-		},
 		"28020303": {
 			"id": 28020303,
 			"name": "雪猪",
@@ -1468,13 +1707,6 @@
 			"name": "蕈猪",
 			"type": "ANIMAL",
 			"icon": "UI_AnimalIcon_Boar_Grass",
-			"route": "Shroomboar"
-		},
-		"28020314": {
-			"id": 28020314,
-			"name": "蕈猪",
-			"type": "ANIMAL",
-			"icon": "UI_AnimalIcon_Boar_Grass_Small",
 			"route": "Shroomboar"
 		},
 		"28020401": {
@@ -1504,6 +1736,30 @@
 			"type": "ANIMAL",
 			"icon": "UI_AnimalIcon_DogPrick_03",
 			"route": "Black-Back Hound"
+		},
+		"28020411": {
+			"id": 28020411,
+			"name": "深栗猎犬",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_Dog_DropEar_01",
+			"route": "Chestnut Hunting Hound",
+			"beta": true
+		},
+		"28020412": {
+			"id": 28020412,
+			"name": "亮灰猎犬",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_Dog_DropEar_02",
+			"route": "Glittergray Hunting Hound",
+			"beta": true
+		},
+		"28020413": {
+			"id": 28020413,
+			"name": "琥珀猎犬",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_Dog_DropEar_03",
+			"route": "Amber Hunting Hound",
+			"beta": true
 		},
 		"28020501": {
 			"id": 28020501,
@@ -1609,6 +1865,38 @@
 			"type": "ANIMAL",
 			"icon": "UI_AnimalIcon_Tortoise_01",
 			"route": "Tent Tortoise"
+		},
+		"28021101": {
+			"id": 28021101,
+			"name": "淑女犬",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_FontainePoddle_Lady_01",
+			"route": "Lady Poodle",
+			"beta": true
+		},
+		"28021102": {
+			"id": 28021102,
+			"name": "卫兵犬",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_FontainePoddle_Guard_01",
+			"route": "Guard Poodle",
+			"beta": true
+		},
+		"28021103": {
+			"id": 28021103,
+			"name": "绅士犬",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_FontainePoddle_Gentleman_01",
+			"route": "Gentleman Poodle",
+			"beta": true
+		},
+		"28021201": {
+			"id": 28021201,
+			"name": "悠悠海獭",
+			"type": "ANIMAL",
+			"icon": "UI_AnimalIcon_Beaver_01",
+			"route": "Leisurely Otter",
+			"beta": true
 		},
 		"28030101": {
 			"id": 28030101,
@@ -1749,6 +2037,86 @@
 			"type": "AVIARY",
 			"icon": "UI_AnimalIcon_Wigeon_03",
 			"route": "Emerald Duck"
+		},
+		"28030601": {
+			"id": 28030601,
+			"name": "雪翅雁",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Swan_01",
+			"route": "Snow-Winged Goose",
+			"beta": true
+		},
+		"28030602": {
+			"id": 28030602,
+			"name": "乌翅雁",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Swan_02",
+			"route": "Darkwing Goose",
+			"beta": true
+		},
+		"28030701": {
+			"id": 28030701,
+			"name": "平冠鹱",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Albatross_01",
+			"route": "Flatcrest Fulmar",
+			"beta": true
+		},
+		"28030702": {
+			"id": 28030702,
+			"name": "紫金渔鸥",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Seagull_01",
+			"route": "Violetgold Angler Gull",
+			"beta": true
+		},
+		"28030703": {
+			"id": 28030703,
+			"name": "灰蓝伞雀",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Eggplant_01",
+			"route": "Slate Umbrellafinch",
+			"beta": true
+		},
+		"28030704": {
+			"id": 28030704,
+			"name": "赤棕伞雀",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Eggplant_02",
+			"route": "Burgundy Umbrellafinch",
+			"beta": true
+		},
+		"28030705": {
+			"id": 28030705,
+			"name": "洋红扇尾鸽",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Fantail_01",
+			"route": "Magenta Fantail Pigeon",
+			"beta": true
+		},
+		"28030706": {
+			"id": 28030706,
+			"name": "叶绿扇尾鸽",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Fantail_02",
+			"route": "Viridian Fantail Pigeon",
+			"beta": true
+		},
+		"28030707": {
+			"id": 28030707,
+			"name": "红冠雀",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Larvivora_01",
+			"route": "Redcrown Finch",
+			"beta": true
+		},
+		"28030708": {
+			"id": 28030708,
+			"name": "青冠雀",
+			"type": "AVIARY",
+			"icon": "UI_AnimalIcon_Larvivora_02",
+			"route": "Bluecrown Finch",
+			"beta": true
 		},
 		"28040101": {
 			"id": 28040101,
@@ -1981,6 +2349,62 @@
 			"icon": "UI_ItemIcon_131028",
 			"route": "Halcyon Jade Axe Marlin"
 		},
+		"28040903": {
+			"id": 28040903,
+			"name": "海涛斧枪鱼",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131029",
+			"route": "Streaming Axe Marlin",
+			"beta": true
+		},
+		"28041001": {
+			"id": 28041001,
+			"name": "波波心羽鲈",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131030",
+			"route": "Rippling Heartfeather Bass",
+			"beta": true
+		},
+		"28041002": {
+			"id": 28041002,
+			"name": "烘烘心羽鲈",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131031",
+			"route": "Blazing Heartfeather Bass",
+			"beta": true
+		},
+		"28041101": {
+			"id": 28041101,
+			"name": "维护机关·初始能力型",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131032",
+			"route": "Maintenance Mek: Initial Configuration",
+			"beta": true
+		},
+		"28041102": {
+			"id": 28041102,
+			"name": "维护机关·水域清理者",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131033",
+			"route": "Maintenance Mek: Water Body Cleaner",
+			"beta": true
+		},
+		"28041103": {
+			"id": 28041103,
+			"name": "维护机关·态势控制者",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131034",
+			"route": "Maintenance Mek: Situation Controller",
+			"beta": true
+		},
+		"28041104": {
+			"id": 28041104,
+			"name": "维护机关·白金典藏型",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131035",
+			"route": "Maintenance Mek: Platinum Collection",
+			"beta": true
+		},
 		"28050101": {
 			"id": 28050101,
 			"name": "风晶蝶",
@@ -2022,6 +2446,14 @@
 			"type": "CRITTER",
 			"icon": "UI_AnimalIcon_Wisp_Grass_01",
 			"route": "Dendro Crystalfly"
+		},
+		"28050107": {
+			"id": 28050107,
+			"name": "水晶蝶",
+			"type": "CRITTER",
+			"icon": "UI_AnimalIcon_Wisp_Water_01",
+			"route": "Hydro Crystalfly",
+			"beta": true
 		},
 		"28050201": {
 			"id": 28050201,

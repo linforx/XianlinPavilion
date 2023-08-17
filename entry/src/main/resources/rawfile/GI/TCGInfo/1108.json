@@ -1,0 +1,128 @@
+{
+	"id": 1108,
+	"name": "七七",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_CRYO": "冰元素",
+		"GCG_TAG_WEAPON_SWORD": "单手剑",
+		"GCG_TAG_NATION_LIYUE": "璃月"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 3
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Qiqi",
+	"route": "Qiqi",
+	"storyTitle": "冻冻回魂夜·七七",
+	"storyDetail": "流转不息，生生不绝。",
+	"source": "在猫尾酒馆中邀请七七进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K101": {
+			"name": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2101}冰元素，可发生元素反应：\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2103}<color=#FFFFFFFF>融化</color>：本伤害+2\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2104}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2101}{SPRITE_PRESET#2102}<color=#FFFFFFFF>冻结</color>：本伤害+1，使目标本回合无法行动（受到物理或火元素伤害后提前解除，但是伤害+2）"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C111081": {
+			"name": "寒病鬼差",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K101]。\\n<color=#FFFFFFFF>$[K3]：3</color>\\n<color=#FFFFFFFF>此召唤物在场时，$[A1108]使用「普通攻击」后：</color>治疗受伤最多的我方角色1点。",
+			"cost": null,
+			"params": {
+				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>",
+				"A1108": "七七"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"C111082": {
+			"name": "度厄真符",
+			"description": "<color=#FFFFFFFF>我方角色使用技能后：</color>如果该角色生命值未满，则治疗该角色2点。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"11081": {
+			"name": "云来古剑法",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_01",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"11082": {
+			"name": "仙法·寒病鬼差",
+			"description": "召唤<color=#FFFFFFFF>$[C111081]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3
+			},
+			"params": {
+				"C111081": "寒病鬼差"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Qiqi_01",
+			"subSkills": {
+				"C111081": "cardSkill"
+			},
+			"keywords": null
+		},
+		"11083": {
+			"name": "仙法·救苦度厄",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C111082]</color>。",
+			"cost": {
+				"GCG_COST_DICE_CRYO": 3,
+				"GCG_COST_ENERGY": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 3,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",
+				"C111082": "度厄真符"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Qiqi_01_HD",
+			"subSkills": {
+				"C111082": "cardSkill"
+			},
+			"keywords": {
+				"K101": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 211081,
+			"name": "起死回骸",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Qiqi"
+		}
+	]
+}

@@ -31,56 +31,7 @@
 				}
 			],
 			"resistance": null,
-			"reward": null
-		},
-		"28040702": {
-			"id": 28040702,
-			"type": "MONSTER_FISH",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
-			"reward": null
-		},
-		"28040703": {
-			"id": 28040703,
-			"type": "MONSTER_ORDINARY",
-			"affix": null,
-			"hpDrops": null,
-			"prop": [
-				{
-					"propType": "FIGHT_PROP_BASE_HP",
-					"initValue": 0.14,
-					"type": "GROW_CURVE_HP_LITTLEMONSTER"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_ATTACK",
-					"initValue": 0.51,
-					"type": "GROW_CURVE_ATTACK"
-				},
-				{
-					"propType": "FIGHT_PROP_BASE_DEFENSE",
-					"initValue": 0,
-					"type": "GROW_CURVE_DEFENSE"
-				}
-			],
-			"resistance": null,
+			"fundamentalForce": null,
 			"reward": null
 		}
 	},

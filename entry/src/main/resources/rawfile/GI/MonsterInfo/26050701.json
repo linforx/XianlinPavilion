@@ -53,6 +53,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": {
 				"102": {
 					"rank": 3,
@@ -195,6 +196,7 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
 		"26050703": {
@@ -242,21 +244,13 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
+			"fundamentalForce": null,
 			"reward": null
 		},
-		"26050781": {
-			"id": 26050781,
+		"26051001": {
+			"id": 26051001,
 			"type": "MONSTER_ORDINARY",
-			"affix": [
-				{
-					"name": "快速死亡-TD总控",
-					"description": "快速死亡-TD总控",
-					"abilityName": [
-						"MonsterAffix_DieOptimize_LevelPlay"
-					],
-					"isCommon": true
-				}
-			],
+			"affix": null,
 			"hpDrops": [
 				{
 					"id": 22010016,
@@ -290,7 +284,56 @@
 				"rockSubHurt": 0.1,
 				"physicalSubHurt": 0.3
 			},
-			"reward": null
+			"fundamentalForce": null,
+			"reward": {
+				"202": {
+					"rank": 3,
+					"icon": "UI_ItemIcon_202"
+				},
+				"112041": {
+					"rank": 2,
+					"icon": "UI_ItemIcon_112041",
+					"count": "5.2526"
+				},
+				"112042": {
+					"rank": 3,
+					"icon": "UI_ItemIcon_112042",
+					"count": "1.4006"
+				},
+				"112043": {
+					"rank": 4,
+					"icon": "UI_ItemIcon_112043",
+					"count": "0.3502"
+				},
+				"400022": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10005_4"
+				},
+				"400023": {
+					"rank": 4,
+					"icon": "UI_RelicIcon_10005_4"
+				},
+				"400032": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10007_4"
+				},
+				"400033": {
+					"rank": 4,
+					"icon": "UI_RelicIcon_10007_4"
+				},
+				"400042": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10009_4"
+				},
+				"400043": {
+					"rank": 4,
+					"icon": "UI_RelicIcon_10009_4"
+				},
+				"400062": {
+					"rank": 3,
+					"icon": "UI_RelicIcon_10013_4"
+				}
+			}
 		}
 	},
 	"tips": {

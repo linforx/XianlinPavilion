@@ -103,11 +103,11 @@
 			"name": "琉金云间草",
 			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C113052]</color>。",
 			"cost": {
-				"GCG_COST_DICE_PYRO": 4,
+				"GCG_COST_DICE_PYRO": 3,
 				"GCG_COST_ENERGY": 3
 			},
 			"params": {
-				"D__KEY__DAMAGE": 4,
+				"D__KEY__DAMAGE": 3,
 				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>",
 				"C113052": "琉金火光"
 			},

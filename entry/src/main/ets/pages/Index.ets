@@ -216,7 +216,7 @@ struct Index {
                         .backgroundColor('#00000000')
                         .onClick(() => {
                           if (this.selUser) {
-                            this.selUser.getGameRoleListAsync()
+                            this.selUser.getGIGameRoleListAsync()
                               .then((list) => {
                                 this.gameRoleList = list
                                 this.gameRoleChooseDialogController_genshin.open()
@@ -319,7 +319,7 @@ struct Index {
                         .backgroundColor('#00000000')
                         .onClick(() => {
                           if (this.selUser) {
-                            this.selUser.getGameRoleListAsync()
+                            this.selUser.getHSRGameRoleListAsync()
                               .then((list) => {
                                 this.gameRoleList = list
                                 this.gameRoleChooseDialogController_starrail.open()
@@ -433,15 +433,19 @@ struct Index {
         await this.selUser.updateBBSCookieAsync()
         await this.selUser.updateUserInfoAsync()
         // 刷新账号下的游戏角色列表
-        let gameRoles = await this.selUser.getGameRoleListAsync()
+        let GI_gameRoles = await this.selUser.getGIGameRoleListAsync()
+        let HSR_gameRoles = await this.selUser.getHSRGameRoleListAsync()
         this.selUser.gameRoleChosen.Genshin.uid = globalThis.selGIRoleUid
         this.selUser.gameRoleChosen.StarRail.uid = globalThis.selHSRRoleUid
         console.warn(`genshinrole: ${this.selUser.gameRoleChosen.Genshin.uid}`)
         console.warn(`starrailrole: ${this.selUser.gameRoleChosen.StarRail.uid}`)
-        for (let role of gameRoles) {
+
+        for (let role of GI_gameRoles) {
           if (this.selUser.gameRoleChosen.Genshin.uid && (this.selUser.gameRoleChosen.Genshin.uid == role.gameUid)) {
             this.selGameRole_genshin = role
           }
+        }
+        for (let role of HSR_gameRoles) {
           if (this.selUser.gameRoleChosen.StarRail.uid && (this.selUser.gameRoleChosen.StarRail.uid == role.gameUid)) {
             this.selGameRole_starrail = role
           }

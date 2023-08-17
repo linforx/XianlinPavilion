@@ -12,12 +12,12 @@ export default struct AvatarCard {
         Stack({ alignContent: Alignment.Top }) {
           Column() {
             Column() {
-              Image($rawfile(`GI/resource/${this.avatar.id}/UI_AvatarIcon_Ayaka.webp`))
-                .width(100)
-                .objectFit(ImageFit.Contain)
+              Image($rawfile(`GI/resource/${(this.avatar.id == 10000005 || this.avatar.id == 10000007) ? this.avatar.id + '-' + this.avatar.element.toLowerCase() : this.avatar.id}/${this.avatar.icon}.webp`))
+                .width('100%')
                 .aspectRatio(1)
+                .objectFit(ImageFit.Contain)
             }
-            .width(100)
+            .width('100%')
             .aspectRatio(1)
             .backgroundImage($rawfile(`GI/resource/others/RarityBGI/bg${this.avatar.rarity}.png`))
             .backgroundImageSize(ImageSize.Contain)
@@ -38,7 +38,7 @@ export default struct AvatarCard {
               }
               .height(17)
             }
-            .width(100)
+            .width('100%')
             .height(32)
             .borderRadius(10)
             .clip(true)
@@ -48,23 +48,28 @@ export default struct AvatarCard {
             Image($rawfile(`GI/resource/others/star${this.avatar.rarity}.png`))
               .height(18)
           }
-          .width(100)
+          .width('100%')
           .justifyContent(FlexAlign.Center)
-          .margin({ top: 85 })
+          .margin({ top: 95 })
+
+          Row() {
+            Image($rawfile(`GI/resource/others/ElementIcon/${this.avatar.element}.png`))
+              .height(25)
+              .aspectRatio(1)
+          }
+          .width(25)
+          .borderRadius(15)
+          .justifyContent(FlexAlign.Center)
+          .margin({ right: 70, top: 7 })
 
           Stack() {
-            Progress({ value: this.avatar.activedConstellation, total: 6, type: ProgressType.ScaleRing })
-              .width(20)
-              .style({ strokeWidth: 5, scaleCount: 6, scaleWidth: 5 })
-              .borderRadius(10)
-              .backdropBlur(20)
             Text(`${this.avatar.activedConstellation}`)
-              .fontSize(12)
+              .fontSize(15)
               .fontColor($r('app.color.primary_text_inversion'))
           }
-          .margin({ left: 80 })
+          .margin({ left: 95 })
         }
-        .width(100)
+        .width(110)
       }
     }
     .type(ButtonType.Normal)

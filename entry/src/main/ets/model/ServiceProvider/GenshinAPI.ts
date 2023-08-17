@@ -13,6 +13,17 @@ class GenshinAPI extends MihoyoAPI {
         super();
     }
 
+    // 获取账户关联的游戏角色信息的接口
+    // 参数: void
+    // 返回: this
+    public applyGameRoleInfo() {
+        super.applyGameRoleInfo()
+
+        this.params['game_biz'] = 'hk4e_cn'
+
+        return this;
+    }
+
     /*-------------------------------------接口定义------------------------------------*/
     // 获取游戏实时便笺的接口
     // 参数: role_id(string), server(string)

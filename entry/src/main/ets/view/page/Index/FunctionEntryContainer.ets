@@ -16,7 +16,7 @@ export default struct FunctionEntryContainer {
         direction: GridRowDirection.Row
       }) {
         ForEach(this.functions, (item) => {
-          GridCol({ span: { xs: 4, sm: 3, md: 2, lg: 1 } }) {
+          GridCol({ span: { xs: 4, sm: 3, md: 2, lg: 2 } }) {
             Row() {
               FunctionEntryCard({ title: item.title, icon: item.icon, targetPage: item.targetPage })
             }

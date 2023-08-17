@@ -4,16 +4,43 @@ import User from '../model/User/User';
 import appSetting from '../common/preference/appSetting'
 import { DatabaseHelper, getDBHelper } from '../common/database/DatabaseHelper'
 import common from '@ohos.app.ability.common';
+import FileManager from '../common/utils/FileManager'
 
 @Entry
 @Component
 struct Page {
   private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
   @State message: string = 'Hello World'
+  private fileManager: FileManager = new FileManager(this.context)
 
   async aboutToAppear() {
     let bundleFlags = bundleManager.BundleFlag.GET_BUNDLE_INFO_DEFAULT;
     globalThis.BundleInfo = await bundleManager.getBundleInfoForSelf(bundleFlags)
+    this.message = '初始化应用沙箱...'
+    try {
+      this.fileManager.mkdir('data')
+    } catch (err) {
+      if (err.code != 13900015) {
+        console.error('code: ' + err.code)
+      }
+    }
+
+    try {
+      this.fileManager.mkdir('data/GI')
+    } catch (err) {
+      if (err.code != 13900015) {
+        console.error('code: ' + err.code)
+      }
+    }
+
+    try {
+      this.fileManager.mkdir('data/HSR')
+    } catch (err) {
+      if (err.code != 13900015) {
+        console.error('code: ' + err.code)
+      }
+    }
+
     let DBHelper = getDBHelper(this.context)
     this.message = '初始化数据库...'
     await DBHelper.initStorageAsync()

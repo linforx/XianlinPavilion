@@ -20,6 +20,7 @@ import deviceInfo from '@ohos.deviceInfo'
 import { DatabaseHelper, getDBHelper } from '../../common/database/DatabaseHelper'
 import common from '@ohos.app.ability.common'
 import relationalStore from '@ohos.data.relationalStore'
+import StarRailAPI from '../ServiceProvider/StarRailAPI'
 
 export default class User {
     public cookie: Cookie = null
@@ -160,6 +161,48 @@ export default class User {
 
     public async getGameRoleListAsync() {
         let response = await new MihoyoAPI()
+            .applyGameRoleInfo()
+            .setCookie(this.cookie.getByType(CookieType.CookieToken))
+            .getResponseAsync()
+
+        let roleList: GameRole[] = []
+        if (!response.success) {
+            promptAction.showToast({
+                message: '获取游戏角色信息失败：' + response.message
+            })
+            return roleList
+        }
+        let json_data = JSON.parse(response.data)
+        for (let role of json_data['list']) {
+            roleList.push(new GameRole(role))
+        }
+
+        return roleList
+    }
+
+    public async getGIGameRoleListAsync() {
+        let response = await new GenshinAPI()
+            .applyGameRoleInfo()
+            .setCookie(this.cookie.getByType(CookieType.CookieToken))
+            .getResponseAsync()
+
+        let roleList: GameRole[] = []
+        if (!response.success) {
+            promptAction.showToast({
+                message: '获取游戏角色信息失败：' + response.message
+            })
+            return roleList
+        }
+        let json_data = JSON.parse(response.data)
+        for (let role of json_data['list']) {
+            roleList.push(new GameRole(role))
+        }
+
+        return roleList
+    }
+
+    public async getHSRGameRoleListAsync() {
+        let response = await new StarRailAPI()
             .applyGameRoleInfo()
             .setCookie(this.cookie.getByType(CookieType.CookieToken))
             .getResponseAsync()

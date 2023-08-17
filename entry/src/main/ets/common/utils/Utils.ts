@@ -59,13 +59,5 @@ const joinParams2Url = (host: string, params: {}) => {
     return host
 }
 
-const readRawfileTextAsync = async (context: common.Context, filePath: string, encoding: string = 'utf-8') => {
-    let value = await context.resourceManager.getRawFileContent(filePath)
-    let decoder = util.TextDecoder.create(encoding, { ignoreBOM : true })
-    let retStr = decoder.decodeWithStream( value , {stream: false})
-
-    return retStr
-}
-
-export { crypto, losslessJSON, Logger, getRandomString, joinParams2Url, readRawfileTextAsync }
-export default { crypto, losslessJSON, Logger, getRandomString, joinParams2Url, readRawfileTextAsync }
+export { crypto, losslessJSON, Logger, getRandomString, joinParams2Url }
+export default { crypto, losslessJSON, Logger, getRandomString, joinParams2Url }

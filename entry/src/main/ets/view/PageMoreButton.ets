@@ -64,9 +64,6 @@ export default struct PageMoreButton {
             .clip(true)
             .onClick(() => {
               item.action()
-              promptAction.showToast({
-                message: 'action 执行'
-              })
             })
           }
         })

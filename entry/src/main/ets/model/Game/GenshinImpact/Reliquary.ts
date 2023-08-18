@@ -12,6 +12,7 @@ export default class Reliquary {
     private _set: number;
     private _mainStat: Stat;
     private _subStats: Stat[];
+    private _appendPropIdList: number[];
 
     constructor(
         id: number,
@@ -21,7 +22,8 @@ export default class Reliquary {
         level: number,
         set: number,
         mainStat?: Stat,
-        subStats?: Stat[]
+        subStats?: Stat[],
+        appendPropIdList?: number[]
     ) {
         this._id = id;
         this._name = name;
@@ -31,6 +33,7 @@ export default class Reliquary {
         this._set = set;
         this._mainStat = mainStat ?? null;
         this._subStats = subStats ?? [];
+        this._appendPropIdList = appendPropIdList ?? [];
     }
 
     public get id(): number {
@@ -97,6 +100,14 @@ export default class Reliquary {
         this._subStats = value;
     }
 
+    public get appendPropIdList(): number[] {
+        return this._appendPropIdList;
+    }
+
+    public set appendPropIdList(value: number[]) {
+        this._appendPropIdList = value
+    }
+
     public toJSON() {
         const mainStatObj = this.mainStat ? { key: this.mainStat.key ?? null, value: this.mainStat.value ?? 0 } : null;
         const subStatsObj = this.subStats.map(stat => ({ key: stat.key ?? null, value: stat.value ?? 0 }));
@@ -109,7 +120,8 @@ export default class Reliquary {
             level: this.level ?? 0,
             set: this.set ?? 0,
             mainStat: mainStatObj,
-            subStats: subStatsObj
+            subStats: subStatsObj,
+            appendPropIdList: this.appendPropIdList ?? []
         };
     }
 }

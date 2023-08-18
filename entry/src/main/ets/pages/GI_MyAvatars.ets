@@ -18,6 +18,10 @@ import Reliquary from '../model/Game/GenshinImpact/Reliquary'
 import Utils, { losslessJSON } from '../common/utils/Utils'
 import fs from '@ohos.file.fs'
 import WeaponBriefInfo from '../viewmodel/page/GI_MyAvatars/WeaponBriefInfo'
+import enkaAPI from '../model/ServiceProvider/EnkaAPI'
+import EnkaAPI from '../model/ServiceProvider/EnkaAPI'
+import Host from '../common/service/Host'
+import EnkaSyncResultCard from '../view/page/GI_MyAvatars/EnkaSyncResultCard'
 
 @Entry
 @Component
@@ -29,11 +33,19 @@ struct GI_MyAvatars {
   @State isRefreshing: boolean = false
   @State titleHeight: number = 70
   @State avatarList: AvatarBriefInfo[] = []
+  @State avatarTempList: AvatarBriefInfo[] = []
   private avatarMap: {} = {}
 
   @State totalNum: number = 0
   @State loadedNum: number = 0
   @State isLoadingData: boolean = false
+  @State isSyncFromEnka: boolean = false
+
+
+  EnkaResultDialogController: CustomDialogController = new CustomDialogController({         // 原神角色选择器弹窗控制器
+    builder: EnkaSyncResultCard({ avatarList: $avatarTempList }),
+    customStyle: true
+  })
 
   aboutToAppear() {
     this.user = globalThis.SelUser as User
@@ -133,6 +145,7 @@ struct GI_MyAvatars {
 
   // 从米哈游服务器获取角色信息
   async getDataFromMihoyoServerAsync() {
+    if (this.isSyncFromEnka) return       // 避免冲突
     console.warn('getDataFromMihoyoServerAsync')
     try {
       var res = await new GenshinAPI()
@@ -146,13 +159,64 @@ struct GI_MyAvatars {
       })
       return null
     }
+
+    let mihoyoData = res.data ? JSON.parse(res.data) : null
+    if (!mihoyoData) return null
+
+    for (let i = 0; i < mihoyoData['avatars'].length; ++i) {
+      try {
+        let response = await new GenshinAPI()
+          .applyAvatarDetail(this.role.gameUid, this.role.region, 10000073)
+          .setReferer(Host.AppMihoyoReferer)
+          .setCookie(this.user.cookie.getByType(CookieType.BothCLToken))
+          .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
+          .getResponseAsync()
+
+        if (!response.success) {
+          console.error('get avatarDetail failed: ' + response.message)
+          promptAction.showToast({
+            message: 'get avatarDetail failed: ' + response.message
+          })
+          continue
+        }
+
+        mihoyoData['avatars'][i]['skill_list'] = JSON.parse(response.data)['skill_list']
+      } catch (err) {
+        throw err
+      }
+    }
+
     console.warn('getDataFromMihoyoServerAsync done')
 
-    return res.data ? JSON.parse(res.data) : null
+    return res.success ? mihoyoData : null
   }
 
   // 从恩卡服务获取角色展柜公布的角色信息
-  async getDataFromEnkaServerAsync() {}
+  async getDataFromEnkaServerAsync() {
+    if (this.isRefreshing) return       // 避免冲突
+    console.warn('getDataFromEnkaServerAsync')
+
+    this.isSyncFromEnka = true
+    let response = await new EnkaAPI()
+      .applyGetGameInfo({ uid: this.role.gameUid, hostOption: 1 })
+      .getResponseAsync()
+
+    if (!response.success) {
+      promptAction.showToast({
+        message: '同步失败: ' + response.message
+      })
+      console.error('同步失败: ' + response.message)
+    }
+    console.warn('getDataFromEnkaServerAsync done')
+
+    let data = Utils.losslessJSON.parse(response.data) as any
+    if (!data.avatarInfoList) {
+      promptAction.showToast({
+        message: '同步失败: 请确认已经在游戏中打开面板(五分钟前)'
+      })
+    }
+    return data.avatarInfoList ? data : null
+  }
 
   // 从本地文件读取角色信息
   async getDataFromLocalFileAsync() {
@@ -189,7 +253,8 @@ struct GI_MyAvatars {
             reliquary.level,
             reliquary.set,
             reliquary.mainStat,
-            reliquary.subStats
+            reliquary.subStats,
+            reliquary.appendPropIdList
           ))
         }
 
@@ -214,7 +279,8 @@ struct GI_MyAvatars {
           json.costumeId,
           weapon,
           json.prop,
-          reliquaries
+          reliquaries,
+          json.skillList
         )
         avatarList.push(avatar)
       } catch (err) {
@@ -232,7 +298,137 @@ struct GI_MyAvatars {
   async localizeDataAsync(mihoyoData?, enkaData?) {
     let avatars: Avatar[] = []
 
-    if (enkaData) {}
+    console.warn('localizeDataAsync')
+    let reliquaryWikiMap = Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync('GI/reliquary_list.json'))['items']
+    if (enkaData) {
+      try {
+        let loc = await EnkaAPI.getLocalizationMapAsync(this.context)
+        let weaponWikiMap = (Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/weapon_list.json`)) as any).items
+        let avatarWikiMap = (Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/avatar_list.json`)) as any).items
+        let characters = await EnkaAPI.getCharactersMapAsync(this.context)
+        for (let item of enkaData.avatarInfoList) {
+          let reliquaryList: Reliquary[] = []
+          let weapon: Weapon = null
+          for (let equip of item.equipList) {
+            if (equip.flat.itemType == 'ITEM_RELIQUARY') {
+              // 圣遗物
+              let setName = loc[equip.flat.setNameTextMapHash]
+              let setId = 0
+              for (let key in reliquaryWikiMap) {
+                if (reliquaryWikiMap[key].name == setName) {
+                  setId = reliquaryWikiMap[key].id
+                }
+              }
+
+              if (!setId) {
+                promptAction.showToast({
+                  message: '本地资源版本滞后'
+                })
+                continue
+              }
+
+              let reliquaryWikiInfo = Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/ReliquaryInfo/${setId}.json`)) as any
+              let name = reliquaryWikiInfo.suit[equip.flat.equipType].name
+
+              reliquaryList.push(new Reliquary(
+                equip.itemId,
+                name,
+                this.equipType2Pos(equip.flat.equipType),
+                equip.flat.rankLevel,
+                equip.reliquary.level - 1,
+                setId,
+                { key: equip.flat.reliquaryMainstat.mainPropId, value: equip.flat.reliquaryMainstat.statValue },
+                (equip.flat.reliquarySubstats as any[]).map(stat => ({ key: stat.appendPropId ?? null, value: stat.statValue ?? 0 })),
+                equip.reliquary.appendPropIdList
+              ))
+            }
+            else if (equip.flat.itemType == 'ITEM_WEAPON') {
+              // 武器
+              let affixLevel = 0
+              for (let key in equip.weapon.affixMap) {
+                affixLevel = equip.weapon.affixMap[key] + 1
+              }
+
+              let mainStat = null
+              let subStat = null
+              for (let stat of equip.flat.weaponStats) {
+                if (stat.appendPropId == 'FIGHT_PROP_BASE_ATTACK') {
+                  mainStat = {
+                    key: 'FIGHT_PROP_BASE_ATTACK',
+                    value: stat.statValue
+                  }
+                }
+                else {
+                  subStat = {
+                    key: stat.appendPropId,
+                    value: stat.statValue
+                  }
+                }
+              }
+
+              weapon = new Weapon(
+                equip.itemId,
+                weaponWikiMap[`${equip.itemId}`],
+                equip.flat.rankLevel,
+                equip.weapon.level,
+                affixLevel,
+                mainStat,
+                subStat
+              )
+            }
+          }
+
+          let level = this.avatarMap[`${item.avatarId}`] ? (this.avatarMap[`${item.avatarId}`] as Avatar).level : 0
+          let costumeId = 0
+          for (let i of enkaData.playerInfo.showAvatarInfoList) {
+            if (i.avatarId == item.avatarId) {
+              level = i.level
+              costumeId = i.costumeId ?? 0
+            }
+          }
+
+          let skillList: any[] = []
+          for (let id in item.skillLevelMap) {
+            let skillId = parseInt(id)
+            let icon: string = characters[`${item.avatarId}`]['Skills'][`${skillId}`]
+            let avatarWikiInfo = Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/AvatarInfo/${item.avatarId}.json`)) as any
+            let name = ''
+            for (let value of Object.values(avatarWikiInfo.talent) as any[]) {
+              if (value.icon == icon) {
+                name = value.name
+              }
+            }
+
+            skillList.push({
+              id: skillId,
+              name: name,
+              currentLevel: item.skillLevelMap[id],
+              maxLevel: 10
+            })
+          }
+
+          avatars.push(new Avatar(
+            item.avatarId,
+            avatarWikiMap[`${item.avatarId}`].name,
+            avatarWikiMap[`${item.avatarId}`].rank,
+            this.elementTrans(avatarWikiMap[`${item.avatarId}`].element),
+            level,
+            item.fetterInfo.expLevel,
+            this.avatarMap[`${item.avatarId}`] ? (this.avatarMap[`${item.avatarId}`] as Avatar).actived_constellation_num : 0,
+            costumeId,
+            weapon,
+            item.fightPropMap,
+            reliquaryList,
+            skillList
+          ))
+        }
+      } catch (err) {
+        console.error(err.message)
+        promptAction.showToast({
+          message: err.message
+        })
+      }
+    }
     if (mihoyoData) {
       for (let item of mihoyoData['avatars']) {
         let reliquaryList: Reliquary[] = []
@@ -240,7 +436,6 @@ struct GI_MyAvatars {
           let { id, name, pos, rarity, level } = reliquary
           let setName = reliquary.set.name
           let setId = 0
-          let reliquaryWikiMap = Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync('GI/reliquary_list.json'))['items']
           for (let key in reliquaryWikiMap) {
             if (reliquaryWikiMap[key].name == setName) {
               setId = reliquaryWikiMap[key].id
@@ -253,12 +448,19 @@ struct GI_MyAvatars {
             continue
           }
 
-          let reliquaryWikiInfo = Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/ReliquaryInfo/${setId}.json`)) as any
-          id = reliquaryWikiInfo.id
-
           reliquaryList.push(new Reliquary(id, name, pos, rarity, level, setId))
         }
-
+        let skillList: any[] = []
+        for (let skill of item.skill_list) {
+          if (skill.max_level > 1) {
+            skillList.push({
+              id: skill.id,
+              name: skill.name,
+              currentLevel: skill.level_current,
+              maxLevel: skill.max_level
+            })
+          }
+        }
         avatars.push(new Avatar(
           item.id,
           item.name,
@@ -267,13 +469,15 @@ struct GI_MyAvatars {
           item.level,
           item.fetter,
           item.actived_constellation_num,
-          0,
+          this.avatarMap[`${item.id}`] ? (this.avatarMap[`${item.id}`] as Avatar).actived_constellation_num : 0,
           new Weapon(item.weapon.id, item.weapon.name, item.weapon.rarity, item.weapon.level, item.weapon.affix_level),
-          null,
-          reliquaryList
+          this.avatarMap[`${item.id}`] ? (this.avatarMap[`${item.id}`] as Avatar).prop : null,
+          reliquaryList,
+          skillList
         ))
       }
     }
+    console.warn('localizeDataAsync done')
 
     return avatars
   }
@@ -299,6 +503,30 @@ struct GI_MyAvatars {
           return
         }
       }
+    }
+  }
+
+  equipType2Pos(type: string) {
+    switch(type) {
+      case 'EQUIP_BRACER': return 1
+      case 'EQUIP_NECKLACE': return 2
+      case 'EQUIP_SHOES': return 3
+      case 'EQUIP_RING': return 4
+      case 'EQUIP_DRESS': return 5
+      default: return 0
+    }
+  }
+
+  elementTrans(name: string) {
+    switch(name) {
+      case 'ice': return 'Cryo'
+      case 'wind': return 'Anemo'
+      case 'electric': return 'Electro'
+      case 'water': return 'Hydro'
+      case 'fire': return 'Pyro'
+      case 'rock': return 'Geo'
+      case 'grass': return 'Dendro'
+      default: return ''
     }
   }
 
@@ -377,7 +605,7 @@ struct GI_MyAvatars {
         .fontColor($r('app.color.text_color'))
         .fontWeight(FontWeight.Bold)
 
-      if (this.isRefreshing) {
+      if (this.isRefreshing || this.isSyncFromEnka) {
         Text('（正在同步）`')
           .fontSize(24)
           .fontColor($r('app.color.sub_text_color'))
@@ -388,7 +616,41 @@ struct GI_MyAvatars {
       PageMoreButton({ titleHeight: this.titleHeight,
         menus: [{
           desc: '从角色展柜同步',
-          action: () => { console.warn('hello') },
+          action: () => {
+            if (!this.isSyncFromEnka) {       // 避免重复请求
+              this.getDataFromEnkaServerAsync()
+                .then(async (result) => {
+                  if (result) {
+                    let avatars = await this.localizeDataAsync(null, result)
+                    this.isSyncFromEnka = false
+
+                    let avatarWikiMap = (Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/avatar_list.json`)) as any).items
+                    this.avatarTempList = []
+                    for (let avatar of avatars) {
+                      this.avatarMap[`${avatar.id}`] = avatar
+                      this.avatarTempList.push(new AvatarBriefInfo(
+                        avatar.id,
+                        avatar.name,
+                        avatar.element,
+                        avatar.rarity,
+                        avatarWikiMap[`${avatar.id}`].icon,
+                        avatar.level,
+                        avatar.actived_constellation_num,
+                        null
+                      ))
+                    }
+
+                    this.saveData(Object.entries(this.avatarMap).map(([key, value]) => (value)) as Avatar[])
+
+                    let avatarList = await this.getDataFromLocalFileAsync()
+                    console.warn('read file done')
+                    await this.bindingDataAsync(avatarList)
+
+                    this.EnkaResultDialogController.open()
+                  }
+                })
+            }
+          },
         }]
       })
     }

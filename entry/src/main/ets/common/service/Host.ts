@@ -20,5 +20,5 @@ export default {
     WebStaticMihoyoReferer: 'https://webstatic.mihoyo.com',
     // 以下host提供原神面板查询服务
     EnkaNetwork: 'https://enka.network',
-    EnkaMicrogg: 'https://enka.microgg.cn'
+    EnkaMicrogg: 'https://profile.microgg.cn'
 }

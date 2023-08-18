@@ -10,9 +10,10 @@ import common from '@ohos.app.ability.common';
 import apiMap from '../../common/service/EnkaNetwork/APIMap';
 import CoreEnvironment from '../../common/service/CoreEnvironment';
 import Response from '../../common/service/Response';
-import { losslessJSON, Logger, readRawfileTextAsync } from '../../common/utils/Utils'
+import { losslessJSON, Logger } from '../../common/utils/Utils'
+import FileManager from '../../common/utils/FileManager'
 
-export default class enkaAPI {
+export default class EnkaAPI {
     private url: string = ''
     private static resourceCache = {
         charactersMap: {},
@@ -22,19 +23,19 @@ export default class enkaAPI {
         appendPropMap: {}
     }
 
-    public applyGetGameInfo(config: { hostOption: number, diyHost?: string, uid: string }) {
-        if (config.diyHost) {
-            this.url = `${config.diyHost}/api/uid/${config.uid}`
+    public applyGetGameInfo(option: { hostOption: number,diyHost?: string,uid: string }) {
+        if (option.diyHost) {
+            this.url = `${option.diyHost}/api/uid/${option.uid}`
         } else {
-            switch (config.hostOption) {
+            switch (option.hostOption) {
                 case 0:     // enka.network
-                    this.url = `${apiMap.EnkaNetwork.url}${config.uid}`
+                    this.url = `${apiMap.EnkaNetwork.url}${option.uid}`
                     break
                 case 1:     // enka.microgg
-                    this.url = `${apiMap.EnkaMicrogg.url}${config.uid}`
+                    this.url = `${apiMap.EnkaMicrogg.url}${option.uid}`
                     break
                 default:
-                    this.url = `${apiMap.EnkaNetwork.url}${config.uid}`
+                    this.url = `${apiMap.EnkaNetwork.url}${option.uid}`
             }
         }
 
@@ -56,7 +57,7 @@ export default class enkaAPI {
         } catch(err) {
             // 在结果中标识请求错误信息
             res.success = false;
-            res.message = `http request with error: ` + err;
+            res.message = `http request with error: ` + err.message;
             let end = Date.now();
             res.timeCost = end - start;
 
@@ -75,7 +76,7 @@ export default class enkaAPI {
                     res.message = 'UID 格式错误'
                     break
                 case 404:
-                    res.message = '玩家不存在（MHY 服务器说的）'
+                    res.message = '玩家不存在（原神服务器说的）'
                     break
                 case 424:
                     res.message = '面板服务维护中'
@@ -102,35 +103,35 @@ export default class enkaAPI {
 
     public static async getCharactersMapAsync(context: common.Context) {
         if (Object.keys(this.resourceCache.charactersMap).length == 0) {
-            this.resourceCache.charactersMap = losslessJSON.parse(await readRawfileTextAsync(context, 'EnkaAPIResource/characters.json'))
+            this.resourceCache.charactersMap = losslessJSON.parse(await new FileManager(context).getRawFileTextAsync('EnkaAPIResource/characters.json'))
         }
         return this.resourceCache.charactersMap
     }
 
     public static async getLocalizationMapAsync(context: common.Context) {
         if (Object.keys(this.resourceCache.localizationMap).length == 0) {
-            this.resourceCache.localizationMap = losslessJSON.parse(await readRawfileTextAsync(context, 'EnkaAPIResource/Loc.json'))
+            this.resourceCache.localizationMap = losslessJSON.parse(await new FileManager(context).getRawFileTextAsync('EnkaAPIResource/Loc.json'))
         }
         return this.resourceCache.localizationMap
     }
 
     public static async getPropMapAsync(context: common.Context) {
         if (Object.keys(this.resourceCache.propMap).length == 0) {
-            this.resourceCache.propMap = losslessJSON.parse(await readRawfileTextAsync(context, 'EnkaAPIResource/PropMap.json'))
+            this.resourceCache.propMap = losslessJSON.parse(await new FileManager(context).getRawFileTextAsync('EnkaAPIResource/PropMap.json'))
         }
         return this.resourceCache.propMap
     }
 
     public static async getFightPropMapAsync(context: common.Context) {
         if (Object.keys(this.resourceCache.fightPropMap).length == 0) {
-            this.resourceCache.fightPropMap = losslessJSON.parse(await readRawfileTextAsync(context, 'EnkaAPIResource/FightPropMap.json'))
+            this.resourceCache.fightPropMap = losslessJSON.parse(await new FileManager(context).getRawFileTextAsync('EnkaAPIResource/FightPropMap.json'))
         }
         return this.resourceCache.fightPropMap
     }
 
     public static async getAppenPropMapAsync(context: common.Context) {
         if (Object.keys(this.resourceCache.appendPropMap).length == 0) {
-            this.resourceCache.appendPropMap = losslessJSON.parse(await readRawfileTextAsync(context, 'EnkaAPIResource/AppendPropMap.json'))
+            this.resourceCache.appendPropMap = losslessJSON.parse(await new FileManager(context).getRawFileTextAsync('EnkaAPIResource/AppendPropMap.json'))
         }
         return this.resourceCache.appendPropMap
     }

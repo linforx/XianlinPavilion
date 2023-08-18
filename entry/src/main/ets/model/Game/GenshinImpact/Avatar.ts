@@ -1,6 +1,13 @@
 import Reliquary from './Reliquary'
 import Weapon from './Weapon'
 
+interface skill {
+    id: number,
+    name: string,
+    currentLevel: number,
+    maxLevel: number
+}
+
 export default class Avatar {
     private _id: number;
     private _name: string;
@@ -13,6 +20,7 @@ export default class Avatar {
     private _prop: object;
     private _weapon: Weapon;
     private _reliquaries: Reliquary[];
+    private _skillList: skill[];
 
     constructor(
         id: number,
@@ -25,7 +33,8 @@ export default class Avatar {
         costumeId: number,
         weapon: Weapon,
         prop: object = {},
-        reliquaries: Reliquary[] = []
+        reliquaries: Reliquary[] = [],
+        skillList: skill[] = []
     ) {
         this._id = id;
         this._name = name;
@@ -36,8 +45,9 @@ export default class Avatar {
         this._actived_constellation_num = actived_constellation_num;
         this._costumeId = costumeId;
         this._weapon = weapon;
-        this._prop = prop;
-        this._reliquaries = reliquaries;
+        this._prop = prop ?? null;
+        this._reliquaries = reliquaries ?? [];
+        this._skillList = skillList ?? [];
     }
 
     public get id(): number {
@@ -128,6 +138,14 @@ export default class Avatar {
         this._reliquaries = value;
     }
 
+    public get skillList(): skill[] {
+        return this._skillList;
+    }
+
+    public set skillList(value: skill[]) {
+        this._skillList = value;
+    }
+
     public toJSON() {
         const weaponObj = this.weapon ? this.weapon.toJSON() : null;
         const reliquariesArr = this.reliquaries.map(reliquary => reliquary.toJSON());
@@ -143,7 +161,8 @@ export default class Avatar {
             costumeId: this.costumeId ?? 0,
             prop: this.prop ?? {},
             weapon: weaponObj,
-            reliquaries: reliquariesArr
+            reliquaries: reliquariesArr,
+            skillList: this._skillList
         };
     }
 }

@@ -65,7 +65,7 @@ export default struct EnkaSyncResultCard {
           .type(ButtonType.Normal)
           .backgroundColor('#00000000')
           .height(40)
-          .width(150)
+          .width(200)
           .borderRadius(20)
           .fontSize(18)
           .fontColor($r('app.color.high_light_text_color'))

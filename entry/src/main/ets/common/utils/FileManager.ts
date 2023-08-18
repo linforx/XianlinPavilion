@@ -51,13 +51,16 @@ export default class FileManager {
     // 对文件进行字符串写入
     public writeText(arg1: fs.File | string, content: string): number {
         let file: fs.File = null
+
         if (typeof arg1 === 'string') {
             file = this.openFile(arg1, fs.OpenMode.WRITE_ONLY | fs.OpenMode.CREATE)
+            var writeLen = fs.writeSync(file.fd, content)
+            this.closeFile(file)
         }
         else {
             file = arg1
+            var writeLen = fs.writeSync(file.fd, content)
         }
-        let writeLen = fs.writeSync(file.fd, content)
 
         return writeLen
     }

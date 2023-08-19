@@ -18,7 +18,8 @@ struct Page {
     globalThis.BundleInfo = await bundleManager.getBundleInfoForSelf(bundleFlags)
     this.message = '初始化应用沙箱...'
     try {
-      this.fileManager.mkdir('data')
+      this.fileManager.mkdir('/data')
+      console.info('success make /data')
     } catch (err) {
       if (err.code != 13900015) {
         console.error('code: ' + err.code)
@@ -26,7 +27,8 @@ struct Page {
     }
 
     try {
-      this.fileManager.mkdir('data/GI')
+      this.fileManager.mkdir('/data/GI')
+      console.info('success make /data/GI')
     } catch (err) {
       if (err.code != 13900015) {
         console.error('code: ' + err.code)
@@ -34,7 +36,8 @@ struct Page {
     }
 
     try {
-      this.fileManager.mkdir('data/HSR')
+      this.fileManager.mkdir('/data/HSR')
+      console.info('success make /data/HSR')
     } catch (err) {
       if (err.code != 13900015) {
         console.error('code: ' + err.code)

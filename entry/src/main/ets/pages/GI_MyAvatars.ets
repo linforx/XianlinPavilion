@@ -129,6 +129,7 @@ struct GI_MyAvatars {
 
   // 从云端同步数据并保存
   async updateAndSaveDataAsync() {
+    if (this.isSyncFromEnka || this.isLoadingData) return       // 避免冲突
     this.isRefreshing = true
     let mihoyoData = await this.getDataFromMihoyoServerAsync()
     let avatarList = await this.localizeDataAsync(mihoyoData, null)
@@ -145,7 +146,6 @@ struct GI_MyAvatars {
 
   // 从米哈游服务器获取角色信息
   async getDataFromMihoyoServerAsync() {
-    if (this.isSyncFromEnka) return       // 避免冲突
     console.warn('getDataFromMihoyoServerAsync')
     try {
       var res = await new GenshinAPI()
@@ -368,7 +368,7 @@ struct GI_MyAvatars {
 
               weapon = new Weapon(
                 equip.itemId,
-                weaponWikiMap[`${equip.itemId}`],
+                weaponWikiMap[`${equip.itemId}`].name,
                 equip.flat.rankLevel,
                 equip.weapon.level,
                 affixLevel,
@@ -411,7 +411,7 @@ struct GI_MyAvatars {
             item.avatarId,
             avatarWikiMap[`${item.avatarId}`].name,
             avatarWikiMap[`${item.avatarId}`].rank,
-            this.elementTrans(avatarWikiMap[`${item.avatarId}`].element),
+            this.elementTrans((avatarWikiMap[`${item.avatarId}`].element as string).toLowerCase()),
             level,
             item.fetterInfo.expLevel,
             this.avatarMap[`${item.avatarId}`] ? (this.avatarMap[`${item.avatarId}`] as Avatar).actived_constellation_num : 0,
@@ -550,32 +550,44 @@ struct GI_MyAvatars {
           Refresh({ refreshing: $$this.isRefreshing, offset: 16 }) {
             Scroll() {
               Column() {
-                GridRow({
-                  columns: 12,
-                  gutter: { x: 5, y: 20 },
-                  direction: GridRowDirection.Row
-                }) {
-                  ForEach(this.avatarList, (avatar: AvatarBriefInfo) => {
-                    GridCol({ span: { xs: 6, sm: 4, md: 2, lg: 2 } }) {
-                      Row() {
-                        AvatarCard({ avatar: avatar })
-                      }
-                      .width('100%')
-                      .justifyContent(FlexAlign.Center)
-                    }
-                    .borderRadius(8)
-                    .clip(true)
-                  })
+                if (this.avatarList.length == 0) {
+                  Column() {
+                    Text('下拉刷新↓')
+                      .fontSize(20)
+                      .fontColor($r('app.color.high_light_text_color'))
+                  }
+                  .width('100%')
+                  .height('100%')
+                  .justifyContent(FlexAlign.Center)
                 }
-                .width('100%')
+                else {
+                  GridRow({
+                    columns: 12,
+                    gutter: { x: 5, y: 20 },
+                    direction: GridRowDirection.Row
+                  }) {
+                    ForEach(this.avatarList, (avatar: AvatarBriefInfo) => {
+                      GridCol({ span: { xs: 6, sm: 4, md: 2, lg: 2 } }) {
+                        Row() {
+                          AvatarCard({ avatar: avatar })
+                        }
+                        .width('100%')
+                        .justifyContent(FlexAlign.Center)
+                      }
+                      .borderRadius(8)
+                      .clip(true)
+                    })
+                  }
+                  .width('100%')
+                }
               }
               .justifyContent(FlexAlign.Start)
               .padding(8)
             }
             .width('100%')
-            .height('100%')
+            .constraintSize({ maxHeight: '100%' })
             .edgeEffect(EdgeEffect.Spring)
-            .scrollBar(BarState.Off)
+            .scrollBar(BarState.Auto)
           }
           .onRefreshing(() => {
             this.updateAndSaveDataAsync()
@@ -606,7 +618,7 @@ struct GI_MyAvatars {
         .fontWeight(FontWeight.Bold)
 
       if (this.isRefreshing || this.isSyncFromEnka) {
-        Text('（正在同步）`')
+        Text('（正在同步）')
           .fontSize(24)
           .fontColor($r('app.color.sub_text_color'))
       }
@@ -617,40 +629,39 @@ struct GI_MyAvatars {
         menus: [{
           desc: '从角色展柜同步',
           action: () => {
-            if (!this.isSyncFromEnka) {       // 避免重复请求
-              this.getDataFromEnkaServerAsync()
-                .then(async (result) => {
-                  if (result) {
-                    let avatars = await this.localizeDataAsync(null, result)
-                    this.isSyncFromEnka = false
+            if (this.isSyncFromEnka || this.isLoadingData) return
+            this.getDataFromEnkaServerAsync()
+              .then(async (result) => {
+                if (result) {
+                  let avatars = await this.localizeDataAsync(null, result)
+                  this.isSyncFromEnka = false
 
-                    let avatarWikiMap = (Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/avatar_list.json`)) as any).items
-                    this.avatarTempList = []
-                    for (let avatar of avatars) {
-                      this.avatarMap[`${avatar.id}`] = avatar
-                      this.avatarTempList.push(new AvatarBriefInfo(
-                        avatar.id,
-                        avatar.name,
-                        avatar.element,
-                        avatar.rarity,
-                        avatarWikiMap[`${avatar.id}`].icon,
-                        avatar.level,
-                        avatar.actived_constellation_num,
-                        null
-                      ))
-                    }
-
-                    this.saveData(Object.entries(this.avatarMap).map(([key, value]) => (value)) as Avatar[])
-
-                    let avatarList = await this.getDataFromLocalFileAsync()
-                    console.warn('read file done')
-                    await this.bindingDataAsync(avatarList)
-
-                    this.EnkaResultDialogController.open()
+                  let avatarWikiMap = (Utils.losslessJSON.parse(await this.fileManager.getRawFileTextAsync(`GI/avatar_list.json`)) as any).items
+                  this.avatarTempList = []
+                  for (let avatar of avatars) {
+                    this.avatarMap[`${avatar.id}`] = avatar
+                    this.avatarTempList.push(new AvatarBriefInfo(
+                      avatar.id,
+                      avatar.name,
+                      avatar.element,
+                      avatar.rarity,
+                      avatarWikiMap[`${avatar.id}`].icon,
+                      avatar.level,
+                      avatar.actived_constellation_num,
+                      null
+                    ))
                   }
-                })
-            }
-          },
+
+                  this.saveData(Object.entries(this.avatarMap).map(([key, value]) => (value)) as Avatar[])
+
+                  let avatarList = await this.getDataFromLocalFileAsync()
+                  console.warn('read file done')
+                  await this.bindingDataAsync(avatarList)
+
+                  this.EnkaResultDialogController.open()
+                }
+              })
+          }
         }]
       })
     }

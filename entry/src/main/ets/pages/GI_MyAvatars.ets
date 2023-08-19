@@ -588,6 +588,12 @@ struct GI_MyAvatars {
             .constraintSize({ maxHeight: '100%' })
             .edgeEffect(EdgeEffect.Spring)
             .scrollBar(BarState.Auto)
+            .margin({ top: this.isRefreshing ? 100 : 0 })
+            .animation({
+              duration: 618,
+              curve: Curve.EaseInOut,
+              playMode: PlayMode.Normal
+            })
           }
           .onRefreshing(() => {
             this.updateAndSaveDataAsync()

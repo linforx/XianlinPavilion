@@ -606,7 +606,7 @@ struct Index {
 
       Blank()
 
-      PageMoreButton({ titleHeight: this.titleHeight,
+      PageMoreButton({
         menus: [{
           desc: '关于',
           action: () => { console.warn('hello') },

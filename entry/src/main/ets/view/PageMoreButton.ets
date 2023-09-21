@@ -22,7 +22,7 @@ export default struct PageMoreButton {
     }
     .type(ButtonType.Normal)
     .backgroundColor('#00000000')
-    .height(60)
+    .height('100%')
     .aspectRatio(1)
     .borderRadius(8)
     .clip(true)

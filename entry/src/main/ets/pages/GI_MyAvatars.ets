@@ -651,7 +651,7 @@ struct GI_MyAvatars {
 
       Blank()
 
-      PageMoreButton({ titleHeight: this.titleHeight,
+      PageMoreButton({
         menus: [{
           desc: '从角色展柜同步',
           action: () => {

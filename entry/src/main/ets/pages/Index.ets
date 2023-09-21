@@ -111,11 +111,12 @@ struct Index {
   })
 
   async aboutToAppear() {
+    console.warn('about to appear')
     await this.getAccountFromDatabaseAsync()
     for (let user of this.userList) {
       await user.updateUserInfoAsync()
     }
-    await this.updateSelUserInfoAsync()
+    console.warn('load users done')
   }
 
   // 从本地数据库中读取账户列表
@@ -139,7 +140,9 @@ struct Index {
 
   // 页面呈现生命周期函数
   async onPageShow() {
+    console.warn('on page show')
     if (this.isAddingAccount) {
+      console.warn('添加账户')
       // 添加帐户
       this.isAddingAccount = false
       let cookie = router.getParams()?.['cookie'] ?? ''
@@ -156,8 +159,8 @@ struct Index {
     }
     if (this.isFirstEntry) {
       this.isFirstEntry = false
-    }
-    else {
+      await this.updateSelUserInfoAsync()
+    } else {
       this.updateGIDataAsync()
     }
     router.clear()
@@ -455,7 +458,7 @@ struct Index {
         if (this.selGameRole_genshin) {
           this.selGameRoleInfo_genshin = new GameRoleInfo(this.selGameRole_genshin)
           globalThis.SelGIRole = this.selGameRole_genshin         // 更新全局“选中的原神角色”
-          this.updateGIDataAsync()        // 异步执行原神分区数据刷新
+          await this.updateGIDataAsync()
         } else {
           globalThis.SelGIRole = null
         }
@@ -559,6 +562,7 @@ struct Index {
     .onChange((width: number, height: number, mode: PanelMode) => {
       if (mode == 0) {
         this.showAMCP = false
+        console.warn('panel 0')
         this.updateSelUserInfoAsync()
       }
     })

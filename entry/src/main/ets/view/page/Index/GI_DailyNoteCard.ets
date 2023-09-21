@@ -396,9 +396,11 @@ export default struct GI_DailyNoteCard {
     .backdropBlur(40)
     .padding(10)
     .onClick(() => {
-      router.pushUrl({
-        url: 'pages/GI_DailyNote'
-      })
+      if (globalThis.SelUser && globalThis.SelGIRole) {
+        router.pushUrl({
+          url: 'pages/GI_DailyNote'
+        })
+      }
     })
   }
 }

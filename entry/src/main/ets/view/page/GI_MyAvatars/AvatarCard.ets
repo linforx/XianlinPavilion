@@ -1,5 +1,6 @@
 import AvatarBriefInfo from '../../../viewmodel/page/GI_MyAvatars/AvatarBriefInfo'
 import WeaponBriefInfo from '../../../viewmodel/page/GI_MyAvatars/WeaponBriefInfo'
+import router from '@ohos.router'
 
 @Preview
 @Component

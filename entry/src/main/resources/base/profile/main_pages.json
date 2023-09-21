@@ -4,6 +4,7 @@
     "pages/Index",
     "pages/Login",
     "pages/GI_DailyNote",
-    "pages/GI_MyAvatars"
+    "pages/GI_MyAvatars",
+    "pages/GI_MyAvatarDetails"
   ]
 }

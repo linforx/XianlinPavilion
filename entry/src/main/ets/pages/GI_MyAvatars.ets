@@ -166,7 +166,7 @@ struct GI_MyAvatars {
     for (let i = 0; i < mihoyoData['avatars'].length; ++i) {
       try {
         let response = await new GenshinAPI()
-          .applyAvatarDetail(this.role.gameUid, this.role.region, 10000073)
+          .applyAvatarDetail(this.role.gameUid, this.role.region, mihoyoData['avatars'][i].id)
           .setReferer(Host.AppMihoyoReferer)
           .setCookie(this.user.cookie.getByType(CookieType.BothCLToken))
           .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
@@ -290,6 +290,18 @@ struct GI_MyAvatars {
         })
       }
     }
+
+    avatarList = avatarList.sort((a, b) => {
+      if (a.rarity % 10 == b.rarity % 10) {
+        if (a.level == b.level) {
+          if (a.fetter == b.fetter) {
+            if ((a.weapon ? a.weapon.rarity : 0) == (b.weapon ? b.weapon.rarity : 0)) {
+              return (b.actived_constellation_num + (b.weapon ? b.weapon.affixLevel : 0)) - (a.actived_constellation_num + (a.weapon ? a.weapon.affixLevel : 0))
+            } else return (b.weapon ? b.weapon.rarity : 0) - (a.weapon ? a.weapon.rarity : 0)
+          } else return b.fetter - a.fetter
+        } else return b.level - a.level
+      } else return b.rarity - a.rarity
+    })
 
     return avatarList
   }
@@ -469,7 +481,7 @@ struct GI_MyAvatars {
           item.level,
           item.fetter,
           item.actived_constellation_num,
-          this.avatarMap[`${item.id}`] ? (this.avatarMap[`${item.id}`] as Avatar).actived_constellation_num : 0,
+          item.costumes[0]?.id ?? 0,
           new Weapon(item.weapon.id, item.weapon.name, item.weapon.rarity, item.weapon.level, item.weapon.affix_level),
           this.avatarMap[`${item.id}`] ? (this.avatarMap[`${item.id}`] as Avatar).prop : null,
           reliquaryList,
@@ -570,6 +582,14 @@ struct GI_MyAvatars {
                       GridCol({ span: { xs: 6, sm: 4, md: 2, lg: 2 } }) {
                         Row() {
                           AvatarCard({ avatar: avatar })
+                            .onClick(() => {
+                              router.pushUrl({
+                                url: 'pages/GI_MyAvatarDetails',
+                                params: {
+                                  avatar: JSON.parse(Utils.losslessJSON.stringify(this.avatarMap[`${avatar.id}`]))
+                                }
+                              })
+                            })
                         }
                         .width('100%')
                         .justifyContent(FlexAlign.Center)

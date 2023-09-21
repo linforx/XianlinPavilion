@@ -11,6 +11,14 @@
     {
       "name": "EntryAbility_label",
       "value": "仙麟阁"
+    },
+    {
+      "name": "GenshinDailyNoteEntryFormAbility_desc",
+      "value": "查看你的原神体力便笺数据"
+    },
+    {
+      "name": "GenshinDailyNoteEntryFormAbility_label",
+      "value": "原神体力便笺"
     }
   ]
 }

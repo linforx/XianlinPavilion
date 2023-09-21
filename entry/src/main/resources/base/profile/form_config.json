@@ -1,0 +1,25 @@
+{
+  "forms": [
+    {
+      "name": "原神体力便笺",
+      "description": "查看你的原神体力便笺数据",
+      "src": "./ets/genshin_daillynote_widget/pages/Genshin_dailynote_widgetCard.ets",
+      "uiSyntax": "arkts",
+      "window": {
+        "designWidth": 720,
+        "autoDesignWidth": true
+      },
+      "colorMode": "auto",
+      "isDefault": true,
+      "updateEnabled": false,
+      "scheduledUpdateTime": "10:30",
+      "updateDuration": 1,
+      "defaultDimension": "2*2",
+      "supportDimensions": [
+        "2*2",
+        "2*4",
+        "4*4"
+      ]
+    }
+  ]
+}

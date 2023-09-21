@@ -36,6 +36,21 @@
       {
         "name": "ohos.permission.INTERNET"
       }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "GenshinDailyNoteEntryFormAbility",
+        "srcEntry": "./ets/genshindailynoteentryformability/GenshinDailyNoteEntryFormAbility.ts",
+        "label": "$string:GenshinDailyNoteEntryFormAbility_label",
+        "description": "$string:GenshinDailyNoteEntryFormAbility_desc",
+        "type": "form",
+        "metadata": [
+          {
+            "name": "ohos.extension.form",
+            "resource": "$profile:form_config"
+          }
+        ]
+      }
     ]
   }
 }

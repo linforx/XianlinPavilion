@@ -8,16 +8,13 @@ import promptAction from '@ohos.promptAction'
 
 @Component
 export default struct PageMoreButton {
-  @Prop titleHeight: number
   private menus: { desc: string, action: () => void, icon?: string | Resource | PixelMap }[] = []
-
-
 
   build() {
     Button() {
       Column() {
         Image($r('app.media.ic_public_more'))
-          .height(30)
+          .height('50%')
           .aspectRatio(1)
       }
       .justifyContent(FlexAlign.Center)

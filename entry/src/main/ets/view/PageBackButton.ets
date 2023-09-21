@@ -13,7 +13,7 @@ export default struct PageBackButton {
     Button() {
       Column() {
         Image($r('app.media.ic_public_back'))
-          .height('64%')
+          .height('50%')
           .aspectRatio(1)
           .onClick(() => {
             router.back()

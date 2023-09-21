@@ -11,8 +11,6 @@ import CookieType from '../../common/service/CookieType'
 import promptAction from '@ohos.promptAction'
 import GameRole from './GameRole'
 import Host from '../../common/service/Host'
-import http from '@ohos.net.http'
-import CoreEnvironment from '../../common/service/CoreEnvironment'
 import GenshinAPI from '../ServiceProvider/GenshinAPI'
 import DynamicSecretVersion from '../../common/service/DynamicSecretVersion'
 import SaltType from '../../common/service/SaltType'
@@ -43,17 +41,18 @@ export default class User {
         this.cookie = new Cookie(cookie)
         this.uid = uid ?? ''
 
-        this.registerDeviceAsync()
+        this.deviceId = '5f3b6eec-58a4-3a6d-b544-51566d011b42'
+        this.deviceFP = '38d7ee834d1e9'
     }
 
     private async registerDeviceAsync() {
-        let deviceFP = this.cookie.getByName('DEVICEFP')
-        let deviceId = this.cookie.getByName('_MHYUUID')
+        let deviceId = this.deviceId
+        let deviceFP = this.deviceFP
         let RegId = this.genRegistrationId()
         let response = await new MihoyoAPI()
             .applyDeviceLogin(deviceId, deviceFP, RegId)
-            .HeadersAddWith('x-rpc-client_type', '2')
-            .HeadersAddWith('x-rpc-sys_version', '7.1.2')
+            .HeadersAddWith('x-rpc-client_type', '5')
+            .HeadersAddWith('x-rpc-sys_version', '12')
             .HeadersAddWith('x-rpc-channel', 'release')
             .HeadersAddWith('x-rpc-device_id', deviceId)
             .HeadersAddWith('x-rpc-device_fp', deviceFP)
@@ -65,8 +64,8 @@ export default class User {
         if (response.success) {
             response = await new MihoyoAPI()
                 .applySaveDevice(deviceId, deviceFP, RegId)
-                .HeadersAddWith('x-rpc-client_type', '2')
-                .HeadersAddWith('x-rpc-sys_version', '7.1.2')
+                .HeadersAddWith('x-rpc-client_type', '5')
+                .HeadersAddWith('x-rpc-sys_version', '12')
                 .HeadersAddWith('x-rpc-channel', 'release')
                 .HeadersAddWith('x-rpc-device_id', deviceId)
                 .HeadersAddWith('x-rpc-device_fp', deviceFP)
@@ -75,10 +74,13 @@ export default class User {
                 .setReferer(Host.AppMihoyoReferer)
                 .setCookie(this.cookie.getByType(CookieType.SToken))
                 .getResponseAsync()
-        }
 
-        this.deviceFP = deviceFP
-        this.deviceId = deviceId
+            if (response.success) {
+                console.warn(`register device(id:${deviceId},fp:${deviceFP}) success`)
+            } else {
+                console.warn(`register device(id:${deviceId},fp:${deviceFP}) failed`)
+            }
+        }
     }
 
     private genRegistrationId() {
@@ -224,36 +226,43 @@ export default class User {
 
     public async getGIDailyNoteDateAsync() {
         let role = globalThis.SelGIRole as GameRole
+
         if (!role) {
             promptAction.showToast({
                 message: '请绑定原神角色'
             })
             return
         }
+/*
+        const seedId: string = getRandomString(16)
+        const seedTime: string = new Date().getTime().toString()
+        let FPData = await new MihoyoAPI()
+            .applyGetFP(seedId, seedTime, this.deviceId, this.deviceFP)
+            .setCookie(this.cookie.getByType(CookieType.BothCLToken))
+            .setReferer('https://webstatic.mihoyo.com/')
+            .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
+            .getResponseAsync()
+        console.warn('FPData: ' + FPData.data)
+        const deviceFP: string = JSON.parse(FPData.data).device_fp
+*/
 
         let response = await new GenshinAPI()
             .applyDailyNote(role.gameUid, role.region)
             .setCookie(this.cookie.getByType(CookieType.BothCLToken))
-            .setReferer('https://webstatic.mihoyo.com')
-            .setOrigin('https://webstatic.mihoyo.com')
-            .HeadersAddWith('x-rpc-sys_version', '7.1.2')
-            .HeadersAddWith('x-rpc-device_id', this.deviceId)
+            .setReferer('https://webstatic.mihoyo.com/')
             .HeadersAddWith('x-rpc-device_fp', this.deviceFP)
-            .HeadersAddWith('x-rpc-device_name', `${deviceInfo.brand} ${deviceInfo.productModel}`)
-            .HeadersAddWith('x-rpc-page', `v${CoreEnvironment.miHoYoBBSGIToolVersion}-ys_#/ys`)
-            .HeadersAddWith('X-Requested-With', 'com.mihoyo.hyperion')
-            .HeadersAddWith('x-rpc-tool_verison', `v${CoreEnvironment.miHoYoBBSGIToolVersion}-ys`)
-            .HeadersAddWith('Sec-Fetch-Mode', 'cors')
-            .HeadersAddWith('Sec-Fetch-Site', 'same-site')
-            .HeadersAddWith('Sec-Fetch-Dest', 'empty')
+            .HeadersAddWith('x-rpc-device_id', this.deviceId)
             .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
             .getResponseAsync()
         if (!response.success) {
             promptAction.showToast({
                 message: '获取体力数据失败: ' + response.message
             })
+            console.error('获取体力数据失败: ' + response.message)
             return null
         }
+
+        console.warn('获取体力数据成功')
 
         return JSON.parse(response.data)
     }
@@ -264,7 +273,7 @@ export default class User {
 
     // 将帐户信息持久化保持在数据库中
     public async flush(context: common.Context) {
-        let DBHelper = getDBHelper(context)
+        let DBHelper: DatabaseHelper = getDBHelper(context)
         if (await DBHelper.initStorageAsync()) {
             let predicates = new relationalStore.RdbPredicates('account')
             predicates.equalTo('account_id', this.uid)

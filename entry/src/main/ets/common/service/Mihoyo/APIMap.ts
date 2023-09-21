@@ -16,6 +16,7 @@ import userInfo from './API/userInfo'
 import verifyVerification from './API/verifyVerification'
 import deviceLogin from './API/deviceLogin'
 import saveDevice from './API/saveDevice'
+import getFP from './API/getFP'
 
 export default {
     actionTicket,
@@ -28,5 +29,6 @@ export default {
     newsList,
     postFull,
     deviceLogin,
-    saveDevice
+    saveDevice,
+    getFP
 }

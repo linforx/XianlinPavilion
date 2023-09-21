@@ -13,7 +13,7 @@ import bundleManager from '@ohos.bundle.bundleManager';
 
 export default class CoreEnvironment {
     // 米游社Rpc版本
-    public static miHoYoBBSXrpcVersion: string = '2.52.1'
+    public static miHoYoBBSXrpcVersion: string = '2.56.1'
     public static miHoYoBBSUserAgent: string = `Mozilla/5.0 (Linux; Android 12) Mobile miHoYoBBS/${CoreEnvironment.miHoYoBBSXrpcVersion}`
     public static miHoYoBBSGIToolVersion: string = '3.7.1'
     public static APPUserAgent: string = `XianlinPavilion/${globalThis.BundleInfo?.versionName ?? '1.0.0'}`

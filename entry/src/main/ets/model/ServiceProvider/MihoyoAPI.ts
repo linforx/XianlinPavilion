@@ -33,11 +33,7 @@ class MihoyoAPI {
             'Accept': 'application/json',
             'User-Agent': CoreEnvironment.miHoYoBBSUserAgent,
             'x-rpc-client_type': '5',
-            'x-rpc-app_version': CoreEnvironment.miHoYoBBSXrpcVersion,
-            'x-rpc-sys_version': '12',
-            'x-rpc-channel': 'mihoyo',
-            'x-rpc-device_name': Utils.getRandomString(Math.floor(Math.random() * 10) + 1),
-            'x-rpc-device_model': deviceInfo.productModel
+            'x-rpc-app_version': CoreEnvironment.miHoYoBBSXrpcVersion
         };
         this.data = {};
         this.method = http.RequestMethod.GET;
@@ -217,6 +213,22 @@ class MihoyoAPI {
         this.data['app_version'] = CoreEnvironment.miHoYoBBSXrpcVersion;
         this.data['os_version'] = '25';
         this.data['platform'] = 'Android';
+
+        return this;
+    }
+
+    // 获取指纹
+    public applyGetFP(seedId: string, seedTime: string, deviceId: string, deviceFP: string) {
+        let api = apiMap.getFP
+
+        this.url = api.url;
+        this.params = api.params;
+        this.method = api.method;
+        this.data = api.body;
+        this.data['seed_id'] = seedId;
+        this.data['device_id'] = deviceId;
+        this.data['seed_time'] = seedTime;
+        this.data['device_fp'] = deviceFP;
 
         return this;
     }
@@ -432,7 +444,7 @@ class MihoyoAPI {
         } catch(err) {
             // 在结果中标识请求错误信息
             res.success = false;
-            res.message = `http request with error: ` + err;
+            res.message = `http request with error: ` + JSON.stringify(err);
             let end = Date.now();
             res.timeCost = end - start;
 

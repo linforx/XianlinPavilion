@@ -30,7 +30,7 @@ export default struct EnkaSyncResultCard {
                   }
                   .width('100%')
                   .aspectRatio(1)
-                  .backgroundImage($rawfile('GI/resource/others/RarityBGI/bg5.png'))
+                  .backgroundImage($rawfile(`GI/resource/others/RarityBGI/bg${avatar.rarity}.png`))
                   .backgroundImageSize(ImageSize.Contain)
                   .borderRadius({ topLeft: 8, topRight: 8, bottomLeft: 8, bottomRight: 24 })
                   .clip(true)

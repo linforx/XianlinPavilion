@@ -23,6 +23,9 @@ import tableAccount from '../common/database/tables/account'
 import appSetting from '../common/preference/appSetting'
 import GI_SignDialog from '../view/page/Index/GI_SignDialog'
 import FunctionEntryContainer from '../view/page/Index/FunctionEntryContainer'
+import FileManager from '../common/utils/FileManager'
+import fs from '@ohos.file.fs'
+import Config from '../model/config'
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 
@@ -65,7 +68,10 @@ struct Index {
             promptAction.showToast({
               message: '原神角色选中保存失败'
             })
+            return
           }
+          let fileManager: FileManager = new FileManager(this.context)
+          this.saveConfig()
         } else {
           console.error('无法向preference中存入信息')
         }
@@ -90,6 +96,7 @@ struct Index {
               message: '星穹铁道角色选中保存失败'
             })
           }
+          this.saveConfig()
         } else {
           console.error('无法向preference中存入信息')
         }
@@ -117,6 +124,48 @@ struct Index {
       await user.updateUserInfoAsync()
     }
     console.warn('load users done')
+  }
+  // 将cookie以及账号角色的信息保存到config配置文件中，以便卡片端调用
+  saveConfig() {
+    let fileManager: FileManager = new FileManager(this.context)
+    try {
+      let path = `/config/config.json`
+      fileManager.createFile(path)
+      let file = fileManager.openFile(path, fs.OpenMode.WRITE_ONLY | fs.OpenMode.TRUNC)
+
+      let config_json: Config = {
+        selected_account: {
+          account_id: this.selUser.uid,
+          cookie: this.selUser.cookie.toString(),
+          genshin_impact: {
+            selected_role: {
+              uid: this.selUser.gameRoleChosen.Genshin.uid,
+              server: this.selGameRole_genshin.region,
+            }
+          },
+          star_rail: {
+            selected_role: {
+              uid: this.selUser.gameRoleChosen.StarRail?.uid ?? '',
+              server: this.selGameRole_starrail?.region ?? ''
+            }
+          }
+        }
+      }
+
+      let content = JSON.stringify(config_json)
+      fileManager.writeText(file, content)
+
+      fileManager.closeFile(file)
+      console.warn('保存config配置成功')
+    } catch (err) {
+      if (err.code != 13900015) {
+        console.error('code: ' + err.code)
+        promptAction.showToast({
+          message: '保存config配置碰到错误: ' + JSON.stringify(err)
+        })
+        return
+      }
+    }
   }
 
   // 从本地数据库中读取账户列表
@@ -491,6 +540,7 @@ struct Index {
       new_accountInfoList.push(new AccountInfo(user))
     }
     this.accountInfoList = new_accountInfoList
+    this.saveConfig()
   }
 
   async updateGIDataAsync() {
@@ -609,7 +659,11 @@ struct Index {
       PageMoreButton({
         menus: [{
           desc: '关于',
-          action: () => { console.warn('hello') },
+          action: () => {
+            promptAction.showToast({
+              message: '尚在开发中'
+            })
+          },
         }, {
           desc: '退出应用',
           action: () => { this.exitApp() }

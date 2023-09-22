@@ -14,11 +14,11 @@
     },
     {
       "name": "GenshinDailyNoteEntryFormAbility_desc",
-      "value": "查看你的原神体力便笺数据"
+      "value": "查看你的原神实时便笺数据"
     },
     {
       "name": "GenshinDailyNoteEntryFormAbility_label",
-      "value": "原神体力便笺"
+      "value": "原神实时便笺"
     }
   ]
 }

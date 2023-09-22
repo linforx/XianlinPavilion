@@ -1,9 +1,9 @@
 {
   "forms": [
     {
-      "name": "原神体力便笺",
-      "description": "查看你的原神体力便笺数据",
-      "src": "./ets/genshin_daillynote_widget/pages/Genshin_dailynote_widgetCard.ets",
+      "name": "原神实时便笺",
+      "description": "查看你的原神实时便笺",
+      "src": "./ets/genshin_dailyNote_widget/pages/Genshin_dailyNote_widgetCard.ets",
       "uiSyntax": "arkts",
       "window": {
         "designWidth": 720,
@@ -11,14 +11,13 @@
       },
       "colorMode": "auto",
       "isDefault": true,
-      "updateEnabled": false,
-      "scheduledUpdateTime": "10:30",
+      "updateEnabled": true,
+      "scheduledUpdateTime": "20:15",
       "updateDuration": 1,
-      "defaultDimension": "2*2",
+      "defaultDimension": "2*4",
       "supportDimensions": [
         "2*2",
-        "2*4",
-        "4*4"
+        "2*4"
       ]
     }
   ]

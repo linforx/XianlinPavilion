@@ -5,6 +5,7 @@ import appSetting from '../common/preference/appSetting'
 import { DatabaseHelper, getDBHelper } from '../common/database/DatabaseHelper'
 import common from '@ohos.app.ability.common';
 import FileManager from '../common/utils/FileManager'
+import font from '@ohos.font';
 
 @Entry
 @Component
@@ -17,6 +18,15 @@ struct Page {
     let bundleFlags = bundleManager.BundleFlag.GET_BUNDLE_INFO_DEFAULT;
     globalThis.BundleInfo = await bundleManager.getBundleInfoForSelf(bundleFlags)
     this.message = '初始化应用沙箱...'
+    try {
+      this.fileManager.mkdir(`/config`)
+      console.info('success make /config')
+    } catch (err) {
+      if (err.code != 13900015) {
+        console.error('code: ' + err.code)
+      }
+    }
+
     try {
       this.fileManager.mkdir('/data')
       console.info('success make /data')
@@ -43,6 +53,29 @@ struct Page {
         console.error('code: ' + err.code)
       }
     }
+
+
+    this.message = '初始化字体...'
+    try {
+      console.warn('注册HarmonyOS_Sans_Medium.ttf')
+      font.registerFont({
+        familyName: 'Medium',
+        familySrc: '/font/HarmonyOS_Sans_Medium.ttf'
+      })
+      console.warn('注册HYWenHei-55W.ttf')
+      font.registerFont({
+        familyName: 'HYWenHei',
+        familySrc: '/font/HYWenHei-55W.ttf'
+      })
+      console.warn('注册tttgbnumber.ttf')
+      font.registerFont({
+        familyName: 'GBNumber',
+        familySrc: '/font/tttgbnumber.ttf'
+      })
+    } catch (err) {
+      console.error('register font failed with err: ' + err.message)
+    }
+
 
     let DBHelper = getDBHelper(this.context)
     this.message = '初始化数据库...'

@@ -94,10 +94,6 @@ struct Page {
       globalThis.selHSRRoleUid = await appSetting.getAsync('selHSRRoleUid')
     }
 
-    router.pushUrl({
-      url: 'pages/Index'
-    })
-
     let userList: User[] = []
 
     globalThis.userList = userList

@@ -12,9 +12,13 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
     onAddForm(want) {
         // Called to return a FormBindingData object.
         console.warn('onAddForm')
-        let dimension = want.parameters['ohos.extra.param.key.form_dimension']
+        let dimension =  want.parameters[formInfo.FormParam.DIMENSION_KEY]
         console.warn(`card dimension: ${dimension}`)
         console.warn(JSON.stringify(want))
+
+        let formData = {
+            dimension: dimension,
+        };
 
         let fileManager: FileManager = new FileManager(this.context)
         let config: Config
@@ -25,14 +29,69 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
 
             console.warn(`config: ${text}`)
             console.warn('读取config配置成功')
+
+            if (config.selected_account.genshin_impact.selected_role.uid) {
+                formData['uid'] = config.selected_account.genshin_impact.selected_role.uid
+            }
+
+            let formId: string = want.parameters[formInfo.FormParam.IDENTITY_KEY]
+            console.warn('从网络中拉取数据')
+            new GenshinAPI()
+                .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
+                .setCookie(config.selected_account.cookie)
+                .setReferer('https://webstatic.mihoyo.com/')
+                .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
+                .HeadersAddWith('x-rpc-device_id', '5f3b6eec-58a4-3a6d-b544-51566d011b42')
+                .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
+                .getResponseAsync()
+                .then((response) => {
+                    if (!response.success) {
+                        console.error('获取体力数据失败: ' + response.message)
+                        if (!response.success) {
+                            console.error('获取体力数据失败: ' + response.message)
+                            let formData = {
+                                uid: config.selected_account.genshin_impact.selected_role.uid,
+                                loaded: false,
+                                message: response.message
+                            }
+                            let formInfo = formBindingData.createFormBindingData(formData)
+
+                            formProvider.updateForm(formId, formInfo)
+                                .then((data) => {
+                                    console.info('FormAbility updateForm success.' + JSON.stringify(data));
+                                }).catch((error) => {
+                                console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+                            })
+                            return null
+                        }
+                        return null
+                    }
+                    console.warn('获取体力数据成功')
+
+                    let json = JSON.parse(response.data)
+                    let dailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo(json)
+
+                    let formData = {
+                        dimension: dimension,
+                        uid: config.selected_account.genshin_impact.selected_role.uid,
+                        loaded: true,
+                        ...dailyNoteData.toJSON()
+                    }
+
+                    let formInfo = formBindingData.createFormBindingData(formData)
+
+                    formProvider.updateForm(formId, formInfo)
+                        .then((data) => {
+                            console.info('FormAbility updateForm success.' + JSON.stringify(data));
+                        }).catch((error) => {
+                        console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+                    })
+                })
         } catch (err) {
             console.error('读取config配置错误 code: ' + err.code)
+            formData['message'] = '读取配置信息错误'
+            return formBindingData.createFormBindingData(formData);
         }
-
-        let formData = {
-            dimension: dimension,
-            uid: config.selected_account.genshin_impact.selected_role.uid
-        };
 
         return formBindingData.createFormBindingData(formData);
     }

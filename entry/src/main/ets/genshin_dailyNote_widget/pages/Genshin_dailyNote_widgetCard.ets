@@ -24,7 +24,7 @@ let storage = new LocalStorage();
 @Entry(storage)
 @Component
 struct Genshin_dailyNote_widgetCard {
-  @LocalStorageProp('dimension') dimension: number = 2
+  @LocalStorageProp('dimension') dimension: number = 3
   @LocalStorageProp('uid') uid: string = '角色未绑定'
   @LocalStorageProp('loaded') loaded: boolean = false
   @LocalStorageProp('message') message: string = '点击卡片刷新'
@@ -45,6 +45,10 @@ struct Genshin_dailyNote_widgetCard {
   @LocalStorageProp('maxHomeCoin') maxHomeCoin: number = 0
   @LocalStorageProp('homeCoinRecoveryTime') homeCoinRecoveryTime: number = 0
   @LocalStorageProp('transformer') transformer: transformer = null
+
+  aboutToAppear() {
+    console.warn(this.dimension.toString())
+  }
 
   getUpdateTime() {
     if (this.updateTime == 0) return '尚未刷新'
@@ -147,6 +151,7 @@ struct Genshin_dailyNote_widgetCard {
               .height(15)
               .fontSize(10)
               .fontColor($r('app.color.sub_text_color'))
+              .maxLines(1)
           }
         }
         .width('100%')

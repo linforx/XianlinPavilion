@@ -150,20 +150,29 @@ export default struct GI_DailyNoteCard {
             }
           }
           Row() {
-            Text() {
-              Span(`${Math.floor(this.data.resinRecoveryTime / 3600)}`)
-                .fontColor($r('app.color.high_light_text_color'))
-              Span(' 小时 ')
-                .fontColor($r('app.color.sub_text_color'))
+            if (this.data.currentResin !== this.data.maxResin) {
+              Text() {
+                Span(`${Math.floor(this.data.resinRecoveryTime / 3600)}`)
+                  .fontColor($r('app.color.high_light_text_color'))
+                Span(' 小时 ')
+                  .fontColor($r('app.color.sub_text_color'))
+                  .fontSize(12)
+                Span(`${Math.floor(this.data.resinRecoveryTime / 60) % 60}`)
+                  .fontColor($r('app.color.call_color'))
+                Span(' 分钟 ')
+                  .fontColor($r('app.color.sub_text_color'))
+                  .fontSize(12)
+              }
+              Text('后完全恢复')
                 .fontSize(12)
-              Span(`${Math.floor(this.data.resinRecoveryTime / 60) % 60}`)
-                .fontColor($r('app.color.call_color'))
-              Span(' 分钟 ')
-                .fontColor($r('app.color.sub_text_color'))
-                .fontSize(12)
+            } else {
+              Row() {
+                Text('已全部恢复')
+                  .fontSize(16)
+              }
+              .width('100%')
+              .justifyContent(FlexAlign.Center)
             }
-            Text('后完全恢复')
-              .fontSize(12)
           }
           .alignItems(VerticalAlign.Bottom)
           .width('100%')

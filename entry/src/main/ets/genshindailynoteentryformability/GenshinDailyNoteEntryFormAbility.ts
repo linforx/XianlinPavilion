@@ -70,6 +70,23 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
             .then((response) => {
                 if (!response.success) {
                     console.error('获取体力数据失败: ' + response.message)
+                    if (!response.success) {
+                        console.error('获取体力数据失败: ' + response.message)
+                        let formData = {
+                            uid: config.selected_account.genshin_impact.selected_role.uid,
+                            loaded: false,
+                            message: response.message
+                        }
+                        let formInfo = formBindingData.createFormBindingData(formData)
+
+                        formProvider.updateForm(formId, formInfo)
+                            .then((data) => {
+                                console.info('FormAbility updateForm success.' + JSON.stringify(data));
+                            }).catch((error) => {
+                            console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+                        })
+                        return null
+                    }
                     return null
                 }
                 console.warn('获取体力数据成功')
@@ -128,6 +145,19 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
                 .then((response) => {
                     if (!response.success) {
                         console.error('获取体力数据失败: ' + response.message)
+                        let formData = {
+                            uid: config.selected_account.genshin_impact.selected_role.uid,
+                            loaded: false,
+                            message: response.message
+                        }
+                        let formInfo = formBindingData.createFormBindingData(formData)
+
+                        formProvider.updateForm(formId, formInfo)
+                            .then((data) => {
+                                console.info('FormAbility updateForm success.' + JSON.stringify(data));
+                            }).catch((error) => {
+                            console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+                        })
                         return null
                     }
                     console.warn('获取体力数据成功')
@@ -138,6 +168,7 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
                     let formData = {
                         uid: config.selected_account.genshin_impact.selected_role.uid,
                         loaded: true,
+                        message: response.message,
                         ...dailyNoteData.toJSON()
                     }
 

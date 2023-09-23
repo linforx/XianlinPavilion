@@ -27,7 +27,7 @@ export default struct TalentDetailsDialog {
           Text(this.info.name)
             .fontSize(25)
             .fontWeight(FontWeight.Medium)
-            .fontColor($r('app.color.primary_text_inversion'))
+            .fontColor(Color.White)
             .copyOption(CopyOptions.LocalDevice)
         }
         .justifyContent(FlexAlign.Start)
@@ -38,7 +38,7 @@ export default struct TalentDetailsDialog {
           Text(`Lv ${this.level}`)
             .lineHeight(25)
             .fontSize(21)
-            .fontColor(this.info.extraUpgrade ? '#f7ce00' : $r('app.color.primary_text_inversion'))
+            .fontColor(this.info.extraUpgrade ? '#f7ce00' : Color.White)
             .fontWeight(this.info.extraUpgrade ? FontWeight.Medium : FontWeight.Normal)
 
           Slider({
@@ -79,7 +79,7 @@ export default struct TalentDetailsDialog {
             ForEach(this.getColorfulTextArrayFromHtmlText(this.info.wiki['description']), item => {
               Span(item.content.replace(/\\n/g, '\n').replace(/\n\n/g, '\n \n'))
                 .fontSize(18)
-                .fontColor(item.color ? item.color : $r('app.color.primary_text_inversion'))
+                .fontColor(item.color ? item.color : Color.White)
                 .fontStyle(item.italic ? FontStyle.Italic : FontStyle.Normal)
             })
           }
@@ -97,13 +97,13 @@ export default struct TalentDetailsDialog {
                 Row() {
                   Text(item.title)
                     .fontSize(18)
-                    .fontColor($r('app.color.primary_text_inversion'))
+                    .fontColor(Color.White)
 
                   Blank()
 
                   Text(item.params)
                     .fontSize(18)
-                    .fontColor(item.title === '元素能量' ? Color.Yellow : $r('app.color.secondary_text_inversion'))
+                    .fontColor(item.title === '元素能量' ? Color.Yellow : '#B3FFFFFF')
                 }
                 .width('100%')
               }

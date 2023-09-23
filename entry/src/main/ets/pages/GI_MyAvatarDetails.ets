@@ -260,30 +260,42 @@ struct GI_MyAvatarDetails {
                     }
                     .alignItems(HorizontalAlign.Start)
                     .justifyContent(FlexAlign.SpaceEvenly)
-                    .height(500)
+                    .height(450)
                     .margin({ right: 20 })
                   }
                   .width('100%')
                   .justifyContent(FlexAlign.SpaceBetween)
                   .alignItems(VerticalAlign.Center)
                   .padding({ left: 10, right: 10 })
+
+                  Row() {
+                    Image($rawfile(`GI/resource/others/star${this.avatar.rarity}.png`))
+                      .height(30)
+                  }
+                  .margin({ top: 470, right: 30 })
                 }
-                .alignContent(Alignment.TopStart)
+                .alignContent(Alignment.TopEnd)
                 .width('100%')
 
                 Row() {
                   // 武器面板
                   Column() {
-                    Row() {
+                    Stack() {
                       Image($rawfile(this.WeaponImage))
                         .width('100%')
                         .height(175)
                         .objectFit(ImageFit.Cover)
+                      Row() {
+                        Image($rawfile(`GI/resource/others/star${this.avatar.weapon.rarity}.png`))
+                          .height(16)
+                      }
+                      .margin({ bottom: 5, right: 5 })
                     }
                     .width('100%')
                     .backgroundColor('#4D000000')
                     .shadow({ color: '#4000001E', radius: 55 })
                     .borderRadius(15)
+                    .alignContent(Alignment.BottomEnd)
 
                     Row() {
                       Column() {
@@ -292,7 +304,7 @@ struct GI_MyAvatarDetails {
                           .fontColor(Color.White)
                         Text(`Lv ${this.avatar.weapon.level}`)
                           .fontSize(16)
-                          .fontColor(Color.White)
+                          .fontColor('#B3FFFFFF')
                       }
                       .backgroundColor('#4D000000')
                       .shadow({ color: '#4000001E', radius: 55 })
@@ -304,7 +316,7 @@ struct GI_MyAvatarDetails {
                       Column() {
                         Text('基础攻击力')
                           .fontSize(16)
-                          .fontColor(Color.White)
+                          .fontColor('#B3FFFFFF')
                           .maxLines(1)
                         Text(`${this.avatar.weapon.mainStat?.value ?? '???'}`)
                           .fontSize(16)
@@ -313,7 +325,7 @@ struct GI_MyAvatarDetails {
                         if (this.avatar.weapon.subStat) {
                           Text(`${AppendProp.get(this.avatar.weapon.subStat?.key) ?? '???'}`)
                             .fontSize(16)
-                            .fontColor(Color.White)
+                            .fontColor('#B3FFFFFF')
                             .maxLines(1)
                           Text(`${this.avatar.weapon.subStat?.value + propUnit.get(this.avatar.weapon.subStat.key) ?? '???'}`)
                             .fontSize(16)
@@ -333,7 +345,7 @@ struct GI_MyAvatarDetails {
                       .width('48%')
                       .justifyContent(FlexAlign.SpaceEvenly)
                       .alignItems(HorizontalAlign.Start)
-                      .padding(5)
+                      .padding(8)
                     }
                     .width('100%')
                     .justifyContent(FlexAlign.SpaceBetween)

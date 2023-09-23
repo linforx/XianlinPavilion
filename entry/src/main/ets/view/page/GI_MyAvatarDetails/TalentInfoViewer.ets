@@ -5,7 +5,7 @@ import TalentInfo from '../../../viewmodel/page/GI_MyAvatarDetails/TalentInfo'
 export default struct TalentInfoViewer {
   info: TalentInfo = null
   element: string = ''
-  _size: number = 60
+  _size: number = 75
 
   TalentDetailsDialogController: CustomDialogController = new CustomDialogController({
     builder: TalentDetailsDialog({ info: this.info, talentWiki: this.info.wiki['promote'] }),
@@ -21,16 +21,17 @@ export default struct TalentInfoViewer {
         .margin({ top: '4%', left: '2%' })
       Row() {
         Text(`${this.info.current_level + (this.info.extraUpgrade ? 3 : 0)}`)
-          .fontSize(13)
-          .fontColor(this.info.extraUpgrade ? '#f7ce00' : $r('app.color.primary_text_inversion'))
+          .fontSize(16)
+          .fontColor(this.info.extraUpgrade ? '#f7ce00' : Color.White)
           .fontWeight(this.info.extraUpgrade ? FontWeight.Medium : FontWeight.Normal)
       }
-      .width(25)
-      .height(17)
+      .width(this._size / 2)
+      .height(this._size / 3.2)
       .borderRadius(5)
       .backdropBlur(20)
+      .backgroundColor('#4D000000')
       .justifyContent(FlexAlign.Center)
-      .margin({ top: 35 })
+      .margin({ top: this._size / 1.5 })
     }
     .width(this._size)
     .aspectRatio(1)

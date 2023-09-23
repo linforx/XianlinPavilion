@@ -20,7 +20,7 @@ export default struct ConstellationDetailsDialog {
         Text(this.info.name)
           .fontSize(25)
           .fontWeight(FontWeight.Medium)
-          .fontColor($r('app.color.primary_text_inversion'))
+          .fontColor(Color.White)
           .copyOption(CopyOptions.LocalDevice)
       }
       .justifyContent(FlexAlign.Start)
@@ -28,21 +28,23 @@ export default struct ConstellationDetailsDialog {
 
 
       Scroll() {
-        Column() {
+        Row() {
           // 命座描述
           Text() {
             ForEach(this.getColorfulTextArrayFromHtmlText(this.info.wiki), item => {
               Span(item.content.replace(/\\n/g, '\n').replace(/\n\n/g, '\n \n'))
                 .fontSize(18)
-                .fontColor(item.color ? item.color : $r('app.color.primary_text_inversion'))
+                .fontColor(item.color ? item.color : Color.White)
                 .fontStyle(item.italic ? FontStyle.Italic : FontStyle.Normal)
             })
           }
         }
+        .width('100%')
       }
       .edgeEffect(EdgeEffect.Spring)
       .constraintSize({ maxHeight: '50%' })
       .scrollBar(BarState.Off)
+      .width('100%')
     }
     .backdropBlur(100)
     .width('88%')

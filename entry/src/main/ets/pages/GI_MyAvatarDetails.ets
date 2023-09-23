@@ -20,6 +20,62 @@ interface skill {
   maxLevel: number
 }
 
+const ElementDMGMap = {
+  'Pyro': { id: 40, name: '火' },
+  'Electro': { id: 41, name: '雷' },
+  'Hydro': { id: 42, name: '水' },
+  'Dendro': { id: 43, name: '草' },
+  'Anemo': { id: 44, name: '风' },
+  'Geo': { id: 45, name: '岩' },
+  'Cryo': { id: 46, name: '冰' }
+}
+
+const AppendProp: Map<string, string> = new Map([
+  ['FIGHT_PROP_BASE_ATTACK', '基础攻击力'],
+  ['FIGHT_PROP_HP', '生命值'],
+  ['FIGHT_PROP_ATTACK', '攻击力'],
+  ['FIGHT_PROP_DEFENSE', '防御力'],
+  ['FIGHT_PROP_HP_PERCENT', '生命加成'],
+  ['FIGHT_PROP_ATTACK_PERCENT', '攻击加成'],
+  ['FIGHT_PROP_DEFENSE_PERCENT', '防御加成'],
+  ['FIGHT_PROP_CRITICAL', '暴击率'],
+  ['FIGHT_PROP_CRITICAL_HURT', '暴击伤害'],
+  ['FIGHT_PROP_CHARGE_EFFICIENCY', '元素充能'],
+  ['FIGHT_PROP_HEAL_ADD', '治疗加成'],
+  ['FIGHT_PROP_ELEMENT_MASTERY', '元素精通'],
+  ['FIGHT_PROP_PHYSICAL_ADD_HURT', '物伤加成'],
+  ['FIGHT_PROP_FIRE_ADD_HURT', '火伤加成'],
+  ['FIGHT_PROP_ELEC_ADD_HURT', '雷伤加成'],
+  ['FIGHT_PROP_WATER_ADD_HURT', '水伤加成'],
+  ['FIGHT_PROP_WIND_ADD_HURT', '风伤加成'],
+  ['FIGHT_PROP_ICE_ADD_HURT', '冰伤加成'],
+  ['FIGHT_PROP_ROCK_ADD_HURT', '岩伤加成'],
+  ['FIGHT_PROP_GRASS_ADD_HURT', '草伤加成']
+])
+
+const propUnit: Map<string, string> = new Map([
+  ['FIGHT_PROP_BASE_ATTACK', ''],
+  ['FIGHT_PROP_HP', ''],
+  ['FIGHT_PROP_ATTACK', ''],
+  ['FIGHT_PROP_DEFENSE', ''],
+  ['FIGHT_PROP_HP_PERCENT', '%'],
+  ['FIGHT_PROP_ATTACK_PERCENT', '%'],
+  ['FIGHT_PROP_DEFENSE_PERCENT', '%'],
+  ['FIGHT_PROP_CRITICAL', '%'],
+  ['FIGHT_PROP_CRITICAL_HURT', '%'],
+  ['FIGHT_PROP_CHARGE_EFFICIENCY', '%'],
+  ['FIGHT_PROP_HEAL_ADD', '%'],
+  ['FIGHT_PROP_ELEMENT_MASTERY', ''],
+  ['FIGHT_PROP_PHYSICAL_ADD_HURT', '%'],
+  ['FIGHT_PROP_FIRE_ADD_HURT', '%'],
+  ['FIGHT_PROP_ELEC_ADD_HURT', '%'],
+  ['FIGHT_PROP_WATER_ADD_HURT', '%'],
+  ['FIGHT_PROP_WIND_ADD_HURT', '%'],
+  ['FIGHT_PROP_ICE_ADD_HURT', '%'],
+  ['FIGHT_PROP_ROCK_ADD_HURT', '%'],
+  ['FIGHT_PROP_GRASS_ADD_HURT', '%']
+])
+
 @Entry
 @Component
 struct GI_MyAvatarDetails {
@@ -28,7 +84,9 @@ struct GI_MyAvatarDetails {
   private avatar: Avatar = router.getParams()['avatar']
 
   @State AvatarImage: string = ''
+  @State WeaponImage: string = ''
   @State AvatarWikiInfo: Object = {}
+  @State WeaponWikiInfo: Object = {}
   @State loadAvatarWikiInfoDone: boolean = false
   @State TalentInfoList: TalentInfo[] = []
   @State ConstellationInfoList: ConstellationInfo[] = []
@@ -55,6 +113,16 @@ struct GI_MyAvatarDetails {
       console.warn(this.AvatarImage)
     } catch (err) {
       console.error('load avatar image failed: ' + err.message)
+    }
+  }
+
+  // 加载武器立绘
+  async getWeaponImageAsync() {
+    try {
+      this.WeaponWikiInfo = Utils.losslessJSON.parse(await new FileManager(this.context).getRawFileTextAsync(`GI/WeaponInfo/${this.avatar.weapon.id}.json`)) as any
+      this.WeaponImage = `GI/resource/${this.avatar.weapon.id}/${this.WeaponWikiInfo['icon'].replace('EquipIcon', 'Gacha_WeaponImg')}.webp`
+    } catch (err) {
+      console.error('load weapon image failed: ' + err.message)
     }
   }
 
@@ -146,6 +214,7 @@ struct GI_MyAvatarDetails {
   async aboutToAppear() {
     console.warn('about to appear')
     await this.getAvatarImageAsync(this.avatar.id, this.avatar.costumeId)
+    await this.getWeaponImageAsync()
     await this.loadAvatarWikiInfoAsync()
     this.loadTalentList()
     this.loadConstellationList()
@@ -159,56 +228,407 @@ struct GI_MyAvatarDetails {
     Column() {
       Navigation() {
         Column() {
-          Scroll() {
-            Column() {
-              Stack() {
-                Image($rawfile(`GI/resource/${(this.avatar.id == 10000005 || this.avatar.id == 10000007) ? this.avatar.id + '-' + this.avatar.element.toLowerCase() : this.avatar.id}/${this.AvatarImage}`))
-                  .width('100%')
-                  .height(500)
-                  .objectFit(ImageFit.Cover)
-                  .alt($r('app.media.ic_gallery_list_damage'))
+          List() {
+            ListItem() {
+              Column({ space: 10 }) {
+                Stack() {
+                  Image($rawfile(`GI/resource/${(this.avatar.id == 10000005 || this.avatar.id == 10000007) ? this.avatar.id + '-' + this.avatar.element.toLowerCase() : this.avatar.id}/${this.AvatarImage}`))
+                    .width('100%')
+                    .height(500)
+                    .objectFit(ImageFit.Cover)
+                    .alt($r('app.media.ic_gallery_list_damage'))
 
+
+                  Row() {
+                    // 天赋展示
+                    Column() {
+                      ForEach(this.TalentInfoList, talentInfo => {
+                        TalentInfoViewer({ info: talentInfo, element: this.avatar.element })
+                      })
+                    }
+                    .alignItems(HorizontalAlign.Start)
+                    .justifyContent(FlexAlign.SpaceEvenly)
+                    .height(300)
+                    .margin({ left: 20 })
+
+                    // 命座展示
+                    Column() {
+                      ForEach(this.ConstellationInfoList, (con: ConstellationInfo) => {
+                        ConstellationInfoViewer({ info: con, element: this.avatar.element })
+                          .opacity(con.index <= this.avatar.actived_constellation_num ? 1 : 0.3)
+                      })
+                    }
+                    .alignItems(HorizontalAlign.Start)
+                    .justifyContent(FlexAlign.SpaceEvenly)
+                    .height(500)
+                    .margin({ right: 20 })
+                  }
+                  .width('100%')
+                  .justifyContent(FlexAlign.SpaceBetween)
+                  .alignItems(VerticalAlign.Center)
+                  .padding({ left: 10, right: 10 })
+                }
+                .alignContent(Alignment.TopStart)
+                .width('100%')
 
                 Row() {
-                  // 天赋展示
+                  // 武器面板
                   Column() {
-                    ForEach(this.TalentInfoList, talentInfo => {
-                      TalentInfoViewer({ info: talentInfo, element: this.avatar.element })
-                    })
-                  }
-                  .alignItems(HorizontalAlign.Start)
-                  .justifyContent(FlexAlign.SpaceEvenly)
-                  .height(300)
-                  .margin({ left: 20 })
+                    Row() {
+                      Image($rawfile(this.WeaponImage))
+                        .width('100%')
+                        .height(175)
+                        .objectFit(ImageFit.Cover)
+                    }
+                    .width('100%')
+                    .backgroundColor('#4D000000')
+                    .shadow({ color: '#4000001E', radius: 55 })
+                    .borderRadius(15)
 
-                  // 命座展示
-                  Column() {
-                    ForEach(this.ConstellationInfoList, (con: ConstellationInfo) => {
-                      ConstellationInfoViewer({ info: con, element: this.avatar.element })
-                        .opacity(con.index <= this.avatar.actived_constellation_num ? 1 : 0.3)
-                    })
+                    Row() {
+                      Column() {
+                        Text(this.avatar.weapon.name)
+                          .fontSize(16)
+                          .fontColor(Color.White)
+                        Text(`Lv ${this.avatar.weapon.level}`)
+                          .fontSize(16)
+                          .fontColor(Color.White)
+                      }
+                      .backgroundColor('#4D000000')
+                      .shadow({ color: '#4000001E', radius: 55 })
+                      .borderRadius(15)
+                      .height('100%')
+                      .width('48%')
+                      .justifyContent(FlexAlign.SpaceEvenly)
+
+                      Column() {
+                        Text('基础攻击力')
+                          .fontSize(16)
+                          .fontColor(Color.White)
+                          .maxLines(1)
+                        Text(`${this.avatar.weapon.mainStat?.value ?? '???'}`)
+                          .fontSize(16)
+                          .fontColor(Color.White)
+                          .maxLines(1)
+                        if (this.avatar.weapon.subStat) {
+                          Text(`${AppendProp.get(this.avatar.weapon.subStat?.key) ?? '???'}`)
+                            .fontSize(16)
+                            .fontColor(Color.White)
+                            .maxLines(1)
+                          Text(`${this.avatar.weapon.subStat?.value + propUnit.get(this.avatar.weapon.subStat.key) ?? '???'}`)
+                            .fontSize(16)
+                            .fontColor(Color.White)
+                            .maxLines(1)
+                        } else {
+                          Text(`???\n???`)
+                            .fontSize(16)
+                            .fontColor(Color.White)
+                            .maxLines(2)
+                        }
+                      }
+                      .backgroundColor('#4D000000')
+                      .shadow({ color: '#4000001E', radius: 55 })
+                      .borderRadius(15)
+                      .height('100%')
+                      .width('48%')
+                      .justifyContent(FlexAlign.SpaceEvenly)
+                      .alignItems(HorizontalAlign.Start)
+                      .padding(5)
+                    }
+                    .width('100%')
+                    .justifyContent(FlexAlign.SpaceBetween)
+                    .height(96)
                   }
-                  .alignItems(HorizontalAlign.Start)
-                  .justifyContent(FlexAlign.SpaceEvenly)
-                  .height(500)
-                  .margin({ right: 20 })
+                  .width('48%')
+                  .height(280)
+                  .justifyContent(FlexAlign.SpaceBetween)
+                  // 角色属性面板
+                  List() {
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/HP.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('生命值上限')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['2000'])}`)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+
+                          Text() {
+                            Span(`${Math.round(this.avatar.prop['1'])}`)
+                              .fontSize(12)
+                              .fontColor(Color.White)
+                            Span(` +${Math.round(this.avatar.prop['2000'] - this.avatar.prop['1'])}`)
+                              .fontSize(11)
+                              .fontColor('#90e800')
+                          }
+                          .opacity(0.8)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .width('100%')
+                      .height(32)
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/Attack.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('攻击力')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['2001'])}`)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+
+                          Text() {
+                            Span(`${Math.round(this.avatar.prop['4'])}`)
+                              .fontSize(12)
+                              .fontColor(Color.White)
+                            Span(` +${Math.round(this.avatar.prop['2001'] - this.avatar.prop['4'])}`)
+                              .fontSize(11)
+                              .fontColor('#90e800')
+                          }
+                          .opacity(0.8)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .width('100%')
+                      .height(32)
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/Defence.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('防御力')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['2002'])}`)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+
+                          Text() {
+                            Span(`${Math.round(this.avatar.prop['7'])}`)
+                              .fontSize(12)
+                              .fontColor(Color.White)
+                            Span(` +${Math.round(this.avatar.prop['2002'] - this.avatar.prop['7'])}`)
+                              .fontSize(11)
+                              .fontColor('#90e800')
+                          }
+                          .opacity(0.8)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .height(32)
+                      .width('100%')
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/EM.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('元素精通')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['28'])} `)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .height(32)
+                      .width('100%')
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/CritRate.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('暴击率')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['20'] * 1000) / 10}% `)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .height(32)
+                      .width('100%')
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/CritDMG.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('暴击伤害')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['22'] * 1000) / 10}% `)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .height(32)
+                      .width('100%')
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    ListItem() {
+                      Row() {
+                        Image($rawfile('GI/resource/others/ER.svg'))
+                          .width(15)
+                          .height(15)
+                          .margin({ right: 5 })
+                        Text('元素充能效率')
+                          .fontColor(Color.White)
+                          .fontSize(16)
+
+                        Blank()
+
+                        Column() {
+                          Text(`${Math.round(this.avatar.prop['23'] * 1000) / 10}% `)
+                            .fontSize(15)
+                            .fontColor(Color.White)
+                            .fontWeight(FontWeight.Bold)
+                        }
+                        .justifyContent(FlexAlign.Center)
+                        .alignItems(HorizontalAlign.End)
+                      }
+                      .height(32)
+                      .width('100%')
+                      .padding({ left: 10, right: 10 })
+                    }
+
+                    if (Math.round(this.avatar.prop['30'] * 1000) > 0) {
+                      ListItem() {
+                        Row() {
+                          Image($rawfile('GI/resource/others/Physics.svg'))
+                            .width(15)
+                            .height(15)
+                            .margin({ right: 5 })
+                          Text('物理伤害加成')
+                            .fontColor(Color.White)
+                            .fontSize(16)
+
+                          Blank()
+
+                          Column() {
+                            Text(`${Math.round(Math.round(this.avatar.prop['30'] * 1000)) / 10 }% `)
+                              .fontSize(15)
+                              .fontColor(Color.White)
+                              .fontWeight(FontWeight.Bold)
+                          }
+                          .justifyContent(FlexAlign.Center)
+                          .alignItems(HorizontalAlign.End)
+                        }
+                        .height(32)
+                        .width('100%')
+                        .padding({ left: 10, right: 10 })
+                      }
+                    } else {
+                      ListItem() {
+                        Row() {
+                          Image($rawfile(`GI/resource/others/${this.avatar.element}.svg`))
+                            .width(15)
+                            .height(15)
+                            .margin({ right: 5 })
+                          Text(ElementDMGMap[this.avatar.element].name + '元素伤害加成')
+                            .fontColor(Color.White)
+                            .fontSize(16)
+
+                          Blank()
+
+                          Column() {
+                            Text(`${Math.round(this.avatar.prop[`${ElementDMGMap[this.avatar.element].id}`] * 1000) / 10}% `)
+                              .fontSize(15)
+                              .fontColor(Color.White)
+                              .fontWeight(FontWeight.Bold)
+                          }
+                          .justifyContent(FlexAlign.Center)
+                          .alignItems(HorizontalAlign.End)
+                        }
+                        .height(32)
+                        .width('100%')
+                        .padding({ left: 10, right: 10 })
+                      }
+                    }
+                  }
+                  .width('48%')
+                  .divider({ startMargin: 10, endMargin: 10, strokeWidth: 2 })
+                  .backgroundColor('#4D000000')
+                  .shadow({ color: '#4000001E', radius: 55 })
+                  .borderRadius(15)
+                  .padding(5)
                 }
+                .justifyContent(FlexAlign.SpaceAround)
                 .width('100%')
-                .justifyContent(FlexAlign.SpaceBetween)
-                .alignItems(VerticalAlign.Center)
-                .padding({ left: 10, right: 10 })
               }
-              .alignContent(Alignment.TopStart)
               .width('100%')
+              .justifyContent(FlexAlign.Start)
+              .alignItems(HorizontalAlign.Center)
             }
-            .width('100%')
-            .justifyContent(FlexAlign.Start)
-            .alignItems(HorizontalAlign.Center)
           }
           .edgeEffect(EdgeEffect.Spring)
           .scrollBar(BarState.Off)
           .width('100%')
-          .constraintSize({ maxHeight: '100%' })
+          .height('100%')
         }
         .height('100%')
         .width('100%')

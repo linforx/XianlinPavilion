@@ -127,7 +127,7 @@ struct Index {
   }
   // 将cookie以及账号角色的信息保存到config配置文件中，以便卡片端调用
   saveConfig() {
-    if (!this.selUser || !this.selGameRole_genshin || !this.selGameRole_starrail) return;
+    if (!this.selUser) return;
 
     let fileManager: FileManager = new FileManager(this.context)
     try {
@@ -142,7 +142,7 @@ struct Index {
           genshin_impact: {
             selected_role: {
               uid: this.selUser.gameRoleChosen.Genshin.uid,
-              server: this.selGameRole_genshin.region,
+              server: this.selGameRole_genshin?.region ?? '',
             }
           },
           star_rail: {

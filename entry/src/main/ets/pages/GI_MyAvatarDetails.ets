@@ -12,6 +12,8 @@ import TalentInfoViewer from '../view/page/GI_MyAvatarDetails/TalentInfoViewer'
 import TalentInfo from '../viewmodel/page/GI_MyAvatarDetails/TalentInfo'
 import ConstellationInfo from '../viewmodel/page/GI_MyAvatarDetails/ConstellationInfo'
 import ConstellationInfoViewer from '../view/page/GI_MyAvatarDetails/ContellationInfoViewer'
+import ReliquaryInfo from '../viewmodel/page/GI_MyAvatarDetails/ReliquaryInfo'
+import ReliquaryCard from '../view/page/GI_MyAvatarDetails/ReliquaryCard'
 
 interface skill {
   id: number,
@@ -90,6 +92,7 @@ struct GI_MyAvatarDetails {
   @State loadAvatarWikiInfoDone: boolean = false
   @State TalentInfoList: TalentInfo[] = []
   @State ConstellationInfoList: ConstellationInfo[] = []
+  @State ReliquaryInfoList: ReliquaryInfo[] = []
 
   // 加载角色/皮肤立绘
   async getAvatarImageAsync(avatarId: number, costumeId: number) {
@@ -211,6 +214,37 @@ struct GI_MyAvatarDetails {
     this.ConstellationInfoList = conList.sort((a, b) => { return a.index - b.index })
   }
 
+  pos2EquipType(pos: number) {
+    switch(pos) {
+      case 1: return 'EQUIP_BRACER'
+      case 2: return 'EQUIP_NECKLACE'
+      case 3: return 'EQUIP_SHOES'
+      case 4: return 'EQUIP_RING'
+      case 5: return 'EQUIP_DRESS'
+      default: return ''
+    }
+  }
+
+  async loadReliquaryList() {
+    let reqList: ReliquaryInfo[] = []
+    const reliquaries = this.avatar.reliquaries
+    let setWikiMap = {}
+    for (let req of reliquaries) {
+      if (!setWikiMap.hasOwnProperty(req.set)) {
+        setWikiMap[`${req.set}`] = Utils.losslessJSON.parse(await new FileManager(this.context).getRawFileTextAsync(`GI/ReliquaryInfo/${req.set}.json`)) as any
+      }
+      if (!setWikiMap.hasOwnProperty(req.set)) {
+        promptAction.showToast({
+          message: '本地资源落后，请及时更新'
+        })
+        continue
+      }
+      reqList.push(new ReliquaryInfo(req, setWikiMap[`${req.set}`]['suit'][this.pos2EquipType(req.pos)]?.icon ?? ''))
+    }
+
+    this.ReliquaryInfoList = reqList
+  }
+
   async aboutToAppear() {
     console.warn('about to appear')
     await this.getAvatarImageAsync(this.avatar.id, this.avatar.costumeId)
@@ -218,6 +252,7 @@ struct GI_MyAvatarDetails {
     await this.loadAvatarWikiInfoAsync()
     this.loadTalentList()
     this.loadConstellationList()
+    await this.loadReliquaryList()
   }
 
   onPageShow() {
@@ -630,7 +665,31 @@ struct GI_MyAvatarDetails {
                   .padding(5)
                 }
                 .justifyContent(FlexAlign.SpaceAround)
-                .width('100%')
+                .width('95%')
+
+                // 圣遗物
+                Row() {
+                  GridRow({
+                    columns: 15,
+                    gutter: { x: 5, y: 5 },
+                    direction: GridRowDirection.Row
+                  }) {
+                    ForEach(this.ReliquaryInfoList, (reliquary: ReliquaryInfo) => {
+                      GridCol({ span: { xs: 5, sm: 5, md: 3, lg: 3 } }) {
+                        Row() {
+                          ReliquaryCard({ reliquary: reliquary })
+                        }
+                        .width('100%')
+                        .padding(5)
+                        .justifyContent(FlexAlign.Center)
+                      }
+                      .borderRadius(8)
+                      .clip(true)
+                    })
+                  }
+                  .width('100%')
+                }
+                .width('95%')
               }
               .width('100%')
               .justifyContent(FlexAlign.Start)

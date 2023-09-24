@@ -127,6 +127,8 @@ struct Index {
   }
   // 将cookie以及账号角色的信息保存到config配置文件中，以便卡片端调用
   saveConfig() {
+    if (!this.selUser || !this.selGameRole_genshin || !this.selGameRole_starrail) return;
+
     let fileManager: FileManager = new FileManager(this.context)
     try {
       let path = `/config/config.json`
@@ -159,9 +161,9 @@ struct Index {
       console.warn('保存config配置成功')
     } catch (err) {
       if (err.code != 13900015) {
-        console.error('code: ' + err.code)
+        console.error('code: ' + err.message)
         promptAction.showToast({
-          message: '保存config配置碰到错误: ' + JSON.stringify(err)
+          message: '保存config配置碰到错误: ' + JSON.stringify(err.message)
         })
         return
       }
@@ -544,6 +546,7 @@ struct Index {
   }
 
   async updateGIDataAsync() {
+    if (!this.selUser || !this.selUser.gameRoleChosen.Genshin.uid) return;
     // 更新体力数据
     this.GI_DailyNoteDataUpdateFlag = true
     let dailyNoteData = await this.selUser.getGIDailyNoteDateAsync()

@@ -46,7 +46,6 @@ const propUnit: Map<string, string> = new Map([
   ['FIGHT_PROP_GRASS_ADD_HURT', '%']
 ])
 
-@Preview
 @Component
 export default struct ReliquaryCard {
   private reliquary: ReliquaryInfo

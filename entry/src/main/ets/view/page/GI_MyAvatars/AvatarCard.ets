@@ -2,10 +2,9 @@ import AvatarBriefInfo from '../../../viewmodel/page/GI_MyAvatars/AvatarBriefInf
 import WeaponBriefInfo from '../../../viewmodel/page/GI_MyAvatars/WeaponBriefInfo'
 import router from '@ohos.router'
 
-@Preview
 @Component
 export default struct AvatarCard {
-  @ObjectLink avatar: AvatarBriefInfo
+  avatar: AvatarBriefInfo
 
   build() {
     Button() {

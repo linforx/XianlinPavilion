@@ -1,7 +1,5 @@
-import Avatar from '../../../model/Game/GenshinImpact/Avatar'
 import AvatarBriefInfo from '../../../viewmodel/page/GI_MyAvatars/AvatarBriefInfo'
 
-@Preview
 @CustomDialog
 export default struct EnkaSyncResultCard {
   controller: CustomDialogController

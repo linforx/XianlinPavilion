@@ -16,6 +16,5 @@
 	],
 	"icon": "UI_ItemIcon_112089",
 	"rank": 2,
-	"route": "Rift Core",
-	"beta": true
+	"route": "Rift Core"
 }

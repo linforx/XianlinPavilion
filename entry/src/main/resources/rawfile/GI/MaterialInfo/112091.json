@@ -23,6 +23,5 @@
 	],
 	"icon": "UI_ItemIcon_112091",
 	"rank": 4,
-	"route": "Alien Life Core",
-	"beta": true
+	"route": "Alien Life Core"
 }

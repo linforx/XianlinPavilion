@@ -6,7 +6,7 @@
 		"GCG_TAG_ARTIFACT": "圣遗物"
 	},
 	"props": {
-		"GCG_COST_DICE_VOID": 3
+		"GCG_COST_DICE_SAME": 2
 	},
 	"icon": "UI_Gcg_CardFace_Modify_Artifact_JueyuanTaozhuang",
 	"route": "Emblem of Severed Fate",
@@ -22,9 +22,9 @@
 	"talent": {
 		"27014": {
 			"name": "绝缘之旗印",
-			"description": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"description": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
 			"cost": {
-				"GCG_COST_DICE_VOID": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"params": {
 				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
@@ -33,7 +33,7 @@
 				"GCG_TAG_ARTIFACT": "圣遗物"
 			},
 			"icon": null,
-			"effect": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。",
+			"effect": "<color=#FFFFFFFF>其他我方角色使用「元素爆发」后：</color>所附属角色获得1点$[K310]。\\n角色使用「元素爆发」造成的伤害+2。（每回合1次）",
 			"subSkills": null,
 			"keywords": {
 				"K310": "keyword"

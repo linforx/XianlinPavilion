@@ -1,0 +1,21 @@
+{
+	"id": 120601,
+	"name": "第三十四独立侦查小队驻芒索斯山东麓布设规划",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120601,
+			"name": "第三十四独立侦查小队驻芒索斯山东麓布设规划",
+			"description": "",
+			"storyId": "705"
+		},
+		{
+			"id": 120603,
+			"name": "第三十四独立侦查小队驻芒索斯山东麓纪律规定",
+			"description": "",
+			"storyId": "707"
+		}
+	],
+	"route": "34th Independent Investigative Squad Deployment in Mont Esus (Eastern Quadrant) Deployment Plan"
+}

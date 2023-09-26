@@ -7,6 +7,5 @@
 	"source": null,
 	"icon": "UI_ItemIcon_220089",
 	"rank": 4,
-	"route": "Wind-Powered Wind Generator",
-	"beta": true
+	"route": "Wind-Powered Wind Generator"
 }

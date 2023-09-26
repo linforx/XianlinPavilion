@@ -15,7 +15,7 @@
 	"route": "Fatui Pyro Agent",
 	"storyTitle": "清算之刃·债务处理人",
 	"storyDetail": "「死债不可免，活债更难逃…」",
-	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度火之债务处理人中获得胜利后获取",
+	"source": "在猫尾酒馆中小王子处进行酒馆挑战，在友好对局难度愚人众·火之债务处理人中获得胜利后获取",
 	"dictionary": {
 		"K100": {
 			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",

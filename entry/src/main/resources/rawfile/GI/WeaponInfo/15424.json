@@ -3,7 +3,7 @@
 	"rank": 4,
 	"type": "弓",
 	"name": "烈阳之嗣",
-	"description": "",
+	"description": "赤王国度的古老时代所留下的古代长弓，其上雕刻着不可理解的古老文字与庄严图案。",
 	"icon": "UI_EquipIcon_Bow_Gurabad",
 	"storyId": 195424,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114046": 3,
 		"114047": 4,
 		"114048": 5
-	},
-	"beta": true
+	}
 }

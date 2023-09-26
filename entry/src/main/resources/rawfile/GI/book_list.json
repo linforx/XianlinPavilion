@@ -1946,6 +1946,20 @@
 			"icon": "UI_ItemIcon_101991",
 			"route": "Vigneire's Notebook"
 		},
+		"120401": {
+			"id": 120401,
+			"name": "《交涉的艺术》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120401",
+			"route": "\"The Art of Negotiation\""
+		},
+		"120438": {
+			"id": 120438,
+			"name": "「笔迹娟秀的信」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100229",
+			"route": "\"Beautifully-Written Letter\""
+		},
 		"120462": {
 			"id": 120462,
 			"name": "负罪求赎者所遗",
@@ -1995,6 +2009,27 @@
 			"icon": "UI_ItemIcon_120532",
 			"route": "Damaged Diary"
 		},
+		"120552": {
+			"id": 120552,
+			"name": "锻压装置操作规范",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Forging Press Device Operation Standards"
+		},
+		"120553": {
+			"id": 120553,
+			"name": "《应急处置手册·第三版》",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Emergency Handbook: Third Edition"
+		},
+		"120554": {
+			"id": 120554,
+			"name": "声明",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Disclaimer"
+		},
 		"120577": {
 			"id": 120577,
 			"name": "神秘的书页·其一",
@@ -2015,6 +2050,237 @@
 			"rank": 1,
 			"icon": "UI_ItemIcon_120477",
 			"route": "A Story"
+		},
+		"120601": {
+			"id": 120601,
+			"name": "第三十四独立侦查小队驻芒索斯山东麓布设规划",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "34th Independent Investigative Squad Deployment in Mont Esus (Eastern Quadrant) Deployment Plan"
+		},
+		"120602": {
+			"id": 120602,
+			"name": "先遣队士兵的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Skirmisher's Notes"
+		},
+		"120605": {
+			"id": 120605,
+			"name": "落叶上的诗",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Poem on Fallen Leaf"
+		},
+		"120606": {
+			"id": 120606,
+			"name": "写在叶上的回诗",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Response Poem on a Leaf"
+		},
+		"120608": {
+			"id": 120608,
+			"name": "灯笼上的诗谜",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Poetry Riddle on a Lantern"
+		},
+		"120610": {
+			"id": 120610,
+			"name": "不知何人放于此处的诗",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101501",
+			"route": "Poem Placed by Unknown Person"
+		},
+		"120612": {
+			"id": 120612,
+			"name": "「特别报告」",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120612",
+			"route": "Special Report"
+		},
+		"120620": {
+			"id": 120620,
+			"name": "告示",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Notice"
+		},
+		"120640": {
+			"id": 120640,
+			"name": "互助会宣传册",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120640",
+			"route": "Mutual Aid Network Advertisement"
+		},
+		"120658": {
+			"id": 120658,
+			"name": "嘟嘟可轰轰奇遇记",
+			"rank": 3,
+			"icon": "UI_ItemIcon_120658",
+			"route": "Dodoco's Bomb-Tastic Adventure"
+		},
+		"120661": {
+			"id": 120661,
+			"name": "字迹凌乱的纸张",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101733",
+			"route": "Messily-Written Note"
+		},
+		"120662": {
+			"id": 120662,
+			"name": "支离破碎的对话",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101733",
+			"route": "Tattered Dialogue"
+		},
+		"120663": {
+			"id": 120663,
+			"name": "遗留的信件",
+			"rank": 1,
+			"icon": "UI_ItemIcon_100229",
+			"route": "A Letter Left Behind"
+		},
+		"120669": {
+			"id": 120669,
+			"name": "枫丹动能工程科学研究院奖励状",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101733",
+			"route": "Fontaine Research Institute of Kinetic Energy Engineering Certificate"
+		},
+		"120672": {
+			"id": 120672,
+			"name": "训练日志",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Training Log"
+		},
+		"120673": {
+			"id": 120673,
+			"name": "备忘",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Memo"
+		},
+		"120674": {
+			"id": 120674,
+			"name": "新浪潮文汇·上册",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "New Tide Anthology: Part I"
+		},
+		"120677": {
+			"id": 120677,
+			"name": "项目规划书",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Project Proposal"
+		},
+		"120678": {
+			"id": 120678,
+			"name": "重建计划外部援请人员须知",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "External Reconstruction Support FAQ"
+		},
+		"120679": {
+			"id": 120679,
+			"name": "财务审查办公室协查通知",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Finance Investigation Office Notice"
+		},
+		"120680": {
+			"id": 120680,
+			"name": "有关人事变动的通知",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Announcement Concerning Personnel Changes"
+		},
+		"120682": {
+			"id": 120682,
+			"name": "有关枫丹动能工程科学研究院掩藏的真相",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Concerning the Secrets Hidden Within the Fontaine Research Institute of Kinetic Energy Engineering"
+		},
+		"120683": {
+			"id": 120683,
+			"name": "关于纸张使用规章之倡议",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Paper Usage Initiative"
+		},
+		"120684": {
+			"id": 120684,
+			"name": "厚厚的实验报告",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Thick Experimental Report"
+		},
+		"120685": {
+			"id": 120685,
+			"name": "研究员的日记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Researcher's Notes"
+		},
+		"120686": {
+			"id": 120686,
+			"name": "潦草的实验记录",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Messy Experimental Report"
+		},
+		"120687": {
+			"id": 120687,
+			"name": "字迹工整的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Neatly-Written Notes"
+		},
+		"120688": {
+			"id": 120688,
+			"name": "字迹潦草的笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Scribbled Notes"
+		},
+		"120689": {
+			"id": 120689,
+			"name": "大师鲁杰罗的研究笔记",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "The Research Notes of Master Ruggiero"
+		},
+		"120692": {
+			"id": 120692,
+			"name": "「二号初始能力样机」研发计划",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Initial Skill Sample No. 2 Development Plan"
+		},
+		"120695": {
+			"id": 120695,
+			"name": "博絮埃研究所项目成果总结报告·上",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Bossuet Research Institute Project Result Summary (I)"
+		},
+		"120697": {
+			"id": 120697,
+			"name": "藏书捐赠统计表",
+			"rank": 1,
+			"icon": "UI_ItemIcon_101629",
+			"route": "Book Donation Statistics"
+		},
+		"120699": {
+			"id": 120699,
+			"name": "布兰奇的信",
+			"rank": 1,
+			"icon": "UI_ItemIcon_120577",
+			"route": "Blanche's Letter"
 		}
 	}
 }

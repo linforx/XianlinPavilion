@@ -398,6 +398,58 @@
 				}
 			}
 		},
+		"22100202": {
+			"id": 22100202,
+			"type": "MONSTER_BOSS",
+			"affix": [
+				{
+					"name": "深渊法师（冰水火）",
+					"description": "深渊法师（冰水火）",
+					"abilityName": [
+						"Monster_Invoker_Archdeacon_01_Born_Ice_Water_Fire"
+					],
+					"isCommon": null
+				},
+				{
+					"name": "4.0wq施洗者",
+					"description": "4.0wq施洗者",
+					"abilityName": [
+						"MonsterAffix_Monster_Invoker_Archdeacon_WQV40"
+					],
+					"isCommon": null
+				}
+			],
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 135.84,
+					"type": "GROW_CURVE_HP_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 50.24,
+					"type": "GROW_CURVE_ATTACK_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
+		},
 		"22100301": {
 			"id": 22100301,
 			"type": "MONSTER_BOSS",

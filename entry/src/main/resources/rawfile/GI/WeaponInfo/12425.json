@@ -3,7 +3,7 @@
 	"rank": 4,
 	"type": "双手剑",
 	"name": "浪影阔剑",
-	"description": "",
+	"description": "造型优美的枫丹旧海军的制式剑，专为将官与旗舰舰长量身打造。",
 	"icon": "UI_EquipIcon_Claymore_Vorpal",
 	"storyId": 192425,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114058": 3,
 		"114059": 4,
 		"114060": 5
-	},
-	"beta": true
+	}
 }

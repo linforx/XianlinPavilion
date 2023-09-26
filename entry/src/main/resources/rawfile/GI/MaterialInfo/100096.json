@@ -8,6 +8,10 @@
 		{
 			"name": "须弥餐馆购买",
 			"type": "single"
+		},
+		{
+			"name": "枫丹杂货店购买",
+			"type": "single"
 		}
 	],
 	"icon": "UI_ItemIcon_100096",

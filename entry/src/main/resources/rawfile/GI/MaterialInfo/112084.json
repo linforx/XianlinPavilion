@@ -27,6 +27,5 @@
 	],
 	"icon": "UI_ItemIcon_112084",
 	"rank": 2,
-	"route": "Mechanical Spur Gear",
-	"beta": true
+	"route": "Mechanical Spur Gear"
 }

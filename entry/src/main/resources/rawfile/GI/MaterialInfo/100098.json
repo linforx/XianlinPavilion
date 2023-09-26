@@ -8,6 +8,10 @@
 		{
 			"name": "须弥咖啡厅购买",
 			"type": "single"
+		},
+		{
+			"name": "枫丹咖啡厅购买",
+			"type": "single"
 		}
 	],
 	"icon": "UI_ItemIcon_100098",

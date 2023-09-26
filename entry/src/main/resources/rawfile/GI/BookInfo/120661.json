@@ -1,0 +1,15 @@
+{
+	"id": 120661,
+	"name": "字迹凌乱的纸张",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101733",
+	"volume": [
+		{
+			"id": 120661,
+			"name": "字迹凌乱的纸张",
+			"description": "",
+			"storyId": "737"
+		}
+	],
+	"route": "Messily-Written Note"
+}

@@ -9,7 +9,7 @@
 		9,
 		24
 	],
-	"release": 1690059600,
+	"release": 1693926000,
 	"route": "Freminet",
 	"fetter": {
 		"title": "潜怀遐梦",
@@ -17,10 +17,10 @@
 		"constellation": "机巧座",
 		"native": "布法蒂公馆",
 		"cv": {
-			"EN": "",
-			"CHS": "",
-			"JP": "",
-			"KR": ""
+			"EN": "小保罗·卡斯特罗",
+			"CHS": "锦鲤",
+			"JP": "土岐隼一",
+			"KR": "李周承"
 		}
 	},
 	"upgrade": {
@@ -166,8 +166,8 @@
 		"furnitureId": 368171,
 		"nameCard": {
 			"id": 210167,
-			"name": "？？？",
-			"description": "？？？",
+			"name": "菲米尼·行进",
+			"description": "名片纹饰。\\n明明发条在原地打转，玩偶们却在迈步向前。",
 			"icon": "UI_NameCardIcon_Freminet"
 		},
 		"specialFood": {
@@ -2414,6 +2414,5 @@
 			"extraData": null,
 			"icon": "UI_Talent_S_Freminet_04"
 		}
-	},
-	"beta": true
+	}
 }

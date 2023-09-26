@@ -4,7 +4,6 @@
 	"type": "自律机关",
 	"icon": "UI_MonsterIcon_MachinaIustitia_Probe",
 	"route": "Geological Survey Mek",
-	"beta": true,
 	"title": "机关·地质勘探型",
 	"specialName": "Ser.438412",
 	"description": "以探测地下资源及特定矿物为目的，设计制造的发条机关。\\n因为能够设置搜寻的金属类型，所以也很受盗宝团与冒险家的欢迎。",

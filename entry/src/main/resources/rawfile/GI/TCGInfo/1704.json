@@ -1,0 +1,128 @@
+{
+	"id": 1704,
+	"name": "瑶瑶",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_DENDRO": "草元素",
+		"GCG_TAG_WEAPON_POLE": "长柄武器",
+		"GCG_TAG_NATION_LIYUE": "璃月"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Yaoyao",
+	"route": "Yaoyao",
+	"storyTitle": "仙蕊玲珑·瑶瑶",
+	"storyDetail": "玲珑玉质，身含仙骨。",
+	"source": "在猫尾酒馆中邀请瑶瑶进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K107": {
+			"name": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2107}草元素，可发生元素反应：\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2102}<color=#FFFFFFFF>绽放</color>：本伤害+1，生成使下次火元素或雷元素伤害+2的[<color=#FFFFFFFF>草原核</color>]\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2103}<color=#FFFFFFFF>燃烧</color>：本伤害+1，生成回合结束时造成1点火元素伤害的[<color=#FFFFFFFF>燃烧烈焰</color>]（可用次数1，最多叠加到2）\\n{SPRITE_PRESET#2107}{SPRITE_PRESET#2104}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C117041": {
+			"name": "月桂·抛掷型",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K107]，治疗我方受伤最多的角色1点。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K107": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"C117043": {
+			"name": "桂子仙机",
+			"description": "<color=#FFFFFFFF>我方切换角色后：</color>造成1点$[K107]，治疗我方出战角色1点。\\n<color=#FFFFFFFF>$[K3]：3</color>",
+			"cost": null,
+			"params": {
+				"K107": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"17041": {
+			"name": "颠扑连环枪",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_03",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"17042": {
+			"name": "云台团团降芦菔",
+			"description": "召唤<color=#FFFFFFFF>$[C117041]</color>。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"C117041": "月桂·抛掷型"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Yaoyao_01",
+			"subSkills": {
+				"C117041": "cardSkill"
+			},
+			"keywords": null
+		},
+		"17043": {
+			"name": "玉颗珊珊月中落",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，生成<color=#FFFFFFFF>$[C117043]</color>。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"C117043": "桂子仙机"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Yaoyao_01_HD",
+			"subSkills": {
+				"C117043": "cardSkill"
+			},
+			"keywords": {
+				"K107": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 217041,
+			"name": "慈惠仁心",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Yaoyao"
+		}
+	]
+}

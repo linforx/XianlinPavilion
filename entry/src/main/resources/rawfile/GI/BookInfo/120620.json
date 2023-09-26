@@ -1,0 +1,15 @@
+{
+	"id": 120620,
+	"name": "告示",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120620,
+			"name": "告示",
+			"description": "",
+			"storyId": "716"
+		}
+	],
+	"route": "Notice"
+}

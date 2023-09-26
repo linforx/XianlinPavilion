@@ -6,7 +6,7 @@
 		"GCG_TAG_ARTIFACT": "圣遗物"
 	},
 	"props": {
-		"GCG_COST_DICE_SAME": 2
+		"GCG_COST_DICE_VOID": 2
 	},
 	"icon": "UI_Gcg_CardFace_Modify_Artifact_YanDanjian",
 	"route": "Mask of Solitude Basalt",
@@ -19,7 +19,7 @@
 			"name": "不动玄石之相",
 			"description": "<color=#FFFFFFFF>角色使用技能或装备「{SPRITE_PRESET#3006}天赋」时：</color>少花费1个{SPRITE_PRESET#1106}<color=#FFE699FF>岩元素</color>。（每回合1次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
 			"cost": {
-				"GCG_COST_DICE_SAME": 2
+				"GCG_COST_DICE_VOID": 2
 			},
 			"params": null,
 			"tags": {

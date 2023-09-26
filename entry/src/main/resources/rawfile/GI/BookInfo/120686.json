@@ -1,0 +1,15 @@
+{
+	"id": 120686,
+	"name": "潦草的实验记录",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120686,
+			"name": "潦草的实验记录",
+			"description": "",
+			"storyId": "753"
+		}
+	],
+	"route": "Messy Experimental Report"
+}

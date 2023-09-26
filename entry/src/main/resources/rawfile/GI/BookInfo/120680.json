@@ -1,0 +1,15 @@
+{
+	"id": 120680,
+	"name": "有关人事变动的通知",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120680,
+			"name": "有关人事变动的通知",
+			"description": "",
+			"storyId": "747"
+		}
+	],
+	"route": "Announcement Concerning Personnel Changes"
+}

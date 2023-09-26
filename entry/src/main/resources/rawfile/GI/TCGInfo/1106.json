@@ -43,7 +43,7 @@
 		},
 		"C111061": {
 			"name": "冷酷之心",
-			"description": "<color=#FFFFFFFF>所附属角色使用$[S11062]时：</color>移除此状态，使本次伤害+2。",
+			"description": "<color=#FFFFFFFF>所附属角色使用$[S11062]时：</color>移除此状态，使本次伤害+3。",
 			"cost": null,
 			"params": {
 				"S11062": "冰潮的涡旋"
@@ -58,7 +58,7 @@
 		},
 		"C111062": {
 			"name": "光降之剑",
-			"description": "<color=#FFFFFFFF>$[A1106]使用「普通攻击」或「元素战技」时：</color>此牌累积2点「能量层数」，但是$[A1106]不会获得充能。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成2点$[K100]；每有1点「能量层数」，都使此伤害+1。\\n（影响此牌「$[K3]」的效果会作用于「<color=#FFFFFFFF>能量层数</color>」。）",
+			"description": "<color=#FFFFFFFF>$[A1106]使用「普通攻击」或「元素战技」时：</color>此牌累积2点「能量层数」，但是$[A1106]不会获得充能。\\n<color=#FFFFFFFF>结束阶段：</color>弃置此牌，造成3点$[K100]；每有1点「能量层数」，都使此伤害+1。\\n（影响此牌「$[K3]」的效果会作用于「<color=#FFFFFFFF>能量层数</color>」。）",
 			"cost": null,
 			"params": {
 				"A1106": "优菈",

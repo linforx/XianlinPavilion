@@ -3,7 +3,7 @@
 	"rank": 5,
 	"type": "弓",
 	"name": "最初的大魔术",
-	"description": "",
+	"description": "过去的「大魔术师」曾经使用的表演道具，最终揭露的秘密是它其实也是不俗的武器。",
 	"icon": "UI_EquipIcon_Bow_Pledge",
 	"storyId": 195512,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114050": 3,
 		"114051": 4,
 		"114052": 5
-	},
-	"beta": true
+	}
 }

@@ -1,0 +1,15 @@
+{
+	"id": 120640,
+	"name": "互助会宣传册",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120640",
+	"volume": [
+		{
+			"id": 120640,
+			"name": "互助会宣传册",
+			"description": "从热情的互助会成员手上拿到的宣传册，里面记录了互助会的基本理念。封面的互助会标志看着有些眼熟…",
+			"storyId": "729"
+		}
+	],
+	"route": "Mutual Aid Network Advertisement"
+}

@@ -3,7 +3,7 @@
 	"rank": 4,
 	"type": "长柄武器",
 	"name": "峡湾长歌",
-	"description": "",
+	"description": "在冰原捕鱼的人会使用的长枪，绝对不会放跑猎物。",
 	"icon": "UI_EquipIcon_Pole_Shanty",
 	"storyId": 193424,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114058": 3,
 		"114059": 4,
 		"114060": 5
-	},
-	"beta": true
+	}
 }

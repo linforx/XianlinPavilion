@@ -1,0 +1,15 @@
+{
+	"id": 120679,
+	"name": "财务审查办公室协查通知",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120679,
+			"name": "财务审查办公室协查通知",
+			"description": "",
+			"storyId": "746"
+		}
+	],
+	"route": "Finance Investigation Office Notice"
+}

@@ -1,12 +1,21 @@
 {
 	"name": "「公平」的教导",
-	"description": "水之国土的堤岸是公平。\\n公平限制了权利的边界。若无公平，律法赋予的权利亦会被滥用，成为损害善良风俗的工具。",
+	"description": "天赋培养素材。\\n水之国土的堤岸是公平。\\n公平限制了权利的边界。若无公平，律法赋予的权利亦会被滥用，成为损害善良风俗的工具。",
 	"type": "角色天赋素材",
 	"recipe": false,
 	"mapMark": false,
-	"source": null,
+	"source": [
+		{
+			"name": "精通秘境：旋韵",
+			"type": "domain",
+			"days": [
+				"monday",
+				"thursday",
+				"sunday"
+			]
+		}
+	],
 	"icon": "UI_ItemIcon_104338",
 	"rank": 2,
-	"route": "Teachings of Equity",
-	"beta": true
+	"route": "Teachings of Equity"
 }

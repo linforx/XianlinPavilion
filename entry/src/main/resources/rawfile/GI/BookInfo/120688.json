@@ -1,0 +1,15 @@
+{
+	"id": 120688,
+	"name": "字迹潦草的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120688,
+			"name": "字迹潦草的笔记",
+			"description": "",
+			"storyId": "755"
+		}
+	],
+	"route": "Scribbled Notes"
+}

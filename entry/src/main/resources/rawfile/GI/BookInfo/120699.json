@@ -1,0 +1,15 @@
+{
+	"id": 120699,
+	"name": "布兰奇的信",
+	"rank": 1,
+	"icon": "UI_ItemIcon_120577",
+	"volume": [
+		{
+			"id": 120699,
+			"name": "布兰奇的信",
+			"description": "一封信件，摆放在两个泡泡桔旁边。",
+			"storyId": "766"
+		}
+	],
+	"route": "Blanche's Letter"
+}

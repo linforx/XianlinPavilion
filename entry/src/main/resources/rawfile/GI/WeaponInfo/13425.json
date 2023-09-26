@@ -3,7 +3,7 @@
 	"rank": 4,
 	"type": "长柄武器",
 	"name": "公义的酬报",
-	"description": "",
+	"description": "一柄锋利的长枪，仅在枪尖处留有点滴沾染鲜血的残痕。",
 	"icon": "UI_EquipIcon_Pole_Vorpal",
 	"storyId": 193425,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114058": 3,
 		"114059": 4,
 		"114060": 5
-	},
-	"beta": true
+	}
 }

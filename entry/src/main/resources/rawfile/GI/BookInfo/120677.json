@@ -1,0 +1,15 @@
+{
+	"id": 120677,
+	"name": "项目规划书",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120677,
+			"name": "项目规划书",
+			"description": "",
+			"storyId": "744"
+		}
+	],
+	"route": "Project Proposal"
+}

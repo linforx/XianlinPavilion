@@ -71,6 +71,50 @@
 					"count": "0.084"
 				}
 			}
+		},
+		"25010602": {
+			"id": 25010602,
+			"type": "MONSTER_ORDINARY",
+			"affix": null,
+			"hpDrops": [
+				{
+					"id": 22010010,
+					"hpPercent": 66
+				},
+				{
+					"id": 22010010,
+					"hpPercent": 33
+				}
+			],
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 21.7344,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 20.096,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": -0.2
+			},
+			"fundamentalForce": null,
+			"reward": null
 		}
 	},
 	"tips": null

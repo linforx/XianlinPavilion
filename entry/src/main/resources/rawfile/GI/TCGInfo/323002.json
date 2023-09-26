@@ -17,7 +17,7 @@
 	"talent": {
 		"27014": {
 			"name": "便携营养袋",
-			"description": "<color=#FFFFFFFF>入场时：</color>从牌组中随机抽取1张「{SPRITE_PRESET#3101}料理」事件。\\n<color=#FFFFFFFF>我方打出「{SPRITE_PRESET#3101}料理」事件牌时：</color>从牌组中随机抽取1张「{SPRITE_PRESET#3101}料理」事件。（每回合1次）",
+			"description": "<color=#FFFFFFFF>入场时：</color>从牌组中随机抽取1张「{SPRITE_PRESET#3101}料理」事件。\\n<color=#FFFFFFFF>我方打出「{SPRITE_PRESET#3101}料理」事件牌时：</color>从牌组中随机抽取1张「{SPRITE_PRESET#3101}料理」事件牌。（每回合1次）",
 			"cost": {
 				"GCG_COST_DICE_VOID": 2
 			},

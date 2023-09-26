@@ -1,0 +1,15 @@
+{
+	"id": 120682,
+	"name": "有关枫丹动能工程科学研究院掩藏的真相",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120682,
+			"name": "有关枫丹动能工程科学研究院掩藏的真相",
+			"description": "",
+			"storyId": "749"
+		}
+	],
+	"route": "Concerning the Secrets Hidden Within the Fontaine Research Institute of Kinetic Energy Engineering"
+}

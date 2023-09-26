@@ -27,6 +27,5 @@
 	],
 	"icon": "UI_ItemIcon_112090",
 	"rank": 3,
-	"route": "Foreign Synapse",
-	"beta": true
+	"route": "Foreign Synapse"
 }

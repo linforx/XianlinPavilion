@@ -1,0 +1,27 @@
+{
+	"id": 120692,
+	"name": "「二号初始能力样机」研发计划",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120692,
+			"name": "「二号初始能力样机」研发计划",
+			"description": "",
+			"storyId": "759"
+		},
+		{
+			"id": 120693,
+			"name": "「二号初始能力样机」研发计划",
+			"description": "",
+			"storyId": "760"
+		},
+		{
+			"id": 120694,
+			"name": "「二号初始能力样机」研发计划",
+			"description": "",
+			"storyId": "761"
+		}
+	],
+	"route": "Initial Skill Sample No. 2 Development Plan"
+}

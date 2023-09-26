@@ -236,7 +236,7 @@
 			},
 			"props": {
 				"GCG_PROP_HP": 10,
-				"GCG_PROP_ENERGY": 3
+				"GCG_PROP_ENERGY": 2
 			},
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Ayato",
 			"route": "Kamisato Ayato",
@@ -394,6 +394,23 @@
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Feiyan",
 			"route": "Yanfei",
 			"sortOrder": 1308
+		},
+		"1309": {
+			"id": 1309,
+			"name": "迪希雅",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_PYRO": "火元素",
+				"GCG_TAG_WEAPON_CLAYMORE": "双手剑",
+				"GCG_TAG_NATION_SUMERU": "须弥"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Dehya",
+			"route": "Dehya",
+			"sortOrder": 1309
 		},
 		"1401": {
 			"id": 1401,
@@ -633,6 +650,22 @@
 			"route": "Kaedehara Kazuha",
 			"sortOrder": 1505
 		},
+		"1506": {
+			"id": 1506,
+			"name": "流浪者",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_ANEMO": "风元素",
+				"GCG_TAG_WEAPON_CATALYST": "法器"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 3
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Wanderer",
+			"route": "Wanderer",
+			"sortOrder": 1506
+		},
 		"1601": {
 			"id": 1601,
 			"name": "凝光",
@@ -768,6 +801,23 @@
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Nahida",
 			"route": "Nahida",
 			"sortOrder": 1703
+		},
+		"1704": {
+			"id": 1704,
+			"name": "瑶瑶",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_DENDRO": "草元素",
+				"GCG_TAG_WEAPON_POLE": "长柄武器",
+				"GCG_TAG_NATION_LIYUE": "璃月"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Yaoyao",
+			"route": "Yaoyao",
+			"sortOrder": 1704
 		},
 		"2101": {
 			"id": 2101,
@@ -947,7 +997,7 @@
 				"GCG_TAG_SLOWLY": "战斗行动"
 			},
 			"props": {
-				"GCG_COST_DICE_CRYO": 4
+				"GCG_COST_DICE_CRYO": 3
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Diona",
 			"route": "Shaken, Not Purred",
@@ -1099,7 +1149,7 @@
 				"GCG_TAG_SLOWLY": "战斗行动"
 			},
 			"props": {
-				"GCG_COST_DICE_HYDRO": 4
+				"GCG_COST_DICE_HYDRO": 3
 			},
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Tartaglia",
 			"route": "Abyssal Mayhem: Hydrospout",
@@ -1273,6 +1323,21 @@
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Feiyan",
 			"route": "Right of Final Interpretation",
 			"sortOrder": 213081
+		},
+		"213091": {
+			"id": 213091,
+			"name": "崇诚之真",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_PYRO": 4
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Dehya",
+			"route": "Stalwart and True",
+			"sortOrder": 213091
 		},
 		"214011": {
 			"id": 214011,
@@ -1489,6 +1554,21 @@
 			"route": "Poetics of Fuubutsu",
 			"sortOrder": 215051
 		},
+		"215061": {
+			"id": 215061,
+			"name": "梦迹一风",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_ANEMO": 4
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Wanderer",
+			"route": "Gales of Reverie",
+			"sortOrder": 215061
+		},
 		"216011": {
 			"id": 216011,
 			"name": "储之千日，用之一刻",
@@ -1610,6 +1690,21 @@
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Tighnari",
 			"route": "The Seed of Stored Knowledge",
 			"sortOrder": 217031
+		},
+		"217041": {
+			"id": 217041,
+			"name": "慈惠仁心",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Yaoyao",
+			"route": "Beneficent",
+			"sortOrder": 217041
 		},
 		"221011": {
 			"id": 221011,
@@ -2062,6 +2157,21 @@
 			"route": "Engulfing Lightning",
 			"sortOrder": 311405
 		},
+		"311406": {
+			"id": 311406,
+			"name": "贯月矢",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_WEAPON": "武器",
+				"GCG_TAG_WEAPON_POLE": "长柄武器"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Weapon_Guanyue",
+			"route": "Moonpiercer",
+			"sortOrder": 311406
+		},
 		"311501": {
 			"id": 311501,
 			"name": "旅行剑",
@@ -2332,6 +2442,20 @@
 			"icon": "UI_Gcg_CardFace_Modify_Artifact_ZhuiyiTaozhuang",
 			"route": "Shimenawa's Reminiscence",
 			"sortOrder": 312014
+		},
+		"312015": {
+			"id": 312015,
+			"name": "海祇之冠",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Artifact_HaiRanDanJian",
+			"route": "Crown of Watatsumi",
+			"sortOrder": 312015
 		},
 		"312101": {
 			"id": 312101,
@@ -2705,6 +2829,20 @@
 			"route": "Golden House",
 			"sortOrder": 321013
 		},
+		"321014": {
+			"id": 321014,
+			"name": "化城郭",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"icon": "UI_Gcg_CardFace_Assist_Location_Gandharva",
+			"route": "Gandharva Ville",
+			"sortOrder": 321014
+		},
 		"322001": {
 			"id": 322001,
 			"name": "派蒙",
@@ -2961,6 +3099,20 @@
 			"route": "Setaria",
 			"sortOrder": 322019
 		},
+		"322020": {
+			"id": 322020,
+			"name": "弥生七月",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_ALLY": "伙伴"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"icon": "UI_Gcg_CardFace_Assist_NPC_Yayoyi",
+			"route": "Yayoi Nanatsuki",
+			"sortOrder": 322020
+		},
 		"323001": {
 			"id": 323001,
 			"name": "参量质变仪",
@@ -2983,7 +3135,7 @@
 				"GCG_TAG_ITEM": "道具"
 			},
 			"props": {
-				"GCG_COST_DICE_VOID": 2
+				"GCG_COST_DICE_SAME": 1
 			},
 			"icon": "UI_Gcg_CardFace_Assist_Prop_NREMenu",
 			"route": "NRE",
@@ -3059,6 +3211,20 @@
 			"icon": "UI_Gcg_CardFace_Event_Event_Qingdian",
 			"route": "Joyous Celebration",
 			"sortOrder": 330003
+		},
+		"330004": {
+			"id": 330004,
+			"name": "自由的新风",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"props": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"icon": "UI_Gcg_CardFace_Event_Event_Xinfeng",
+			"route": "Fresh Wind of Freedom",
+			"sortOrder": 330004
 		},
 		"331101": {
 			"id": 331101,
@@ -3538,6 +3704,16 @@
 			"route": "Where Is the Unseen Razor?",
 			"sortOrder": 332022
 		},
+		"332023": {
+			"id": 332023,
+			"name": "拳力斗技！",
+			"type": "actionCard",
+			"tags": null,
+			"props": null,
+			"icon": "UI_Gcg_CardFace_Event_Event_Heiquan",
+			"route": "Pankration!",
+			"sortOrder": 332023
+		},
 		"333001": {
 			"id": 333001,
 			"name": "绝云锅巴",
@@ -3652,7 +3828,7 @@
 				"GCG_TAG_FOOD": "料理"
 			},
 			"props": {
-				"GCG_COST_DICE_SAME": 3
+				"GCG_COST_DICE_SAME": 2
 			},
 			"icon": "UI_Gcg_CardFace_Event_Food_Jiandan",
 			"route": "Teyvat Fried Egg",

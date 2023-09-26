@@ -1,0 +1,15 @@
+{
+	"id": 120678,
+	"name": "重建计划外部援请人员须知",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120678,
+			"name": "重建计划外部援请人员须知",
+			"description": "",
+			"storyId": "745"
+		}
+	],
+	"route": "External Reconstruction Support FAQ"
+}

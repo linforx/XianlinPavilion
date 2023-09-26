@@ -1,0 +1,15 @@
+{
+	"id": 120553,
+	"name": "《应急处置手册·第三版》",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120553,
+			"name": "《应急处置手册·第三版》",
+			"description": "",
+			"storyId": "688"
+		}
+	],
+	"route": "Emergency Handbook: Third Edition"
+}

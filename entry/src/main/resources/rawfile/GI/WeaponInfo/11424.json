@@ -3,7 +3,7 @@
 	"rank": 4,
 	"type": "单手剑",
 	"name": "狼牙",
-	"description": "",
+	"description": "传说中，遥远过去的流浪骑士所使用的长剑。",
 	"icon": "UI_EquipIcon_Sword_Boreas",
 	"storyId": 191424,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114002": 3,
 		"114003": 4,
 		"114004": 5
-	},
-	"beta": true
+	}
 }

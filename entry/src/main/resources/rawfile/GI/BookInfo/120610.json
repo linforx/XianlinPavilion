@@ -1,0 +1,15 @@
+{
+	"id": 120610,
+	"name": "不知何人放于此处的诗",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 120610,
+			"name": "不知何人放于此处的诗",
+			"description": "不知何人放于此处的诗",
+			"storyId": "713"
+		}
+	],
+	"route": "Poem Placed by Unknown Person"
+}

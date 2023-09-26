@@ -27,6 +27,5 @@
 	],
 	"icon": "UI_ItemIcon_112081",
 	"rank": 2,
-	"route": "Transoceanic Chunk",
-	"beta": true
+	"route": "Transoceanic Chunk"
 }

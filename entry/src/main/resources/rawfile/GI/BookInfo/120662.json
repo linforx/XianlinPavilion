@@ -1,0 +1,15 @@
+{
+	"id": 120662,
+	"name": "支离破碎的对话",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101733",
+	"volume": [
+		{
+			"id": 120662,
+			"name": "支离破碎的对话",
+			"description": "",
+			"storyId": "738"
+		}
+	],
+	"route": "Tattered Dialogue"
+}

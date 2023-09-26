@@ -12,6 +12,5 @@
 	],
 	"icon": "UI_ItemIcon_101231",
 	"rank": 1,
-	"route": "Marcotte",
-	"beta": true
+	"route": "Marcotte"
 }

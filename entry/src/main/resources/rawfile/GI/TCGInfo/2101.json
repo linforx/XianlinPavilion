@@ -27,7 +27,7 @@
 		},
 		"C121011": {
 			"name": "冰萤",
-			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K101]。\\n<color=#FFFFFFFF>$[K3]：2</color>（可叠加，最多叠加到3次）\\n\\n<color=#FFFFFFFF>$[A2101]「普通攻击」后：</color>此牌$[K3]+1。\\n<color=#FFFFFFFF>我方角色受到发生元素反应的伤害后：</color>此牌$[K3]-1。",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K101]。\\n<color=#FFFFFFFF>$[K3]：2</color>（可叠加，最多叠加到3次）\\n\\n<color=#FFFFFFFF>$[A2101]「普通攻击」后：</color>此牌$[K3]+1。\\n<color=#FFFFFFFF>$[A2101]受到元素反应伤害后：</color>此牌$[K3]-1。",
 			"cost": null,
 			"params": {
 				"K101": "{SPRITE_PRESET#2101}<color=#99FFFFFF>冰元素伤害</color>",

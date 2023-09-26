@@ -1,0 +1,25 @@
+{
+	"id": 332023,
+	"name": "拳力斗技！",
+	"type": "actionCard",
+	"tags": null,
+	"props": null,
+	"icon": "UI_Gcg_CardFace_Event_Event_Heiquan",
+	"route": "Pankration!",
+	"storyTitle": "拳力斗技！",
+	"storyDetail": "「为了胜利、特许券、破烂骨头商店的热门货…还有可能到来的自由，出拳！」",
+	"source": "「破烂骨头商店」特许券兑换",
+	"dictionary": null,
+	"talent": {
+		"27014": {
+			"name": "拳力斗技！",
+			"description": "<color=#FFFFFFFF>我方至少剩余8个元素骰，且对方未宣布结束时，才能打出：</color>本回合中一位牌手先宣布结束时，未宣布结束的牌手抓2张牌。",
+			"cost": null,
+			"params": null,
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

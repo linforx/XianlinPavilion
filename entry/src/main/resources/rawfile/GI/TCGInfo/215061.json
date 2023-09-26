@@ -1,0 +1,91 @@
+{
+	"id": 215061,
+	"name": "梦迹一风",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ANEMO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Wanderer",
+	"route": "Gales of Reverie",
+	"storyTitle": "流浪者·梦迹一风",
+	"storyDetail": "「怒风腾天！」",
+	"source": "在猫尾酒馆中邀请流浪者进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S15062": {
+			"name": "羽画·风姿华歌",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，本角色附属<color=#FFFFFFFF>$[C115061]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+				"C115061": "优风倾姿"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Wanderer_01"
+		},
+		"C115061": {
+			"name": "优风倾姿",
+			"description": "<color=#FFFFFFFF>所附属角色进行「普通攻击」时：</color>造成的伤害+2；如果敌方存在后台角色，则此技能改为对下一个敌方后台角色造成伤害。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K51": {
+			"name": "<color=#FFFFFFFF>重击</color>",
+			"description": "我方行动开始前，如果元素骰总数为偶数，则进行的「普通攻击」将被视为「重击」。"
+		},
+		"K105": {
+			"name": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>",
+			"description": "和已附着的元素发生元素反应：\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2101}<color=#FFFFFFFF>扩散（冰）</color>：对目标以外的所有敌方角色造成1点冰元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2102}<color=#FFFFFFFF>扩散（水）</color>：对目标以外的所有敌方角色造成1点水元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2103}<color=#FFFFFFFF>扩散（火）</color>：对目标以外的所有敌方角色造成1点火元素伤害\\n{SPRITE_PRESET#2105}{SPRITE_PRESET#2104}<color=#FFFFFFFF>扩散（雷）</color>：对目标以外的所有敌方角色造成1点雷元素伤害"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "梦迹一风",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1506]</color>时，装备此牌。\\n$[A1506]装备此牌后，立刻使用一次<color=#FFD780FF>$[S15062]</color>。\\n装备有此牌的$[A1506]在<color=#FFFFFFFF>$[C115061]</color>状态下进行$[K51]后：下次从该角色执行「切换角色」行动时少花费1个元素骰，并且造成1点$[K105]。\\n（牌组中包含$[A1506]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ANEMO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1506": "流浪者",
+				"S15062": "羽画·风姿华歌",
+				"C115061": "优风倾姿",
+				"K51": "<color=#FFFFFFFF>重击</color>",
+				"K105": "{SPRITE_PRESET#2105}<color=#80FFD7FF>风元素伤害</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1506]在<color=#FFFFFFFF>$[C115061]</color>状态下进行$[K51]后：下次从该角色执行「切换角色」行动时少花费1个元素骰，并且造成1点$[K105]。",
+			"subSkills": {
+				"S15062": "skill",
+				"C115061": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K51": "keyword",
+				"K105": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

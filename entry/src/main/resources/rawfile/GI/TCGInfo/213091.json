@@ -1,0 +1,66 @@
+{
+	"id": 213091,
+	"name": "崇诚之真",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_PYRO": 4
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Talent_Dehya",
+	"route": "Stalwart and True",
+	"storyTitle": "迪希雅·崇诚之真",
+	"storyDetail": "「不用留情，开打吧！」",
+	"source": "在猫尾酒馆中邀请迪希雅进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S13092": {
+			"name": "熔铁流狱",
+			"description": "召唤<color=#FFFFFFFF>$[C113093]</color>；如果已存在$[C113093]，就先造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 3
+			},
+			"params": {
+				"C113093": "净焰剑狱领域",
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2103}<color=#FF9999FF>火元素伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Dehya_01"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "崇诚之真",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1309]</color>时，装备此牌。\\n$[A1309]装备此牌后，立刻使用一次<color=#FFD780FF>$[S13092]</color>。\\n结束阶段：如果装备有此牌的$[A1309]生命值不多于6，则治疗该角色2点。\\n（牌组中包含$[A1309]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_PYRO": 4
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1309": "迪希雅",
+				"S13092": "熔铁流狱"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "结束阶段：如果装备有此牌的$[A1309]生命值不多于6，则治疗该角色2点。",
+			"subSkills": {
+				"S13092": "skill"
+			},
+			"keywords": {
+				"K1": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

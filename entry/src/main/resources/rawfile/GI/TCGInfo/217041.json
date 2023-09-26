@@ -1,0 +1,84 @@
+{
+	"id": 217041,
+	"name": "慈惠仁心",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_DENDRO": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Yaoyao",
+	"route": "Beneficent",
+	"storyTitle": "瑶瑶·慈惠仁心",
+	"storyDetail": "「痛痛飞~」",
+	"source": "在猫尾酒馆中邀请瑶瑶进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S17042": {
+			"name": "云台团团降芦菔",
+			"description": "召唤<color=#FFFFFFFF>$[C117041]</color>。",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"C117041": "月桂·抛掷型"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Yaoyao_01"
+		},
+		"C117041": {
+			"name": "月桂·抛掷型",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K107]，治疗我方受伤最多的角色1点。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K107": "{SPRITE_PRESET#2107}<color=#7EC236FF>草元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		}
+	},
+	"talent": {
+		"27014": {
+			"name": "慈惠仁心",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1704]</color>时，装备此牌。\\n$[A1704]装备此牌后，立刻使用一次<color=#FFD780FF>$[S17042]</color>。\\n装备有此牌的$[A1704]生成的<color=#FFFFFFFF>$[C117041]</color>，在$[K3]仅剩余最后1次时造成的伤害和治疗各+1。\\n（牌组中包含$[A1704]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_DENDRO": 3
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1704": "瑶瑶",
+				"S17042": "云台团团降芦菔",
+				"C117041": "月桂·抛掷型",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1704]生成的<color=#FFFFFFFF>$[C117041]</color>，在$[K3]仅剩余最后1次时造成的伤害和治疗各+1。",
+			"subSkills": {
+				"S17042": "skill",
+				"C117041": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K3": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

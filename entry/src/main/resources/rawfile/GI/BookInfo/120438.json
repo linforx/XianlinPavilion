@@ -1,0 +1,15 @@
+{
+	"id": 120438,
+	"name": "「笔迹娟秀的信」",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100229",
+	"volume": [
+		{
+			"id": 120438,
+			"name": "「笔迹娟秀的信」",
+			"description": "从德瑟布尔处取得的信件。据他本人说，该信是为了给他的孩子庆生所写。",
+			"storyId": "665"
+		}
+	],
+	"route": "\"Beautifully-Written Letter\""
+}

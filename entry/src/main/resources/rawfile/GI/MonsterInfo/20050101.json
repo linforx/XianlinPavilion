@@ -187,6 +187,71 @@
 			},
 			"fundamentalForce": null,
 			"reward": null
+		},
+		"20050103": {
+			"id": 20050103,
+			"type": "MONSTER_BOSS",
+			"affix": [
+				{
+					"name": "水抗-100%",
+					"description": "同系伤害抵抗-水-100%",
+					"abilityName": [
+						"MonsterAffix_ElementResist_Water_03"
+					],
+					"isCommon": null
+				},
+				{
+					"name": "4.0wq纯水",
+					"description": "4.0wq纯水",
+					"abilityName": [
+						"MonsterAffix_Monster_Oceanid_WQMarkV40"
+					],
+					"isCommon": null
+				}
+			],
+			"hpDrops": [
+				{
+					"id": 22010032,
+					"hpPercent": 75
+				},
+				{
+					"id": 22010032,
+					"hpPercent": 50
+				},
+				{
+					"id": 22010032,
+					"hpPercent": 25
+				}
+			],
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 95.088,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 37.68,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
 		}
 	},
 	"tips": {

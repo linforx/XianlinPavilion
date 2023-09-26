@@ -78,6 +78,24 @@
 			]
 		},
 		{
+			"name": "精通秘境：旋韵",
+			"type": "domain",
+			"days": [
+				"monday",
+				"thursday",
+				"sunday"
+			]
+		},
+		{
+			"name": "炼武秘境：机思",
+			"type": "domain",
+			"days": [
+				"monday",
+				"thursday",
+				"sunday"
+			]
+		},
+		{
 			"name": "精通秘境：深炎之底",
 			"type": "domain",
 			"days": [
@@ -150,6 +168,24 @@
 			]
 		},
 		{
+			"name": "精通秘境：箴铭",
+			"type": "domain",
+			"days": [
+				"tuesday",
+				"friday",
+				"sunday"
+			]
+		},
+		{
+			"name": "炼武秘境：匠理",
+			"type": "domain",
+			"days": [
+				"tuesday",
+				"friday",
+				"sunday"
+			]
+		},
+		{
 			"name": "精通秘境：焚尽之环",
 			"type": "domain",
 			"days": [
@@ -214,6 +250,24 @@
 		},
 		{
 			"name": "炼武秘境：引业",
+			"type": "domain",
+			"days": [
+				"wednesday",
+				"saturday",
+				"sunday"
+			]
+		},
+		{
+			"name": "精通秘境：琅诵",
+			"type": "domain",
+			"days": [
+				"wednesday",
+				"saturday",
+				"sunday"
+			]
+		},
+		{
+			"name": "炼武秘境：奇械",
 			"type": "domain",
 			"days": [
 				"wednesday",

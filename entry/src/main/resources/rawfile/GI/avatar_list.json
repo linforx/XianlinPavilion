@@ -956,9 +956,8 @@
 				2,
 				2
 			],
-			"release": 1690059600,
-			"route": "Lynette",
-			"beta": true
+			"release": 1692046800,
+			"route": "Lynette"
 		},
 		"10000084": {
 			"id": 10000084,
@@ -971,9 +970,8 @@
 				2,
 				2
 			],
-			"release": 1690059600,
-			"route": "Lyney",
-			"beta": true
+			"release": 1692046800,
+			"route": "Lyney"
 		},
 		"10000085": {
 			"id": 10000085,
@@ -986,9 +984,50 @@
 				9,
 				24
 			],
-			"release": 1690059600,
-			"route": "Freminet",
-			"beta": true
+			"release": 1693926000,
+			"route": "Freminet"
+		},
+		"10000086": {
+			"id": 10000086,
+			"rank": 5,
+			"name": "莱欧斯利",
+			"element": "Ice",
+			"weaponType": "WEAPON_CATALYST",
+			"icon": "UI_AvatarIcon_Wriothesley",
+			"birthday": [
+				11,
+				23
+			],
+			"release": 1697554800,
+			"route": "Wriothesley"
+		},
+		"10000087": {
+			"id": 10000087,
+			"rank": 5,
+			"name": "那维莱特",
+			"element": "Water",
+			"weaponType": "WEAPON_CATALYST",
+			"icon": "UI_AvatarIcon_Neuvillette",
+			"birthday": [
+				12,
+				18
+			],
+			"release": 1695675600,
+			"route": "Neuvillette"
+		},
+		"10000005-hydro": {
+			"id": "10000005-hydro",
+			"rank": 5,
+			"name": "旅行者",
+			"element": "Water",
+			"weaponType": "WEAPON_SWORD_ONE_HAND",
+			"icon": "UI_AvatarIcon_PlayerBoy",
+			"birthday": [
+				0,
+				0
+			],
+			"route": "Hydro Traveler Boy",
+			"release": 1690146000
 		},
 		"10000005-anemo": {
 			"id": "10000005-anemo",
@@ -1044,6 +1083,20 @@
 			"route": "Dendro Traveler Boy",
 			"release": 1657659600
 		},
+		"10000007-hydro": {
+			"id": "10000007-hydro",
+			"rank": 5,
+			"name": "旅行者",
+			"element": "Water",
+			"weaponType": "WEAPON_SWORD_ONE_HAND",
+			"icon": "UI_AvatarIcon_PlayerGirl",
+			"birthday": [
+				0,
+				0
+			],
+			"route": "Hydro Traveler Girl",
+			"release": 1690146000
+		},
 		"10000007-anemo": {
 			"id": "10000007-anemo",
 			"rank": 5,
@@ -1097,36 +1150,6 @@
 			],
 			"route": "Dendro Traveler Girl",
 			"release": 1657659600
-		},
-		"10000005-hydro": {
-			"id": "10000005-hydro",
-			"rank": 5,
-			"name": "旅行者",
-			"element": "Water",
-			"weaponType": "WEAPON_SWORD_ONE_HAND",
-			"icon": "UI_AvatarIcon_PlayerBoy",
-			"birthday": [
-				0,
-				0
-			],
-			"route": "Hydro Traveler Boy",
-			"release": 1690146000,
-			"beta": true
-		},
-		"10000007-hydro": {
-			"id": "10000007-hydro",
-			"rank": 5,
-			"name": "旅行者",
-			"element": "Water",
-			"weaponType": "WEAPON_SWORD_ONE_HAND",
-			"icon": "UI_AvatarIcon_PlayerGirl",
-			"birthday": [
-				0,
-				0
-			],
-			"route": "Hydro Traveler Girl",
-			"release": 1690146000,
-			"beta": true
 		}
 	}
 }

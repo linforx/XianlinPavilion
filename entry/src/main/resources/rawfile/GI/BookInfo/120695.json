@@ -1,0 +1,21 @@
+{
+	"id": 120695,
+	"name": "博絮埃研究所项目成果总结报告·上",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120695,
+			"name": "博絮埃研究所项目成果总结报告·上",
+			"description": "",
+			"storyId": "762"
+		},
+		{
+			"id": 120696,
+			"name": "博絮埃研究所项目成果总结报告·下",
+			"description": "",
+			"storyId": "763"
+		}
+	],
+	"route": "Bossuet Research Institute Project Result Summary (I)"
+}

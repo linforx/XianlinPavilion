@@ -1,0 +1,15 @@
+{
+	"id": 120687,
+	"name": "字迹工整的笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120687,
+			"name": "字迹工整的笔记",
+			"description": "",
+			"storyId": "754"
+		}
+	],
+	"route": "Neatly-Written Notes"
+}

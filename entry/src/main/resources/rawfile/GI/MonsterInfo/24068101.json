@@ -4,7 +4,6 @@
 	"type": "自律机关",
 	"icon": "UI_MonsterIcon_MachinaIustitia_Sentry",
 	"route": "Recon Log Mek",
-	"beta": true,
 	"title": "机关·侦察记录型",
 	"specialName": "Ser.438412",
 	"description": "最早设计制造的新式发条机关机械之一。\\n据说「奇械公」吉约丹在自然哲学学院的时期，曾经做出了能够真正模拟智慧思考的机械。\\n尽管他从未正式承认过这种说法，这一传奇仍在日后激起了许多工程师的斗志。数十年前曾有人宣布创造了具有基础思考能力，并能够解读人类情感的发条机关，但最后相关的成果并未得到认同。",
@@ -316,6 +315,63 @@
 					"count": "0.084"
 				}
 			}
+		},
+		"24065103": {
+			"id": 24065103,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "正义机器-光",
+					"description": "正义机器-光性词缀",
+					"abilityName": [
+						"Monster_MachinaIustitia_Ousia"
+					],
+					"isCommon": null
+				},
+				{
+					"name": "正义机器-天线",
+					"description": "正义机器-天线词缀",
+					"abilityName": [
+						"Monster_MachinaIustitia_Coil_01"
+					],
+					"isCommon": null
+				}
+			],
+			"hpDrops": [
+				{
+					"id": 22010010,
+					"hpPercent": 60
+				}
+			],
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 21.7344,
+					"type": "GROW_CURVE_HP_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 22.608,
+					"type": "GROW_CURVE_ATTACK_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": "Ousia",
+			"reward": null
 		},
 		"24068101": {
 			"id": 24068101,

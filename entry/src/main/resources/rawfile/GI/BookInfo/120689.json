@@ -1,0 +1,15 @@
+{
+	"id": 120689,
+	"name": "大师鲁杰罗的研究笔记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120689,
+			"name": "大师鲁杰罗的研究笔记",
+			"description": "",
+			"storyId": "756"
+		}
+	],
+	"route": "The Research Notes of Master Ruggiero"
+}

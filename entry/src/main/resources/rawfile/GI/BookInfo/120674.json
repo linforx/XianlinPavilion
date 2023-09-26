@@ -1,0 +1,27 @@
+{
+	"id": 120674,
+	"name": "新浪潮文汇·上册",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120674,
+			"name": "新浪潮文汇·上册",
+			"description": "",
+			"storyId": "717"
+		},
+		{
+			"id": 120675,
+			"name": "新浪潮文汇·中册",
+			"description": "",
+			"storyId": "718"
+		},
+		{
+			"id": 120676,
+			"name": "新浪潮文汇·下册",
+			"description": "",
+			"storyId": "719"
+		}
+	],
+	"route": "New Tide Anthology: Part I"
+}

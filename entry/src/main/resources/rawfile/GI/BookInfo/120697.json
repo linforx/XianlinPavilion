@@ -1,0 +1,21 @@
+{
+	"id": 120697,
+	"name": "藏书捐赠统计表",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120697,
+			"name": "藏书捐赠统计表",
+			"description": "",
+			"storyId": "764"
+		},
+		{
+			"id": 120698,
+			"name": "藏书捐赠统计表",
+			"description": "",
+			"storyId": "765"
+		}
+	],
+	"route": "Book Donation Statistics"
+}

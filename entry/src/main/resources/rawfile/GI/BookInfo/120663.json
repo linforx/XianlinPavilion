@@ -1,0 +1,15 @@
+{
+	"id": 120663,
+	"name": "遗留的信件",
+	"rank": 1,
+	"icon": "UI_ItemIcon_100229",
+	"volume": [
+		{
+			"id": 120663,
+			"name": "遗留的信件",
+			"description": "",
+			"storyId": "739"
+		}
+	],
+	"route": "A Letter Left Behind"
+}

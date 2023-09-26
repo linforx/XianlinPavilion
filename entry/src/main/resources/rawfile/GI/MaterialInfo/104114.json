@@ -81,6 +81,10 @@
 			"type": "single"
 		},
 		{
+			"name": "75级以上铁甲熔火帝皇掉落",
+			"type": "single"
+		},
+		{
 			"name": "合成获得",
 			"type": "single"
 		}

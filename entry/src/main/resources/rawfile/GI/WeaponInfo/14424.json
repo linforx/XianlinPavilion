@@ -3,7 +3,7 @@
 	"rank": 4,
 	"type": "法器",
 	"name": "遗祀玉珑",
-	"description": "",
+	"description": "一枚古老的玉珑，闪烁着清水般的光泽，似乎是古代的祭祀用品。",
 	"icon": "UI_EquipIcon_Catalyst_Yue",
 	"storyId": 194424,
 	"affix": {
@@ -164,6 +164,5 @@
 		"114014": 3,
 		"114015": 4,
 		"114016": 5
-	},
-	"beta": true
+	}
 }

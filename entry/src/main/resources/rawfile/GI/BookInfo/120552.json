@@ -1,0 +1,15 @@
+{
+	"id": 120552,
+	"name": "锻压装置操作规范",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120552,
+			"name": "锻压装置操作规范",
+			"description": "",
+			"storyId": "687"
+		}
+	],
+	"route": "Forging Press Device Operation Standards"
+}

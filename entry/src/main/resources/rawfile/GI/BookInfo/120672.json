@@ -1,0 +1,15 @@
+{
+	"id": 120672,
+	"name": "训练日志",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120672,
+			"name": "训练日志",
+			"description": "",
+			"storyId": "742"
+		}
+	],
+	"route": "Training Log"
+}

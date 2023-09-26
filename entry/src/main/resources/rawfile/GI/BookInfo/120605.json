@@ -1,0 +1,21 @@
+{
+	"id": 120605,
+	"name": "落叶上的诗",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 120605,
+			"name": "落叶上的诗",
+			"description": "落叶上的诗",
+			"storyId": "708"
+		},
+		{
+			"id": 120607,
+			"name": "落叶上的诗",
+			"description": "落叶上的诗",
+			"storyId": "710"
+		}
+	],
+	"route": "Poem on Fallen Leaf"
+}

@@ -12,6 +12,5 @@
 	],
 	"icon": "UI_ItemIcon_101234",
 	"rank": 1,
-	"route": "Tidalga",
-	"beta": true
+	"route": "Tidalga"
 }

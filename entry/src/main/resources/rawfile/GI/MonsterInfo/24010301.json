@@ -300,6 +300,64 @@
 			},
 			"fundamentalForce": null,
 			"reward": null
+		},
+		"24010305": {
+			"id": 24010305,
+			"type": "MONSTER_ORDINARY",
+			"affix": [
+				{
+					"name": "4.0WQ遗迹重机",
+					"description": "遗迹重机复活逻辑",
+					"abilityName": [
+						"Monster_Konungmathr_None_WQ_Limbo",
+						"Monster_Konungmathr_None_WQ_Limbo_StateChange_v2"
+					],
+					"isCommon": null
+				}
+			],
+			"hpDrops": [
+				{
+					"id": 22010040,
+					"hpPercent": 75
+				},
+				{
+					"id": 22010040,
+					"hpPercent": 50
+				},
+				{
+					"id": 22010040,
+					"hpPercent": 25
+				}
+			],
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 122.256,
+					"type": "GROW_CURVE_HP"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 87.92,
+					"type": "GROW_CURVE_ATTACK"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.1,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.7
+			},
+			"fundamentalForce": null,
+			"reward": null
 		}
 	},
 	"tips": {

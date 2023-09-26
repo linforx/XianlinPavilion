@@ -1,0 +1,15 @@
+{
+	"id": 120554,
+	"name": "声明",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120554,
+			"name": "声明",
+			"description": "",
+			"storyId": "689"
+		}
+	],
+	"route": "Disclaimer"
+}

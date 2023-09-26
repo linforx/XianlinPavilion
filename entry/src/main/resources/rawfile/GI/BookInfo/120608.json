@@ -1,0 +1,21 @@
+{
+	"id": 120608,
+	"name": "灯笼上的诗谜",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101501",
+	"volume": [
+		{
+			"id": 120608,
+			"name": "灯笼上的诗谜",
+			"description": "灯笼上的诗谜",
+			"storyId": "711"
+		},
+		{
+			"id": 120609,
+			"name": "灯笼上的诗谜",
+			"description": "灯笼上的诗谜",
+			"storyId": "712"
+		}
+	],
+	"route": "Poetry Riddle on a Lantern"
+}

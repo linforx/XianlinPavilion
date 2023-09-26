@@ -1,12 +1,12 @@
 {
 	"name": "水之印",
-	"description": "蒙德周围的特殊纪念货币，可在城市商店中兑换珍稀物品",
+	"description": "受到枫丹的流水认可，获授的印记。\\n可以投入露景泉中，以此得到泉水的回馈。",
 	"type": "七国徽印",
 	"recipe": false,
 	"mapMark": false,
 	"source": [
 		{
-			"name": "探索奖励",
+			"name": "枫丹地区探索奖励",
 			"type": "single"
 		}
 	],

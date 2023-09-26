@@ -1,0 +1,15 @@
+{
+	"id": 120683,
+	"name": "关于纸张使用规章之倡议",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120683,
+			"name": "关于纸张使用规章之倡议",
+			"description": "",
+			"storyId": "750"
+		}
+	],
+	"route": "Paper Usage Initiative"
+}

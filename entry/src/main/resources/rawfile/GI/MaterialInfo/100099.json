@@ -12,6 +12,5 @@
 	],
 	"icon": "UI_ItemIcon_100099",
 	"rank": 1,
-	"route": "Fermented Juice",
-	"beta": true
+	"route": "Fermented Juice"
 }

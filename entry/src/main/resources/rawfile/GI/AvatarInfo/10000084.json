@@ -9,7 +9,7 @@
 		2,
 		2
 	],
-	"release": 1690059600,
+	"release": 1692046800,
 	"route": "Lyney",
 	"fetter": {
 		"title": "惑光幻戏",
@@ -17,10 +17,10 @@
 		"constellation": "黑斑猫座",
 		"native": "布法蒂公馆",
 		"cv": {
-			"EN": "",
-			"CHS": "",
-			"JP": "",
-			"KR": ""
+			"EN": "达曼·米尔斯",
+			"CHS": "锦鲤",
+			"JP": "下野纮",
+			"KR": "朴成楹"
 		}
 	},
 	"upgrade": {
@@ -166,8 +166,8 @@
 		"furnitureId": 368170,
 		"nameCard": {
 			"id": 210165,
-			"name": "？？？",
-			"description": "？？？",
+			"name": "林尼·弄假",
+			"description": "名片纹饰。\\n魔术有一大分类就是「凭空消失」。林尼的戏法有诸多欺瞒。作为共犯的你如果愿意睁只眼闭只眼，那一切问题都可以消失不见。",
 			"icon": "UI_NameCardIcon_Liney"
 		},
 		"specialFood": {
@@ -2414,6 +2414,5 @@
 			"extraData": null,
 			"icon": "UI_Talent_S_Liney_04"
 		}
-	},
-	"beta": true
+	}
 }

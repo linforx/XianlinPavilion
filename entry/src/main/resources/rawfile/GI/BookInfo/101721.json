@@ -39,6 +39,18 @@
 			"name": "陈旧的笔记",
 			"description": "加入了调料的美味料理，散发着诱人的香气。不知道适合谁的喜好呢？快去邀请伙伴们试吃吧！",
 			"storyId": "366"
+		},
+		{
+			"id": 120690,
+			"name": "陈旧的笔记",
+			"description": "",
+			"storyId": "757"
+		},
+		{
+			"id": 120691,
+			"name": "陈旧的笔记",
+			"description": "",
+			"storyId": "758"
 		}
 	],
 	"route": "Old Notes"

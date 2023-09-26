@@ -1,0 +1,15 @@
+{
+	"id": 120685,
+	"name": "研究员的日记",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120685,
+			"name": "研究员的日记",
+			"description": "",
+			"storyId": "752"
+		}
+	],
+	"route": "Researcher's Notes"
+}

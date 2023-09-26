@@ -1,0 +1,15 @@
+{
+	"id": 120684,
+	"name": "厚厚的实验报告",
+	"rank": 1,
+	"icon": "UI_ItemIcon_101629",
+	"volume": [
+		{
+			"id": 120684,
+			"name": "厚厚的实验报告",
+			"description": "",
+			"storyId": "751"
+		}
+	],
+	"route": "Thick Experimental Report"
+}

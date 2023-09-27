@@ -426,6 +426,7 @@ struct Index {
             .tabBar(this.starrailBar())
           }
           .animationDuration(0)
+          .scrollable(false)
           .onChange((index) => {
             this.selIndex = index as 0 | 1
           })

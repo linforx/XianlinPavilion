@@ -5,6 +5,9 @@
     "pages/Login",
     "pages/GI_DailyNote",
     "pages/GI_MyAvatars",
-    "pages/GI_MyAvatarDetails"
+    "pages/GI_MyAvatarDetails",
+    "pages/GI_WikiCategory",
+    "pages/GI_RoleWiki",
+    "pages/GI_RoleWikiDetails"
   ]
 }

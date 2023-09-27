@@ -4,6 +4,7 @@ import FunctionEntryCard from './FuntionEntryCard'
 export default struct FunctionEntryContainer {
   private functions = [
     { title: '我的角色', icon: $rawfile('GI/resource/others/roleIcon.png'), targetPage: 'pages/GI_MyAvatars' },
+    { title: '百科图鉴', icon: $rawfile('GI/resource/others/wiki.png'), targetPage: 'pages/GI_WikiCategory' }
   ]
   @State bgColors: Color[] = [Color.Red, Color.Orange, Color.Yellow, Color.Green, Color.Pink, Color.Grey, Color.Blue, Color.Brown]
   @State currentBp: string = 'unknown'
@@ -12,7 +13,7 @@ export default struct FunctionEntryContainer {
     Column() {
       GridRow({
         columns: 12,
-        gutter: { x: 5, y: 10 },
+        gutter: { x: 10, y: 10 },
         direction: GridRowDirection.Row
       }) {
         ForEach(this.functions, (item) => {

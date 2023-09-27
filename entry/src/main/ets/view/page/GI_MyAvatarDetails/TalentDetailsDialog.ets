@@ -83,6 +83,8 @@ export default struct TalentDetailsDialog {
                 .fontStyle(item.italic ? FontStyle.Italic : FontStyle.Normal)
             })
           }
+          .width('100%')
+          .textAlign(TextAlign.Start)
 
           Divider()
             .width('90%')

@@ -1,8 +1,8 @@
 import router from '@ohos.router'
-import PageBackButton from '../view/PageBackButton'
+import PageBackButton from '../../view/PageBackButton'
 import common from '@ohos.app.ability.common'
-import FileManager from '../common/utils/FileManager'
-import TalentCard from '../view/page/GI_RoleWikiDetails/TalentCard'
+import FileManager from '../../common/utils/FileManager'
+import TalentCard from '../../view/page/GenshinImpact/RoleWikiDetails/TalentCard'
 
 const propUnit: Map<string, string> = new Map([
   ['FIGHT_PROP_BASE_ATTACK', ''],

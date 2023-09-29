@@ -1,122 +1,50 @@
-import TalentInfo from '../../../viewmodel/page/GI_MyAvatarDetails/TalentInfo'
+import ConstellationInfo from '../../../../viewmodel/page/GI_MyAvatarDetails/ConstellationInfo'
 
 @CustomDialog
-export default struct TalentDetailsDialog {
-  private info: TalentInfo
-  private talentWiki: any
+export default struct ConstellationDetailsDialog {
+  private info: ConstellationInfo
   @State level: number = 0
 
   controller: CustomDialogController
   cancel: () => void
   confirm: () => void
 
-  aboutToAppear() {
-    this.level = this.info.current_level + (this.info.extraUpgrade ? 3 : 0)
-    console.log(this.info.name)
-  }
-
   build() {
     Column({ space: 10 }) {
-      Column() {
-        Row({ space: 5 }) {
-          Image($rawfile(this.info.icon))
-            .width(45)
-            .aspectRatio(1)
-            .objectFit(ImageFit.Contain)
+      Row({ space: 5 }) {
+        Image($rawfile(this.info.icon))
+          .width(45)
+          .aspectRatio(1)
+          .objectFit(ImageFit.Contain)
 
-          Text(this.info.name)
-            .fontSize(25)
-            .fontWeight(FontWeight.Medium)
-            .fontColor(Color.White)
-            .copyOption(CopyOptions.LocalDevice)
-        }
-        .justifyContent(FlexAlign.Start)
-        .alignSelf(ItemAlign.Start)
-
-
-        Row() {
-          Text(`Lv ${this.level}`)
-            .lineHeight(25)
-            .fontSize(21)
-            .fontColor(this.info.extraUpgrade ? '#f7ce00' : Color.White)
-            .fontWeight(this.info.extraUpgrade ? FontWeight.Medium : FontWeight.Normal)
-
-          Slider({
-            value: this.info.current_level + (this.info.extraUpgrade ? 3 : 0),
-            min: 1,
-            max: 13,
-            step: 1,
-            style: SliderStyle.InSet,
-          })
-            .width('61.8%')
-            .alignSelf(ItemAlign.End)
-            .onChange((value: number, mode: SliderChangeMode) => {
-              animateTo({
-                duration: 300,
-                curve: Curve.EaseInOut,
-                iterations: 1,
-                playMode: PlayMode.Normal,
-                onFinish: () => {
-                  console.info('play end')
-                }
-              }, () => {
-                this.level = value
-              })
-            })
-        }
-        .width('100%')
-        .justifyContent(FlexAlign.SpaceBetween)
+        Text(this.info.name)
+          .fontSize(25)
+          .fontWeight(FontWeight.Medium)
+          .fontColor(Color.White)
+          .copyOption(CopyOptions.LocalDevice)
       }
-      .justifyContent(FlexAlign.SpaceBetween)
+      .justifyContent(FlexAlign.Start)
       .alignSelf(ItemAlign.Start)
-      .width('100%')
 
 
       Scroll() {
-        Column() {
-          // 技能描述
+        Row() {
+          // 命座描述
           Text() {
-            ForEach(this.getColorfulTextArrayFromHtmlText(this.info.wiki['description']), item => {
+            ForEach(this.getColorfulTextArrayFromHtmlText(this.info.wiki), item => {
               Span(item.content.replace(/\\n/g, '\n').replace(/\n\n/g, '\n \n'))
                 .fontSize(18)
                 .fontColor(item.color ? item.color : Color.White)
                 .fontStyle(item.italic ? FontStyle.Italic : FontStyle.Normal)
             })
           }
-          .width('100%')
-          .textAlign(TextAlign.Start)
-
-          Divider()
-            .width('90%')
-            .strokeWidth(2)
-            .color($r('app.color.stroke_line_color'))
-            .margin({ top: 5, bottom: 5 })
-
-          // 技能参数
-          List({ space: 3  }) {
-            ForEach(this.formatDescription(this.talentWiki[`${this.level}`]['description'], this.talentWiki[`${this.level}`]['params']), item => {
-              ListItem() {
-                Row() {
-                  Text(item.title)
-                    .fontSize(18)
-                    .fontColor(Color.White)
-
-                  Blank()
-
-                  Text(item.params)
-                    .fontSize(18)
-                    .fontColor(item.title === '元素能量' ? Color.Yellow : '#B3FFFFFF')
-                }
-                .width('100%')
-              }
-            })
-          }
-          .alignListItem(ListItemAlign.Center)
         }
+        .width('100%')
       }
       .edgeEffect(EdgeEffect.Spring)
       .constraintSize({ maxHeight: '50%' })
       .scrollBar(BarState.Off)
+      .width('100%')
     }
     .backdropBlur(100)
     .width('88%')

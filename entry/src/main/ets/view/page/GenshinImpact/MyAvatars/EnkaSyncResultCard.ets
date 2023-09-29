@@ -1,4 +1,4 @@
-import AvatarBriefInfo from '../../../viewmodel/page/GI_MyAvatars/AvatarBriefInfo'
+import AvatarBriefInfo from '../../../../viewmodel/page/GI_MyAvatars/AvatarBriefInfo'
 
 @CustomDialog
 export default struct EnkaSyncResultCard {

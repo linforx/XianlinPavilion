@@ -1,5 +1,5 @@
 import TalentDetailsDialog from './TalentDetailsDialog'
-import TalentInfo from '../../../viewmodel/page/GI_MyAvatarDetails/TalentInfo'
+import TalentInfo from '../../../../viewmodel/page/GI_MyAvatarDetails/TalentInfo'
 
 @Component
 export default struct TalentInfoViewer {

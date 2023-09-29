@@ -1,4 +1,4 @@
-import ConstellationInfo from '../../../viewmodel/page/GI_MyAvatarDetails/ConstellationInfo'
+import ConstellationInfo from '../../../../viewmodel/page/GI_MyAvatarDetails/ConstellationInfo'
 import ConstellationDetailsDialog from './ConstellationDetailsDialog'
 
 @Component

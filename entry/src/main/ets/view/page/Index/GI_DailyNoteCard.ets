@@ -407,7 +407,7 @@ export default struct GI_DailyNoteCard {
     .onClick(() => {
       if (globalThis.SelUser && globalThis.SelGIRole) {
         router.pushUrl({
-          url: 'pages/GI_DailyNote'
+          url: 'pages/GenshinImpact/DailyNote'
         })
       }
     })

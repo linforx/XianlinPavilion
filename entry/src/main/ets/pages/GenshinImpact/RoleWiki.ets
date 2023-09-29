@@ -1,6 +1,6 @@
 import common from '@ohos.app.ability.common'
-import FileManager from '../common/utils/FileManager'
-import PageBackButton from '../view/PageBackButton'
+import FileManager from '../../common/utils/FileManager'
+import PageBackButton from '../../view/PageBackButton'
 import router from '@ohos.router'
 
 @Entry
@@ -90,7 +90,7 @@ struct GI_RoleWiki {
                     .margin({ top: 10, bottom: 10, left: 8, right: 8 })
                     .onClick(() => {
                       router.pushUrl({
-                        url: 'pages/GI_RoleWikiDetails',
+                        url: 'pages/GenshinImpact/RoleWikiDetails',
                         params: {
                           avatarId: `${item.id}`,
                           weaponType: this.avatarMap['types'][item.weaponType]

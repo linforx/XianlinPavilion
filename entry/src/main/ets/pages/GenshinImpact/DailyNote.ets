@@ -1,12 +1,12 @@
-import PageBackButton from '../view/PageBackButton';
+import PageBackButton from '../../view/PageBackButton';
 import webview from '@ohos.web.webview';
 import router from '@ohos.router';
 import promptAction from '@ohos.promptAction';
 import common from '@ohos.app.ability.common';
-import User from '../model/User/User';
-import CoreEnvironment from '../common/service/CoreEnvironment'
-import MihoyoJSInterface from '../model/Web/Bridge/MihoyoJSInterface'
-import GameRole from '../model/User/GameRole';
+import User from '../../model/User/User';
+import CoreEnvironment from '../../common/service/CoreEnvironment'
+import MihoyoJSInterface from '../../model/Web/Bridge/MihoyoJSInterface'
+import GameRole from '../../model/User/GameRole';
 
 
 @Entry

@@ -3,11 +3,12 @@
     "pages/Start",
     "pages/Index",
     "pages/Login",
-    "pages/GI_DailyNote",
-    "pages/GI_MyAvatars",
-    "pages/GI_MyAvatarDetails",
-    "pages/GI_WikiCategory",
-    "pages/GI_RoleWiki",
-    "pages/GI_RoleWikiDetails"
+    "pages/GenshinImpact/DailyNote",
+    "pages/GenshinImpact/MyAvatars",
+    "pages/GenshinImpact/MyAvatarDetails",
+    "pages/GenshinImpact/WikiCategory",
+    "pages/GenshinImpact/RoleWiki",
+    "pages/GenshinImpact/RoleWikiDetails",
+    "pages/GenshinImpact/WeaponWiki"
   ]
 }

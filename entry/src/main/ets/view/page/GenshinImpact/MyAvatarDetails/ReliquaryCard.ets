@@ -1,4 +1,4 @@
-import ReliquaryInfo from '../../../viewmodel/page/GI_MyAvatarDetails/ReliquaryInfo'
+import ReliquaryInfo from '../../../../viewmodel/page/GI_MyAvatarDetails/ReliquaryInfo'
 
 const AppendProp: Map<string, string> = new Map([
   ['FIGHT_PROP_BASE_ATTACK', '基础攻击力'],

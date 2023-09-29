@@ -1,27 +1,26 @@
-import GenshinAPI from '../model/ServiceProvider/GenshinAPI'
-import PageBackButton from '../view/PageBackButton'
+import GenshinAPI from '../../model/ServiceProvider/GenshinAPI'
+import PageBackButton from '../../view/PageBackButton'
 import common from '@ohos.app.ability.common'
 import router from '@ohos.router'
-import GameRole from '../model/User/GameRole'
-import User from '../model/User/User'
-import CookieType from '../common/service/CookieType'
-import DynamicSecretVersion from '../common/service/DynamicSecretVersion'
-import SaltType from '../common/service/SaltType'
+import GameRole from '../../model/User/GameRole'
+import User from '../../model/User/User'
+import CookieType from '../../common/service/CookieType'
+import DynamicSecretVersion from '../../common/service/DynamicSecretVersion'
+import SaltType from '../../common/service/SaltType'
 import promptAction from '@ohos.promptAction'
-import PageMoreButton from '../view/PageMoreButton'
-import AvatarCard from '../view/page/GI_MyAvatars/AvatarCard'
-import AvatarBriefInfo from '../viewmodel/page/GI_MyAvatars/AvatarBriefInfo'
-import FileManager from '../common/utils/FileManager'
-import Avatar from '../model/Game/GenshinImpact/Avatar'
-import Weapon from '../model/Game/GenshinImpact/Weapon'
-import Reliquary from '../model/Game/GenshinImpact/Reliquary'
-import Utils, { losslessJSON } from '../common/utils/Utils'
+import PageMoreButton from '../../view/PageMoreButton'
+import AvatarCard from '../../view/page/GenshinImpact/MyAvatars/AvatarCard'
+import AvatarBriefInfo from '../../viewmodel/page/GI_MyAvatars/AvatarBriefInfo'
+import FileManager from '../../common/utils/FileManager'
+import Avatar from '../../model/Game/GenshinImpact/Avatar'
+import Weapon from '../../model/Game/GenshinImpact/Weapon'
+import Reliquary from '../../model/Game/GenshinImpact/Reliquary'
+import Utils, { losslessJSON } from '../../common/utils/Utils'
 import fs from '@ohos.file.fs'
-import WeaponBriefInfo from '../viewmodel/page/GI_MyAvatars/WeaponBriefInfo'
-import enkaAPI from '../model/ServiceProvider/EnkaAPI'
-import EnkaAPI from '../model/ServiceProvider/EnkaAPI'
-import Host from '../common/service/Host'
-import EnkaSyncResultCard from '../view/page/GI_MyAvatars/EnkaSyncResultCard'
+import WeaponBriefInfo from '../../viewmodel/page/GI_MyAvatars/WeaponBriefInfo'
+import EnkaAPI from '../../model/ServiceProvider/EnkaAPI'
+import Host from '../../common/service/Host'
+import EnkaSyncResultCard from '../../view/page/GenshinImpact/MyAvatars/EnkaSyncResultCard'
 
 @Entry
 @Component
@@ -584,7 +583,7 @@ struct GI_MyAvatars {
                           AvatarCard({ avatar: avatar })
                             .onClick(() => {
                               router.pushUrl({
-                                url: 'pages/GI_MyAvatarDetails',
+                                url: 'pages/GenshinImpact/MyAvatarDetails',
                                 params: {
                                   avatar: JSON.parse(Utils.losslessJSON.stringify(this.avatarMap[`${avatar.id}`]))
                                 }

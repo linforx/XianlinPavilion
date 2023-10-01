@@ -139,10 +139,14 @@ struct GI_RoleWikiDetails {
 
   async aboutToAppear() {
     this.loadWikiDone = false
-    await this.loadManualWeapon()
-    await this.loadAvatarCurve()
-    await this.loadMaterials()
-    await this.loadAvatarWikiInfo()
+    try {
+      await this.loadManualWeapon()
+      await this.loadAvatarCurve()
+      await this.loadMaterials()
+      await this.loadAvatarWikiInfo()
+    } catch (err) {
+      console.error(JSON.stringify(err))
+    }
     this.calcProp()
     this.loadWikiDone = true
   }

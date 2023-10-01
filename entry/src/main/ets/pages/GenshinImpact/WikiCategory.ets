@@ -5,23 +5,26 @@ import router from '@ohos.router'
 
 @Entry
 @Component
-struct GI_WikiCatagory {
+struct GI_WikiCategory {
   private context: common.UIAbilityContext = getContext(this) as common.UIAbilityContext
   @State titleHeight: number = 70
   @State title: string = '原神百科'
   private avatarMap: {} = {}
+  private weaponMap: {} = {}
   @State AvatarWikiList: Array<{}> = []
+  @State WeaponWikiList: Array<{}> = []
 
   aboutToAppear() {
     this.loadAvatarList()
+    this.loadWeaponList()
   }
 
   build() {
     Column() {
       Navigation() {
-        List() {
+        List({ space: 15 }) {
           ListItem() {
-            Column({ space: 12 }) {
+            Column() {
               Row() {
                 Text('角色图鉴')
                   .fontSize(22)
@@ -33,6 +36,7 @@ struct GI_WikiCatagory {
                   .height(30)
                   .aspectRatio(1)
               }
+              .height(50)
               .width('100%')
               .onClick(() => {
                 router.pushUrl({
@@ -68,6 +72,8 @@ struct GI_WikiCatagory {
                               Column() {
                                 Text(item.name)
                                   .fontSize(15)
+                                  .maxLines(1)
+                                  .textOverflow({ overflow: TextOverflow.Ellipsis })
                               }
                               .width('100%')
                               .height(26)
@@ -108,6 +114,105 @@ struct GI_WikiCatagory {
                           params: {
                             avatarId: `${item.id}`,
                             weaponType: this.avatarMap['types'][item.weaponType]
+                          }
+                        })
+                      })
+                    }
+                  })
+                }
+                .listDirection(Axis.Horizontal)
+                .cachedCount(3)
+              }
+              .width('100%')
+              .justifyContent(FlexAlign.Center)
+            }
+            .width('95%')
+            .borderRadius(16)
+            .backgroundColor($r('app.color.card_background_color'))
+            .padding(12)
+
+          }
+
+          ListItem() {
+            Column() {
+              Row() {
+                Text('武器图鉴')
+                  .fontSize(22)
+                  .fontColor($r('app.color.text_color'))
+
+                Blank()
+
+                Image($r('app.media.ic_public_arrow_right'))
+                  .height(30)
+                  .aspectRatio(1)
+              }
+              .height(50)
+              .width('100%')
+              .onClick(() => {
+                router.pushUrl({
+                  url: 'pages/GenshinImpact/WeaponWiki',
+                  params: {
+                    wikiMap: this.weaponMap,
+                    wikiList: this.WeaponWikiList
+                  }
+                })
+              })
+
+              Row() {
+                List() {
+                  ForEach(this.WeaponWikiList, item => {
+                    ListItem() {
+                      Button() {
+                        Column() {
+                          Stack({ alignContent: Alignment.Top }) {
+                            Column() {
+                              Column() {
+                                Image($rawfile(`GI/resource/${item.id}/${item.icon}.webp`))
+                                  .width('100%')
+                                  .aspectRatio(1)
+                                  .objectFit(ImageFit.Contain)
+                              }
+                              .width('100%')
+                              .aspectRatio(1)
+                              .backgroundImage($rawfile(`GI/resource/others/RarityBGI/bg${item.rank}.png`))
+                              .backgroundImageSize(ImageSize.Contain)
+                              .borderRadius({ topLeft: 10, topRight: 10, bottomLeft: 10, bottomRight: 30 })
+                              .clip(true)
+
+                              Column() {
+                                Text(item.name)
+                                  .fontSize(15)
+                                  .maxLines(1)
+                                  .textOverflow({ overflow: TextOverflow.Ellipsis })
+                              }
+                              .width('100%')
+                              .height(26)
+                              .justifyContent(FlexAlign.Center)
+                              .borderRadius(10)
+                              .clip(true)
+                            }
+
+                            Row() {
+                              Image($rawfile(`GI/resource/others/star${item.rank}.png`))
+                                .height(16)
+                            }
+                            .width('100%')
+                            .justifyContent(FlexAlign.Center)
+                            .margin({ top: 78 })
+                          }
+                          .width(90)
+                        }
+                      }
+                      .type(ButtonType.Normal)
+                      .backgroundColor($r('app.color.card_background_color'))
+                      .borderRadius(10)
+                      .shadow({ color: '#4000001E', radius: 20 })
+                      .margin({ top: 10, bottom: 10, left: 8, right: 8 })
+                      .onClick(() => {
+                        router.pushUrl({
+                          url: 'pages/GenshinImpact/WeaponWikiDetails',
+                          params: {
+                            weaponId: `${item.id}`
                           }
                         })
                       })
@@ -184,6 +289,25 @@ struct GI_WikiCatagory {
         if (!a.release) return -1
         else return 1
       }
+    })
+  }
+
+  async loadWeaponList() {
+    let weaponMap = JSON.parse(await new FileManager(this.context).getRawFileTextAsync('GI/weapon_list.json')) as any
+
+    let weaponList: any[] = []
+    for (let key in weaponMap['items']) {
+      if (!weaponMap['items'][key].name) {
+        delete weaponMap[key]
+        continue
+      }
+      weaponList.push(weaponMap['items'][key])
+    }
+    this.weaponMap = weaponMap
+
+    this.WeaponWikiList = weaponList.sort((a, b) => {
+      if (a.rank !== b.rank) return b.rank - a.rank;
+      else return 1;
     })
   }
 

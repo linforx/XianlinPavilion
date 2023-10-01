@@ -30,7 +30,7 @@ struct GI_RoleWiki {
           ListItem() {
             GridRow({
               columns: 12,
-              gutter: { x: 5, y: 20 },
+              gutter: { x: 0, y: 0 },
               direction: GridRowDirection.Row
             }) {
               LazyForEach(this.data, (item) => {
@@ -55,6 +55,8 @@ struct GI_RoleWiki {
                           Column() {
                             Text(item.name)
                               .fontSize(15)
+                              .maxLines(1)
+                              .textOverflow({ overflow: TextOverflow.Ellipsis })
                           }
                           .width('100%')
                           .height(26)
@@ -87,7 +89,7 @@ struct GI_RoleWiki {
                     .backgroundColor($r('app.color.card_background_color'))
                     .borderRadius(10)
                     .shadow({ color: '#4000001E', radius: 20 })
-                    .margin({ top: 10, bottom: 10, left: 8, right: 8 })
+                    .margin({ top: 10, bottom: 10, left: 4, right: 4 })
                     .onClick(() => {
                       router.pushUrl({
                         url: 'pages/GenshinImpact/RoleWikiDetails',
@@ -107,8 +109,10 @@ struct GI_RoleWiki {
             }
             .width('100%')
           }
+          .width('96%')
         }
         .height('100%')
+        .alignListItem(ListItemAlign.Center)
       }
       .mode(NavigationMode.Stack)
       .title({
@@ -129,7 +133,7 @@ struct GI_RoleWiki {
     Row() {
       PageBackButton()
 
-      Text('角色图鉴')
+      Text(this.title)
         .fontSize(24)
         .fontColor($r('app.color.text_color'))
         .fontWeight(FontWeight.Bold)

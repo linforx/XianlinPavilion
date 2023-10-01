@@ -1,3 +1,5 @@
+// 签到弹窗
+
 import GameRole from '../../../model/User/GameRole'
 import User from '../../../model/User/User'
 import webview from '@ohos.web.webview'

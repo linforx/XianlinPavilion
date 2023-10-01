@@ -9,6 +9,7 @@
     "pages/GenshinImpact/WikiCategory",
     "pages/GenshinImpact/RoleWiki",
     "pages/GenshinImpact/RoleWikiDetails",
-    "pages/GenshinImpact/WeaponWiki"
+    "pages/GenshinImpact/WeaponWiki",
+    "pages/GenshinImpact/WeaponWikiDetails"
   ]
 }

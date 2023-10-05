@@ -36,6 +36,13 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
 
             let formId: string = want.parameters[formInfo.FormParam.IDENTITY_KEY]
             console.warn('从网络中拉取数据')
+            let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
+            formProvider.updateForm(formId, binding)
+                .then((data) => {
+                    console.info('FormAbility updateForm success.' + JSON.stringify(data));
+                }).catch((error) => {
+                console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+            })
             new GenshinAPI()
                 .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
                 .setCookie(config.selected_account.cookie)
@@ -118,6 +125,13 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
             console.error('读取config配置错误 code: ' + err.code)
         }
         console.warn('从网络中拉取数据')
+        let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
+        formProvider.updateForm(formId, binding)
+            .then((data) => {
+                console.info('FormAbility updateForm success.' + JSON.stringify(data));
+            }).catch((error) => {
+            console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+        })
         new GenshinAPI()
             .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
             .setCookie(config.selected_account.cookie)
@@ -193,6 +207,13 @@ export default class GenshinDailyNoteEntryFormAbility extends FormExtensionAbili
                 console.error('读取config配置错误 code: ' + err.code)
             }
             console.warn('从网络中拉取数据')
+            let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
+            formProvider.updateForm(formId, binding)
+                .then((data) => {
+                    console.info('FormAbility updateForm success.' + JSON.stringify(data));
+                }).catch((error) => {
+                console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
+            })
             new GenshinAPI()
                 .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
                 .setCookie(config.selected_account.cookie)

@@ -13,6 +13,7 @@ import router from '@ohos.router'
 export default struct GI_DailyNoteCard {
   @Link data: GI_DailyNoteInfo
   @Link isUpdating: boolean
+  private card_height: number = 180
 
 
   getUpdateTime() {
@@ -92,7 +93,7 @@ export default struct GI_DailyNoteCard {
   }
 
   build() {
-    Column() {
+    Flex({ direction: FlexDirection.Column, justifyContent: FlexAlign.Start, alignItems: ItemAlign.Center }) {
       Row() {
         Text('实时便笺')
           .height(20)
@@ -113,23 +114,24 @@ export default struct GI_DailyNoteCard {
       .width('100%')
       .justifyContent(FlexAlign.Start)
       .alignSelf(ItemAlign.Center)
-      .margin({ left: 10, bottom: 10 })
+      .flexShrink(0)
 
       Flex({ direction: FlexDirection.Row }) {
-        Column() {
-          Stack({ alignContent: Alignment.Center }) {
+        Flex({ direction: FlexDirection.Column }) {
+          Stack() {
             Progress({ value: this.data.currentResin, total: this.data.maxResin, type: ProgressType.Ring })
-              .color($r('app.color.purple_color'))
-              .height(130)
-              .aspectRatio(1)
-              .borderRadius(65)
-              .style({ strokeWidth: 13, scaleCount: 160, scaleWidth: 18 })
-              .opacity(0.8)
+              .style({ strokeWidth: 14, scaleCount: 160, scaleWidth: 18 })
+              .color('#8A2BE2')
+              .opacity(0.6)
               .blur(40)
+              .height('100%')
+              .aspectRatio(1)
+              .borderRadius(this.card_height)
+              .clip(true)
             Column() {
               Text() {
                 Span(`${this.data.currentResin}`)
-                  .fontSize(40)
+                  .fontSize(30)
                   .fontColor($r('app.color.high_light_text_color'))
                 Span('/')
                   .fontSize(12)
@@ -149,6 +151,11 @@ export default struct GI_DailyNoteCard {
               .alignItems(VerticalAlign.Center)
             }
           }
+          .height('100%')
+          .width('100%')
+          .alignContent(Alignment.Center)
+          .flexShrink(1)
+
           Row() {
             if (this.data.currentResin !== this.data.maxResin) {
               Text() {
@@ -165,23 +172,28 @@ export default struct GI_DailyNoteCard {
               }
               Text('后完全恢复')
                 .fontSize(12)
+                .fontColor($r('app.color.sub_text_color'))
             } else {
               Row() {
                 Text('已全部恢复')
-                  .fontSize(16)
+                  .fontSize(12)
+                  .fontColor($r('app.color.sub_text_color'))
               }
               .width('100%')
               .justifyContent(FlexAlign.Center)
             }
           }
-          .alignItems(VerticalAlign.Bottom)
+          .height(18)
           .width('100%')
+          .alignItems(VerticalAlign.Bottom)
           .justifyContent(FlexAlign.SpaceBetween)
+          .flexShrink(0)
         }
-        .width(150)
+        .height('100%')
+        .aspectRatio(1)
         .flexShrink(0)
 
-        List({ space: 8 }) {
+        List({ space: 6 }) {
           ListItem() {
             Row({ space: 5 }) {
               Stack({ alignContent: Alignment.Center }) {
@@ -389,20 +401,21 @@ export default struct GI_DailyNoteCard {
             }
           }
         }
-        .height(150)
+        .height('100%')
         .borderRadius(10)
         .flexShrink(1)
         .clip(true)
         .margin({ left: 10 })
       }
       .width('100%')
+      .height('100%')
+      .margin({ top: 6 })
+      .flexShrink(1)
     }
     .width('100%')
-    .justifyContent(FlexAlign.Start)
-    .alignItems(HorizontalAlign.Center)
+    .height(this.card_height)
     .borderRadius(16)
     .clip(true)
-    .backdropBlur(40)
     .padding(10)
     .onClick(() => {
       if (globalThis.SelUser && globalThis.SelGIRole) {

@@ -444,7 +444,7 @@ class MihoyoAPI {
         } catch(err) {
             // 在结果中标识请求错误信息
             res.success = false;
-            res.message = `http request with error: ` + JSON.stringify(err);
+            res.message = `http error: ${err.message}(${err.code})`;
             let end = Date.now();
             res.timeCost = end - start;
 

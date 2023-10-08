@@ -39,8 +39,8 @@
     ],
     "extensionAbilities": [
       {
-        "name": "GenshinDailyNoteEntryFormAbility",
-        "srcEntry": "./ets/genshindailynoteentryformability/GenshinDailyNoteEntryFormAbility.ts",
+        "name": "EntryFormAbility",
+        "srcEntry": "./ets/entryformability/EntryFormAbility.ts",
         "label": "$string:GenshinDailyNoteEntryFormAbility_label",
         "description": "$string:GenshinDailyNoteEntryFormAbility_desc",
         "type": "form",

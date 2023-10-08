@@ -26,6 +26,8 @@ import FunctionEntryContainer from '../view/page/Index/FunctionEntryContainer'
 import FileManager from '../common/utils/FileManager'
 import fs from '@ohos.file.fs'
 import Config from '../model/config'
+import HSR_NoteInfo from '../viewmodel/page/Index/HSR_NoteInfo'
+import HSR_NoteCard from '../view/page/Index/HSR_NoteCard'
 
 /* 本页面中出现的Account指代User的UI相关信息 */
 
@@ -100,6 +102,7 @@ struct Index {
         } else {
           console.error('无法向preference中存入信息')
         }
+        this.updateHSRDataAsync()
       }
     }),
     customStyle: true
@@ -111,6 +114,9 @@ struct Index {
   /* 原神游戏数据 */
   @State GI_DailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo()
   @State GI_DailyNoteDataUpdateFlag: boolean = false
+  /* 星穹铁道游戏数据 */
+  @State HSR_NoteData: HSR_NoteInfo = new HSR_NoteInfo()
+  @State HSR_NoteDataUpdateFlag: boolean = false
 
   signGialogController_genshin: CustomDialogController = new CustomDialogController({
     builder: GI_SignDialog({ role: $selGameRole_genshin, user: $selUser }),
@@ -213,6 +219,7 @@ struct Index {
       await this.updateSelUserInfoAsync()
     } else {
       this.updateGIDataAsync()
+      this.updateHSRDataAsync()
     }
     router.clear()
   }
@@ -334,7 +341,7 @@ struct Index {
             .tabBar(this.genshinBar())
             // 星穹铁道分区
             TabContent() {
-              List() {
+              List({ space: 20 }) {
                 ListItem() {
                   Column() {
                     List() {
@@ -414,6 +421,13 @@ struct Index {
                   }
                   .width('100%')
                   .padding(5)
+                }
+                .borderRadius(20)
+                .backgroundColor($r('app.color.card_background_color'))
+                .clip(true)
+
+                ListItem() {
+                  HSR_NoteCard({ data: $HSR_NoteData, isUpdating: $HSR_NoteDataUpdateFlag })
                 }
                 .borderRadius(20)
                 .backgroundColor($r('app.color.card_background_color'))
@@ -517,6 +531,7 @@ struct Index {
         if (this.selGameRole_starrail) {
           this.selGameRoleInfo_starrail = new GameRoleInfo(this.selGameRole_starrail)
           globalThis.SelHSRRole = this.selGameRole_starrail       // 更新全局“选中的崩坏：星穹铁道角色”
+          await this.updateHSRDataAsync()
         } else {
           globalThis.SelHSRRole = null
         }
@@ -563,6 +578,26 @@ struct Index {
       }
     }, () => {
       this.GI_DailyNoteData = dailyNoteInfo
+    })
+  }
+
+  async updateHSRDataAsync() {
+    if (!this.selUser || !this.selUser.gameRoleChosen.StarRail.uid) return;
+    // 更新体力数据
+    this.HSR_NoteDataUpdateFlag = true
+    let noteData = await this.selUser.getHSRNoteDateAsync()
+    let noteInfo = new HSR_NoteInfo(noteData)
+    this.HSR_NoteDataUpdateFlag = false
+    animateTo({
+      duration: 600,
+      curve: Curve.EaseInOut,
+      iterations: 1,
+      playMode: PlayMode.Normal,
+      onFinish: () => {
+        console.info('play end')
+      }
+    }, () => {
+      this.HSR_NoteData = noteInfo
     })
   }
 

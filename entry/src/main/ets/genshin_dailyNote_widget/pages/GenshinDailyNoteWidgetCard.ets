@@ -19,9 +19,9 @@ type transformer = {
   latestJobId: string
 }
 
-let storage = new LocalStorage();
+let GI_storage = new LocalStorage();
 
-@Entry(storage)
+@Entry(GI_storage)
 @Component
 struct Genshin_dailyNote_widgetCard {
   @LocalStorageProp('dimension') dimension: number = 3
@@ -131,7 +131,7 @@ struct Genshin_dailyNote_widgetCard {
       Row() {
         if (this.dimension == 2) {
           Row() {
-            Text(`实时便笺`)
+            Text(`GI·实时便笺`)
               .height(15)
               .fontSize(12)
 
@@ -143,7 +143,7 @@ struct Genshin_dailyNote_widgetCard {
           .justifyContent(FlexAlign.SpaceBetween)
         }
         if (this.dimension > 2) {
-          Text(`实时便笺·${this.uid}`)
+          Text(`GI·实时便笺·${this.uid}`)
             .height(15)
             .fontSize(12)
 
@@ -449,6 +449,7 @@ struct Genshin_dailyNote_widgetCard {
       postCardAction(this, {
         'action': 'message',
         'params': {
+          'name': 'GenshinDailyNote',
           'update': true
         }
       });

@@ -256,13 +256,44 @@ export default class User {
             .getResponseAsync()
         if (!response.success) {
             promptAction.showToast({
-                message: '获取体力数据失败: ' + response.message
+                message: '获取原神体力数据失败: ' + response.message
             })
-            console.error('获取体力数据失败: ' + response.message)
+            console.error('获取原神体力数据失败: ' + response.message)
             return null
         }
 
-        console.warn('获取体力数据成功')
+        console.warn('获取原神体力数据成功')
+
+        return JSON.parse(response.data)
+    }
+
+    public async getHSRNoteDateAsync() {
+        let role = globalThis.SelHSRRole as GameRole
+
+        if (!role) {
+            promptAction.showToast({
+                message: '请绑定崩坏·星穹铁道角色'
+            })
+            return
+        }
+
+        let response = await new StarRailAPI()
+            .applyNote(role.gameUid, role.region)
+            .setCookie(this.cookie.getByType(CookieType.BothCLToken))
+            .setReferer('https://webstatic.mihoyo.com/')
+            .HeadersAddWith('x-rpc-device_fp', this.deviceFP)
+            .HeadersAddWith('x-rpc-device_id', this.deviceId)
+            .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
+            .getResponseAsync()
+        if (!response.success) {
+            promptAction.showToast({
+                message: '获取星穹铁道体力数据失败: ' + response.message
+            })
+            console.error('获取星穹铁道体力数据失败: ' + response.message)
+            return null
+        }
+
+        console.warn('获取星穹铁道体力数据成功')
 
         return JSON.parse(response.data)
     }

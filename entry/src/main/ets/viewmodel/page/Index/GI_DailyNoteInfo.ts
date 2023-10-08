@@ -5,7 +5,6 @@
  * Description:
  */
 
-@Observed
 export default class GI_DailyNoteInfo {
   public currentResin: number = 0                       // 当前原脆树脂
   public maxResin: number = 160                         // 原脆树脂最大值
@@ -26,7 +25,7 @@ export default class GI_DailyNoteInfo {
 
   public updateTime: number = 0                         // 数据更新的时间戳
 
-  public constructor(data?: any) {
+  public constructor(data?: Object) {
     if (data) {
       this.currentResin = data['current_resin'] ?? 0
       this.maxResin = data['max_resin'] ?? 160
@@ -57,6 +56,28 @@ export default class GI_DailyNoteInfo {
       this.updateTime = Date.now()
     }
   }
+
+  public toJSON(): any {
+    return {
+      currentResin: this.currentResin,
+      maxResin: this.maxResin,
+      resinRecoveryTime: this.resinRecoveryTime,
+      finishedTaskNum: this.finishedTaskNum,
+      totalTaskNum: this.totalTaskNum,
+      isExtraTaskRewardReceived: this.isExtraTaskRewardReceived,
+      remainResinDiscountNum: this.remainResinDiscountNum,
+      resinDiscountNumLimit: this.resinDiscountNumLimit,
+      currentExpeditionNum: this.currentExpeditionNum,
+      maxExpeditionNum: this.maxExpeditionNum,
+      expeditions: this.expeditionsList.map(expedition => expedition.toJSON()),
+      obtainedHome: this.obtainedHome,
+      currentHomeCoin: this.currentHomeCoin,
+      maxHomeCoin: this.maxHomeCoin,
+      homeCoinRecoveryTime: this.homeCoinRecoveryTime,
+      transformer: this.transformer.toJSON(),
+      updateTime: this.updateTime
+    }
+  }
 }
 
 
@@ -70,6 +91,14 @@ class Expedition {
     this.avatarSideIcon = data['avatar_side_icon'] ?? ''
     this.status = data['status'] ?? ''
     this.remainedTime = parseInt(data['remained_time'] ?? '0')
+  }
+
+  public toJSON(): any {
+    return {
+      avatarSideIcon: this.avatarSideIcon,
+      status: this.status,
+      remainedTime: this.remainedTime
+    }
   }
 }
 
@@ -89,6 +118,15 @@ class Transformer {
         this.noticed = data['noticed'] ?? false
         this.latestJobId = data['latest_job_id'] ?? '0'
       }
+    }
+  }
+
+  public toJSON(): any {
+    return {
+      obtained: this.obtained,
+      recoveryTime: this.recoveryTime,
+      noticed: this.noticed,
+      latestJobId: this.latestJobId
     }
   }
 }

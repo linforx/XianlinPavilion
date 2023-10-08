@@ -6,9 +6,9 @@
         "type": "HarmonyOS",
         "material": {
           "certpath": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_XianlinPavilion_com.forlinx.xianlinpavilion_2850086000483979975.cer",
-          "storePassword": "0000001BC8A9FB3B6BCF51450BE4369B6437FE8EE1279E2226D30C210CF864904E067B1F2CBE8DBDD616B6",
+          "storePassword": "0000001B86A790ED2FF6C3504497E436BA00AE83500F6A59889370A590679890CAAAAEC51022AE297A2F44",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B8FE690F36E3D23AD8272E4123FBD65F71A4D286CA46106EF46F57FB7C6089A21284767F63E434E",
+          "keyPassword": "0000001BF0037BD3DC7DFE398DC8FCB975FCF66210F02A115012B4EE5276ADF221EE1E8B18B3E0FF599653",
           "profile": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_XianlinPavilion_com.forlinx.xianlinpavilion_2850086000483979975.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\auto_debug_XianlinPavilion_com.forlinx.xianlinpavilion_2850086000483979975.p12"

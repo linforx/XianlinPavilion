@@ -151,6 +151,8 @@ struct GI_MyAvatars {
         .applyCharacter(this.role.gameUid, this.role.region)
         .setCookie(this.user.cookie.getByType(CookieType.BothCLToken))
         .useDynamicSecret(DynamicSecretVersion.V2, SaltType.X4)
+        .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
+        .HeadersAddWith('x-rpc-device_id', '5f3b6eec-58a4-3a6d-b544-51566d011b42')
         .getResponseAsync()
     } catch (err) {
       promptAction.showToast({

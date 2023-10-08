@@ -42,8 +42,9 @@ export default class EntryFormAbility extends FormExtensionAbility {
 
             switch (want.parameters[formInfo.FormParam.NAME_KEY]) {
                 case 'GenshinDailyNote': {
+                    let gameRoleUid = config.selected_account.genshin_impact.selected_role.uid
                     if (config.selected_account.genshin_impact.selected_role.uid) {
-                        formData['uid'] = config.selected_account.genshin_impact.selected_role.uid
+                        formData['uid'] = gameRoleUid
                     }
 
                     console.warn('从网络中拉取数据')
@@ -55,7 +56,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                         console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
                     })
                     new GenshinAPI()
-                        .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
+                        .applyDailyNote(gameRoleUid, config.selected_account.genshin_impact.selected_role.server)
                         .setCookie(config.selected_account.cookie)
                         .setReferer('https://webstatic.mihoyo.com/')
                         .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
@@ -68,7 +69,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                 if (!response.success) {
                                     console.error('获取原神体力数据失败: ' + response.message)
                                     let formData = {
-                                        uid: config.selected_account.genshin_impact.selected_role.uid,
+                                        uid: gameRoleUid,
                                         loaded: false,
                                         message: response.message
                                     }
@@ -91,7 +92,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
 
                             let formData = {
                                 dimension: dimension,
-                                uid: config.selected_account.genshin_impact.selected_role.uid,
+                                uid: gameRoleUid,
                                 loaded: true,
                                 ...dailyNoteData.toJSON()
                             }
@@ -109,11 +110,11 @@ export default class EntryFormAbility extends FormExtensionAbility {
                     break
                 }
                 case 'StarRailNote': {
+                    let gameRoleUid = config.selected_account.star_rail.selected_role.uid
                     if (config.selected_account.star_rail.selected_role.uid) {
-                        formData['uid'] = config.selected_account.star_rail.selected_role.uid
+                        formData['uid'] = gameRoleUid
                     }
 
-                    let formId: string = want.parameters[formInfo.FormParam.IDENTITY_KEY]
                     console.warn('从网络中拉取数据')
                     let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
                     formProvider.updateForm(formId, binding)
@@ -123,7 +124,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                         console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
                     })
                     new StarRailAPI()
-                        .applyNote(config.selected_account.star_rail.selected_role.uid, config.selected_account.star_rail.selected_role.server)
+                        .applyNote(gameRoleUid, config.selected_account.star_rail.selected_role.server)
                         .setCookie(config.selected_account.cookie)
                         .setReferer('https://webstatic.mihoyo.com/')
                         .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
@@ -136,7 +137,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                 if (!response.success) {
                                     console.error('获取星穹铁道体力数据失败: ' + response.message)
                                     let formData = {
-                                        uid: config.selected_account.genshin_impact.selected_role.uid,
+                                        uid: gameRoleUid,
                                         loaded: false,
                                         message: response.message
                                     }
@@ -159,7 +160,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
 
                             let formData = {
                                 dimension: dimension,
-                                uid: config.selected_account.genshin_impact.selected_role.uid,
+                                uid: gameRoleUid,
                                 loaded: true,
                                 ...noteData.toJSON()
                             }
@@ -209,6 +210,8 @@ export default class EntryFormAbility extends FormExtensionAbility {
 
             switch (cardName) {
                 case 'GenshinDailyNote': {
+                    let gameRoleUid = config.selected_account.genshin_impact.selected_role.uid
+
                     console.warn('从网络中拉取数据')
                     let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
                     formProvider.updateForm(formId, binding)
@@ -218,7 +221,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                         console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
                     })
                     new GenshinAPI()
-                        .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
+                        .applyDailyNote(gameRoleUid, config.selected_account.genshin_impact.selected_role.server)
                         .setCookie(config.selected_account.cookie)
                         .setReferer('https://webstatic.mihoyo.com/')
                         .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
@@ -231,7 +234,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                 if (!response.success) {
                                     console.error('获取原神体力数据失败: ' + response.message)
                                     let formData = {
-                                        uid: config.selected_account.genshin_impact.selected_role.uid,
+                                        uid: gameRoleUid,
                                         loaded: false,
                                         message: response.message
                                     }
@@ -253,7 +256,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                             let dailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo(json)
 
                             let formData = {
-                                uid: config.selected_account.genshin_impact.selected_role.uid,
+                                uid: gameRoleUid,
                                 loaded: true,
                                 ...dailyNoteData.toJSON()
                             }
@@ -271,6 +274,8 @@ export default class EntryFormAbility extends FormExtensionAbility {
                     break
                 }
                 case 'StarRailNote': {
+                    let gameRoleUid = config.selected_account.star_rail.selected_role.uid
+
                     console.warn('从网络中拉取数据')
                     let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
                     formProvider.updateForm(formId, binding)
@@ -280,7 +285,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                         console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
                     })
                     new StarRailAPI()
-                        .applyNote(config.selected_account.star_rail.selected_role.uid, config.selected_account.star_rail.selected_role.server)
+                        .applyNote(gameRoleUid, config.selected_account.star_rail.selected_role.server)
                         .setCookie(config.selected_account.cookie)
                         .setReferer('https://webstatic.mihoyo.com/')
                         .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
@@ -293,7 +298,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                 if (!response.success) {
                                     console.error('获取星穹铁道体力数据失败: ' + response.message)
                                     let formData = {
-                                        uid: config.selected_account.genshin_impact.selected_role.uid,
+                                        uid: gameRoleUid,
                                         loaded: false,
                                         message: response.message
                                     }
@@ -315,7 +320,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                             let noteData: HSR_NoteInfo = new HSR_NoteInfo(json)
 
                             let formData = {
-                                uid: config.selected_account.genshin_impact.selected_role.uid,
+                                uid: gameRoleUid,
                                 loaded: true,
                                 ...noteData.toJSON()
                             }
@@ -362,6 +367,8 @@ export default class EntryFormAbility extends FormExtensionAbility {
 
                 switch (cardName) {
                     case 'GenshinDailyNote': {
+                        let gameRoleUid = config.selected_account.genshin_impact.selected_role.uid
+
                         console.warn('从网络中拉取数据')
                         let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
                         formProvider.updateForm(formId, binding)
@@ -371,7 +378,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                             console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
                         })
                         new GenshinAPI()
-                            .applyDailyNote(config.selected_account.genshin_impact.selected_role.uid, config.selected_account.genshin_impact.selected_role.server)
+                            .applyDailyNote(gameRoleUid, config.selected_account.genshin_impact.selected_role.server)
                             .setCookie(config.selected_account.cookie)
                             .setReferer('https://webstatic.mihoyo.com/')
                             .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
@@ -384,7 +391,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                     if (!response.success) {
                                         console.error('获取原神体力数据失败: ' + response.message)
                                         let formData = {
-                                            uid: config.selected_account.genshin_impact.selected_role.uid,
+                                            uid: gameRoleUid,
                                             loaded: false,
                                             message: response.message
                                         }
@@ -406,7 +413,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                 let dailyNoteData: GI_DailyNoteInfo = new GI_DailyNoteInfo(json)
 
                                 let formData = {
-                                    uid: config.selected_account.genshin_impact.selected_role.uid,
+                                    uid: gameRoleUid,
                                     loaded: true,
                                     ...dailyNoteData.toJSON()
                                 }
@@ -424,6 +431,8 @@ export default class EntryFormAbility extends FormExtensionAbility {
                         break
                     }
                     case 'StarRailNote': {
+                        let gameRoleUid = config.selected_account.star_rail.selected_role.uid
+
                         console.warn('从网络中拉取数据')
                         let binding = formBindingData.createFormBindingData({ message: '正在刷新' })
                         formProvider.updateForm(formId, binding)
@@ -433,7 +442,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                             console.error('FormAbility updateForm failed: ' + JSON.stringify(error));
                         })
                         new StarRailAPI()
-                            .applyNote(config.selected_account.star_rail.selected_role.uid, config.selected_account.star_rail.selected_role.server)
+                            .applyNote(gameRoleUid, config.selected_account.star_rail.selected_role.server)
                             .setCookie(config.selected_account.cookie)
                             .setReferer('https://webstatic.mihoyo.com/')
                             .HeadersAddWith('x-rpc-device_fp', '38d7ee834d1e9')
@@ -446,7 +455,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                     if (!response.success) {
                                         console.error('获取星穹铁道体力数据失败: ' + response.message)
                                         let formData = {
-                                            uid: config.selected_account.genshin_impact.selected_role.uid,
+                                            uid: gameRoleUid,
                                             loaded: false,
                                             message: response.message
                                         }
@@ -468,7 +477,7 @@ export default class EntryFormAbility extends FormExtensionAbility {
                                 let noteData: HSR_NoteInfo = new HSR_NoteInfo(json)
 
                                 let formData = {
-                                    uid: config.selected_account.genshin_impact.selected_role.uid,
+                                    uid: gameRoleUid,
                                     loaded: true,
                                     ...noteData.toJSON()
                                 }

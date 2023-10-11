@@ -1,0 +1,49 @@
+{
+	"id": 29090101,
+	"name": "?????",
+	"type": "值得铭记的强敌",
+	"icon": "UI_MonsterIcon_Ptahur_Devourer",
+	"route": "?????",
+	"beta": true,
+	"title": "?????",
+	"specialName": "?????",
+	"description": "?????",
+	"entries": {
+		"29090101": {
+			"id": 29090101,
+			"type": "MONSTER_BOSS",
+			"affix": null,
+			"hpDrops": null,
+			"prop": [
+				{
+					"propType": "FIGHT_PROP_BASE_HP",
+					"initValue": 543.35999,
+					"type": "GROW_CURVE_HP_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_ATTACK",
+					"initValue": 125.6,
+					"type": "GROW_CURVE_ATTACK_2"
+				},
+				{
+					"propType": "FIGHT_PROP_BASE_DEFENSE",
+					"initValue": 500,
+					"type": "GROW_CURVE_DEFENSE"
+				}
+			],
+			"resistance": {
+				"fireSubHurt": 0.1,
+				"grassSubHurt": 0.1,
+				"waterSubHurt": 0.7,
+				"elecSubHurt": 0.1,
+				"windSubHurt": 0.1,
+				"iceSubHurt": 0.1,
+				"rockSubHurt": 0.1,
+				"physicalSubHurt": 0.1
+			},
+			"fundamentalForce": null,
+			"reward": null
+		}
+	},
+	"tips": null
+}

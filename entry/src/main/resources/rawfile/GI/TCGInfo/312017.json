@@ -1,0 +1,34 @@
+{
+	"id": 312017,
+	"name": "沙王的投影",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_SAME": 1
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_Chiwangdanjian",
+	"route": "Shadow of the Sand King",
+	"beta": true,
+	"storyTitle": "代施之辈·沙王的投影",
+	"storyDetail": "「曾经，凡人的贤王与神官亲身领受圣谕，他们是大地的主人。」\\n「而如今，绿洲之中代施统治的诸多显贵，成为了神主的影子。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"17053": {
+			"name": "沙王的投影",
+			"description": "<color=#FFFFFFFF>入场时：</color>抓1张牌。\\n<color=#FFFFFFFF>所附属角色为出战角色期间，敌方受到元素反应伤害时：</color>抓1张牌。（每回合最多触发2次）\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "<color=#FFFFFFFF>所附属角色为出战角色期间，敌方受到元素反应伤害时：</color>抓1张牌。（每回合最多触发2次）"
+		}
+	},
+	"relatedEntries": null
+}

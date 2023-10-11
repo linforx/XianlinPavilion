@@ -259,6 +259,24 @@
 			"route": "Candace",
 			"sortOrder": 1207
 		},
+		"1208": {
+			"id": 1208,
+			"name": "妮露",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_HYDRO": "水元素",
+				"GCG_TAG_WEAPON_SWORD": "单手剑",
+				"GCG_TAG_NATION_SUMERU": "须弥"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Nilou",
+			"route": "Nilou",
+			"beta": true,
+			"sortOrder": 1208
+		},
 		"1301": {
 			"id": 1301,
 			"name": "迪卢克",
@@ -565,6 +583,24 @@
 			"route": "Lisa",
 			"sortOrder": 1409
 		},
+		"1410": {
+			"id": 1410,
+			"name": "多莉",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_ELECTRO": "雷元素",
+				"GCG_TAG_WEAPON_CLAYMORE": "双手剑",
+				"GCG_TAG_NATION_SUMERU": "须弥"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Dori",
+			"route": "Dori",
+			"beta": true,
+			"sortOrder": 1410
+		},
 		"1501": {
 			"id": 1501,
 			"name": "砂糖",
@@ -818,6 +854,24 @@
 			"icon": "UI_Gcg_CardFace_Char_Avatar_Yaoyao",
 			"route": "Yaoyao",
 			"sortOrder": 1704
+		},
+		"1705": {
+			"id": 1705,
+			"name": "白术",
+			"type": "characterCard",
+			"tags": {
+				"GCG_TAG_ELEMENT_DENDRO": "草元素",
+				"GCG_TAG_WEAPON_CATALYST": "法器",
+				"GCG_TAG_NATION_LIYUE": "璃月"
+			},
+			"props": {
+				"GCG_PROP_HP": 10,
+				"GCG_PROP_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Char_Avatar_Baizhuer",
+			"route": "Baizhu",
+			"beta": true,
+			"sortOrder": 1705
 		},
 		"2101": {
 			"id": 2101,
@@ -1202,6 +1256,22 @@
 			"route": "The Overflow",
 			"sortOrder": 212071
 		},
+		"212081": {
+			"id": 212081,
+			"name": "星天的花雨",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_HYDRO": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Nilou",
+			"route": "The Starry Skies Their Flowers Rain",
+			"beta": true,
+			"sortOrder": 212081
+		},
 		"213011": {
 			"id": 213011,
 			"name": "流火焦灼",
@@ -1476,6 +1546,23 @@
 			"route": "Pulsating Witch",
 			"sortOrder": 214091
 		},
+		"214101": {
+			"id": 214101,
+			"name": "酌盈剂虚",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Dori",
+			"route": "Discretionary Supplement",
+			"beta": true,
+			"sortOrder": 214101
+		},
 		"215011": {
 			"id": 215011,
 			"name": "混元熵增论",
@@ -1705,6 +1792,23 @@
 			"icon": "UI_Gcg_CardFace_Modify_Constellation_Yaoyao",
 			"route": "Beneficent",
 			"sortOrder": 217041
+		},
+		"217051": {
+			"id": 217051,
+			"name": "在地为化",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"props": {
+				"GCG_COST_DICE_DENDRO": 4,
+				"GCG_COST_ENERGY": 2
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Talent_Baizhuer",
+			"route": "All Things Are of the Earth",
+			"beta": true,
+			"sortOrder": 217051
 		},
 		"221011": {
 			"id": 221011,
@@ -2457,6 +2561,36 @@
 			"route": "Crown of Watatsumi",
 			"sortOrder": 312015
 		},
+		"312016": {
+			"id": 312016,
+			"name": "海染砗磲",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"props": {
+				"GCG_COST_DICE_VOID": 3
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Artifact_Hairantaozhuang",
+			"route": "Ocean-Hued Clam",
+			"beta": true,
+			"sortOrder": 312016
+		},
+		"312017": {
+			"id": 312017,
+			"name": "沙王的投影",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 1
+			},
+			"icon": "UI_Gcg_CardFace_Modify_Artifact_Chiwangdanjian",
+			"route": "Shadow of the Sand King",
+			"beta": true,
+			"sortOrder": 312017
+		},
 		"312101": {
 			"id": 312101,
 			"name": "破冰踏雪的回音",
@@ -2843,6 +2977,21 @@
 			"route": "Gandharva Ville",
 			"sortOrder": 321014
 		},
+		"321015": {
+			"id": 321015,
+			"name": "风龙废墟",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_PLACE": "场地"
+			},
+			"props": {
+				"GCG_COST_DICE_SAME": 2
+			},
+			"icon": "UI_Gcg_CardFace_Assist_Location_Fenglong",
+			"route": "Stormterror's Lair",
+			"beta": true,
+			"sortOrder": 321015
+		},
 		"322001": {
 			"id": 322001,
 			"name": "派蒙",
@@ -3225,6 +3374,21 @@
 			"icon": "UI_Gcg_CardFace_Event_Event_Xinfeng",
 			"route": "Fresh Wind of Freedom",
 			"sortOrder": 330004
+		},
+		"330005": {
+			"id": 330005,
+			"name": "万家灶火",
+			"type": "actionCard",
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"props": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"icon": "UI_Gcg_CardFace_Event_Event_Guobahelp",
+			"route": "In Every House a Stove",
+			"beta": true,
+			"sortOrder": 330005
 		},
 		"331101": {
 			"id": 331101,
@@ -3713,6 +3877,17 @@
 			"icon": "UI_Gcg_CardFace_Event_Event_Heiquan",
 			"route": "Pankration!",
 			"sortOrder": 332023
+		},
+		"332024": {
+			"id": 332024,
+			"name": "琴音之诗",
+			"type": "actionCard",
+			"tags": null,
+			"props": null,
+			"icon": "UI_Gcg_CardFace_Event_Event_Wangfu",
+			"route": "Lyresong",
+			"beta": true,
+			"sortOrder": 332024
 		},
 		"333001": {
 			"id": 333001,

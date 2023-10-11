@@ -196,6 +196,14 @@
 			"icon": "UI_MonsterIcon_Necalevia_Big",
 			"route": "Tainted Water-Spouting Phantasm"
 		},
+		"20051201": {
+			"id": 20051201,
+			"name": "水形幻人",
+			"type": "ELEMENTAL",
+			"icon": "UI_MonsterIcon_Narcissusborn_Normal_01",
+			"route": "Hydro Tulpa",
+			"beta": true
+		},
 		"20060101": {
 			"id": 20060101,
 			"name": "水飘浮灵",
@@ -2380,6 +2388,14 @@
 			"icon": "UI_ItemIcon_131035",
 			"route": "Maintenance Mek: Platinum Collection"
 		},
+		"28041105": {
+			"id": 28041105,
+			"name": "维护机关·澄金领队型",
+			"type": "FISH",
+			"icon": "UI_ItemIcon_131036",
+			"route": "Maintenance Mek: Gold Leader",
+			"beta": true
+		},
 		"28050101": {
 			"id": 28050101,
 			"name": "风晶蝶",
@@ -2575,6 +2591,14 @@
 			"type": "BOSS",
 			"icon": "UI_MonsterIcon_Apep",
 			"route": "Guardian of Apep's Oasis"
+		},
+		"29090101": {
+			"id": 29090101,
+			"name": "?????",
+			"type": "BOSS",
+			"icon": "UI_MonsterIcon_Ptahur_Devourer",
+			"route": "?????",
+			"beta": true
 		}
 	}
 }

@@ -1,0 +1,34 @@
+{
+	"id": 312016,
+	"name": "海染砗磲",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_ARTIFACT": "圣遗物"
+	},
+	"props": {
+		"GCG_COST_DICE_VOID": 3
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Artifact_Hairantaozhuang",
+	"route": "Ocean-Hued Clam",
+	"beta": true,
+	"storyTitle": "海渊之忆·海染砗磲",
+	"storyDetail": "「带着来自海渊的希望与记忆，浸润着失落已久的文明与历史，这些精巧优雅的冠冕，随同其主人一起滑落进入遗忘的裂隙。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"17053": {
+			"name": "海染砗磲",
+			"description": "<color=#FFFFFFFF>入场时：</color>治疗所附属角色3点。\\n我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\\n<color=#FFFFFFFF>角色造成伤害时：</color>消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。\\n（角色最多装备1件「{SPRITE_PRESET#3004}圣遗物」）",
+			"cost": {
+				"GCG_COST_DICE_VOID": 3
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_ARTIFACT": "圣遗物"
+			},
+			"icon": null,
+			"effect": "我方角色每受到3点治疗，此牌就累积1个「海染泡沫」。（最多累积2个）\\n<color=#FFFFFFFF>角色造成伤害时：</color>消耗所有「海染泡沫」，每消耗1个都使造成的伤害+1。"
+		}
+	},
+	"relatedEntries": null
+}

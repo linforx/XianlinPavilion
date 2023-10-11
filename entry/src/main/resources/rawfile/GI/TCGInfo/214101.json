@@ -1,0 +1,90 @@
+{
+	"id": 214101,
+	"name": "酌盈剂虚",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_TALENT": "天赋",
+		"GCG_TAG_SLOWLY": "战斗行动"
+	},
+	"props": {
+		"GCG_COST_DICE_ELECTRO": 3,
+		"GCG_COST_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Modify_Constellation_Dori",
+	"route": "Discretionary Supplement",
+	"beta": true,
+	"storyTitle": "多莉·酌盈剂虚",
+	"storyDetail": "「先把商品涨价百分之三十，然后再打八折卖出！」",
+	"source": "在猫尾酒馆中邀请多莉进行对局，完成相应挑战目标后获取",
+	"dictionary": {
+		"K1": {
+			"name": "<color=#FFFFFFFF>战斗行动</color>",
+			"description": "我方执行了一次战斗行动后，会轮到对方行动。\\n<color=#FFFFFFFF>打出具有此规则的手牌是一个战斗行动，而非快速行动。</color>"
+		},
+		"S14103": {
+			"name": "卡萨扎莱宫的无微不至",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C114102]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114102": "灯中幽精"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Dori_01_HD"
+		},
+		"C114102": {
+			"name": "灯中幽精",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>治疗我方出战角色2点，并使其获得1点$[K310]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		}
+	},
+	"talent": {
+		"17053": {
+			"name": "酌盈剂虚",
+			"description": "$[K1]：我方出战角色为<color=#FFFFFFFF>$[A1410]</color>时，装备此牌。\\n$[A1410]装备此牌后，立刻使用一次<color=#FFD780FF>$[S14103]</color>。\\n装备有此牌的$[A1410]所召唤的<color=#FFFFFFFF>$[C114102]</color>，对生命值不多于6的角色造成的治疗+1，使没有$[K310]的角色获得$[K310]时获得量+1。\\n（牌组中包含$[A1410]，才能加入牌组）",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"K1": "<color=#FFFFFFFF>战斗行动</color>",
+				"A1410": "多莉",
+				"S14103": "卡萨扎莱宫的无微不至",
+				"C114102": "灯中幽精",
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>"
+			},
+			"tags": {
+				"GCG_TAG_TALENT": "天赋",
+				"GCG_TAG_SLOWLY": "战斗行动"
+			},
+			"icon": null,
+			"effect": "装备有此牌的$[A1410]所召唤的<color=#FFFFFFFF>$[C114102]</color>，对生命值不多于6的角色造成的治疗+1，使没有$[K310]的角色获得$[K310]时获得量+1。",
+			"subSkills": {
+				"S14103": "skill",
+				"C114102": "cardSkill"
+			},
+			"keywords": {
+				"K1": "keyword",
+				"K310": "keyword"
+			}
+		}
+	},
+	"relatedEntries": null
+}

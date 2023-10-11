@@ -1,0 +1,34 @@
+{
+	"id": 330005,
+	"name": "万家灶火",
+	"type": "actionCard",
+	"tags": {
+		"GCG_TAG_LEGEND": "秘传"
+	},
+	"props": {
+		"GCG_COST_DICE_LEGEND": 1
+	},
+	"icon": "UI_Gcg_CardFace_Event_Event_Guobahelp",
+	"route": "In Every House a Stove",
+	"beta": true,
+	"storyTitle": "万家灶火",
+	"storyDetail": "「灶神惜护民生，化出分身潜入千家万户帮着生火做饭，助人团圆。」",
+	"source": "",
+	"dictionary": null,
+	"talent": {
+		"17053": {
+			"name": "万家灶火",
+			"description": "我方抓相当于当前的回合数的牌。（最多抓4张）\\n（整局游戏只能打出一张「{SPRITE_PRESET#3007}秘传」卡牌；这张牌一定在你的起始手牌中）",
+			"cost": {
+				"GCG_COST_DICE_LEGEND": 1
+			},
+			"params": null,
+			"tags": {
+				"GCG_TAG_LEGEND": "秘传"
+			},
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"relatedEntries": null
+}

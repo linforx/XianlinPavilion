@@ -1,0 +1,38 @@
+{
+	"name": "？？？",
+	"description": "？？？",
+	"type": "角色培养素材",
+	"recipe": {
+		"60801": {
+			"113021": {
+				"icon": "UI_ItemIcon_113021",
+				"count": 1
+			},
+			"113055": {
+				"icon": "",
+				"count": 1
+			}
+		},
+		"60802": {
+			"113021": {
+				"icon": "UI_ItemIcon_113021",
+				"count": 1
+			},
+			"113056": {
+				"icon": "",
+				"count": 1
+			}
+		}
+	},
+	"mapMark": false,
+	"source": [
+		{
+			"name": "？？？",
+			"type": "single"
+		}
+	],
+	"icon": "",
+	"rank": 5,
+	"route": "？？？",
+	"beta": true
+}

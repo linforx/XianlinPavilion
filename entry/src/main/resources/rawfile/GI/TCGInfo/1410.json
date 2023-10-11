@@ -1,0 +1,137 @@
+{
+	"id": 1410,
+	"name": "多莉",
+	"type": "characterCard",
+	"tags": {
+		"GCG_TAG_ELEMENT_ELECTRO": "雷元素",
+		"GCG_TAG_WEAPON_CLAYMORE": "双手剑",
+		"GCG_TAG_NATION_SUMERU": "须弥"
+	},
+	"props": {
+		"GCG_PROP_HP": 10,
+		"GCG_PROP_ENERGY": 2
+	},
+	"icon": "UI_Gcg_CardFace_Char_Avatar_Dori",
+	"route": "Dori",
+	"beta": true,
+	"storyTitle": "梦园藏金·多莉",
+	"storyDetail": "摩拉多多，快乐多多！",
+	"source": "在猫尾酒馆中邀请多莉进行对局，在友好对局难度中获得胜利后获取",
+	"dictionary": {
+		"K100": {
+			"name": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>",
+			"description": "物理伤害不会附着元素，也不会发生元素反应。"
+		},
+		"K104": {
+			"name": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+			"description": "附着{SPRITE_PRESET#2104}雷元素，可发生元素反应：\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2103}<color=#FFFFFFFF>超载</color>：本伤害+2，目标强制切换到下一个角色\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2101}<color=#FFFFFFFF>超导</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2102}<color=#FFFFFFFF>感电</color>：本伤害+1，对目标以外的所有敌方角色造成1点穿透伤害\\n{SPRITE_PRESET#2104}{SPRITE_PRESET#2107}<color=#FFFFFFFF>原激化</color>：本伤害+1，生成使下2次草元素或雷元素伤害+1的[<color=#FFFFFFFF>激化领域</color>]"
+		},
+		"K3": {
+			"name": "<color=#FFFFFFFF>可用次数</color>",
+			"description": "此牌效果触发后，会消耗1次<color=#FFFFFFFF>可用次数</color>；\\n<color=#FFFFFFFF>可用次数</color>耗尽后，立刻弃置此牌。"
+		},
+		"C114101": {
+			"name": "售后服务弹",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>造成1点$[K104]。\\n<color=#FFFFFFFF>$[K3]：1</color>",
+			"cost": null,
+			"params": {
+				"K104": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		},
+		"K310": {
+			"name": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+			"description": "角色使用「元素爆发」时，需要消耗{SPRITE_PRESET#1110}充能。\\n角色使用「元素战技」或「普通攻击」后，会获得1点{SPRITE_PRESET#1110}充能。"
+		},
+		"C114102": {
+			"name": "灯中幽精",
+			"description": "<color=#FFFFFFFF>结束阶段：</color>治疗我方出战角色2点，并使其获得1点$[K310]。\\n<color=#FFFFFFFF>$[K3]：2</color>",
+			"cost": null,
+			"params": {
+				"K310": "<color=#FFFFFFFF>{SPRITE_PRESET#1110}充能</color>",
+				"K3": "<color=#FFFFFFFF>可用次数</color>"
+			},
+			"tags": null,
+			"icon": null,
+			"effect": ""
+		}
+	},
+	"talent": {
+		"14101": {
+			"name": "妙显剑舞·改",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 1,
+				"GCG_COST_DICE_VOID": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2100}<color=#FFFFFFFF>物理伤害</color>"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_A": "普通攻击"
+			},
+			"icon": "Skill_A_04",
+			"subSkills": null,
+			"keywords": {
+				"K100": "keyword"
+			}
+		},
+		"14102": {
+			"name": "镇灵之灯·烦恼解决炮",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C114101]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3
+			},
+			"params": {
+				"D__KEY__DAMAGE": 2,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114101": "售后服务弹"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_E": "元素战技"
+			},
+			"icon": "Skill_S_Dori_01",
+			"subSkills": {
+				"C114101": "cardSkill"
+			},
+			"keywords": {
+				"K104": "keyword"
+			}
+		},
+		"14103": {
+			"name": "卡萨扎莱宫的无微不至",
+			"description": "造成$[D__KEY__DAMAGE]点$[D__KEY__ELEMENT]，召唤<color=#FFFFFFFF>$[C114102]</color>。",
+			"cost": {
+				"GCG_COST_DICE_ELECTRO": 3,
+				"GCG_COST_ENERGY": 2
+			},
+			"params": {
+				"D__KEY__DAMAGE": 1,
+				"D__KEY__ELEMENT": "{SPRITE_PRESET#2104}<color=#FFACFFFF>雷元素伤害</color>",
+				"C114102": "灯中幽精"
+			},
+			"tags": {
+				"GCG_SKILL_TAG_Q": "元素爆发"
+			},
+			"icon": "Skill_E_Dori_01_HD",
+			"subSkills": {
+				"C114102": "cardSkill"
+			},
+			"keywords": {
+				"K104": "keyword"
+			}
+		}
+	},
+	"relatedEntries": [
+		{
+			"id": 214101,
+			"name": "酌盈剂虚",
+			"type": "gcg",
+			"icon": "UI_Gcg_CardFace_Modify_Constellation_Dori"
+		}
+	]
+}
